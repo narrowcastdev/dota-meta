@@ -38,14 +38,14 @@
     "attack_type": "Ranged",
     "roles": ["Support", "Disabler", "Nuker"],
     "img": "/apps/dota2/images/dota_react/heroes/bane.png",
-    "1_pick": 800, "1_win": 450,
-    "2_pick": 900, "2_win": 510,
-    "3_pick": 700, "3_win": 390,
-    "4_pick": 750, "4_win": 420,
-    "5_pick": 600, "5_win": 330,
-    "6_pick": 650, "6_win": 360,
-    "7_pick": 500, "7_win": 280,
-    "8_pick": 550, "8_win": 310
+    "1_pick": 400, "1_win": 225,
+    "2_pick": 450, "2_win": 255,
+    "3_pick": 350, "3_win": 195,
+    "4_pick": 380, "4_win": 210,
+    "5_pick": 300, "5_win": 165,
+    "6_pick": 320, "6_win": 180,
+    "7_pick": 250, "7_win": 140,
+    "8_pick": 280, "8_win": 155
   },
   {
     "id": 4,
