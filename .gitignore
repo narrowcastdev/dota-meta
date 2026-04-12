@@ -1,0 +1,19 @@
+# Go binary
+/dota-meta
+
+# OS files
+.DS_Store
+
+# Nix / direnv
+.direnv/
+result
+
+# Node
+node_modules/
+
+# Editor
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
