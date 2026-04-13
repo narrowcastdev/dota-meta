@@ -5,7 +5,7 @@
 **Start every session by reading `BUSINESS.md` in the narrowcast repo.** It is the source of truth for the Narrowcast side hustle that this project is part of.
 
 ```
-read /Volumes/Untitled/narrowcast/BUSINESS.md
+read /Volumes/Untitled/narrowcast/narrowcast/BUSINESS.md
 ```
 
 ## What is dota-meta?
@@ -21,8 +21,8 @@ This is a **free and open source** community tool. It is not a paid product. It 
 
 ## Key documents
 
-- **Design spec:** `/Volumes/Untitled/narrowcast/docs/superpowers/specs/2026-04-12-dota-meta-design.md`
-- **Implementation plan:** `/Volumes/Untitled/narrowcast/docs/superpowers/plans/2026-04-12-dota-meta.md`
+- **Design spec:** `/Volumes/Untitled/narrowcast/narrowcast/docs/superpowers/specs/2026-04-12-dota-meta-design.md`
+- **Implementation plan:** `/Volumes/Untitled/narrowcast/narrowcast/docs/superpowers/plans/2026-04-12-dota-meta.md`
 
 ## Tech stack
 

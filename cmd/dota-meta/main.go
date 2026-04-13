@@ -14,7 +14,7 @@ import (
 func main() {
 	outputFile := flag.String("output", "", "write Reddit post to file instead of stdout")
 	jsonMode := flag.Bool("json", false, "output raw analysis as JSON")
-	htmlMode := flag.Bool("html", false, "generate site/data.json for static site")
+	htmlMode := flag.Bool("html", false, "generate docs/data.json for static site")
 	minPicks := flag.Int("min-picks", 1000, "minimum picks to qualify a hero")
 	flag.Parse()
 
@@ -43,11 +43,11 @@ func main() {
 			fmt.Fprintf(os.Stderr, "Error formatting JSON: %v\n", jsonErr)
 			os.Exit(1)
 		}
-		if writeErr := os.WriteFile("site/data.json", data, 0644); writeErr != nil {
-			fmt.Fprintf(os.Stderr, "Error writing site/data.json: %v\n", writeErr)
+		if writeErr := os.WriteFile("docs/data.json", data, 0644); writeErr != nil {
+			fmt.Fprintf(os.Stderr, "Error writing docs/data.json: %v\n", writeErr)
 			os.Exit(1)
 		}
-		fmt.Fprintln(os.Stderr, "Wrote site/data.json")
+		fmt.Fprintln(os.Stderr, "Wrote docs/data.json")
 	}
 
 	post := format.FormatReddit(result, date)
