@@ -59,6 +59,7 @@ func TestFormatReddit_ContainsSections(t *testing.T) {
 		"Bracket delta",
 		"Low bracket stompers",
 		"High skill ceiling",
+		"Free MMR",
 	} {
 		if !strings.Contains(post, section) {
 			t.Errorf("post should contain section %q", section)
