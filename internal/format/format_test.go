@@ -70,7 +70,7 @@ func TestFormatReddit_ContainsFooter(t *testing.T) {
 	_, result := loadFixtureAndAnalyze(t)
 	post := format.FormatReddit(result, "April 12, 2026")
 
-	if !strings.Contains(post, "narrowcastdev.github.io/dota-meta") {
+	if !strings.Contains(post, "dota.narrowcast.dev") {
 		t.Error("post should contain static site link")
 	}
 	if !strings.Contains(post, "OpenDota") {
