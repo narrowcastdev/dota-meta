@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-13T06:03:43Z",
+  "generated": "2026-04-14T15:57:18Z",
   "heroes": [
     {
       "name": "Anti-Mage",
@@ -7,24 +7,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 127205,
-          "wins": 62138,
-          "win_rate": 48.84870877717071
+          "picks": 134423,
+          "wins": 65831,
+          "win_rate": 48.97301801031074
         },
         "divine_immortal": {
-          "picks": 20375,
-          "wins": 9809,
-          "win_rate": 48.14233128834356
+          "picks": 21526,
+          "wins": 10436,
+          "win_rate": 48.48090681036886
         },
         "herald_guardian": {
-          "picks": 105150,
-          "wins": 51758,
-          "win_rate": 49.22301474084641
+          "picks": 111460,
+          "wins": 55012,
+          "win_rate": 49.35582271666966
         },
         "legend_ancient": {
-          "picks": 62452,
-          "wins": 30381,
-          "win_rate": 48.64696086594505
+          "picks": 66076,
+          "wins": 32147,
+          "win_rate": 48.651552757430835
         }
       }
     },
@@ -34,24 +34,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 182271,
-          "wins": 96079,
-          "win_rate": 52.712170339768804
+          "picks": 193648,
+          "wins": 102278,
+          "win_rate": 52.8164504668264
         },
         "divine_immortal": {
-          "picks": 34674,
-          "wins": 17802,
-          "win_rate": 51.34106246755494
+          "picks": 37007,
+          "wins": 19021,
+          "win_rate": 51.39838408949659
         },
         "herald_guardian": {
-          "picks": 136723,
-          "wins": 73380,
-          "win_rate": 53.670560183729144
+          "picks": 145867,
+          "wins": 78413,
+          "win_rate": 53.75650421274174
         },
         "legend_ancient": {
-          "picks": 99434,
-          "wins": 51683,
-          "win_rate": 51.977190900496815
+          "picks": 106228,
+          "wins": 55499,
+          "win_rate": 52.24517076477012
         }
       }
     },
@@ -61,24 +61,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 26223,
-          "wins": 13218,
-          "win_rate": 50.40613202150783
+          "picks": 27383,
+          "wins": 13847,
+          "win_rate": 50.567870576635144
         },
         "divine_immortal": {
-          "picks": 8836,
-          "wins": 4620,
-          "win_rate": 52.28610230873698
+          "picks": 9268,
+          "wins": 4813,
+          "win_rate": 51.93137678031938
         },
         "herald_guardian": {
-          "picks": 19568,
-          "wins": 9474,
-          "win_rate": 48.41578086672118
+          "picks": 20590,
+          "wins": 9991,
+          "win_rate": 48.52355512384653
         },
         "legend_ancient": {
-          "picks": 17027,
-          "wins": 8766,
-          "win_rate": 51.48293886180772
+          "picks": 17803,
+          "wins": 9112,
+          "win_rate": 51.1823849912936
         }
       }
     },
@@ -88,24 +88,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 48307,
-          "wins": 25239,
-          "win_rate": 52.2470863435941
+          "picks": 49835,
+          "wins": 25858,
+          "win_rate": 51.88722785191131
         },
         "divine_immortal": {
-          "picks": 8425,
-          "wins": 4369,
-          "win_rate": 51.85756676557863
+          "picks": 8793,
+          "wins": 4585,
+          "win_rate": 52.14375071079268
         },
         "herald_guardian": {
-          "picks": 53636,
-          "wins": 28055,
-          "win_rate": 52.306286822283546
+          "picks": 56019,
+          "wins": 29151,
+          "win_rate": 52.037701494135916
         },
         "legend_ancient": {
-          "picks": 24291,
-          "wins": 12799,
-          "win_rate": 52.690296817751424
+          "picks": 25217,
+          "wins": 13251,
+          "win_rate": 52.547884363722886
         }
       }
     },
@@ -115,24 +115,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 129378,
-          "wins": 67024,
-          "win_rate": 51.804789067693115
+          "picks": 136754,
+          "wins": 70648,
+          "win_rate": 51.660646123696566
         },
         "divine_immortal": {
-          "picks": 27944,
-          "wins": 14113,
-          "win_rate": 50.50458058975094
+          "picks": 29743,
+          "wins": 15006,
+          "win_rate": 50.452207242040146
         },
         "herald_guardian": {
-          "picks": 110633,
-          "wins": 58708,
-          "win_rate": 53.065541023022064
+          "picks": 117201,
+          "wins": 62052,
+          "win_rate": 52.94494074282643
         },
         "legend_ancient": {
-          "picks": 73569,
-          "wins": 37675,
-          "win_rate": 51.21042830540037
+          "picks": 77727,
+          "wins": 39698,
+          "win_rate": 51.0736294981152
         }
       }
     },
@@ -142,24 +142,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 122575,
-          "wins": 60709,
-          "win_rate": 49.52804405466041
+          "picks": 131179,
+          "wins": 65561,
+          "win_rate": 49.978273961533475
         },
         "divine_immortal": {
-          "picks": 22393,
-          "wins": 11402,
-          "win_rate": 50.91769749475282
+          "picks": 24517,
+          "wins": 12543,
+          "win_rate": 51.16041930089325
         },
         "herald_guardian": {
-          "picks": 107536,
-          "wins": 52546,
-          "win_rate": 48.86363636363637
+          "picks": 114591,
+          "wins": 56274,
+          "win_rate": 49.10856873576459
         },
         "legend_ancient": {
-          "picks": 64364,
-          "wins": 32326,
-          "win_rate": 50.22372754956187
+          "picks": 69561,
+          "wins": 35123,
+          "win_rate": 50.492373600149506
         }
       }
     },
@@ -169,24 +169,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 134491,
-          "wins": 66834,
-          "win_rate": 49.694031570885784
+          "picks": 142991,
+          "wins": 71208,
+          "win_rate": 49.798938394724146
         },
         "divine_immortal": {
-          "picks": 29869,
-          "wins": 15389,
-          "win_rate": 51.52164451437946
+          "picks": 31802,
+          "wins": 16291,
+          "win_rate": 51.226337966165644
         },
         "herald_guardian": {
-          "picks": 103493,
-          "wins": 51422,
-          "win_rate": 49.6864522238219
+          "picks": 110183,
+          "wins": 54758,
+          "win_rate": 49.697321728397306
         },
         "legend_ancient": {
-          "picks": 79703,
-          "wins": 40296,
-          "win_rate": 50.5576954443371
+          "picks": 84707,
+          "wins": 42846,
+          "win_rate": 50.581415939650796
         }
       }
     },
@@ -196,24 +196,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 150893,
-          "wins": 77258,
-          "win_rate": 51.20051957347259
+          "picks": 161956,
+          "wins": 83175,
+          "win_rate": 51.35654128281756
         },
         "divine_immortal": {
-          "picks": 27037,
-          "wins": 13715,
-          "win_rate": 50.726781817509334
+          "picks": 29321,
+          "wins": 14994,
+          "win_rate": 51.1374100474063
         },
         "herald_guardian": {
-          "picks": 117759,
-          "wins": 59375,
-          "win_rate": 50.42077463293676
+          "picks": 126500,
+          "wins": 64272,
+          "win_rate": 50.807905138339926
         },
         "legend_ancient": {
-          "picks": 82006,
-          "wins": 42228,
-          "win_rate": 51.49379313708753
+          "picks": 88494,
+          "wins": 45766,
+          "win_rate": 51.71650055370986
         }
       }
     },
@@ -223,24 +223,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 75926,
-          "wins": 38058,
-          "win_rate": 50.125121829149435
+          "picks": 80363,
+          "wins": 40178,
+          "win_rate": 49.99564476189291
         },
         "divine_immortal": {
-          "picks": 16236,
-          "wins": 8108,
-          "win_rate": 49.93840847499384
+          "picks": 17283,
+          "wins": 8642,
+          "win_rate": 50.00289301625875
         },
         "herald_guardian": {
-          "picks": 54501,
-          "wins": 27616,
-          "win_rate": 50.67062989669915
+          "picks": 57840,
+          "wins": 29260,
+          "win_rate": 50.5878284923928
         },
         "legend_ancient": {
-          "picks": 43982,
-          "wins": 22087,
-          "win_rate": 50.21827111090901
+          "picks": 46755,
+          "wins": 23437,
+          "win_rate": 50.12725911667202
         }
       }
     },
@@ -250,24 +250,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 45614,
-          "wins": 21159,
-          "win_rate": 46.38707414390319
+          "picks": 47301,
+          "wins": 22017,
+          "win_rate": 46.546584638802564
         },
         "divine_immortal": {
-          "picks": 13666,
-          "wins": 6432,
-          "win_rate": 47.065710522464514
+          "picks": 14078,
+          "wins": 6606,
+          "win_rate": 46.924279016905814
         },
         "herald_guardian": {
-          "picks": 34531,
-          "wins": 16396,
-          "win_rate": 47.48197272016449
+          "picks": 36132,
+          "wins": 17155,
+          "win_rate": 47.47868925052585
         },
         "legend_ancient": {
-          "picks": 27953,
-          "wins": 13167,
-          "win_rate": 47.10406754194541
+          "picks": 29046,
+          "wins": 13669,
+          "win_rate": 47.05983612201336
         }
       }
     },
@@ -277,24 +277,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 142743,
-          "wins": 67971,
-          "win_rate": 47.61774657951703
+          "picks": 149821,
+          "wins": 71293,
+          "win_rate": 47.58545197268741
         },
         "divine_immortal": {
-          "picks": 31402,
-          "wins": 14895,
-          "win_rate": 47.43328450417171
+          "picks": 32907,
+          "wins": 15638,
+          "win_rate": 47.521803871516695
         },
         "herald_guardian": {
-          "picks": 104382,
-          "wins": 50286,
-          "win_rate": 48.17497269644191
+          "picks": 110144,
+          "wins": 52880,
+          "win_rate": 48.009877977919814
         },
         "legend_ancient": {
-          "picks": 82714,
-          "wins": 39309,
-          "win_rate": 47.52399835578016
+          "picks": 86614,
+          "wins": 41262,
+          "win_rate": 47.638949823354196
         }
       }
     },
@@ -304,24 +304,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 79085,
-          "wins": 42428,
-          "win_rate": 53.64860593032813
+          "picks": 88704,
+          "wins": 47824,
+          "win_rate": 53.91414141414141
         },
         "divine_immortal": {
-          "picks": 17981,
-          "wins": 9714,
-          "win_rate": 54.02369167454535
+          "picks": 20962,
+          "wins": 11355,
+          "win_rate": 54.169449480011444
         },
         "herald_guardian": {
-          "picks": 74656,
-          "wins": 39514,
-          "win_rate": 52.92809687098157
+          "picks": 81817,
+          "wins": 43451,
+          "win_rate": 53.10754488675947
         },
         "legend_ancient": {
-          "picks": 39899,
-          "wins": 21339,
-          "win_rate": 53.48254342214091
+          "picks": 45699,
+          "wins": 24475,
+          "win_rate": 53.5569706120484
         }
       }
     },
@@ -331,24 +331,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 47097,
-          "wins": 21916,
-          "win_rate": 46.533749495721594
+          "picks": 49723,
+          "wins": 23164,
+          "win_rate": 46.58608692154536
         },
         "divine_immortal": {
-          "picks": 17189,
-          "wins": 8411,
-          "win_rate": 48.93245680376985
+          "picks": 18305,
+          "wins": 9007,
+          "win_rate": 49.2051352089593
         },
         "herald_guardian": {
-          "picks": 28063,
-          "wins": 12767,
-          "win_rate": 45.494066920856646
+          "picks": 30128,
+          "wins": 13651,
+          "win_rate": 45.31001062134891
         },
         "legend_ancient": {
-          "picks": 34937,
-          "wins": 16779,
-          "win_rate": 48.026447605690244
+          "picks": 37060,
+          "wins": 17821,
+          "win_rate": 48.08688613059903
         }
       }
     },
@@ -358,24 +358,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 291801,
-          "wins": 147403,
-          "win_rate": 50.51490570628613
+          "picks": 307875,
+          "wins": 156402,
+          "win_rate": 50.800487210718636
         },
         "divine_immortal": {
-          "picks": 72107,
-          "wins": 35746,
-          "win_rate": 49.57355041812861
+          "picks": 76231,
+          "wins": 38057,
+          "win_rate": 49.923259566318166
         },
         "herald_guardian": {
-          "picks": 225228,
-          "wins": 114401,
-          "win_rate": 50.79341822508747
+          "picks": 238236,
+          "wins": 121716,
+          "win_rate": 51.090515287362116
         },
         "legend_ancient": {
-          "picks": 164010,
-          "wins": 82286,
-          "win_rate": 50.171331016401446
+          "picks": 173212,
+          "wins": 87241,
+          "win_rate": 50.366602775789204
         }
       }
     },
@@ -385,24 +385,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 68591,
-          "wins": 34293,
-          "win_rate": 49.99635520695135
+          "picks": 71948,
+          "wins": 35828,
+          "win_rate": 49.797075665758605
         },
         "divine_immortal": {
-          "picks": 15236,
-          "wins": 7403,
-          "win_rate": 48.58886846941454
+          "picks": 15751,
+          "wins": 7643,
+          "win_rate": 48.52390324423846
         },
         "herald_guardian": {
-          "picks": 58324,
-          "wins": 29250,
-          "win_rate": 50.15088128386256
+          "picks": 61594,
+          "wins": 30841,
+          "win_rate": 50.07143552943468
         },
         "legend_ancient": {
-          "picks": 40488,
-          "wins": 20111,
-          "win_rate": 49.671507607192254
+          "picks": 42281,
+          "wins": 20935,
+          "win_rate": 49.51396608405667
         }
       }
     },
@@ -412,24 +412,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 71043,
-          "wins": 35274,
-          "win_rate": 49.65161944174655
+          "picks": 74408,
+          "wins": 36818,
+          "win_rate": 49.48123857649715
         },
         "divine_immortal": {
-          "picks": 18846,
-          "wins": 8952,
-          "win_rate": 47.50079592486469
+          "picks": 19576,
+          "wins": 9216,
+          "win_rate": 47.07805476093176
         },
         "herald_guardian": {
-          "picks": 52805,
-          "wins": 27043,
-          "win_rate": 51.2129533188145
+          "picks": 55850,
+          "wins": 28619,
+          "win_rate": 51.242614145031325
         },
         "legend_ancient": {
-          "picks": 45174,
-          "wins": 21909,
-          "win_rate": 48.499136671536725
+          "picks": 47371,
+          "wins": 22952,
+          "win_rate": 48.45158430263241
         }
       }
     },
@@ -439,24 +439,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 74210,
-          "wins": 34586,
-          "win_rate": 46.60557876296995
+          "picks": 78022,
+          "wins": 36232,
+          "win_rate": 46.43818410191997
         },
         "divine_immortal": {
-          "picks": 22173,
-          "wins": 10592,
-          "win_rate": 47.7698101294367
+          "picks": 23418,
+          "wins": 11192,
+          "win_rate": 47.79229652404133
         },
         "herald_guardian": {
-          "picks": 49507,
-          "wins": 23038,
-          "win_rate": 46.53483345789484
+          "picks": 52539,
+          "wins": 24397,
+          "win_rate": 46.43598089038619
         },
         "legend_ancient": {
-          "picks": 50353,
-          "wins": 23701,
-          "win_rate": 47.069688002700936
+          "picks": 53030,
+          "wins": 24986,
+          "win_rate": 47.1167263812936
         }
       }
     },
@@ -466,24 +466,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 46348,
-          "wins": 22968,
-          "win_rate": 49.555536376974196
+          "picks": 48612,
+          "wins": 24038,
+          "win_rate": 49.44869579527689
         },
         "divine_immortal": {
-          "picks": 7524,
-          "wins": 3692,
-          "win_rate": 49.069643806485914
+          "picks": 7942,
+          "wins": 3934,
+          "win_rate": 49.53412238730798
         },
         "herald_guardian": {
-          "picks": 45526,
-          "wins": 22369,
-          "win_rate": 49.13456047093968
+          "picks": 48109,
+          "wins": 23669,
+          "win_rate": 49.198694630942235
         },
         "legend_ancient": {
-          "picks": 22806,
-          "wins": 11412,
-          "win_rate": 50.0394632991318
+          "picks": 24030,
+          "wins": 12038,
+          "win_rate": 50.09571369121931
         }
       }
     },
@@ -493,24 +493,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 70916,
-          "wins": 31986,
-          "win_rate": 45.104066783236505
+          "picks": 73495,
+          "wins": 33273,
+          "win_rate": 45.27246751479693
         },
         "divine_immortal": {
-          "picks": 27323,
-          "wins": 12928,
-          "win_rate": 47.315448523222194
+          "picks": 28620,
+          "wins": 13575,
+          "win_rate": 47.43186582809224
         },
         "herald_guardian": {
-          "picks": 44399,
-          "wins": 19976,
-          "win_rate": 44.99200432442172
+          "picks": 46804,
+          "wins": 21030,
+          "win_rate": 44.93205708913768
         },
         "legend_ancient": {
-          "picks": 54400,
-          "wins": 24824,
-          "win_rate": 45.63235294117647
+          "picks": 56272,
+          "wins": 25727,
+          "win_rate": 45.71900767699744
         }
       }
     },
@@ -520,24 +520,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 81568,
-          "wins": 42911,
-          "win_rate": 52.607640251078855
+          "picks": 87050,
+          "wins": 45848,
+          "win_rate": 52.668581275129235
         },
         "divine_immortal": {
-          "picks": 16740,
-          "wins": 8698,
-          "win_rate": 51.95937873357228
+          "picks": 17989,
+          "wins": 9424,
+          "win_rate": 52.387570181777754
         },
         "herald_guardian": {
-          "picks": 56991,
-          "wins": 30070,
-          "win_rate": 52.76271692021547
+          "picks": 60728,
+          "wins": 31957,
+          "win_rate": 52.62317217757872
         },
         "legend_ancient": {
-          "picks": 49132,
-          "wins": 25828,
-          "win_rate": 52.568590735162424
+          "picks": 52527,
+          "wins": 27696,
+          "win_rate": 52.72716888457365
         }
       }
     },
@@ -547,24 +547,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 120242,
-          "wins": 57319,
-          "win_rate": 47.66969943946375
+          "picks": 126787,
+          "wins": 60395,
+          "win_rate": 47.63500989849117
         },
         "divine_immortal": {
-          "picks": 23511,
-          "wins": 11584,
-          "win_rate": 49.27055420866828
+          "picks": 25107,
+          "wins": 12439,
+          "win_rate": 49.54395188592823
         },
         "herald_guardian": {
-          "picks": 100667,
-          "wins": 47832,
-          "win_rate": 47.51507445339585
+          "picks": 106428,
+          "wins": 50591,
+          "win_rate": 47.5354230089826
         },
         "legend_ancient": {
-          "picks": 65732,
-          "wins": 31616,
-          "win_rate": 48.09833870869591
+          "picks": 69617,
+          "wins": 33579,
+          "win_rate": 48.23390838444633
         }
       }
     },
@@ -574,24 +574,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 163255,
-          "wins": 83492,
-          "win_rate": 51.14207834369544
+          "picks": 173091,
+          "wins": 88438,
+          "win_rate": 51.09335551819563
         },
         "divine_immortal": {
-          "picks": 38161,
-          "wins": 19348,
-          "win_rate": 50.70097743769817
+          "picks": 40641,
+          "wins": 20535,
+          "win_rate": 50.52779213109913
         },
         "herald_guardian": {
-          "picks": 124882,
-          "wins": 63816,
-          "win_rate": 51.10103938117583
+          "picks": 132889,
+          "wins": 68033,
+          "win_rate": 51.19535853230892
         },
         "legend_ancient": {
-          "picks": 94473,
-          "wins": 48059,
-          "win_rate": 50.870619118689994
+          "picks": 100369,
+          "wins": 50996,
+          "win_rate": 50.808516573842525
         }
       }
     },
@@ -601,24 +601,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 49927,
-          "wins": 24586,
-          "win_rate": 49.2438960882889
+          "picks": 53414,
+          "wins": 26331,
+          "win_rate": 49.29606470213802
         },
         "divine_immortal": {
-          "picks": 11258,
-          "wins": 5716,
-          "win_rate": 50.77278379818796
+          "picks": 12018,
+          "wins": 6050,
+          "win_rate": 50.34115493426526
         },
         "herald_guardian": {
-          "picks": 37243,
-          "wins": 18228,
-          "win_rate": 48.94342561018178
+          "picks": 40151,
+          "wins": 19603,
+          "win_rate": 48.82319244850689
         },
         "legend_ancient": {
-          "picks": 30096,
-          "wins": 14891,
-          "win_rate": 49.478335991493886
+          "picks": 32311,
+          "wins": 16030,
+          "win_rate": 49.611587385101046
         }
       }
     },
@@ -628,24 +628,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 137941,
-          "wins": 66976,
-          "win_rate": 48.554091966855395
+          "picks": 145470,
+          "wins": 70671,
+          "win_rate": 48.58115075273252
         },
         "divine_immortal": {
-          "picks": 28724,
-          "wins": 14055,
-          "win_rate": 48.931207352736386
+          "picks": 30432,
+          "wins": 14850,
+          "win_rate": 48.797318611987386
         },
         "herald_guardian": {
-          "picks": 109815,
-          "wins": 52047,
-          "win_rate": 47.39516459500068
+          "picks": 115983,
+          "wins": 55013,
+          "win_rate": 47.431951234232606
         },
         "legend_ancient": {
-          "picks": 78999,
-          "wins": 38686,
-          "win_rate": 48.97024012962189
+          "picks": 83345,
+          "wins": 40752,
+          "win_rate": 48.89555462235287
         }
       }
     },
@@ -655,24 +655,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 295298,
-          "wins": 146183,
-          "win_rate": 49.50355234373413
+          "picks": 312316,
+          "wins": 154572,
+          "win_rate": 49.492180996170546
         },
         "divine_immortal": {
-          "picks": 65087,
-          "wins": 31740,
-          "win_rate": 48.76549848664096
+          "picks": 69249,
+          "wins": 33614,
+          "win_rate": 48.540773151958874
         },
         "herald_guardian": {
-          "picks": 208544,
-          "wins": 102567,
-          "win_rate": 49.18242673009053
+          "picks": 221582,
+          "wins": 109167,
+          "win_rate": 49.267088481916396
         },
         "legend_ancient": {
-          "picks": 172721,
-          "wins": 84861,
-          "win_rate": 49.13183689302401
+          "picks": 183340,
+          "wins": 90133,
+          "win_rate": 49.161666848478234
         }
       }
     },
@@ -682,24 +682,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 180806,
-          "wins": 94138,
-          "win_rate": 52.065750030419345
+          "picks": 189569,
+          "wins": 98653,
+          "win_rate": 52.04068175703833
         },
         "divine_immortal": {
-          "picks": 39556,
-          "wins": 20471,
-          "win_rate": 51.751946607341495
+          "picks": 41857,
+          "wins": 21678,
+          "win_rate": 51.79062044580357
         },
         "herald_guardian": {
-          "picks": 142818,
-          "wins": 73714,
-          "win_rate": 51.613942220168326
+          "picks": 150435,
+          "wins": 77537,
+          "win_rate": 51.54186193372553
         },
         "legend_ancient": {
-          "picks": 101256,
-          "wins": 52666,
-          "win_rate": 52.01272023386269
+          "picks": 106190,
+          "wins": 54931,
+          "win_rate": 51.728976363122705
         }
       }
     },
@@ -709,24 +709,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 94483,
-          "wins": 48559,
-          "win_rate": 51.39443074415503
+          "picks": 100368,
+          "wins": 51546,
+          "win_rate": 51.35700621712099
         },
         "divine_immortal": {
-          "picks": 24017,
-          "wins": 12156,
-          "win_rate": 50.6141483116126
+          "picks": 25768,
+          "wins": 13078,
+          "win_rate": 50.752871778950635
         },
         "herald_guardian": {
-          "picks": 70447,
-          "wins": 35831,
-          "win_rate": 50.86235041946428
+          "picks": 74633,
+          "wins": 38012,
+          "win_rate": 50.93189339836266
         },
         "legend_ancient": {
-          "picks": 58337,
-          "wins": 29929,
-          "win_rate": 51.30363234310986
+          "picks": 61876,
+          "wins": 31695,
+          "win_rate": 51.22341457107764
         }
       }
     },
@@ -736,24 +736,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 154570,
-          "wins": 81701,
-          "win_rate": 52.85695801255095
+          "picks": 161508,
+          "wins": 84795,
+          "win_rate": 52.50204324244
         },
         "divine_immortal": {
-          "picks": 46791,
-          "wins": 24286,
-          "win_rate": 51.90314376696373
+          "picks": 48685,
+          "wins": 25009,
+          "win_rate": 51.36900482694875
         },
         "herald_guardian": {
-          "picks": 93827,
-          "wins": 49327,
-          "win_rate": 52.572287294701944
+          "picks": 98423,
+          "wins": 51472,
+          "win_rate": 52.29671926277395
         },
         "legend_ancient": {
-          "picks": 104954,
-          "wins": 54963,
-          "win_rate": 52.368656744859656
+          "picks": 109303,
+          "wins": 56888,
+          "win_rate": 52.04614694930606
         }
       }
     },
@@ -763,24 +763,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 195511,
-          "wins": 100299,
-          "win_rate": 51.30094981868027
+          "picks": 206388,
+          "wins": 105956,
+          "win_rate": 51.33825610016086
         },
         "divine_immortal": {
-          "picks": 30779,
-          "wins": 15228,
-          "win_rate": 49.475291594918616
+          "picks": 32531,
+          "wins": 16121,
+          "win_rate": 49.555808305923584
         },
         "herald_guardian": {
-          "picks": 149100,
-          "wins": 77572,
-          "win_rate": 52.02682763246143
+          "picks": 157850,
+          "wins": 82013,
+          "win_rate": 51.956287614824205
         },
         "legend_ancient": {
-          "picks": 100875,
-          "wins": 51244,
-          "win_rate": 50.799504337050806
+          "picks": 106728,
+          "wins": 54028,
+          "win_rate": 50.62214226819579
         }
       }
     },
@@ -790,24 +790,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 132440,
-          "wins": 68801,
-          "win_rate": 51.94880700694654
+          "picks": 138507,
+          "wins": 71808,
+          "win_rate": 51.84431111784964
         },
         "divine_immortal": {
-          "picks": 34267,
-          "wins": 17398,
-          "win_rate": 50.77187965097616
+          "picks": 35996,
+          "wins": 18297,
+          "win_rate": 50.83064784976108
         },
         "herald_guardian": {
-          "picks": 86215,
-          "wins": 44977,
-          "win_rate": 52.16841616888013
+          "picks": 90167,
+          "wins": 46995,
+          "win_rate": 52.119955194250664
         },
         "legend_ancient": {
-          "picks": 86192,
-          "wins": 44244,
-          "win_rate": 51.33191015407462
+          "picks": 90518,
+          "wins": 46463,
+          "win_rate": 51.33012218564264
         }
       }
     },
@@ -817,24 +817,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 56568,
-          "wins": 29858,
-          "win_rate": 52.782491868194036
+          "picks": 60215,
+          "wins": 31651,
+          "win_rate": 52.56331478867392
         },
         "divine_immortal": {
-          "picks": 9750,
-          "wins": 5148,
-          "win_rate": 52.800000000000004
+          "picks": 10487,
+          "wins": 5537,
+          "win_rate": 52.79870315628874
         },
         "herald_guardian": {
-          "picks": 59577,
-          "wins": 31378,
-          "win_rate": 52.667975896738675
+          "picks": 63532,
+          "wins": 33545,
+          "win_rate": 52.80016369703456
         },
         "legend_ancient": {
-          "picks": 27069,
-          "wins": 14343,
-          "win_rate": 52.98681148176881
+          "picks": 28610,
+          "wins": 15191,
+          "win_rate": 53.09681929395317
         }
       }
     },
@@ -844,24 +844,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 33892,
-          "wins": 16768,
-          "win_rate": 49.474802313230256
+          "picks": 35641,
+          "wins": 17599,
+          "win_rate": 49.37852473275161
         },
         "divine_immortal": {
-          "picks": 6228,
-          "wins": 3328,
-          "win_rate": 53.43609505459217
+          "picks": 6704,
+          "wins": 3623,
+          "win_rate": 54.042362768496425
         },
         "herald_guardian": {
-          "picks": 29079,
-          "wins": 14194,
-          "win_rate": 48.81185735410434
+          "picks": 30921,
+          "wins": 15113,
+          "win_rate": 48.876168299860936
         },
         "legend_ancient": {
-          "picks": 16873,
-          "wins": 8608,
-          "win_rate": 51.016416760504946
+          "picks": 17772,
+          "wins": 9051,
+          "win_rate": 50.92842673869007
         }
       }
     },
@@ -871,24 +871,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 43062,
-          "wins": 19651,
-          "win_rate": 45.63420184849751
+          "picks": 46330,
+          "wins": 21211,
+          "win_rate": 45.782430390675586
         },
         "divine_immortal": {
-          "picks": 10658,
-          "wins": 5052,
-          "win_rate": 47.4010133233252
+          "picks": 11622,
+          "wins": 5555,
+          "win_rate": 47.79728101875753
         },
         "herald_guardian": {
-          "picks": 35175,
-          "wins": 15756,
-          "win_rate": 44.79317697228145
+          "picks": 38067,
+          "wins": 17068,
+          "win_rate": 44.83673522998923
         },
         "legend_ancient": {
-          "picks": 25603,
-          "wins": 11873,
-          "win_rate": 46.37347185876655
+          "picks": 27581,
+          "wins": 12775,
+          "win_rate": 46.31811754468656
         }
       }
     },
@@ -898,24 +898,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 226161,
-          "wins": 113180,
-          "win_rate": 50.04399520695434
+          "picks": 238456,
+          "wins": 119159,
+          "win_rate": 49.97106384406347
         },
         "divine_immortal": {
-          "picks": 29765,
-          "wins": 14162,
-          "win_rate": 47.579371745338484
+          "picks": 31097,
+          "wins": 14816,
+          "win_rate": 47.64446731195935
         },
         "herald_guardian": {
-          "picks": 194735,
-          "wins": 99121,
-          "win_rate": 50.900454463758436
+          "picks": 206434,
+          "wins": 104893,
+          "win_rate": 50.81188176366296
         },
         "legend_ancient": {
-          "picks": 106332,
-          "wins": 52003,
-          "win_rate": 48.90625587781665
+          "picks": 111566,
+          "wins": 54577,
+          "win_rate": 48.919025509563845
         }
       }
     },
@@ -925,24 +925,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 157502,
-          "wins": 82479,
-          "win_rate": 52.3669540704245
+          "picks": 166386,
+          "wins": 87103,
+          "win_rate": 52.34995732814058
         },
         "divine_immortal": {
-          "picks": 30817,
-          "wins": 15400,
-          "win_rate": 49.972417821332385
+          "picks": 32449,
+          "wins": 16211,
+          "win_rate": 49.958396252580975
         },
         "herald_guardian": {
-          "picks": 123013,
-          "wins": 65473,
-          "win_rate": 53.224455951809965
+          "picks": 130533,
+          "wins": 69580,
+          "win_rate": 53.30452835681398
         },
         "legend_ancient": {
-          "picks": 85569,
-          "wins": 44006,
-          "win_rate": 51.427502950835006
+          "picks": 90518,
+          "wins": 46385,
+          "win_rate": 51.24395147926379
         }
       }
     },
@@ -952,24 +952,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 91902,
-          "wins": 46049,
-          "win_rate": 50.106635328937344
+          "picks": 95988,
+          "wins": 48067,
+          "win_rate": 50.0760511730633
         },
         "divine_immortal": {
-          "picks": 21252,
-          "wins": 10239,
-          "win_rate": 48.17899491812535
+          "picks": 22127,
+          "wins": 10626,
+          "win_rate": 48.022777602024675
         },
         "herald_guardian": {
-          "picks": 66307,
-          "wins": 33800,
-          "win_rate": 50.97501017992067
+          "picks": 69916,
+          "wins": 35581,
+          "win_rate": 50.891069283139764
         },
         "legend_ancient": {
-          "picks": 53449,
-          "wins": 26425,
-          "win_rate": 49.439652753091735
+          "picks": 55672,
+          "wins": 27422,
+          "win_rate": 49.25635867222302
         }
       }
     },
@@ -979,24 +979,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 81669,
-          "wins": 38736,
-          "win_rate": 47.43048157807736
+          "picks": 85501,
+          "wins": 40686,
+          "win_rate": 47.58540835779698
         },
         "divine_immortal": {
-          "picks": 24931,
-          "wins": 12200,
-          "win_rate": 48.9350607677189
+          "picks": 26199,
+          "wins": 12899,
+          "win_rate": 49.23470361464178
         },
         "herald_guardian": {
-          "picks": 59405,
-          "wins": 28257,
-          "win_rate": 47.56670313946638
+          "picks": 62220,
+          "wins": 29485,
+          "win_rate": 47.388299582127935
         },
         "legend_ancient": {
-          "picks": 51492,
-          "wins": 24586,
-          "win_rate": 47.74722286957197
+          "picks": 53741,
+          "wins": 25590,
+          "win_rate": 47.61727545077316
         }
       }
     },
@@ -1006,24 +1006,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 153201,
-          "wins": 74596,
-          "win_rate": 48.691588175011915
+          "picks": 163395,
+          "wins": 79495,
+          "win_rate": 48.65203953609352
         },
         "divine_immortal": {
-          "picks": 47465,
-          "wins": 23952,
-          "win_rate": 50.46244601285157
+          "picks": 50559,
+          "wins": 25428,
+          "win_rate": 50.29371625229929
         },
         "herald_guardian": {
-          "picks": 89873,
-          "wins": 42697,
-          "win_rate": 47.50815038999477
+          "picks": 95492,
+          "wins": 45319,
+          "win_rate": 47.45842583671931
         },
         "legend_ancient": {
-          "picks": 105363,
-          "wins": 52304,
-          "win_rate": 49.64171483348044
+          "picks": 112568,
+          "wins": 55816,
+          "win_rate": 49.58425129699382
         }
       }
     },
@@ -1033,24 +1033,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 161221,
-          "wins": 78096,
-          "win_rate": 48.44033965798501
+          "picks": 167658,
+          "wins": 81267,
+          "win_rate": 48.47188920302044
         },
         "divine_immortal": {
-          "picks": 38891,
-          "wins": 18604,
-          "win_rate": 47.83626031729706
+          "picks": 40494,
+          "wins": 19408,
+          "win_rate": 47.92808811181904
         },
         "herald_guardian": {
-          "picks": 107676,
-          "wins": 51280,
-          "win_rate": 47.62435454511683
+          "picks": 112773,
+          "wins": 53846,
+          "win_rate": 47.74724446454382
         },
         "legend_ancient": {
-          "picks": 99049,
-          "wins": 47670,
-          "win_rate": 48.127694373491906
+          "picks": 102910,
+          "wins": 49544,
+          "win_rate": 48.14303760567486
         }
       }
     },
@@ -1060,24 +1060,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 115350,
-          "wins": 58108,
-          "win_rate": 50.37537928045081
+          "picks": 122420,
+          "wins": 61633,
+          "win_rate": 50.345531775853615
         },
         "divine_immortal": {
-          "picks": 25370,
-          "wins": 12833,
-          "win_rate": 50.58336618052818
+          "picks": 27396,
+          "wins": 13862,
+          "win_rate": 50.598627536866694
         },
         "herald_guardian": {
-          "picks": 86030,
-          "wins": 42821,
-          "win_rate": 49.77449726839475
+          "picks": 91094,
+          "wins": 45066,
+          "win_rate": 49.471974004874085
         },
         "legend_ancient": {
-          "picks": 68432,
-          "wins": 34875,
-          "win_rate": 50.96299976619125
+          "picks": 73045,
+          "wins": 37304,
+          "win_rate": 51.069888424943535
         }
       }
     },
@@ -1087,24 +1087,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 148001,
-          "wins": 80212,
-          "win_rate": 54.19693110181688
+          "picks": 155144,
+          "wins": 83853,
+          "win_rate": 54.04849688031764
         },
         "divine_immortal": {
-          "picks": 24225,
-          "wins": 12207,
-          "win_rate": 50.39009287925696
+          "picks": 24851,
+          "wins": 12539,
+          "win_rate": 50.45672206349845
         },
         "herald_guardian": {
-          "picks": 114112,
-          "wins": 62927,
-          "win_rate": 55.14494531688165
+          "picks": 120144,
+          "wins": 66306,
+          "win_rate": 55.1887734718338
         },
         "legend_ancient": {
-          "picks": 77954,
-          "wins": 41013,
-          "win_rate": 52.61179670061832
+          "picks": 81485,
+          "wins": 42987,
+          "win_rate": 52.754494692274655
         }
       }
     },
@@ -1114,24 +1114,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 49473,
-          "wins": 23625,
-          "win_rate": 47.753319992723306
+          "picks": 53319,
+          "wins": 25647,
+          "win_rate": 48.1010521577674
         },
         "divine_immortal": {
-          "picks": 13398,
-          "wins": 6487,
-          "win_rate": 48.417674279743245
+          "picks": 14659,
+          "wins": 7106,
+          "win_rate": 48.47533938194965
         },
         "herald_guardian": {
-          "picks": 45250,
-          "wins": 21588,
-          "win_rate": 47.70828729281768
+          "picks": 48423,
+          "wins": 23202,
+          "win_rate": 47.91524688680999
         },
         "legend_ancient": {
-          "picks": 30226,
-          "wins": 14669,
-          "win_rate": 48.531065969694964
+          "picks": 32931,
+          "wins": 15949,
+          "win_rate": 48.43156903829219
         }
       }
     },
@@ -1141,24 +1141,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 146047,
-          "wins": 72863,
-          "win_rate": 49.89010387067177
+          "picks": 161724,
+          "wins": 81408,
+          "win_rate": 50.3376122282407
         },
         "divine_immortal": {
-          "picks": 25068,
-          "wins": 12121,
-          "win_rate": 48.352481250997286
+          "picks": 28622,
+          "wins": 13903,
+          "win_rate": 48.5745230941234
         },
         "herald_guardian": {
-          "picks": 135344,
-          "wins": 69085,
-          "win_rate": 51.0440063837333
+          "picks": 147417,
+          "wins": 75950,
+          "win_rate": 51.52051662969671
         },
         "legend_ancient": {
-          "picks": 74264,
-          "wins": 36162,
-          "win_rate": 48.69384897123775
+          "picks": 83310,
+          "wins": 40785,
+          "win_rate": 48.955707598127475
         }
       }
     },
@@ -1168,24 +1168,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 42184,
-          "wins": 20924,
-          "win_rate": 49.60174473734117
+          "picks": 44386,
+          "wins": 21988,
+          "win_rate": 49.53814265759473
         },
         "divine_immortal": {
-          "picks": 9303,
-          "wins": 4735,
-          "win_rate": 50.8975599269053
+          "picks": 9829,
+          "wins": 4998,
+          "win_rate": 50.8495269101638
         },
         "herald_guardian": {
-          "picks": 35093,
-          "wins": 16996,
-          "win_rate": 48.43131108768131
+          "picks": 37090,
+          "wins": 17962,
+          "win_rate": 48.42814774871933
         },
         "legend_ancient": {
-          "picks": 24784,
-          "wins": 12598,
-          "win_rate": 50.83118140735958
+          "picks": 25992,
+          "wins": 13165,
+          "win_rate": 50.650200061557406
         }
       }
     },
@@ -1195,24 +1195,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 59132,
-          "wins": 27145,
-          "win_rate": 45.90577014137861
+          "picks": 61734,
+          "wins": 28216,
+          "win_rate": 45.70576991609162
         },
         "divine_immortal": {
-          "picks": 14600,
-          "wins": 6618,
-          "win_rate": 45.32876712328767
+          "picks": 15183,
+          "wins": 6857,
+          "win_rate": 45.1623526312323
         },
         "herald_guardian": {
-          "picks": 47982,
-          "wins": 21739,
-          "win_rate": 45.3065732983202
+          "picks": 50233,
+          "wins": 22699,
+          "win_rate": 45.187426592080904
         },
         "legend_ancient": {
-          "picks": 33964,
-          "wins": 15729,
-          "win_rate": 46.31079967023908
+          "picks": 35348,
+          "wins": 16346,
+          "win_rate": 46.243068914790086
         }
       }
     },
@@ -1222,24 +1222,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 83960,
-          "wins": 41069,
-          "win_rate": 48.91495950452596
+          "picks": 88635,
+          "wins": 43298,
+          "win_rate": 48.84977717605912
         },
         "divine_immortal": {
-          "picks": 15275,
-          "wins": 7541,
-          "win_rate": 49.36824877250409
+          "picks": 16282,
+          "wins": 8031,
+          "win_rate": 49.324407320967936
         },
         "herald_guardian": {
-          "picks": 87925,
-          "wins": 42151,
-          "win_rate": 47.939721353426215
+          "picks": 92685,
+          "wins": 44435,
+          "win_rate": 47.941953929977885
         },
         "legend_ancient": {
-          "picks": 41668,
-          "wins": 20571,
-          "win_rate": 49.36882019775367
+          "picks": 43848,
+          "wins": 21655,
+          "win_rate": 49.38651705893085
         }
       }
     },
@@ -1249,24 +1249,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 79278,
-          "wins": 39668,
-          "win_rate": 50.03658013572492
+          "picks": 84366,
+          "wins": 42224,
+          "win_rate": 50.04859777635541
         },
         "divine_immortal": {
-          "picks": 25147,
-          "wins": 12548,
-          "win_rate": 49.89859625402632
+          "picks": 26591,
+          "wins": 13242,
+          "win_rate": 49.798804106652625
         },
         "herald_guardian": {
-          "picks": 60488,
-          "wins": 30907,
-          "win_rate": 51.096085173918794
+          "picks": 64645,
+          "wins": 32987,
+          "win_rate": 51.02792172635161
         },
         "legend_ancient": {
-          "picks": 52481,
-          "wins": 26166,
-          "win_rate": 49.85804386349346
+          "picks": 55483,
+          "wins": 27708,
+          "win_rate": 49.93962114521565
         }
       }
     },
@@ -1276,24 +1276,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 55439,
-          "wins": 27061,
-          "win_rate": 48.81220801241003
+          "picks": 57669,
+          "wins": 28147,
+          "win_rate": 48.80785170542232
         },
         "divine_immortal": {
-          "picks": 8162,
-          "wins": 3919,
-          "win_rate": 48.01519235481499
+          "picks": 8391,
+          "wins": 3998,
+          "win_rate": 47.6462876891908
         },
         "herald_guardian": {
-          "picks": 48858,
-          "wins": 24011,
-          "win_rate": 49.14445945392771
+          "picks": 51577,
+          "wins": 25371,
+          "win_rate": 49.19053066289237
         },
         "legend_ancient": {
-          "picks": 26432,
-          "wins": 12698,
-          "win_rate": 48.04025423728814
+          "picks": 27384,
+          "wins": 13144,
+          "win_rate": 47.99883143441426
         }
       }
     },
@@ -1303,24 +1303,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 52492,
-          "wins": 26639,
-          "win_rate": 50.748685513983084
+          "picks": 55196,
+          "wins": 27982,
+          "win_rate": 50.695702587144
         },
         "divine_immortal": {
-          "picks": 10258,
-          "wins": 5303,
-          "win_rate": 51.69623708325209
+          "picks": 10831,
+          "wins": 5608,
+          "win_rate": 51.777305881266734
         },
         "herald_guardian": {
-          "picks": 39648,
-          "wins": 19524,
-          "win_rate": 49.243341404358354
+          "picks": 42022,
+          "wins": 20722,
+          "win_rate": 49.3122650040455
         },
         "legend_ancient": {
-          "picks": 27385,
-          "wins": 14038,
-          "win_rate": 51.261639583713716
+          "picks": 28598,
+          "wins": 14628,
+          "win_rate": 51.15043010000699
         }
       }
     },
@@ -1330,24 +1330,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 30333,
-          "wins": 14483,
-          "win_rate": 47.746678534928954
+          "picks": 32276,
+          "wins": 15388,
+          "win_rate": 47.676291981658196
         },
         "divine_immortal": {
-          "picks": 8428,
-          "wins": 4232,
-          "win_rate": 50.21357380161366
+          "picks": 9004,
+          "wins": 4538,
+          "win_rate": 50.39982230119947
         },
         "herald_guardian": {
-          "picks": 19815,
-          "wins": 9569,
-          "win_rate": 48.29169820842796
+          "picks": 21061,
+          "wins": 10146,
+          "win_rate": 48.1743506955985
         },
         "legend_ancient": {
-          "picks": 20063,
-          "wins": 9624,
-          "win_rate": 47.96889797139012
+          "picks": 21220,
+          "wins": 10206,
+          "win_rate": 48.09613572101791
         }
       }
     },
@@ -1357,24 +1357,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 34969,
-          "wins": 16972,
-          "win_rate": 48.53441619720324
+          "picks": 36834,
+          "wins": 17876,
+          "win_rate": 48.53124830319813
         },
         "divine_immortal": {
-          "picks": 11682,
-          "wins": 5827,
-          "win_rate": 49.88015750727615
+          "picks": 12205,
+          "wins": 6063,
+          "win_rate": 49.676362146661205
         },
         "herald_guardian": {
-          "picks": 24019,
-          "wins": 11771,
-          "win_rate": 49.00703609642367
+          "picks": 25458,
+          "wins": 12432,
+          "win_rate": 48.833372613716705
         },
         "legend_ancient": {
-          "picks": 23836,
-          "wins": 11654,
-          "win_rate": 48.892431616042956
+          "picks": 25093,
+          "wins": 12239,
+          "win_rate": 48.77455864185231
         }
       }
     },
@@ -1384,24 +1384,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 82667,
-          "wins": 35528,
-          "win_rate": 42.9772460594917
+          "picks": 88064,
+          "wins": 37926,
+          "win_rate": 43.06640625
         },
         "divine_immortal": {
-          "picks": 13930,
-          "wins": 6230,
-          "win_rate": 44.72361809045226
+          "picks": 15028,
+          "wins": 6741,
+          "win_rate": 44.85626829917487
         },
         "herald_guardian": {
-          "picks": 78060,
-          "wins": 34541,
-          "win_rate": 44.24929541378427
+          "picks": 82665,
+          "wins": 36713,
+          "win_rate": 44.41178249561483
         },
         "legend_ancient": {
-          "picks": 40694,
-          "wins": 17835,
-          "win_rate": 43.82709981815501
+          "picks": 43492,
+          "wins": 19146,
+          "win_rate": 44.02188908304976
         }
       }
     },
@@ -1411,24 +1411,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 148836,
-          "wins": 78369,
-          "win_rate": 52.65459969362251
+          "picks": 153573,
+          "wins": 80730,
+          "win_rate": 52.567834189603644
         },
         "divine_immortal": {
-          "picks": 37305,
-          "wins": 19494,
-          "win_rate": 52.25572979493366
+          "picks": 38608,
+          "wins": 20146,
+          "win_rate": 52.18089515126398
         },
         "herald_guardian": {
-          "picks": 94386,
-          "wins": 48854,
-          "win_rate": 51.75979488483462
+          "picks": 97840,
+          "wins": 50524,
+          "win_rate": 51.639411283728535
         },
         "legend_ancient": {
-          "picks": 93908,
-          "wins": 49822,
-          "win_rate": 53.05405290284108
+          "picks": 96861,
+          "wins": 51233,
+          "win_rate": 52.89332135740907
         }
       }
     },
@@ -1438,24 +1438,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 17424,
-          "wins": 8541,
-          "win_rate": 49.018595041322314
+          "picks": 18462,
+          "wins": 9073,
+          "win_rate": 49.14418806196512
         },
         "divine_immortal": {
-          "picks": 4860,
-          "wins": 2350,
-          "win_rate": 48.35390946502058
+          "picks": 5198,
+          "wins": 2555,
+          "win_rate": 49.15352058484032
         },
         "herald_guardian": {
-          "picks": 14462,
-          "wins": 6987,
-          "win_rate": 48.312819803623285
+          "picks": 15159,
+          "wins": 7351,
+          "win_rate": 48.49264463355102
         },
         "legend_ancient": {
-          "picks": 10931,
-          "wins": 5466,
-          "win_rate": 50.0045741469216
+          "picks": 11544,
+          "wins": 5738,
+          "win_rate": 49.70547470547471
         }
       }
     },
@@ -1465,24 +1465,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 55450,
-          "wins": 27995,
-          "win_rate": 50.486925157799824
+          "picks": 58495,
+          "wins": 29429,
+          "win_rate": 50.31028293016497
         },
         "divine_immortal": {
-          "picks": 12579,
-          "wins": 6620,
-          "win_rate": 52.62739486445663
+          "picks": 13277,
+          "wins": 6890,
+          "win_rate": 51.89425321985388
         },
         "herald_guardian": {
-          "picks": 62504,
-          "wins": 30914,
-          "win_rate": 49.45923460898503
+          "picks": 65601,
+          "wins": 32345,
+          "win_rate": 49.30565082849347
         },
         "legend_ancient": {
-          "picks": 29290,
-          "wins": 15091,
-          "win_rate": 51.52270399453739
+          "picks": 30789,
+          "wins": 15836,
+          "win_rate": 51.43395368475754
         }
       }
     },
@@ -1492,24 +1492,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 29472,
-          "wins": 14375,
-          "win_rate": 48.775108577633006
+          "picks": 30839,
+          "wins": 15118,
+          "win_rate": 49.022341839878074
         },
         "divine_immortal": {
-          "picks": 7348,
-          "wins": 3694,
-          "win_rate": 50.27218290691344
+          "picks": 7885,
+          "wins": 3987,
+          "win_rate": 50.56436271401395
         },
         "herald_guardian": {
-          "picks": 22000,
-          "wins": 10490,
-          "win_rate": 47.68181818181818
+          "picks": 23366,
+          "wins": 11188,
+          "win_rate": 47.88153727638449
         },
         "legend_ancient": {
-          "picks": 18200,
-          "wins": 9061,
-          "win_rate": 49.785714285714285
+          "picks": 19134,
+          "wins": 9512,
+          "win_rate": 49.71255356956203
         }
       }
     },
@@ -1519,24 +1519,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 22130,
-          "wins": 10679,
-          "win_rate": 48.255761409850884
+          "picks": 23453,
+          "wins": 11358,
+          "win_rate": 48.42877243849401
         },
         "divine_immortal": {
-          "picks": 5612,
-          "wins": 2735,
-          "win_rate": 48.734853884533145
+          "picks": 6048,
+          "wins": 2940,
+          "win_rate": 48.61111111111111
         },
         "herald_guardian": {
-          "picks": 28104,
-          "wins": 13795,
-          "win_rate": 49.08553942499289
+          "picks": 29907,
+          "wins": 14632,
+          "win_rate": 48.9250008359247
         },
         "legend_ancient": {
-          "picks": 11509,
-          "wins": 5595,
-          "win_rate": 48.61412807368147
+          "picks": 12192,
+          "wins": 5898,
+          "win_rate": 48.375984251968504
         }
       }
     },
@@ -1546,24 +1546,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 63457,
-          "wins": 30869,
-          "win_rate": 48.64553949918843
+          "picks": 66503,
+          "wins": 32349,
+          "win_rate": 48.64291836458506
         },
         "divine_immortal": {
-          "picks": 16255,
-          "wins": 8354,
-          "win_rate": 51.39341741002769
+          "picks": 17124,
+          "wins": 8776,
+          "win_rate": 51.2497080121467
         },
         "herald_guardian": {
-          "picks": 62581,
-          "wins": 29610,
-          "win_rate": 47.31468017449386
+          "picks": 66046,
+          "wins": 31188,
+          "win_rate": 47.22163340701935
         },
         "legend_ancient": {
-          "picks": 35112,
-          "wins": 17504,
-          "win_rate": 49.85190248348143
+          "picks": 36928,
+          "wins": 18272,
+          "win_rate": 49.48006932409012
         }
       }
     },
@@ -1573,24 +1573,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 75248,
-          "wins": 39264,
-          "win_rate": 52.17945991920051
+          "picks": 78531,
+          "wins": 40976,
+          "win_rate": 52.17812074212731
         },
         "divine_immortal": {
-          "picks": 25308,
-          "wins": 13278,
-          "win_rate": 52.4656235182551
+          "picks": 26614,
+          "wins": 14065,
+          "win_rate": 52.848125046967766
         },
         "herald_guardian": {
-          "picks": 40365,
-          "wins": 20251,
-          "win_rate": 50.1697014740493
+          "picks": 42017,
+          "wins": 20950,
+          "win_rate": 49.86077064045505
         },
         "legend_ancient": {
-          "picks": 55503,
-          "wins": 29315,
-          "win_rate": 52.81696484874692
+          "picks": 57860,
+          "wins": 30519,
+          "win_rate": 52.74628413411684
         }
       }
     },
@@ -1600,24 +1600,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 34229,
-          "wins": 17061,
-          "win_rate": 49.84369978673055
+          "picks": 36592,
+          "wins": 18319,
+          "win_rate": 50.062855268911235
         },
         "divine_immortal": {
-          "picks": 5269,
-          "wins": 2561,
-          "win_rate": 48.60504839628013
+          "picks": 5651,
+          "wins": 2769,
+          "win_rate": 49.000176959830114
         },
         "herald_guardian": {
-          "picks": 41022,
-          "wins": 20599,
-          "win_rate": 50.214519038564674
+          "picks": 43656,
+          "wins": 21950,
+          "win_rate": 50.27945757742349
         },
         "legend_ancient": {
-          "picks": 13229,
-          "wins": 6521,
-          "win_rate": 49.293219442134706
+          "picks": 14084,
+          "wins": 7010,
+          "win_rate": 49.77279182050554
         }
       }
     },
@@ -1627,24 +1627,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 48700,
-          "wins": 24165,
-          "win_rate": 49.620123203285424
+          "picks": 51018,
+          "wins": 25281,
+          "win_rate": 49.553098906268374
         },
         "divine_immortal": {
-          "picks": 12444,
-          "wins": 6603,
-          "win_rate": 53.061716489874634
+          "picks": 13058,
+          "wins": 6926,
+          "win_rate": 53.04028181957421
         },
         "herald_guardian": {
-          "picks": 41763,
-          "wins": 20533,
-          "win_rate": 49.16552929626703
+          "picks": 44563,
+          "wins": 21936,
+          "win_rate": 49.22469313107286
         },
         "legend_ancient": {
-          "picks": 28024,
-          "wins": 14428,
-          "win_rate": 51.48444190693691
+          "picks": 29363,
+          "wins": 15151,
+          "win_rate": 51.5989510608589
         }
       }
     },
@@ -1654,24 +1654,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 106220,
-          "wins": 49306,
-          "win_rate": 46.41875353040859
+          "picks": 109799,
+          "wins": 50864,
+          "win_rate": 46.324647765462345
         },
         "divine_immortal": {
-          "picks": 25445,
-          "wins": 11965,
-          "win_rate": 47.02299076439379
+          "picks": 26219,
+          "wins": 12396,
+          "win_rate": 47.27869102559213
         },
         "herald_guardian": {
-          "picks": 84012,
-          "wins": 39282,
-          "win_rate": 46.75760605627767
+          "picks": 87796,
+          "wins": 40955,
+          "win_rate": 46.647911066563395
         },
         "legend_ancient": {
-          "picks": 62112,
-          "wins": 28872,
-          "win_rate": 46.48377125193199
+          "picks": 64075,
+          "wins": 29885,
+          "win_rate": 46.640655481857195
         }
       }
     },
@@ -1681,24 +1681,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 120318,
-          "wins": 56596,
-          "win_rate": 47.03868082913612
+          "picks": 125909,
+          "wins": 59142,
+          "win_rate": 46.97201947438229
         },
         "divine_immortal": {
-          "picks": 25659,
-          "wins": 11800,
-          "win_rate": 45.987762578432516
+          "picks": 26797,
+          "wins": 12353,
+          "win_rate": 46.09844385565548
         },
         "herald_guardian": {
-          "picks": 75010,
-          "wins": 35998,
-          "win_rate": 47.99093454206106
+          "picks": 79085,
+          "wins": 38147,
+          "win_rate": 48.23544287791617
         },
         "legend_ancient": {
-          "picks": 71622,
-          "wins": 33002,
-          "win_rate": 46.07802071989054
+          "picks": 74810,
+          "wins": 34684,
+          "win_rate": 46.36278572383371
         }
       }
     },
@@ -1708,24 +1708,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 36205,
-          "wins": 17737,
-          "win_rate": 48.990470929429634
+          "picks": 38017,
+          "wins": 18633,
+          "win_rate": 49.012283978220275
         },
         "divine_immortal": {
-          "picks": 18565,
-          "wins": 9657,
-          "win_rate": 52.01723673579316
+          "picks": 19724,
+          "wins": 10303,
+          "win_rate": 52.23585479618739
         },
         "herald_guardian": {
-          "picks": 20538,
-          "wins": 9635,
-          "win_rate": 46.913039244327585
+          "picks": 21633,
+          "wins": 10171,
+          "win_rate": 47.01613276013498
         },
         "legend_ancient": {
-          "picks": 28504,
-          "wins": 14403,
-          "win_rate": 50.52975021049677
+          "picks": 30045,
+          "wins": 15133,
+          "win_rate": 50.36778166084207
         }
       }
     },
@@ -1735,24 +1735,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 6202,
-          "wins": 2806,
-          "win_rate": 45.24346984843599
+          "picks": 6598,
+          "wins": 3026,
+          "win_rate": 45.862382540163686
         },
         "divine_immortal": {
-          "picks": 2084,
-          "wins": 1005,
-          "win_rate": 48.22456813819578
+          "picks": 2235,
+          "wins": 1098,
+          "win_rate": 49.127516778523486
         },
         "herald_guardian": {
-          "picks": 5304,
-          "wins": 2410,
-          "win_rate": 45.43740573152338
+          "picks": 5581,
+          "wins": 2512,
+          "win_rate": 45.009854864719586
         },
         "legend_ancient": {
-          "picks": 4005,
-          "wins": 1836,
-          "win_rate": 45.84269662921348
+          "picks": 4147,
+          "wins": 1894,
+          "win_rate": 45.671569809500845
         }
       }
     },
@@ -1762,24 +1762,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 109465,
-          "wins": 60203,
-          "win_rate": 54.99748778148267
+          "picks": 114462,
+          "wins": 62698,
+          "win_rate": 54.77625762261711
         },
         "divine_immortal": {
-          "picks": 16863,
-          "wins": 8795,
-          "win_rate": 52.1556069501275
+          "picks": 17327,
+          "wins": 9004,
+          "win_rate": 51.965141109251455
         },
         "herald_guardian": {
-          "picks": 87645,
-          "wins": 49390,
-          "win_rate": 56.35233042386901
+          "picks": 92706,
+          "wins": 51924,
+          "win_rate": 56.009319785127175
         },
         "legend_ancient": {
-          "picks": 58049,
-          "wins": 31188,
-          "win_rate": 53.727023721338874
+          "picks": 60193,
+          "wins": 32177,
+          "win_rate": 53.45638197132557
         }
       }
     },
@@ -1789,24 +1789,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 76879,
-          "wins": 38171,
-          "win_rate": 49.65074987968106
+          "picks": 80444,
+          "wins": 40010,
+          "win_rate": 49.736462632390236
         },
         "divine_immortal": {
-          "picks": 16341,
-          "wins": 7869,
-          "win_rate": 48.154947677620704
+          "picks": 16886,
+          "wins": 8119,
+          "win_rate": 48.081250740258206
         },
         "herald_guardian": {
-          "picks": 54902,
-          "wins": 27439,
-          "win_rate": 49.97814287275509
+          "picks": 57514,
+          "wins": 28757,
+          "win_rate": 50
         },
         "legend_ancient": {
-          "picks": 44897,
-          "wins": 21956,
-          "win_rate": 48.90304474686505
+          "picks": 46682,
+          "wins": 22899,
+          "win_rate": 49.05316824471959
         }
       }
     },
@@ -1816,24 +1816,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 87845,
-          "wins": 40277,
-          "win_rate": 45.85007683988844
+          "picks": 85898,
+          "wins": 38871,
+          "win_rate": 45.25250878949451
         },
         "divine_immortal": {
-          "picks": 30110,
-          "wins": 14618,
-          "win_rate": 48.54865493191631
+          "picks": 28801,
+          "wins": 13694,
+          "win_rate": 47.54696017499393
         },
         "herald_guardian": {
-          "picks": 48891,
-          "wins": 22120,
-          "win_rate": 45.24350084882698
+          "picks": 48561,
+          "wins": 21745,
+          "win_rate": 44.778731904202964
         },
         "legend_ancient": {
-          "picks": 64041,
-          "wins": 30190,
-          "win_rate": 47.14167486453991
+          "picks": 62227,
+          "wins": 28871,
+          "win_rate": 46.39625885869478
         }
       }
     },
@@ -1843,24 +1843,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 82598,
-          "wins": 39380,
-          "win_rate": 47.67669919368508
+          "picks": 86127,
+          "wins": 41052,
+          "win_rate": 47.66449545438712
         },
         "divine_immortal": {
-          "picks": 20767,
-          "wins": 10003,
-          "win_rate": 48.16776616747725
+          "picks": 21761,
+          "wins": 10476,
+          "win_rate": 48.141169982997106
         },
         "herald_guardian": {
-          "picks": 58103,
-          "wins": 26816,
-          "win_rate": 46.15252224497874
+          "picks": 61242,
+          "wins": 28188,
+          "win_rate": 46.02723621044381
         },
         "legend_ancient": {
-          "picks": 50688,
-          "wins": 24476,
-          "win_rate": 48.287563131313135
+          "picks": 53108,
+          "wins": 25543,
+          "win_rate": 48.096332002711456
         }
       }
     },
@@ -1870,24 +1870,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 210462,
-          "wins": 107366,
-          "win_rate": 51.01443490986496
+          "picks": 218789,
+          "wins": 111648,
+          "win_rate": 51.02998779646143
         },
         "divine_immortal": {
-          "picks": 51479,
-          "wins": 25835,
-          "win_rate": 50.185512539093615
+          "picks": 53583,
+          "wins": 26881,
+          "win_rate": 50.167030588059646
         },
         "herald_guardian": {
-          "picks": 146755,
-          "wins": 75710,
-          "win_rate": 51.58938366665531
+          "picks": 153626,
+          "wins": 79257,
+          "win_rate": 51.59087654433494
         },
         "legend_ancient": {
-          "picks": 131294,
-          "wins": 66324,
-          "win_rate": 50.51563666275687
+          "picks": 136710,
+          "wins": 69144,
+          "win_rate": 50.577134079438224
         }
       }
     },
@@ -1897,24 +1897,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 39609,
-          "wins": 17052,
-          "win_rate": 43.050821782928125
+          "picks": 41507,
+          "wins": 17911,
+          "win_rate": 43.15175753487364
         },
         "divine_immortal": {
-          "picks": 9592,
-          "wins": 4225,
-          "win_rate": 44.04712260216848
+          "picks": 9920,
+          "wins": 4366,
+          "win_rate": 44.01209677419355
         },
         "herald_guardian": {
-          "picks": 25440,
-          "wins": 10904,
-          "win_rate": 42.86163522012579
+          "picks": 26936,
+          "wins": 11408,
+          "win_rate": 42.35224235224236
         },
         "legend_ancient": {
-          "picks": 24591,
-          "wins": 10813,
-          "win_rate": 43.9713716400309
+          "picks": 25595,
+          "wins": 11204,
+          "win_rate": 43.774174643485054
         }
       }
     },
@@ -1924,24 +1924,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 139373,
-          "wins": 70650,
-          "win_rate": 50.69131036857928
+          "picks": 146797,
+          "wins": 74044,
+          "win_rate": 50.43972288262022
         },
         "divine_immortal": {
-          "picks": 46724,
-          "wins": 23510,
-          "win_rate": 50.31675370259395
+          "picks": 49044,
+          "wins": 24510,
+          "win_rate": 49.97553217518963
         },
         "herald_guardian": {
-          "picks": 73499,
-          "wins": 37371,
-          "win_rate": 50.84558973591478
+          "picks": 78415,
+          "wins": 39830,
+          "win_rate": 50.79385321685902
         },
         "legend_ancient": {
-          "picks": 103298,
-          "wins": 52072,
-          "win_rate": 50.409494859532614
+          "picks": 108274,
+          "wins": 54368,
+          "win_rate": 50.21334761808005
         }
       }
     },
@@ -1951,24 +1951,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 202053,
-          "wins": 103303,
-          "win_rate": 51.12668458275799
+          "picks": 215565,
+          "wins": 111853,
+          "win_rate": 51.888293554148404
         },
         "divine_immortal": {
-          "picks": 53122,
-          "wins": 27603,
-          "win_rate": 51.96152253303716
+          "picks": 57232,
+          "wins": 30231,
+          "win_rate": 52.82184791724909
         },
         "herald_guardian": {
-          "picks": 127283,
-          "wins": 64144,
-          "win_rate": 50.39478956341381
+          "picks": 136617,
+          "wins": 69667,
+          "win_rate": 50.99438576458274
         },
         "legend_ancient": {
-          "picks": 128218,
-          "wins": 66752,
-          "win_rate": 52.06133304216257
+          "picks": 137510,
+          "wins": 72754,
+          "win_rate": 52.90815213439023
         }
       }
     },
@@ -1978,24 +1978,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 128763,
-          "wins": 65459,
-          "win_rate": 50.8368087105768
+          "picks": 136509,
+          "wins": 69352,
+          "win_rate": 50.80397629460328
         },
         "divine_immortal": {
-          "picks": 24381,
-          "wins": 12230,
-          "win_rate": 50.16201140232148
+          "picks": 26096,
+          "wins": 13034,
+          "win_rate": 49.946351931330476
         },
         "herald_guardian": {
-          "picks": 95070,
-          "wins": 49493,
-          "win_rate": 52.05953507941516
+          "picks": 101412,
+          "wins": 52838,
+          "win_rate": 52.10231530785311
         },
         "legend_ancient": {
-          "picks": 70781,
-          "wins": 35656,
-          "win_rate": 50.375100662607196
+          "picks": 75320,
+          "wins": 37884,
+          "win_rate": 50.29739776951673
         }
       }
     },
@@ -2005,24 +2005,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 52250,
-          "wins": 25684,
-          "win_rate": 49.15598086124402
+          "picks": 54900,
+          "wins": 26862,
+          "win_rate": 48.92896174863388
         },
         "divine_immortal": {
-          "picks": 11287,
-          "wins": 5439,
-          "win_rate": 48.18818109329317
+          "picks": 12009,
+          "wins": 5812,
+          "win_rate": 48.397035556665834
         },
         "herald_guardian": {
-          "picks": 35635,
-          "wins": 16833,
-          "win_rate": 47.23726673214536
+          "picks": 37748,
+          "wins": 17841,
+          "win_rate": 47.2634311751616
         },
         "legend_ancient": {
-          "picks": 30804,
-          "wins": 15091,
-          "win_rate": 48.99039085833009
+          "picks": 32461,
+          "wins": 15957,
+          "win_rate": 49.15745047903638
         }
       }
     },
@@ -2032,24 +2032,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 10437,
-          "wins": 4839,
-          "win_rate": 46.36389767174475
+          "picks": 10866,
+          "wins": 5049,
+          "win_rate": 46.46604086140254
         },
         "divine_immortal": {
-          "picks": 2944,
-          "wins": 1499,
-          "win_rate": 50.9171195652174
+          "picks": 3143,
+          "wins": 1596,
+          "win_rate": 50.779510022271715
         },
         "herald_guardian": {
-          "picks": 9113,
-          "wins": 4066,
-          "win_rate": 44.617579282343904
+          "picks": 9602,
+          "wins": 4240,
+          "win_rate": 44.157467194334515
         },
         "legend_ancient": {
-          "picks": 5813,
-          "wins": 2819,
-          "win_rate": 48.49475313951488
+          "picks": 6250,
+          "wins": 3035,
+          "win_rate": 48.559999999999995
         }
       }
     },
@@ -2059,24 +2059,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 14797,
-          "wins": 7344,
-          "win_rate": 49.63168209772251
+          "picks": 15637,
+          "wins": 7736,
+          "win_rate": 49.47240519281192
         },
         "divine_immortal": {
-          "picks": 5720,
-          "wins": 2996,
-          "win_rate": 52.37762237762238
+          "picks": 6059,
+          "wins": 3160,
+          "win_rate": 52.153820762502065
         },
         "herald_guardian": {
-          "picks": 10350,
-          "wins": 5105,
-          "win_rate": 49.32367149758454
+          "picks": 10965,
+          "wins": 5425,
+          "win_rate": 49.47560419516644
         },
         "legend_ancient": {
-          "picks": 10441,
-          "wins": 5287,
-          "win_rate": 50.636912173163495
+          "picks": 11014,
+          "wins": 5583,
+          "win_rate": 50.69003086980207
         }
       }
     },
@@ -2086,24 +2086,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 26851,
-          "wins": 12108,
-          "win_rate": 45.0932926148002
+          "picks": 28179,
+          "wins": 12722,
+          "win_rate": 45.14709535469676
         },
         "divine_immortal": {
-          "picks": 11023,
-          "wins": 5102,
-          "win_rate": 46.28504037013517
+          "picks": 11480,
+          "wins": 5368,
+          "win_rate": 46.7595818815331
         },
         "herald_guardian": {
-          "picks": 15007,
-          "wins": 6591,
-          "win_rate": 43.919504231358694
+          "picks": 15896,
+          "wins": 6958,
+          "win_rate": 43.77201811776548
         },
         "legend_ancient": {
-          "picks": 20630,
-          "wins": 9432,
-          "win_rate": 45.719825496849246
+          "picks": 21831,
+          "wins": 9988,
+          "win_rate": 45.751454353900414
         }
       }
     },
@@ -2113,24 +2113,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 26234,
-          "wins": 13881,
-          "win_rate": 52.91225127696882
+          "picks": 28765,
+          "wins": 15243,
+          "win_rate": 52.99148270467582
         },
         "divine_immortal": {
-          "picks": 8664,
-          "wins": 4718,
-          "win_rate": 54.455216989843024
+          "picks": 9709,
+          "wins": 5249,
+          "win_rate": 54.063240292512106
         },
         "herald_guardian": {
-          "picks": 20463,
-          "wins": 10605,
-          "win_rate": 51.8252455651664
+          "picks": 22580,
+          "wins": 11680,
+          "win_rate": 51.72719220549159
         },
         "legend_ancient": {
-          "picks": 16876,
-          "wins": 8900,
-          "win_rate": 52.73761554870823
+          "picks": 18722,
+          "wins": 9941,
+          "win_rate": 53.097959619698756
         }
       }
     },
@@ -2140,24 +2140,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 42641,
-          "wins": 21035,
-          "win_rate": 49.33045660280012
+          "picks": 45286,
+          "wins": 22424,
+          "win_rate": 49.516406836549926
         },
         "divine_immortal": {
-          "picks": 7138,
-          "wins": 3490,
-          "win_rate": 48.8932474082376
+          "picks": 7526,
+          "wins": 3670,
+          "win_rate": 48.76428381610417
         },
         "herald_guardian": {
-          "picks": 46403,
-          "wins": 23459,
-          "win_rate": 50.554921018037625
+          "picks": 49475,
+          "wins": 25037,
+          "win_rate": 50.60535624052552
         },
         "legend_ancient": {
-          "picks": 20038,
-          "wins": 9921,
-          "win_rate": 49.51092923445454
+          "picks": 21402,
+          "wins": 10609,
+          "win_rate": 49.570133632370805
         }
       }
     },
@@ -2167,24 +2167,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 35058,
-          "wins": 17778,
-          "win_rate": 50.71025158309088
+          "picks": 32086,
+          "wins": 15619,
+          "win_rate": 48.67855139313096
         },
         "divine_immortal": {
-          "picks": 10297,
-          "wins": 5378,
-          "win_rate": 52.228804506166846
+          "picks": 8895,
+          "wins": 4441,
+          "win_rate": 49.92692523889826
         },
         "herald_guardian": {
-          "picks": 29760,
-          "wins": 15053,
-          "win_rate": 50.58131720430108
+          "picks": 28449,
+          "wins": 13959,
+          "win_rate": 49.06675102815565
         },
         "legend_ancient": {
-          "picks": 20662,
-          "wins": 10727,
-          "win_rate": 51.91656180427838
+          "picks": 18445,
+          "wins": 9110,
+          "win_rate": 49.39007861209
         }
       }
     },
@@ -2194,24 +2194,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 27306,
-          "wins": 13324,
-          "win_rate": 48.79513660001465
+          "picks": 28825,
+          "wins": 14105,
+          "win_rate": 48.93321769297485
         },
         "divine_immortal": {
-          "picks": 8544,
-          "wins": 4473,
-          "win_rate": 52.35252808988764
+          "picks": 9028,
+          "wins": 4746,
+          "win_rate": 52.56978289765175
         },
         "herald_guardian": {
-          "picks": 22197,
-          "wins": 10672,
-          "win_rate": 48.07856917601478
+          "picks": 23401,
+          "wins": 11200,
+          "win_rate": 47.86120251271313
         },
         "legend_ancient": {
-          "picks": 16328,
-          "wins": 8186,
-          "win_rate": 50.13473787359138
+          "picks": 17360,
+          "wins": 8702,
+          "win_rate": 50.12672811059908
         }
       }
     },
@@ -2221,24 +2221,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 187100,
-          "wins": 95446,
-          "win_rate": 51.01336183858899
+          "picks": 198749,
+          "wins": 101331,
+          "win_rate": 50.98440746871682
         },
         "divine_immortal": {
-          "picks": 26817,
-          "wins": 13357,
-          "win_rate": 49.8079576388112
+          "picks": 28511,
+          "wins": 14159,
+          "win_rate": 49.66153414471607
         },
         "herald_guardian": {
-          "picks": 157364,
-          "wins": 81868,
-          "win_rate": 52.024605373528885
+          "picks": 167453,
+          "wins": 86897,
+          "win_rate": 51.89336709405027
         },
         "legend_ancient": {
-          "picks": 91905,
-          "wins": 46179,
-          "win_rate": 50.24645013873021
+          "picks": 97363,
+          "wins": 48973,
+          "win_rate": 50.29939504739994
         }
       }
     },
@@ -2248,24 +2248,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 99134,
-          "wins": 51726,
-          "win_rate": 52.17786026993766
+          "picks": 105159,
+          "wins": 54808,
+          "win_rate": 52.11917192061545
         },
         "divine_immortal": {
-          "picks": 21564,
-          "wins": 11313,
-          "win_rate": 52.462437395659435
+          "picks": 22969,
+          "wins": 12039,
+          "win_rate": 52.414123383691056
         },
         "herald_guardian": {
-          "picks": 77875,
-          "wins": 40026,
-          "win_rate": 51.39775280898876
+          "picks": 82947,
+          "wins": 42675,
+          "win_rate": 51.44851531700966
         },
         "legend_ancient": {
-          "picks": 54133,
-          "wins": 28381,
-          "win_rate": 52.428278499251846
+          "picks": 57451,
+          "wins": 30126,
+          "win_rate": 52.437729543437015
         }
       }
     },
@@ -2275,24 +2275,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 228893,
-          "wins": 115549,
-          "win_rate": 50.48166610599713
+          "picks": 241847,
+          "wins": 121972,
+          "win_rate": 50.4335385595025
         },
         "divine_immortal": {
-          "picks": 72170,
-          "wins": 37496,
-          "win_rate": 51.955105999722875
+          "picks": 76464,
+          "wins": 39565,
+          "win_rate": 51.74330403850178
         },
         "herald_guardian": {
-          "picks": 119296,
-          "wins": 58601,
-          "win_rate": 49.122351126609445
+          "picks": 126550,
+          "wins": 62173,
+          "win_rate": 49.12919794547609
         },
         "legend_ancient": {
-          "picks": 164202,
-          "wins": 83949,
-          "win_rate": 51.12544305185077
+          "picks": 173525,
+          "wins": 88731,
+          "win_rate": 51.134418671661145
         }
       }
     },
@@ -2302,24 +2302,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 80211,
-          "wins": 39612,
-          "win_rate": 49.38474772786775
+          "picks": 84929,
+          "wins": 41943,
+          "win_rate": 49.38595768229933
         },
         "divine_immortal": {
-          "picks": 26701,
-          "wins": 13369,
-          "win_rate": 50.06928579453953
+          "picks": 28296,
+          "wins": 14144,
+          "win_rate": 49.985863726321746
         },
         "herald_guardian": {
-          "picks": 43684,
-          "wins": 21364,
-          "win_rate": 48.905777859170406
+          "picks": 46418,
+          "wins": 22662,
+          "win_rate": 48.82157783618424
         },
         "legend_ancient": {
-          "picks": 58157,
-          "wins": 29058,
-          "win_rate": 49.96475058892308
+          "picks": 61258,
+          "wins": 30549,
+          "win_rate": 49.86940481243266
         }
       }
     },
@@ -2329,24 +2329,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 70177,
-          "wins": 36407,
-          "win_rate": 51.878820696239515
+          "picks": 74289,
+          "wins": 38427,
+          "win_rate": 51.7263659491984
         },
         "divine_immortal": {
-          "picks": 18898,
-          "wins": 9882,
-          "win_rate": 52.29124775108477
+          "picks": 20141,
+          "wins": 10553,
+          "win_rate": 52.39561094285289
         },
         "herald_guardian": {
-          "picks": 44561,
-          "wins": 22945,
-          "win_rate": 51.491214290523104
+          "picks": 47304,
+          "wins": 24427,
+          "win_rate": 51.638339252494504
         },
         "legend_ancient": {
-          "picks": 46115,
-          "wins": 23837,
-          "win_rate": 51.690339368968885
+          "picks": 48622,
+          "wins": 25153,
+          "win_rate": 51.731726379005394
         }
       }
     },
@@ -2356,24 +2356,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 21960,
-          "wins": 11106,
-          "win_rate": 50.57377049180328
+          "picks": 23022,
+          "wins": 11501,
+          "win_rate": 49.956563287290415
         },
         "divine_immortal": {
-          "picks": 4667,
-          "wins": 2433,
-          "win_rate": 52.13199057210199
+          "picks": 4839,
+          "wins": 2510,
+          "win_rate": 51.87022112006613
         },
         "herald_guardian": {
-          "picks": 29835,
-          "wins": 15334,
-          "win_rate": 51.396011396011396
+          "picks": 31308,
+          "wins": 16042,
+          "win_rate": 51.23929985946084
         },
         "legend_ancient": {
-          "picks": 9957,
-          "wins": 5040,
-          "win_rate": 50.61765592045797
+          "picks": 10413,
+          "wins": 5274,
+          "win_rate": 50.648228176318064
         }
       }
     },
@@ -2383,24 +2383,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 54916,
-          "wins": 27905,
-          "win_rate": 50.8139704275621
+          "picks": 56554,
+          "wins": 28738,
+          "win_rate": 50.81515012200728
         },
         "divine_immortal": {
-          "picks": 18608,
-          "wins": 9851,
-          "win_rate": 52.939595872742906
+          "picks": 19408,
+          "wins": 10260,
+          "win_rate": 52.86479802143445
         },
         "herald_guardian": {
-          "picks": 40346,
-          "wins": 20030,
-          "win_rate": 49.645565855351215
+          "picks": 41589,
+          "wins": 20580,
+          "win_rate": 49.48423862078915
         },
         "legend_ancient": {
-          "picks": 35901,
-          "wins": 18679,
-          "win_rate": 52.02919138742653
+          "picks": 36818,
+          "wins": 19147,
+          "win_rate": 52.00445434298441
         }
       }
     },
@@ -2410,24 +2410,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 36735,
-          "wins": 18802,
-          "win_rate": 51.182795698924735
+          "picks": 38721,
+          "wins": 19745,
+          "win_rate": 50.99300121381163
         },
         "divine_immortal": {
-          "picks": 11946,
-          "wins": 6252,
-          "win_rate": 52.33550979407333
+          "picks": 12910,
+          "wins": 6734,
+          "win_rate": 52.16111541440743
         },
         "herald_guardian": {
-          "picks": 28122,
-          "wins": 14143,
-          "win_rate": 50.291586658132424
+          "picks": 30013,
+          "wins": 15096,
+          "win_rate": 50.298204111551655
         },
         "legend_ancient": {
-          "picks": 22942,
-          "wins": 11816,
-          "win_rate": 51.50379217156307
+          "picks": 24275,
+          "wins": 12447,
+          "win_rate": 51.27497425334706
         }
       }
     },
@@ -2437,24 +2437,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 16917,
-          "wins": 8765,
-          "win_rate": 51.81178695986286
+          "picks": 18029,
+          "wins": 9327,
+          "win_rate": 51.73331854234844
         },
         "divine_immortal": {
-          "picks": 5425,
-          "wins": 3022,
-          "win_rate": 55.705069124423964
+          "picks": 5896,
+          "wins": 3316,
+          "win_rate": 56.2415196743555
         },
         "herald_guardian": {
-          "picks": 15779,
-          "wins": 7918,
-          "win_rate": 50.18061981114139
+          "picks": 16863,
+          "wins": 8491,
+          "win_rate": 50.35284350352843
         },
         "legend_ancient": {
-          "picks": 9560,
-          "wins": 5186,
-          "win_rate": 54.24686192468619
+          "picks": 10336,
+          "wins": 5631,
+          "win_rate": 54.479489164086694
         }
       }
     },
@@ -2464,24 +2464,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 173897,
-          "wins": 87827,
-          "win_rate": 50.505184103233525
+          "picks": 181573,
+          "wins": 91487,
+          "win_rate": 50.38579524488773
         },
         "divine_immortal": {
-          "picks": 45575,
-          "wins": 23528,
-          "win_rate": 51.62479429511794
+          "picks": 47632,
+          "wins": 24363,
+          "win_rate": 51.14838763856231
         },
         "herald_guardian": {
-          "picks": 113896,
-          "wins": 57535,
-          "win_rate": 50.51538245416871
+          "picks": 119453,
+          "wins": 60304,
+          "win_rate": 50.48345374331327
         },
         "legend_ancient": {
-          "picks": 107181,
-          "wins": 54423,
-          "win_rate": 50.776723486438826
+          "picks": 112363,
+          "wins": 56999,
+          "win_rate": 50.72755266413321
         }
       }
     },
@@ -2491,24 +2491,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 48985,
-          "wins": 24896,
-          "win_rate": 50.82372154741247
+          "picks": 51922,
+          "wins": 26324,
+          "win_rate": 50.69912561149417
         },
         "divine_immortal": {
-          "picks": 9110,
-          "wins": 4550,
-          "win_rate": 49.94511525795829
+          "picks": 9637,
+          "wins": 4858,
+          "win_rate": 50.40987859292311
         },
         "herald_guardian": {
-          "picks": 38618,
-          "wins": 19774,
-          "win_rate": 51.204101714226525
+          "picks": 41409,
+          "wins": 21163,
+          "win_rate": 51.10724721678862
         },
         "legend_ancient": {
-          "picks": 26773,
-          "wins": 13415,
-          "win_rate": 50.106450528517534
+          "picks": 28336,
+          "wins": 14090,
+          "win_rate": 49.72473178994918
         }
       }
     },
@@ -2518,24 +2518,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 24570,
-          "wins": 12198,
-          "win_rate": 49.64590964590965
+          "picks": 25717,
+          "wins": 12789,
+          "win_rate": 49.7297507485321
         },
         "divine_immortal": {
-          "picks": 3811,
-          "wins": 1834,
-          "win_rate": 48.12385200734715
+          "picks": 3888,
+          "wins": 1869,
+          "win_rate": 48.07098765432099
         },
         "herald_guardian": {
-          "picks": 31871,
-          "wins": 16336,
-          "win_rate": 51.25662828276489
+          "picks": 33504,
+          "wins": 17199,
+          "win_rate": 51.33416905444126
         },
         "legend_ancient": {
-          "picks": 11712,
-          "wins": 5851,
-          "win_rate": 49.9573087431694
+          "picks": 12337,
+          "wins": 6118,
+          "win_rate": 49.59066223555159
         }
       }
     },
@@ -2545,24 +2545,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 55838,
-          "wins": 26917,
-          "win_rate": 48.2055231204556
+          "picks": 58924,
+          "wins": 28389,
+          "win_rate": 48.17901025049216
         },
         "divine_immortal": {
-          "picks": 11438,
-          "wins": 5394,
-          "win_rate": 47.15859415981815
+          "picks": 12044,
+          "wins": 5668,
+          "win_rate": 47.06077715044836
         },
         "herald_guardian": {
-          "picks": 37771,
-          "wins": 18468,
-          "win_rate": 48.89465462921289
+          "picks": 39840,
+          "wins": 19525,
+          "win_rate": 49.00853413654618
         },
         "legend_ancient": {
-          "picks": 32432,
-          "wins": 15457,
-          "win_rate": 47.659718796250615
+          "picks": 34255,
+          "wins": 16268,
+          "win_rate": 47.490877244197925
         }
       }
     },
@@ -2572,24 +2572,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 111606,
-          "wins": 54336,
-          "win_rate": 48.68555454007849
+          "picks": 118386,
+          "wins": 57747,
+          "win_rate": 48.77857179058335
         },
         "divine_immortal": {
-          "picks": 31459,
-          "wins": 15537,
-          "win_rate": 49.38809243777615
+          "picks": 33516,
+          "wins": 16570,
+          "win_rate": 49.439073875164105
         },
         "herald_guardian": {
-          "picks": 50915,
-          "wins": 24498,
-          "win_rate": 48.1154865953059
+          "picks": 54698,
+          "wins": 26314,
+          "win_rate": 48.10779187538849
         },
         "legend_ancient": {
-          "picks": 80561,
-          "wins": 39576,
-          "win_rate": 49.12550737950125
+          "picks": 85202,
+          "wins": 42061,
+          "win_rate": 49.366212060749746
         }
       }
     },
@@ -2599,24 +2599,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 33192,
-          "wins": 14397,
-          "win_rate": 43.37490961677513
+          "picks": 35020,
+          "wins": 15172,
+          "win_rate": 43.32381496287835
         },
         "divine_immortal": {
-          "picks": 10028,
-          "wins": 4331,
-          "win_rate": 43.18907060231352
+          "picks": 10532,
+          "wins": 4552,
+          "win_rate": 43.22066084314471
         },
         "herald_guardian": {
-          "picks": 22919,
-          "wins": 9907,
-          "win_rate": 43.226144247131195
+          "picks": 24337,
+          "wins": 10520,
+          "win_rate": 43.226363150758104
         },
         "legend_ancient": {
-          "picks": 22528,
-          "wins": 9804,
-          "win_rate": 43.51917613636363
+          "picks": 23676,
+          "wins": 10287,
+          "win_rate": 43.44906234161176
         }
       }
     },
@@ -2626,24 +2626,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 92386,
-          "wins": 45694,
-          "win_rate": 49.45987487281623
+          "picks": 98330,
+          "wins": 48458,
+          "win_rate": 49.28099257601953
         },
         "divine_immortal": {
-          "picks": 18935,
-          "wins": 8894,
-          "win_rate": 46.9712173224188
+          "picks": 19803,
+          "wins": 9225,
+          "win_rate": 46.58385093167702
         },
         "herald_guardian": {
-          "picks": 98685,
-          "wins": 52604,
-          "win_rate": 53.30496022698485
+          "picks": 105457,
+          "wins": 56009,
+          "win_rate": 53.11074656020938
         },
         "legend_ancient": {
-          "picks": 45776,
-          "wins": 22252,
-          "win_rate": 48.61062565536526
+          "picks": 48268,
+          "wins": 23380,
+          "win_rate": 48.43788845612
         }
       }
     },
@@ -2653,24 +2653,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 60863,
-          "wins": 29240,
-          "win_rate": 48.04232456500665
+          "picks": 63917,
+          "wins": 30621,
+          "win_rate": 47.90744246444608
         },
         "divine_immortal": {
-          "picks": 27765,
-          "wins": 13688,
-          "win_rate": 49.299477759769495
+          "picks": 29238,
+          "wins": 14542,
+          "win_rate": 49.736644093303234
         },
         "herald_guardian": {
-          "picks": 31804,
-          "wins": 14560,
-          "win_rate": 45.780404980505594
+          "picks": 33446,
+          "wins": 15221,
+          "win_rate": 45.50917897506429
         },
         "legend_ancient": {
-          "picks": 52126,
-          "wins": 25401,
-          "win_rate": 48.730000383685685
+          "picks": 54634,
+          "wins": 26555,
+          "win_rate": 48.60526412124318
         }
       }
     },
@@ -2680,24 +2680,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 136107,
-          "wins": 67392,
-          "win_rate": 49.513985320372946
+          "picks": 144029,
+          "wins": 71456,
+          "win_rate": 49.61223087017198
         },
         "divine_immortal": {
-          "picks": 29788,
-          "wins": 14321,
-          "win_rate": 48.07640660668726
+          "picks": 31732,
+          "wins": 15307,
+          "win_rate": 48.23837136014118
         },
         "herald_guardian": {
-          "picks": 106099,
-          "wins": 53107,
-          "win_rate": 50.054194667244744
+          "picks": 112418,
+          "wins": 56269,
+          "win_rate": 50.053372235762964
         },
         "legend_ancient": {
-          "picks": 77070,
-          "wins": 37368,
-          "win_rate": 48.485792137018294
+          "picks": 82113,
+          "wins": 40010,
+          "win_rate": 48.7255367603181
         }
       }
     },
@@ -2707,24 +2707,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 35592,
-          "wins": 18022,
-          "win_rate": 50.63497415149472
+          "picks": 37706,
+          "wins": 19197,
+          "win_rate": 50.91232164642232
         },
         "divine_immortal": {
-          "picks": 7953,
-          "wins": 4017,
-          "win_rate": 50.50924179554885
+          "picks": 8385,
+          "wins": 4227,
+          "win_rate": 50.41144901610017
         },
         "herald_guardian": {
-          "picks": 24877,
-          "wins": 12524,
-          "win_rate": 50.343690959520835
+          "picks": 26273,
+          "wins": 13163,
+          "win_rate": 50.10086400487192
         },
         "legend_ancient": {
-          "picks": 21944,
-          "wins": 11199,
-          "win_rate": 51.034451330659856
+          "picks": 22993,
+          "wins": 11704,
+          "win_rate": 50.90244857130431
         }
       }
     },
@@ -2734,24 +2734,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 10093,
-          "wins": 5117,
-          "win_rate": 50.69850391360349
+          "picks": 10604,
+          "wins": 5352,
+          "win_rate": 50.471520181063745
         },
         "divine_immortal": {
-          "picks": 3192,
-          "wins": 1666,
-          "win_rate": 52.19298245614035
+          "picks": 3380,
+          "wins": 1785,
+          "win_rate": 52.81065088757396
         },
         "herald_guardian": {
-          "picks": 8934,
-          "wins": 4324,
-          "win_rate": 48.39937318110589
+          "picks": 9553,
+          "wins": 4607,
+          "win_rate": 48.225688265466346
         },
         "legend_ancient": {
-          "picks": 6173,
-          "wins": 3205,
-          "win_rate": 51.91965008909768
+          "picks": 6488,
+          "wins": 3378,
+          "win_rate": 52.06535141800247
         }
       }
     },
@@ -2761,24 +2761,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 180166,
-          "wins": 94586,
-          "win_rate": 52.49936169976577
+          "picks": 189217,
+          "wins": 99453,
+          "win_rate": 52.560287923389545
         },
         "divine_immortal": {
-          "picks": 31552,
-          "wins": 16272,
-          "win_rate": 51.572008113590265
+          "picks": 33385,
+          "wins": 17305,
+          "win_rate": 51.83465628276171
         },
         "herald_guardian": {
-          "picks": 137580,
-          "wins": 72821,
-          "win_rate": 52.929931676115714
+          "picks": 145026,
+          "wins": 76746,
+          "win_rate": 52.918786976128416
         },
         "legend_ancient": {
-          "picks": 95223,
-          "wins": 49623,
-          "win_rate": 52.11240981695598
+          "picks": 100451,
+          "wins": 52348,
+          "win_rate": 52.11297050303133
         }
       }
     },
@@ -2788,24 +2788,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 116567,
-          "wins": 60887,
-          "win_rate": 52.23347945816569
+          "picks": 122907,
+          "wins": 64224,
+          "win_rate": 52.25414337669946
         },
         "divine_immortal": {
-          "picks": 26728,
-          "wins": 13980,
-          "win_rate": 52.30469919185873
+          "picks": 28644,
+          "wins": 14913,
+          "win_rate": 52.06325932132384
         },
         "herald_guardian": {
-          "picks": 96872,
-          "wins": 50855,
-          "win_rate": 52.49710958790982
+          "picks": 102508,
+          "wins": 53633,
+          "win_rate": 52.32079447457759
         },
         "legend_ancient": {
-          "picks": 66385,
-          "wins": 34625,
-          "win_rate": 52.1578669880244
+          "picks": 70305,
+          "wins": 36684,
+          "win_rate": 52.17836569234051
         }
       }
     },
@@ -2815,24 +2815,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 72038,
-          "wins": 35642,
-          "win_rate": 49.476665093422916
+          "picks": 76491,
+          "wins": 37608,
+          "win_rate": 49.166568615915594
         },
         "divine_immortal": {
-          "picks": 28812,
-          "wins": 14674,
-          "win_rate": 50.93016798556157
+          "picks": 30327,
+          "wins": 15383,
+          "win_rate": 50.72377749200383
         },
         "herald_guardian": {
-          "picks": 39181,
-          "wins": 18627,
-          "win_rate": 47.54089992598453
+          "picks": 41415,
+          "wins": 19587,
+          "win_rate": 47.29445852951829
         },
         "legend_ancient": {
-          "picks": 57207,
-          "wins": 28921,
-          "win_rate": 50.5550020102435
+          "picks": 60510,
+          "wins": 30445,
+          "win_rate": 50.31399768633283
         }
       }
     },
@@ -2842,24 +2842,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 32656,
-          "wins": 16351,
-          "win_rate": 50.07043116119549
+          "picks": 34327,
+          "wins": 17077,
+          "win_rate": 49.7480117691613
         },
         "divine_immortal": {
-          "picks": 13386,
-          "wins": 6898,
-          "win_rate": 51.531450769460626
+          "picks": 14290,
+          "wins": 7389,
+          "win_rate": 51.707487753673895
         },
         "herald_guardian": {
-          "picks": 17557,
-          "wins": 8342,
-          "win_rate": 47.51381215469613
+          "picks": 18465,
+          "wins": 8750,
+          "win_rate": 47.38694828053073
         },
         "legend_ancient": {
-          "picks": 26126,
-          "wins": 13346,
-          "win_rate": 51.08321212585164
+          "picks": 27548,
+          "wins": 14027,
+          "win_rate": 50.91839697981705
         }
       }
     },
@@ -2869,24 +2869,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 55780,
-          "wins": 28613,
-          "win_rate": 51.296163499462175
+          "picks": 59668,
+          "wins": 30665,
+          "win_rate": 51.39270630823892
         },
         "divine_immortal": {
-          "picks": 15251,
-          "wins": 7633,
-          "win_rate": 50.04917710314077
+          "picks": 16418,
+          "wins": 8199,
+          "win_rate": 49.939091241320504
         },
         "herald_guardian": {
-          "picks": 34616,
-          "wins": 18051,
-          "win_rate": 52.14640628611047
+          "picks": 37091,
+          "wins": 19364,
+          "win_rate": 52.20673478741473
         },
         "legend_ancient": {
-          "picks": 37070,
-          "wins": 18642,
-          "win_rate": 50.2886431076342
+          "picks": 39830,
+          "wins": 20101,
+          "win_rate": 50.46698468491088
         }
       }
     },
@@ -2896,24 +2896,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 28873,
-          "wins": 13863,
-          "win_rate": 48.01371523568732
+          "picks": 30967,
+          "wins": 14962,
+          "win_rate": 48.315949236283785
         },
         "divine_immortal": {
-          "picks": 9428,
-          "wins": 4827,
-          "win_rate": 51.19855748833263
+          "picks": 10259,
+          "wins": 5232,
+          "win_rate": 50.99912272151281
         },
         "herald_guardian": {
-          "picks": 26888,
-          "wins": 12734,
-          "win_rate": 47.35941684022612
+          "picks": 29016,
+          "wins": 13701,
+          "win_rate": 47.218775847808104
         },
         "legend_ancient": {
-          "picks": 16534,
-          "wins": 7921,
-          "win_rate": 47.90734244586912
+          "picks": 17544,
+          "wins": 8398,
+          "win_rate": 47.86821705426357
         }
       }
     },
@@ -2923,24 +2923,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 76302,
-          "wins": 40102,
-          "win_rate": 52.55694477208985
+          "picks": 80523,
+          "wins": 42295,
+          "win_rate": 52.525365423543576
         },
         "divine_immortal": {
-          "picks": 31089,
-          "wins": 16541,
-          "win_rate": 53.20531377657692
+          "picks": 32911,
+          "wins": 17499,
+          "win_rate": 53.17067241955578
         },
         "herald_guardian": {
-          "picks": 40389,
-          "wins": 20943,
-          "win_rate": 51.85322736388621
+          "picks": 43073,
+          "wins": 22346,
+          "win_rate": 51.87936758526222
         },
         "legend_ancient": {
-          "picks": 58074,
-          "wins": 30833,
-          "win_rate": 53.092605985466825
+          "picks": 61445,
+          "wins": 32481,
+          "win_rate": 52.8619090243307
         }
       }
     },
@@ -2950,24 +2950,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 37202,
-          "wins": 18596,
-          "win_rate": 49.98655986237299
+          "picks": 38824,
+          "wins": 19341,
+          "win_rate": 49.81712342880692
         },
         "divine_immortal": {
-          "picks": 12001,
-          "wins": 6120,
-          "win_rate": 50.99575035413716
+          "picks": 12443,
+          "wins": 6327,
+          "win_rate": 50.84786627019208
         },
         "herald_guardian": {
-          "picks": 21278,
-          "wins": 10247,
-          "win_rate": 48.15772159037503
+          "picks": 22303,
+          "wins": 10635,
+          "win_rate": 47.68416804914138
         },
         "legend_ancient": {
-          "picks": 26182,
-          "wins": 13376,
-          "win_rate": 51.088534107402026
+          "picks": 27330,
+          "wins": 13933,
+          "win_rate": 50.98060739114526
         }
       }
     },
@@ -2977,24 +2977,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 41108,
-          "wins": 20585,
-          "win_rate": 50.07541111219227
+          "picks": 43171,
+          "wins": 21632,
+          "win_rate": 50.10771119501517
         },
         "divine_immortal": {
-          "picks": 15697,
-          "wins": 8368,
-          "win_rate": 53.3095495954641
+          "picks": 16466,
+          "wins": 8773,
+          "win_rate": 53.27948499939269
         },
         "herald_guardian": {
-          "picks": 29931,
-          "wins": 14619,
-          "win_rate": 48.84233737596472
+          "picks": 31502,
+          "wins": 15438,
+          "win_rate": 49.00641229128309
         },
         "legend_ancient": {
-          "picks": 26911,
-          "wins": 13793,
-          "win_rate": 51.25413399725019
+          "picks": 27966,
+          "wins": 14343,
+          "win_rate": 51.28727740828148
         }
       }
     },
@@ -3004,24 +3004,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 37438,
-          "wins": 18762,
-          "win_rate": 50.11485656285058
+          "picks": 39054,
+          "wins": 19569,
+          "win_rate": 50.107543401444154
         },
         "divine_immortal": {
-          "picks": 7312,
-          "wins": 3570,
-          "win_rate": 48.82385120350109
+          "picks": 7621,
+          "wins": 3708,
+          "win_rate": 48.655032148012076
         },
         "herald_guardian": {
-          "picks": 33885,
-          "wins": 16561,
-          "win_rate": 48.874133097240666
+          "picks": 35630,
+          "wins": 17380,
+          "win_rate": 48.779118720179625
         },
         "legend_ancient": {
-          "picks": 18895,
-          "wins": 9441,
-          "win_rate": 49.96559936491135
+          "picks": 19731,
+          "wins": 9902,
+          "win_rate": 50.184988089807916
         }
       }
     },
@@ -3031,24 +3031,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 95208,
-          "wins": 43972,
-          "win_rate": 46.18519452146879
+          "picks": 101133,
+          "wins": 46527,
+          "win_rate": 46.005754798137104
         },
         "divine_immortal": {
-          "picks": 33279,
-          "wins": 16044,
-          "win_rate": 48.21058325069864
+          "picks": 35244,
+          "wins": 16944,
+          "win_rate": 48.0762683009874
         },
         "herald_guardian": {
-          "picks": 62162,
-          "wins": 28202,
-          "win_rate": 45.368553135356
+          "picks": 66823,
+          "wins": 30271,
+          "win_rate": 45.30027086482199
         },
         "legend_ancient": {
-          "picks": 67374,
-          "wins": 31739,
-          "win_rate": 47.108676937691094
+          "picks": 71341,
+          "wins": 33595,
+          "win_rate": 47.09073323895095
         }
       }
     },
@@ -3058,24 +3058,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 48183,
-          "wins": 22913,
-          "win_rate": 47.55411659714007
+          "picks": 50558,
+          "wins": 24113,
+          "win_rate": 47.69373788520115
         },
         "divine_immortal": {
-          "picks": 14603,
-          "wins": 7235,
-          "win_rate": 49.54461412038622
+          "picks": 15397,
+          "wins": 7585,
+          "win_rate": 49.2628434110541
         },
         "herald_guardian": {
-          "picks": 36340,
-          "wins": 16899,
-          "win_rate": 46.50247660979637
+          "picks": 38405,
+          "wins": 17961,
+          "win_rate": 46.7673480015623
         },
         "legend_ancient": {
-          "picks": 31427,
-          "wins": 15392,
-          "win_rate": 48.97699430426067
+          "picks": 33090,
+          "wins": 16224,
+          "win_rate": 49.02991840435177
         }
       }
     },
@@ -3085,24 +3085,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 70058,
-          "wins": 34703,
-          "win_rate": 49.53467127237432
+          "picks": 75936,
+          "wins": 37464,
+          "win_rate": 49.336283185840706
         },
         "divine_immortal": {
-          "picks": 36216,
-          "wins": 18023,
-          "win_rate": 49.76529710625138
+          "picks": 38962,
+          "wins": 19319,
+          "win_rate": 49.58421025614702
         },
         "herald_guardian": {
-          "picks": 32820,
-          "wins": 15742,
-          "win_rate": 47.96465569774528
+          "picks": 35128,
+          "wins": 16836,
+          "win_rate": 47.92757913914826
         },
         "legend_ancient": {
-          "picks": 62072,
-          "wins": 30994,
-          "win_rate": 49.93233664131976
+          "picks": 67593,
+          "wins": 33593,
+          "win_rate": 49.69893332149779
         }
       }
     },
@@ -3112,24 +3112,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 51116,
-          "wins": 26814,
-          "win_rate": 52.45715627200877
+          "picks": 54403,
+          "wins": 28457,
+          "win_rate": 52.30777714464276
         },
         "divine_immortal": {
-          "picks": 14736,
-          "wins": 7702,
-          "win_rate": 52.26655808903365
+          "picks": 15695,
+          "wins": 8206,
+          "win_rate": 52.284166932144
         },
         "herald_guardian": {
-          "picks": 32353,
-          "wins": 16621,
-          "win_rate": 51.3739065928971
+          "picks": 34194,
+          "wins": 17509,
+          "win_rate": 51.20488974673919
         },
         "legend_ancient": {
-          "picks": 34015,
-          "wins": 17891,
-          "win_rate": 52.5973835072762
+          "picks": 36229,
+          "wins": 19029,
+          "win_rate": 52.524220927985866
         }
       }
     },
@@ -3139,24 +3139,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 98713,
-          "wins": 48634,
-          "win_rate": 49.26808019207197
+          "picks": 104603,
+          "wins": 51507,
+          "win_rate": 49.24046155463992
         },
         "divine_immortal": {
-          "picks": 25715,
-          "wins": 12804,
-          "win_rate": 49.7919502236049
+          "picks": 27403,
+          "wins": 13664,
+          "win_rate": 49.86315366930628
         },
         "herald_guardian": {
-          "picks": 74600,
-          "wins": 36415,
-          "win_rate": 48.81367292225201
+          "picks": 79490,
+          "wins": 38680,
+          "win_rate": 48.660208831299535
         },
         "legend_ancient": {
-          "picks": 61247,
-          "wins": 30492,
-          "win_rate": 49.78529560631541
+          "picks": 65066,
+          "wins": 32326,
+          "win_rate": 49.681861494482526
         }
       }
     },
@@ -3166,24 +3166,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 64451,
-          "wins": 32344,
-          "win_rate": 50.18386060728305
+          "picks": 68284,
+          "wins": 34128,
+          "win_rate": 49.979497393239996
         },
         "divine_immortal": {
-          "picks": 28758,
-          "wins": 14203,
-          "win_rate": 49.387996383615
+          "picks": 30381,
+          "wins": 14915,
+          "win_rate": 49.0931832395247
         },
         "herald_guardian": {
-          "picks": 35685,
-          "wins": 17660,
-          "win_rate": 49.48858063612162
+          "picks": 37950,
+          "wins": 18774,
+          "win_rate": 49.4703557312253
         },
         "legend_ancient": {
-          "picks": 54575,
-          "wins": 27492,
-          "win_rate": 50.3747136967476
+          "picks": 57950,
+          "wins": 29243,
+          "win_rate": 50.46246764452113
         }
       }
     },
@@ -3193,24 +3193,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 60462,
-          "wins": 28745,
-          "win_rate": 47.54225794714036
+          "picks": 64148,
+          "wins": 30616,
+          "win_rate": 47.727131009540436
         },
         "divine_immortal": {
-          "picks": 18027,
-          "wins": 8704,
-          "win_rate": 48.283130859266656
+          "picks": 19028,
+          "wins": 9178,
+          "win_rate": 48.23418120664284
         },
         "herald_guardian": {
-          "picks": 35202,
-          "wins": 16564,
-          "win_rate": 47.05414465087211
+          "picks": 37416,
+          "wins": 17602,
+          "win_rate": 47.04404532820184
         },
         "legend_ancient": {
-          "picks": 42109,
-          "wins": 20237,
-          "win_rate": 48.05860979838039
+          "picks": 44766,
+          "wins": 21448,
+          "win_rate": 47.91136130098735
         }
       }
     },
@@ -3220,24 +3220,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 78530,
-          "wins": 35145,
-          "win_rate": 44.753597351330704
+          "picks": 82545,
+          "wins": 36862,
+          "win_rate": 44.656853837300865
         },
         "divine_immortal": {
-          "picks": 28355,
-          "wins": 12577,
-          "win_rate": 44.35549285840239
+          "picks": 29617,
+          "wins": 13244,
+          "win_rate": 44.71756086031671
         },
         "herald_guardian": {
-          "picks": 41419,
-          "wins": 18586,
-          "win_rate": 44.87312586011251
+          "picks": 43947,
+          "wins": 19663,
+          "win_rate": 44.7425307757071
         },
         "legend_ancient": {
-          "picks": 61336,
-          "wins": 27322,
-          "win_rate": 44.54480239989566
+          "picks": 64347,
+          "wins": 28780,
+          "win_rate": 44.72624986401853
         }
       }
     },
@@ -3247,24 +3247,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 34711,
-          "wins": 16795,
-          "win_rate": 48.38523810895681
+          "picks": 36524,
+          "wins": 17576,
+          "win_rate": 48.12178293724674
         },
         "divine_immortal": {
-          "picks": 15913,
-          "wins": 7834,
-          "win_rate": 49.230189153522275
+          "picks": 16720,
+          "wins": 8212,
+          "win_rate": 49.114832535885164
         },
         "herald_guardian": {
-          "picks": 19280,
-          "wins": 9231,
-          "win_rate": 47.878630705394194
+          "picks": 20381,
+          "wins": 9796,
+          "win_rate": 48.0643736813699
         },
         "legend_ancient": {
-          "picks": 28474,
-          "wins": 13799,
-          "win_rate": 48.46175458312847
+          "picks": 30069,
+          "wins": 14539,
+          "win_rate": 48.35212344939971
         }
       }
     },
@@ -3274,24 +3274,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 68871,
-          "wins": 36778,
-          "win_rate": 53.40128646309768
+          "picks": 74984,
+          "wins": 40037,
+          "win_rate": 53.39405739891176
         },
         "divine_immortal": {
-          "picks": 26337,
-          "wins": 14019,
-          "win_rate": 53.229297186467704
+          "picks": 29077,
+          "wins": 15475,
+          "win_rate": 53.2207586752416
         },
         "herald_guardian": {
-          "picks": 38060,
-          "wins": 20044,
-          "win_rate": 52.66421439831844
+          "picks": 41271,
+          "wins": 21746,
+          "win_rate": 52.690751375057545
         },
         "legend_ancient": {
-          "picks": 52131,
-          "wins": 27856,
-          "win_rate": 53.43461663885212
+          "picks": 56803,
+          "wins": 30435,
+          "win_rate": 53.57991655370314
         }
       }
     },
@@ -3301,24 +3301,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 46316,
-          "wins": 22572,
-          "win_rate": 48.734778478279644
+          "picks": 48241,
+          "wins": 23478,
+          "win_rate": 48.66814535353745
         },
         "divine_immortal": {
-          "picks": 13064,
-          "wins": 6330,
-          "win_rate": 48.45376607470912
+          "picks": 13697,
+          "wins": 6654,
+          "win_rate": 48.57998101774111
         },
         "herald_guardian": {
-          "picks": 36928,
-          "wins": 17560,
-          "win_rate": 47.551993067590985
+          "picks": 38791,
+          "wins": 18425,
+          "win_rate": 47.498131009770304
         },
         "legend_ancient": {
-          "picks": 27827,
-          "wins": 13418,
-          "win_rate": 48.21935530240414
+          "picks": 29188,
+          "wins": 14154,
+          "win_rate": 48.492531177196106
         }
       }
     },
@@ -3328,24 +3328,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 44193,
-          "wins": 22292,
-          "win_rate": 50.44237775213269
+          "picks": 46487,
+          "wins": 23507,
+          "win_rate": 50.5668251339084
         },
         "divine_immortal": {
-          "picks": 15250,
-          "wins": 7942,
-          "win_rate": 52.07868852459016
+          "picks": 16151,
+          "wins": 8397,
+          "win_rate": 51.99058881802985
         },
         "herald_guardian": {
-          "picks": 30188,
-          "wins": 15169,
-          "win_rate": 50.24844308996952
+          "picks": 32044,
+          "wins": 16128,
+          "win_rate": 50.33079515665959
         },
         "legend_ancient": {
-          "picks": 31164,
-          "wins": 15902,
-          "win_rate": 51.02682582466949
+          "picks": 32960,
+          "wins": 16719,
+          "win_rate": 50.7251213592233
         }
       }
     },
@@ -3355,24 +3355,24 @@
       "attack_type": "Ranged",
       "brackets": {
         "crusader_archon": {
-          "picks": 58966,
-          "wins": 28825,
-          "win_rate": 48.88410270325272
+          "picks": 63494,
+          "wins": 30952,
+          "win_rate": 48.74791318864774
         },
         "divine_immortal": {
-          "picks": 19070,
-          "wins": 9203,
-          "win_rate": 48.25904562139486
+          "picks": 20741,
+          "wins": 10034,
+          "win_rate": 48.37760956559472
         },
         "herald_guardian": {
-          "picks": 42344,
-          "wins": 20740,
-          "win_rate": 48.97978462119781
+          "picks": 45666,
+          "wins": 22339,
+          "win_rate": 48.9182323829545
         },
         "legend_ancient": {
-          "picks": 40086,
-          "wins": 19370,
-          "win_rate": 48.321109614329195
+          "picks": 43146,
+          "wins": 20890,
+          "win_rate": 48.41700273490011
         }
       }
     },
@@ -3382,24 +3382,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 38131,
-          "wins": 18363,
-          "win_rate": 48.15766699011303
+          "picks": 40049,
+          "wins": 19313,
+          "win_rate": 48.223426302779096
         },
         "divine_immortal": {
-          "picks": 14376,
-          "wins": 7059,
-          "win_rate": 49.102671118530886
+          "picks": 15239,
+          "wins": 7448,
+          "win_rate": 48.87459807073955
         },
         "herald_guardian": {
-          "picks": 25907,
-          "wins": 12178,
-          "win_rate": 47.00660053267456
+          "picks": 27624,
+          "wins": 12991,
+          "win_rate": 47.02794671300319
         },
         "legend_ancient": {
-          "picks": 28784,
-          "wins": 14042,
-          "win_rate": 48.784046692607
+          "picks": 30190,
+          "wins": 14681,
+          "win_rate": 48.62868499503147
         }
       }
     },
@@ -3409,24 +3409,24 @@
       "attack_type": "Melee",
       "brackets": {
         "crusader_archon": {
-          "picks": 20822,
-          "wins": 9834,
-          "win_rate": 47.22889251752954
+          "picks": 21062,
+          "wins": 9898,
+          "win_rate": 46.994587408603174
         },
         "divine_immortal": {
-          "picks": 6554,
-          "wins": 3256,
-          "win_rate": 49.679584986267926
+          "picks": 6591,
+          "wins": 3327,
+          "win_rate": 50.47792444242148
         },
         "herald_guardian": {
-          "picks": 12724,
-          "wins": 5873,
-          "win_rate": 46.156868909148066
+          "picks": 13088,
+          "wins": 6028,
+          "win_rate": 46.057457212713935
         },
         "legend_ancient": {
-          "picks": 14109,
-          "wins": 6834,
-          "win_rate": 48.43716776525622
+          "picks": 14342,
+          "wins": 6916,
+          "win_rate": 48.22200529912146
         }
       }
     }
@@ -3437,42 +3437,42 @@
         "best": [
           {
             "name": "Spectre",
-            "win_rate": 54.99748778148267,
-            "pick_rate": 1.0194354414672793,
-            "picks": 109465
+            "win_rate": 54.77625762261711,
+            "pick_rate": 1.0104607253155626,
+            "picks": 114462
           },
           {
             "name": "Wraith King",
-            "win_rate": 54.19693110181688,
-            "pick_rate": 1.3783169485460995,
-            "picks": 148001
+            "win_rate": 54.04849688031764,
+            "pick_rate": 1.369597934409303,
+            "picks": 155144
           },
           {
             "name": "Phantom Lancer",
-            "win_rate": 53.64860593032813,
-            "pick_rate": 0.7365098605804575,
-            "picks": 79085
+            "win_rate": 53.91414141414141,
+            "pick_rate": 0.7830713090666918,
+            "picks": 88704
           },
           {
             "name": "Dawnbreaker",
-            "win_rate": 53.40128646309768,
-            "pick_rate": 0.641388007941287,
-            "picks": 68871
+            "win_rate": 53.39405739891176,
+            "pick_rate": 0.6619523250254421,
+            "picks": 74984
           },
           {
             "name": "Lone Druid",
-            "win_rate": 52.91225127696882,
-            "pick_rate": 0.24431434130957477,
-            "picks": 26234
+            "win_rate": 52.99148270467582,
+            "pick_rate": 0.25393495451505443,
+            "picks": 28765
           }
         ],
         "sleepers": [],
         "traps": [
           {
             "name": "Shadow Fiend",
-            "win_rate": 47.61774657951703,
-            "pick_rate": 1.3293497759225674,
-            "picks": 142743
+            "win_rate": 47.58545197268741,
+            "pick_rate": 1.3226069466504422,
+            "picks": 149821
           }
         ]
       },
@@ -3480,73 +3480,79 @@
         "best": [
           {
             "name": "Visage",
-            "win_rate": 55.705069124423964,
-            "pick_rate": 0.2036550545119824,
-            "picks": 5425
-          },
-          {
-            "name": "Lone Druid",
-            "win_rate": 54.455216989843024,
-            "pick_rate": 0.32524744558374485,
-            "picks": 8664
+            "win_rate": 56.2415196743555,
+            "pick_rate": 0.20931568397875885,
+            "picks": 5896
           },
           {
             "name": "Phantom Lancer",
-            "win_rate": 54.02369167454535,
-            "pick_rate": 0.6750085779133559,
-            "picks": 17981
+            "win_rate": 54.169449480011444,
+            "pick_rate": 0.7441783187860826,
+            "picks": 20962
+          },
+          {
+            "name": "Lone Druid",
+            "win_rate": 54.063240292512106,
+            "pick_rate": 0.344682153281847,
+            "picks": 9709
           },
           {
             "name": "Enigma",
-            "win_rate": 53.43609505459217,
-            "pick_rate": 0.23379975658997723,
-            "picks": 6228
+            "win_rate": 54.042362768496425,
+            "pick_rate": 0.23800073700705554,
+            "picks": 6704
           },
           {
             "name": "Winter Wyvern",
-            "win_rate": 53.3095495954641,
-            "pick_rate": 0.5892669844561452,
-            "picks": 15697
+            "win_rate": 53.27948499939269,
+            "pick_rate": 0.5845644593613032,
+            "picks": 16466
           }
         ],
         "sleepers": [
           {
             "name": "Visage",
-            "win_rate": 55.705069124423964,
-            "pick_rate": 0.2036550545119824,
-            "picks": 5425
+            "win_rate": 56.2415196743555,
+            "pick_rate": 0.20931568397875885,
+            "picks": 5896
           },
           {
             "name": "Lone Druid",
-            "win_rate": 54.455216989843024,
-            "pick_rate": 0.32524744558374485,
-            "picks": 8664
+            "win_rate": 54.063240292512106,
+            "pick_rate": 0.344682153281847,
+            "picks": 9709
           },
           {
             "name": "Enigma",
-            "win_rate": 53.43609505459217,
-            "pick_rate": 0.23379975658997723,
-            "picks": 6228
+            "win_rate": 54.042362768496425,
+            "pick_rate": 0.23800073700705554,
+            "picks": 6704
           },
           {
             "name": "Bounty Hunter",
-            "win_rate": 53.061716489874634,
-            "pick_rate": 0.46714903195338425,
-            "picks": 12444
+            "win_rate": 53.04028181957421,
+            "pick_rate": 0.4635760178756162,
+            "picks": 13058
           }
         ],
         "traps": [
           {
             "name": "Venomancer",
-            "win_rate": 47.83626031729706,
-            "pick_rate": 1.4599721152120753,
-            "picks": 38891
+            "win_rate": 47.92808811181904,
+            "pick_rate": 1.4375897739206005,
+            "picks": 40494
           },
           {
             "name": "Shadow Fiend",
-            "win_rate": 47.43328450417171,
-            "pick_rate": 1.178834289730004,
-            "picks": 31402
+            "win_rate": 47.521803871516695,
+            "pick_rate": 1.1682413861412853,
+            "picks": 32907
+          },
+          {
+            "name": "Sniper",
+            "win_rate": 47.64446731195935,
+            "pick_rate": 1.1039840272536405,
+            "picks": 31097
           }
         ]
       },
@@ -3554,54 +3560,54 @@
         "best": [
           {
             "name": "Spectre",
-            "win_rate": 56.35233042386901,
-            "pick_rate": 1.1023918173082246,
-            "picks": 87645
+            "win_rate": 56.009319785127175,
+            "pick_rate": 1.1007925906135898,
+            "picks": 92706
           },
           {
             "name": "Wraith King",
-            "win_rate": 55.14494531688165,
-            "pick_rate": 1.435291631658122,
-            "picks": 114112
+            "win_rate": 55.1887734718338,
+            "pick_rate": 1.4265918603615637,
+            "picks": 120144
           },
           {
             "name": "Axe",
-            "win_rate": 53.670560183729144,
-            "pick_rate": 1.7196909856561398,
-            "picks": 136723
-          },
-          {
-            "name": "Bristleback",
-            "win_rate": 53.30496022698485,
-            "pick_rate": 1.2412520564899552,
-            "picks": 98685
+            "win_rate": 53.75650421274174,
+            "pick_rate": 1.732027191498204,
+            "picks": 145867
           },
           {
             "name": "Necrophos",
-            "win_rate": 53.224455951809965,
-            "pick_rate": 1.5472476994983926,
-            "picks": 123013
+            "win_rate": 53.30452835681398,
+            "pick_rate": 1.5499510196811828,
+            "picks": 130533
+          },
+          {
+            "name": "Bristleback",
+            "win_rate": 53.11074656020938,
+            "pick_rate": 1.2521981773384392,
+            "picks": 105457
           }
         ],
         "sleepers": [],
         "traps": [
           {
             "name": "Lina",
-            "win_rate": 47.39516459500068,
-            "pick_rate": 1.3812443084911024,
-            "picks": 109815
+            "win_rate": 47.431951234232606,
+            "pick_rate": 1.377184076943628,
+            "picks": 115983
           },
           {
             "name": "Venomancer",
-            "win_rate": 47.62435454511683,
-            "pick_rate": 1.354340137149642,
-            "picks": 107676
+            "win_rate": 47.74724446454382,
+            "pick_rate": 1.3390684833912192,
+            "picks": 112773
           },
           {
             "name": "Windranger",
-            "win_rate": 47.51507445339585,
-            "pick_rate": 1.266181494357545,
-            "picks": 100667
+            "win_rate": 47.5354230089826,
+            "pick_rate": 1.2637278475376257,
+            "picks": 106428
           }
         ]
       },
@@ -3609,49 +3615,61 @@
         "best": [
           {
             "name": "Visage",
-            "win_rate": 54.24686192468619,
-            "pick_rate": 0.14736725924953067,
-            "picks": 9560
-          },
-          {
-            "name": "Spectre",
-            "win_rate": 53.727023721338874,
-            "pick_rate": 0.8948244803531389,
-            "picks": 58049
-          },
-          {
-            "name": "Phantom Lancer",
-            "win_rate": 53.48254342214091,
-            "pick_rate": 0.6150424975729106,
-            "picks": 39899
+            "win_rate": 54.479489164086694,
+            "pick_rate": 0.15095935723094736,
+            "picks": 10336
           },
           {
             "name": "Dawnbreaker",
-            "win_rate": 53.43461663885212,
-            "pick_rate": 0.8035985974829796,
-            "picks": 52131
+            "win_rate": 53.57991655370314,
+            "pick_rate": 0.8296192307265385,
+            "picks": 56803
           },
           {
-            "name": "Phoenix",
-            "win_rate": 53.092605985466825,
-            "pick_rate": 0.8952098549850676,
-            "picks": 58074
+            "name": "Phantom Lancer",
+            "win_rate": 53.5569706120484,
+            "pick_rate": 0.6674430791502577,
+            "picks": 45699
+          },
+          {
+            "name": "Spectre",
+            "win_rate": 53.45638197132557,
+            "pick_rate": 0.8791308620164875,
+            "picks": 60193
+          },
+          {
+            "name": "Lone Druid",
+            "win_rate": 53.097959619698756,
+            "pick_rate": 0.27343857256944626,
+            "picks": 18722
           }
         ],
         "sleepers": [
           {
             "name": "Visage",
-            "win_rate": 54.24686192468619,
-            "pick_rate": 0.14736725924953067,
-            "picks": 9560
+            "win_rate": 54.479489164086694,
+            "pick_rate": 0.15095935723094736,
+            "picks": 10336
+          },
+          {
+            "name": "Lone Druid",
+            "win_rate": 53.097959619698756,
+            "pick_rate": 0.27343857256944626,
+            "picks": 18722
+          },
+          {
+            "name": "Riki",
+            "win_rate": 53.09681929395317,
+            "pick_rate": 0.4178547997656158,
+            "picks": 28610
           }
         ],
         "traps": [
           {
             "name": "Shadow Fiend",
-            "win_rate": 47.52399835578016,
-            "pick_rate": 1.2750350922139835,
-            "picks": 82714
+            "win_rate": 47.638949823354196,
+            "pick_rate": 1.2650148768577085,
+            "picks": 86614
           }
         ]
       }
@@ -3660,65 +3678,65 @@
       "low_stompers": [
         {
           "name": "Bristleback",
-          "low_wr": 53.30496022698485,
-          "high_wr": 46.9712173224188,
-          "delta": 6.333742904566052
+          "low_wr": 53.11074656020938,
+          "high_wr": 46.58385093167702,
+          "delta": 6.52689562853236
         },
         {
           "name": "Wraith King",
-          "low_wr": 55.14494531688165,
-          "high_wr": 50.39009287925696,
-          "delta": 4.754852437624688
-        },
-        {
-          "name": "Spectre",
-          "low_wr": 56.35233042386901,
-          "high_wr": 52.1556069501275,
-          "delta": 4.196723473741516
+          "low_wr": 55.1887734718338,
+          "high_wr": 50.45672206349845,
+          "delta": 4.732051408335349
         },
         {
           "name": "Sand King",
-          "low_wr": 51.2129533188145,
-          "high_wr": 47.50079592486469,
-          "delta": 3.7121573939498074
+          "low_wr": 51.242614145031325,
+          "high_wr": 47.07805476093176,
+          "delta": 4.164559384099572
         },
         {
-          "name": "Sniper",
-          "low_wr": 50.900454463758436,
-          "high_wr": 47.579371745338484,
-          "delta": 3.3210827184199525
+          "name": "Spectre",
+          "low_wr": 56.009319785127175,
+          "high_wr": 51.965141109251455,
+          "delta": 4.044178675875719
+        },
+        {
+          "name": "Necrophos",
+          "low_wr": 53.30452835681398,
+          "high_wr": 49.958396252580975,
+          "delta": 3.34613210423301
         }
       ],
       "high_skill_ceiling": [
         {
           "name": "Lycan",
-          "low_wr": 44.617579282343904,
-          "high_wr": 50.9171195652174,
-          "delta": -6.29954028287349
+          "low_wr": 44.157467194334515,
+          "high_wr": 50.779510022271715,
+          "delta": -6.622042827937197
         },
         {
           "name": "Visage",
-          "low_wr": 50.18061981114139,
-          "high_wr": 55.705069124423964,
-          "delta": -5.5244493132825765
+          "low_wr": 50.35284350352843,
+          "high_wr": 56.2415196743555,
+          "delta": -5.8886761708270665
         },
         {
           "name": "Batrider",
-          "low_wr": 46.913039244327585,
-          "high_wr": 52.01723673579316,
-          "delta": -5.104197491465575
+          "low_wr": 47.01613276013498,
+          "high_wr": 52.23585479618739,
+          "delta": -5.219722036052406
         },
         {
           "name": "Enigma",
-          "low_wr": 48.81185735410434,
-          "high_wr": 53.43609505459217,
-          "delta": -4.6242377004878294
+          "low_wr": 48.876168299860936,
+          "high_wr": 54.042362768496425,
+          "delta": -5.166194468635485
         },
         {
-          "name": "Winter Wyvern",
-          "low_wr": 48.84233737596472,
-          "high_wr": 53.3095495954641,
-          "delta": -4.467212219499383
+          "name": "Treant Protector",
+          "low_wr": 47.86120251271313,
+          "high_wr": 52.56978289765175,
+          "delta": -4.708580384938624
         }
       ]
     }
