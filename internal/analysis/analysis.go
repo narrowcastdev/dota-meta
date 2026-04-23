@@ -34,6 +34,7 @@ type HeroStat struct {
 	Wins      int
 	Tier      Tier
 	WRHistory []float64
+	ClimbTag  ClimbTag
 }
 
 // BracketAnalysis holds all analysis results for one bracket.
@@ -93,6 +94,40 @@ func Analyze(heroes []stratz.Hero, responses []stratz.BracketResponse, minPicks 
 		full.Brackets = append(full.Brackets, ba)
 		full.TotalMatches += ba.Matches()
 	}
+
+	// Compute climb tags from Herald-Guardian vs Divine WR per hero.
+	type wrPair struct {
+		low, high       float64
+		hasLow, hasHigh bool
+	}
+	refs := map[int]wrPair{}
+	for _, ba := range full.Brackets {
+		for _, section := range [][]HeroStat{ba.Cores, ba.Supports} {
+			for _, s := range section {
+				p := refs[s.Hero.ID]
+				if ba.Bracket.Name == "Herald-Guardian" {
+					p.low = s.WinRate
+					p.hasLow = true
+				}
+				if ba.Bracket.Name == "Divine" {
+					p.high = s.WinRate
+					p.hasHigh = true
+				}
+				refs[s.Hero.ID] = p
+			}
+		}
+	}
+	for bi := range full.Brackets {
+		applyClimb := func(stats []HeroStat) {
+			for si := range stats {
+				p := refs[stats[si].Hero.ID]
+				stats[si].ClimbTag = TagClimb(p.low, p.high, p.hasLow && p.hasHigh)
+			}
+		}
+		applyClimb(full.Brackets[bi].Cores)
+		applyClimb(full.Brackets[bi].Supports)
+	}
+
 	return full
 }
 
