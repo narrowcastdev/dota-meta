@@ -1,0 +1,14 @@
+{
+  "data": {
+    "constants": {
+      "heroes": [
+        {"id": 1, "shortName": "antimage", "displayName": "Anti-Mage",
+         "roles": [{"roleId": 1}, {"roleId": 4}],
+         "stats": {"primaryAttributeEnum": "AGI", "attackType": "Melee"}},
+        {"id": 2, "shortName": "axe", "displayName": "Axe",
+         "roles": [{"roleId": 5}, {"roleId": 3}],
+         "stats": {"primaryAttributeEnum": "STR", "attackType": "Melee"}}
+      ]
+    }
+  }
+}

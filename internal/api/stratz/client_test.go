@@ -55,3 +55,35 @@ func TestFetchBracket_GraphQLError(t *testing.T) {
 		t.Fatal("expected error, got nil")
 	}
 }
+
+func TestFetchHeroes_ParsesFixture(t *testing.T) {
+	fixture, _ := os.ReadFile("testdata/heroes.json")
+	srv := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		w.Write(fixture)
+	}))
+	defer srv.Close()
+	c := NewClient("x")
+	c.Endpoint = srv.URL
+	got, err := c.FetchHeroes()
+	if err != nil {
+		t.Fatalf("FetchHeroes: %v", err)
+	}
+	if len(got) != 2 {
+		t.Fatalf("len=%d, want 2", len(got))
+	}
+	if got[0].DisplayName != "Anti-Mage" {
+		t.Errorf("bad name: %s", got[0].DisplayName)
+	}
+	if !contains(got[0].Roles, "Carry") {
+		t.Errorf("missing Carry: %v", got[0].Roles)
+	}
+}
+
+func contains(s []string, v string) bool {
+	for _, x := range s {
+		if x == v {
+			return true
+		}
+	}
+	return false
+}

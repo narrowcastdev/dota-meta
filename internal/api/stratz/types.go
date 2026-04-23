@@ -35,3 +35,13 @@ type BracketResponse struct {
 	Bracket Bracket
 	Weeks   []HeroWeekStat
 }
+
+// Hero is the bracket-agnostic hero catalog entry (from constants.heroes).
+type Hero struct {
+	ID               int      `json:"id"`
+	ShortName        string   `json:"shortName"`
+	DisplayName      string   `json:"displayName"`
+	Roles            []string `json:"roles"`
+	PrimaryAttribute string   `json:"primaryAttribute"`
+	AttackType       string   `json:"attackType"`
+}

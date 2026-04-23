@@ -86,6 +86,83 @@ func (c *Client) FetchBracket(bracket Bracket) (BracketResponse, error) {
 	return parseBracket(bracket, resp.Body)
 }
 
+const heroesQuery = `query Heroes {
+  constants {
+    heroes {
+      id
+      shortName
+      displayName
+      roles { roleId }
+      stats { primaryAttributeEnum attackType }
+    }
+  }
+}`
+
+var roleIDToName = map[int]string{
+	1: "Carry", 2: "Disabler", 3: "Durable", 4: "Escape",
+	5: "Initiator", 6: "Support", 7: "Nuker", 8: "Pusher", 9: "Jungler",
+}
+
+// FetchHeroes returns the hero catalog. Call once per run.
+func (c *Client) FetchHeroes() ([]Hero, error) {
+	body, _ := json.Marshal(graphQLRequest{Query: heroesQuery})
+	req, err := http.NewRequest("POST", c.Endpoint, bytes.NewReader(body))
+	if err != nil {
+		return nil, fmt.Errorf("building heroes request: %w", err)
+	}
+	req.Header.Set("Content-Type", "application/json")
+	req.Header.Set("Authorization", "Bearer "+c.Token)
+	resp, err := c.HTTP.Do(req)
+	if err != nil {
+		return nil, fmt.Errorf("heroes request: %w", err)
+	}
+	defer resp.Body.Close()
+	if resp.StatusCode != http.StatusOK {
+		snippet, _ := io.ReadAll(io.LimitReader(resp.Body, 512))
+		return nil, fmt.Errorf("stratz heroes returned %d: %s", resp.StatusCode, string(snippet))
+	}
+	return parseHeroes(resp.Body)
+}
+
+func parseHeroes(r io.Reader) ([]Hero, error) {
+	var raw struct {
+		Data struct {
+			Constants struct {
+				Heroes []struct {
+					ID          int    `json:"id"`
+					ShortName   string `json:"shortName"`
+					DisplayName string `json:"displayName"`
+					Roles       []struct {
+						RoleID int `json:"roleId"`
+					} `json:"roles"`
+					Stats struct {
+						PrimaryAttributeEnum string `json:"primaryAttributeEnum"`
+						AttackType           string `json:"attackType"`
+					} `json:"stats"`
+				} `json:"heroes"`
+			} `json:"constants"`
+		} `json:"data"`
+	}
+	if err := json.NewDecoder(r).Decode(&raw); err != nil {
+		return nil, fmt.Errorf("decoding heroes: %w", err)
+	}
+	out := make([]Hero, 0, len(raw.Data.Constants.Heroes))
+	for _, h := range raw.Data.Constants.Heroes {
+		var roles []string
+		for _, r := range h.Roles {
+			if name, ok := roleIDToName[r.RoleID]; ok {
+				roles = append(roles, name)
+			}
+		}
+		out = append(out, Hero{
+			ID: h.ID, ShortName: h.ShortName, DisplayName: h.DisplayName,
+			Roles: roles, PrimaryAttribute: h.Stats.PrimaryAttributeEnum,
+			AttackType: h.Stats.AttackType,
+		})
+	}
+	return out, nil
+}
+
 func parseBracket(bracket Bracket, r io.Reader) (BracketResponse, error) {
 	var raw graphQLResponse
 	if err := json.NewDecoder(r).Decode(&raw); err != nil {
