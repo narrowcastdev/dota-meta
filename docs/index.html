@@ -3,165 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dota 2 Meta by Bracket</title>
+  <title>dota-meta — tier quadrants by bracket</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Dota 2 Meta by Bracket</h1>
-    <p class="subtitle">Bracket-specific hero win rates from <a href="https://www.opendota.com">OpenDota</a></p>
+    <h1>Dota 2 Meta — Tier Quadrants</h1>
+    <p id="header-meta" class="subtitle"></p>
   </header>
 
   <main>
     <div class="controls">
-      <label for="bracket-select">Bracket:</label>
-      <select id="bracket-select">
-        <option value="herald_guardian">Herald-Guardian</option>
-        <option value="crusader_archon">Crusader-Archon</option>
-        <option value="legend_ancient" selected>Legend-Ancient</option>
-        <option value="divine">Divine</option>
+      <label for="bracket">Bracket:</label>
+      <select id="bracket"></select>
+      <label for="role">Role:</label>
+      <select id="role">
+        <option value="all">All</option>
+        <option value="cores">Cores</option>
+        <option value="supports">Supports</option>
       </select>
     </div>
 
-    <section id="best-section">
-      <h2>Best Heroes</h2>
-      <p class="section-desc">Top 5 by win rate (1000+ picks required)</p>
-      <div class="table-wrap">
-        <table id="best-table">
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>Hero</th>
-              <th>Win Rate</th>
-              <th>Pick Rate</th>
-              <th>Picks</th>
-            </tr>
-          </thead>
-          <tbody></tbody>
-        </table>
-      </div>
-    </section>
-
-    <section id="supports-section">
-      <h2>Best Support Heroes</h2>
-      <p class="section-desc">Top 5 supports by win rate (1000+ picks required). Role tags from OpenDota metadata, not in-game position — flex heroes (Visage, Underlord) can appear.</p>
-      <div class="table-wrap">
-        <table id="supports-table">
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>Hero</th>
-              <th>Win Rate</th>
-              <th>Pick Rate</th>
-              <th>Picks</th>
-            </tr>
-          </thead>
-          <tbody></tbody>
-        </table>
-      </div>
-    </section>
-
-    <section id="sleepers-section">
-      <h2>Sleeper Picks</h2>
-      <p class="section-desc">Win rate &ge; 53% but bottom 40% pick rate &mdash; underrated heroes</p>
-      <div class="table-wrap">
-        <table id="sleepers-table">
-          <thead>
-            <tr>
-              <th>Hero</th>
-              <th>Win Rate</th>
-              <th>Pick Rate</th>
-              <th>Picks</th>
-            </tr>
-          </thead>
-          <tbody></tbody>
-        </table>
-      </div>
-    </section>
-
-    <section id="traps-section">
-      <h2>Trap Picks</h2>
-      <p class="section-desc">Top 20% pick rate but win rate &lt; 48% &mdash; popular but losing</p>
-      <div class="table-wrap">
-        <table id="traps-table">
-          <thead>
-            <tr>
-              <th>Hero</th>
-              <th>Win Rate</th>
-              <th>Pick Rate</th>
-              <th>Picks</th>
-            </tr>
-          </thead>
-          <tbody></tbody>
-        </table>
-      </div>
-    </section>
-
-    <section id="all-heroes-section">
-      <h2>All Heroes</h2>
-      <p class="section-desc">Click column headers to sort</p>
-      <div class="table-wrap">
-        <table id="all-heroes-table">
-          <thead>
-            <tr>
-              <th class="sortable" data-sort="name">Hero</th>
-              <th class="sortable" data-sort="win_rate">Win Rate</th>
-              <th class="sortable" data-sort="pick_rate">Pick Rate</th>
-              <th class="sortable" data-sort="picks">Picks</th>
-            </tr>
-          </thead>
-          <tbody></tbody>
-        </table>
-      </div>
-    </section>
-
-    <section id="delta-section">
-      <h2>Bracket Delta</h2>
-      <p class="section-desc">Win rate difference between Herald-Guardian and Divine</p>
-
-      <h3>Low Bracket Stompers</h3>
-      <p class="section-desc">Much higher WR in Herald-Guardian than Divine</p>
-      <div class="table-wrap">
-        <table id="low-stompers-table">
-          <thead>
-            <tr>
-              <th>Hero</th>
-              <th>Herald-Guardian WR</th>
-              <th>Divine WR</th>
-              <th>Difference</th>
-            </tr>
-          </thead>
-          <tbody></tbody>
-        </table>
-      </div>
-
-      <h3>High Skill Ceiling</h3>
-      <p class="section-desc">Much higher WR in Divine than Herald-Guardian</p>
-      <div class="table-wrap">
-        <table id="high-ceiling-table">
-          <thead>
-            <tr>
-              <th>Hero</th>
-              <th>Herald-Guardian WR</th>
-              <th>Divine WR</th>
-              <th>Difference</th>
-            </tr>
-          </thead>
-          <tbody></tbody>
-        </table>
-      </div>
-    </section>
+    <div id="legend"></div>
+    <div id="tiers"></div>
   </main>
 
   <footer>
     <p id="generated-time"></p>
     <p>
-      Data from <a href="https://www.opendota.com">OpenDota</a>.
+      Data from <a href="https://www.stratz.com">STRATZ</a>.
       Built by <a href="https://github.com/narrowcastdev">Narrowcast</a>.
       <a href="https://github.com/narrowcastdev/dota-meta">Source on GitHub</a>.
     </p>
   </footer>
 
-  <script src="app.js"></script>
+  <script src="app.js" defer></script>
 </body>
 </html>
