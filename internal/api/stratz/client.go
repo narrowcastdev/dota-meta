@@ -9,7 +9,12 @@ import (
 	"time"
 )
 
-const endpoint = "https://api.stratz.com/graphql"
+const (
+	endpoint = "https://api.stratz.com/graphql"
+	// userAgent is required by STRATZ's Cloudflare layer; requests without
+	// `STRATZ_API` in the UA get challenged with a 403.
+	userAgent = "STRATZ_API"
+)
 
 // Client talks to STRATZ GraphQL.
 type Client struct {
@@ -70,7 +75,7 @@ func (c *Client) FetchBracket(bracket Bracket) (BracketResponse, error) {
 	}
 	req.Header.Set("Content-Type", "application/json")
 	req.Header.Set("Authorization", "Bearer "+c.Token)
-	req.Header.Set("User-Agent", "dota-meta/1.0")
+	req.Header.Set("User-Agent", userAgent)
 
 	resp, err := c.HTTP.Do(req)
 	if err != nil {
@@ -98,9 +103,19 @@ const heroesQuery = `query Heroes {
   }
 }`
 
-var roleIDToName = map[int]string{
-	1: "Carry", 2: "Disabler", 3: "Durable", 4: "Escape",
-	5: "Initiator", 6: "Support", 7: "Nuker", 8: "Pusher", 9: "Jungler",
+// roleIDToName maps STRATZ's `HeroRole` enum values to the friendlier strings
+// the analysis layer expects (notably "Carry" and "Support", which drive the
+// core/support split).
+var roleIDToName = map[string]string{
+	"CARRY":     "Carry",
+	"DISABLER":  "Disabler",
+	"DURABLE":   "Durable",
+	"ESCAPE":    "Escape",
+	"INITIATOR": "Initiator",
+	"NUKER":     "Nuker",
+	"PUSHER":    "Pusher",
+	"SUPPORT":   "Support",
+	"JUNGLER":   "Jungler",
 }
 
 // FetchHeroes returns the hero catalog. Call once per run.
@@ -112,6 +127,7 @@ func (c *Client) FetchHeroes() ([]Hero, error) {
 	}
 	req.Header.Set("Content-Type", "application/json")
 	req.Header.Set("Authorization", "Bearer "+c.Token)
+	req.Header.Set("User-Agent", userAgent)
 	resp, err := c.HTTP.Do(req)
 	if err != nil {
 		return nil, fmt.Errorf("heroes request: %w", err)
@@ -133,7 +149,7 @@ func parseHeroes(r io.Reader) ([]Hero, error) {
 					ShortName   string `json:"shortName"`
 					DisplayName string `json:"displayName"`
 					Roles       []struct {
-						RoleID int `json:"roleId"`
+						RoleID string `json:"roleId"`
 					} `json:"roles"`
 					Stats struct {
 						PrimaryAttributeEnum string `json:"primaryAttributeEnum"`
