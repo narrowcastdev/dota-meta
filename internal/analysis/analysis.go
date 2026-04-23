@@ -32,6 +32,7 @@ type HeroStat struct {
 	PickRate  float64
 	Picks     int
 	Wins      int
+	Tier      Tier
 	WRHistory []float64
 }
 
@@ -132,6 +133,8 @@ func analyzeBracket(bracket Bracket, byID map[int]stratz.Hero, agg map[int]strat
 			ba.Cores = append(ba.Cores, hs)
 		}
 	}
+	ClassifyTiers(ba.Cores)
+	ClassifyTiers(ba.Supports)
 	return ba
 }
 
