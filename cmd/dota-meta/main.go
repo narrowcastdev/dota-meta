@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/narrowcastdev/dota-meta/internal/analysis"
-	"github.com/narrowcastdev/dota-meta/internal/api"
+	"github.com/narrowcastdev/dota-meta/internal/api/opendota"
 	"github.com/narrowcastdev/dota-meta/internal/format"
 )
 
@@ -18,7 +18,7 @@ func main() {
 	minPicks := flag.Int("min-picks", 1000, "minimum picks to qualify a hero")
 	flag.Parse()
 
-	heroes, err := api.FetchHeroStats()
+	heroes, err := opendota.FetchHeroStats()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error: %v\n", err)
 		os.Exit(1)

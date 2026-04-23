@@ -7,11 +7,11 @@ import (
 	"testing"
 
 	"github.com/narrowcastdev/dota-meta/internal/analysis"
-	"github.com/narrowcastdev/dota-meta/internal/api"
+	"github.com/narrowcastdev/dota-meta/internal/api/opendota"
 	"github.com/narrowcastdev/dota-meta/internal/format"
 )
 
-func loadFixtureAndAnalyze(t *testing.T) ([]api.Hero, analysis.FullAnalysis) {
+func loadFixtureAndAnalyze(t *testing.T) ([]opendota.Hero, analysis.FullAnalysis) {
 	t.Helper()
 	f, err := os.Open("../../testdata/herostats.json")
 	if err != nil {
@@ -19,7 +19,7 @@ func loadFixtureAndAnalyze(t *testing.T) ([]api.Hero, analysis.FullAnalysis) {
 	}
 	defer f.Close()
 
-	heroes, err := api.ParseHeroStats(f)
+	heroes, err := opendota.ParseHeroStats(f)
 	if err != nil {
 		t.Fatalf("parsing fixture: %v", err)
 	}

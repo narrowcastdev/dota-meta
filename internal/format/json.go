@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/narrowcastdev/dota-meta/internal/analysis"
-	"github.com/narrowcastdev/dota-meta/internal/api"
+	"github.com/narrowcastdev/dota-meta/internal/api/opendota"
 )
 
 type jsonOutput struct {
@@ -49,7 +49,7 @@ type jsonHeroStat struct {
 }
 
 type jsonDelta struct {
-	LowStompers     []jsonDeltaHero `json:"low_stompers"`
+	LowStompers      []jsonDeltaHero `json:"low_stompers"`
 	HighSkillCeiling []jsonDeltaHero `json:"high_skill_ceiling"`
 }
 
@@ -68,7 +68,7 @@ var bracketKeyMap = map[string]string{
 }
 
 // FormatJSON generates a JSON output suitable for the static site.
-func FormatJSON(heroes []api.Hero, result analysis.FullAnalysis) ([]byte, error) {
+func FormatJSON(heroes []opendota.Hero, result analysis.FullAnalysis) ([]byte, error) {
 	bracketMatches := make(map[string]int, len(result.Brackets))
 	for _, ba := range result.Brackets {
 		bracketMatches[ba.Bracket.Name] = ba.Matches()
@@ -83,7 +83,7 @@ func FormatJSON(heroes []api.Hero, result analysis.FullAnalysis) ([]byte, error)
 	return json.MarshalIndent(output, "", "  ")
 }
 
-func buildJSONHeroes(heroes []api.Hero, bracketMatches map[string]int) []jsonHero {
+func buildJSONHeroes(heroes []opendota.Hero, bracketMatches map[string]int) []jsonHero {
 	out := make([]jsonHero, 0, len(heroes))
 	for _, h := range heroes {
 		jh := jsonHero{

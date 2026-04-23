@@ -1,4 +1,4 @@
-package api_test
+package opendota_test
 
 import (
 	"math"
@@ -6,18 +6,18 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/narrowcastdev/dota-meta/internal/api"
+	"github.com/narrowcastdev/dota-meta/internal/api/opendota"
 )
 
-func loadFixture(t *testing.T) []api.Hero {
+func loadFixture(t *testing.T) []opendota.Hero {
 	t.Helper()
-	f, err := os.Open("../../testdata/herostats.json")
+	f, err := os.Open("../../../testdata/herostats.json")
 	if err != nil {
 		t.Fatalf("opening fixture: %v", err)
 	}
 	defer f.Close()
 
-	heroes, err := api.ParseHeroStats(f)
+	heroes, err := opendota.ParseHeroStats(f)
 	if err != nil {
 		t.Fatalf("parsing fixture: %v", err)
 	}
@@ -35,7 +35,7 @@ func TestParseHeroStats_Fields(t *testing.T) {
 	heroes := loadFixture(t)
 
 	// Find Anti-Mage (id=1)
-	var am api.Hero
+	var am opendota.Hero
 	for _, h := range heroes {
 		if h.ID == 1 {
 			am = h
@@ -64,7 +64,7 @@ func TestParseHeroStats_BracketMapping(t *testing.T) {
 	heroes := loadFixture(t)
 
 	// Anti-Mage bracket 1: pick=5000, win=2800
-	var am api.Hero
+	var am opendota.Hero
 	for _, h := range heroes {
 		if h.ID == 1 {
 			am = h
@@ -93,7 +93,7 @@ func almostEqual(a, b, tolerance float64) bool {
 }
 
 func TestHero_WinRate(t *testing.T) {
-	hero := api.Hero{
+	hero := opendota.Hero{
 		BracketPick: [8]int{5000, 0, 0, 0, 0, 0, 0, 0},
 		BracketWin:  [8]int{2800, 0, 0, 0, 0, 0, 0, 0},
 	}
@@ -110,7 +110,7 @@ func TestHero_WinRate(t *testing.T) {
 }
 
 func TestHero_PickRate(t *testing.T) {
-	hero := api.Hero{
+	hero := opendota.Hero{
 		BracketPick: [8]int{5000, 0, 0, 0, 0, 0, 0, 0},
 	}
 
@@ -126,7 +126,7 @@ func TestHero_PickRate(t *testing.T) {
 }
 
 func TestParseHeroStats_EmptyResponse(t *testing.T) {
-	_, err := api.ParseHeroStats(strings.NewReader("[]"))
+	_, err := opendota.ParseHeroStats(strings.NewReader("[]"))
 	if err == nil {
 		t.Fatal("expected error for empty response")
 	}
@@ -136,7 +136,7 @@ func TestParseHeroStats_EmptyResponse(t *testing.T) {
 }
 
 func TestParseHeroStats_InvalidJSON(t *testing.T) {
-	_, err := api.ParseHeroStats(strings.NewReader("not json"))
+	_, err := opendota.ParseHeroStats(strings.NewReader("not json"))
 	if err == nil {
 		t.Fatal("expected error for invalid JSON")
 	}

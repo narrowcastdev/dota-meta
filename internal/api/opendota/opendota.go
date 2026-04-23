@@ -1,4 +1,4 @@
-package api
+package opendota
 
 import (
 	"encoding/json"

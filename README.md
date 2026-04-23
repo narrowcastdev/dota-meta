@@ -40,12 +40,20 @@ dota-meta --html --output reddit.md
 
 ## What it analyzes
 
-All analysis uses bracket pairs (Herald-Guardian, Crusader-Archon, Legend-Ancient, Divine-Immortal) and requires a minimum of 1000 picks per hero to qualify.
+All analysis uses four brackets (Herald-Guardian, Crusader-Archon, Legend-Ancient, Divine) and requires a minimum of 1000 picks per hero to qualify.
 
-- **Best Heroes** — Top 5 by win rate in each bracket pair
+- **Best Heroes** — Top 5 by win rate in each bracket
+- **Best Support Heroes** — Top 5 by win rate among heroes tagged Support (not Carry) in each bracket
 - **Sleeper Picks** — Win rate >= 53% with pick rate in the bottom 40th percentile
 - **Trap Picks** — Pick rate in the top 20th percentile with win rate < 48%
-- **Bracket Delta** — Heroes with the largest win rate gap between low and high brackets
+- **Bracket Delta** — Heroes with the largest win rate gap between Herald-Guardian and Divine
+
+### Methodology notes
+
+- **Pick rate** is `hero_picks / bracket_matches * 100` (matches = total picks / 10). This matches Dotabuff's convention — % of matches the hero appears in.
+- **Brackets**: OpenDota's `heroStats` endpoint returns brackets 1-7 with data; bracket 8 (Immortal) is always zero. "Divine" includes anything the feed puts in bracket 7; it's effectively Divine-and-above.
+- **Support tagging** comes from OpenDota's hero metadata (`roles` field), not in-game position. Flex heroes tagged both Carry and Support are excluded from the support section; heroes tagged Support without Carry (e.g. Visage, Underlord) remain even when played as cores in some metas.
+- **Item data** is intentionally out of scope. OpenDota's item popularity isn't bracket-scoped, and meaningful per-bracket item analysis would require STRATZ (paid/key-gated).
 
 ## Static site
 

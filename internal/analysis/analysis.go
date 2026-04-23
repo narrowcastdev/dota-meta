@@ -3,7 +3,7 @@ package analysis
 import (
 	"sort"
 
-	"github.com/narrowcastdev/dota-meta/internal/api"
+	"github.com/narrowcastdev/dota-meta/internal/api/opendota"
 )
 
 // picksPerMatch is how many hero picks OpenDota counts per match (5 per team x 2).
@@ -27,7 +27,7 @@ var Brackets = []Bracket{
 
 // HeroStat holds computed stats for one hero in one bracket.
 type HeroStat struct {
-	Hero     api.Hero
+	Hero     opendota.Hero
 	WinRate  float64
 	PickRate float64 // % of matches in this bracket where the hero was picked
 	Picks    int
@@ -51,7 +51,7 @@ func (ba BracketAnalysis) Matches() int {
 
 // DeltaHero holds bracket delta data for one hero.
 type DeltaHero struct {
-	Hero   api.Hero
+	Hero   opendota.Hero
 	LowWR  float64 // Herald-Guardian win rate
 	HighWR float64 // Immortal win rate
 	Delta  float64 // LowWR - HighWR (positive = stronger in low brackets)
@@ -66,7 +66,7 @@ type FullAnalysis struct {
 }
 
 // Analyze runs the full analysis on all heroes.
-func Analyze(heroes []api.Hero, minPicks int) FullAnalysis {
+func Analyze(heroes []opendota.Hero, minPicks int) FullAnalysis {
 	var result FullAnalysis
 
 	for _, bracket := range Brackets {
@@ -88,7 +88,7 @@ func sumIndices(values [8]int, indices []int) int {
 	return total
 }
 
-func analyzeBracket(heroes []api.Hero, bracket Bracket, minPicks int) BracketAnalysis {
+func analyzeBracket(heroes []opendota.Hero, bracket Bracket, minPicks int) BracketAnalysis {
 	var totalPicks int
 	for _, h := range heroes {
 		totalPicks += sumIndices(h.BracketPick, bracket.Indices)
@@ -232,9 +232,9 @@ func pickRatePercentile(stats []HeroStat, percentile float64) float64 {
 	return rates[idx]
 }
 
-func analyzeBracketDelta(heroes []api.Hero, minPicks int) (lowStompers []DeltaHero, highSkillCap []DeltaHero) {
-	lowBracket := Brackets[0]                 // Herald-Guardian
-	highBracket := Brackets[len(Brackets)-1]  // Immortal
+func analyzeBracketDelta(heroes []opendota.Hero, minPicks int) (lowStompers []DeltaHero, highSkillCap []DeltaHero) {
+	lowBracket := Brackets[0]                // Herald-Guardian
+	highBracket := Brackets[len(Brackets)-1] // Immortal
 
 	var deltas []DeltaHero
 	for _, h := range heroes {

@@ -56,3 +56,23 @@ dota-meta/
 ## Data source
 
 Single API call to `https://api.opendota.com/api/heroStats`. No API key required. Zero running cost.
+
+## Design decisions (driven by community feedback)
+
+These started as r/DotA2 reader feedback. Update this list when new feedback lands — the product evolves from community signal, not gut.
+
+- **4 brackets, not 8 and not "Divine-Immortal" combined.** OpenDota's `heroStats` endpoint returns bracket 8 (Immortal) as empty for every hero. Attempting to split Divine/Immortal produces an empty Immortal table. Kept as `Divine` with indices `[6, 7]` (7 is a no-op but future-proofs against the feed filling in).
+- **Pick rate = picks / matches, not picks / total_picks.** Original implementation divided by total picks across all heroes, yielding ~1% max and making top heroes look niche. Fixed to match Dotabuff's convention (picks / matches, where matches = total_picks / 10). Anti-Mage now shows ~10% in Legend-Ancient instead of ~1%.
+- **Support section filters out Carry-tagged heroes.** OpenDota tags flex heroes like Wraith King with both `Carry` and `Support`. Filtering `Support ∈ roles AND Carry ∉ roles` removes those while keeping legitimate pos-4/5 heroes.
+- **Role tag caveat is called out in reddit + site.** OpenDota's `roles` metadata is not in-game position. Visage, Underlord etc. can land in the Support section when played pos 4/5 in some metas. Don't hide this — readers will spot it anyway.
+- **No item data.** Skipped because OpenDota item popularity isn't bracket-scoped, and per-bracket item insights require STRATZ (API key, paid tier for volume). Revisit only if a STRATZ data source is wired in.
+- **Reddit tables all show Games column alongside Win Rate / Pick Rate.** Readers want the sample size, not just percentages.
+
+## Future upgrade path
+
+Wire in **STRATZ GraphQL API** if we need:
+- Actual in-game position (pos 1-5) per hero per bracket
+- Item pick/win rates per bracket
+- Matchup win rates per bracket
+
+STRATZ has a free tier with an API key (rate-limited but usable for 126 hero fetches per run).

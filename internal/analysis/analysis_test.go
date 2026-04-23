@@ -5,10 +5,10 @@ import (
 	"testing"
 
 	"github.com/narrowcastdev/dota-meta/internal/analysis"
-	"github.com/narrowcastdev/dota-meta/internal/api"
+	"github.com/narrowcastdev/dota-meta/internal/api/opendota"
 )
 
-func loadFixture(t *testing.T) []api.Hero {
+func loadFixture(t *testing.T) []opendota.Hero {
 	t.Helper()
 	f, err := os.Open("../../testdata/herostats.json")
 	if err != nil {
@@ -16,7 +16,7 @@ func loadFixture(t *testing.T) []api.Hero {
 	}
 	defer f.Close()
 
-	heroes, err := api.ParseHeroStats(f)
+	heroes, err := opendota.ParseHeroStats(f)
 	if err != nil {
 		t.Fatalf("parsing fixture: %v", err)
 	}
