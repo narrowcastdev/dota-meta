@@ -173,3 +173,24 @@ func parseBracket(bracket Bracket, r io.Reader) (BracketResponse, error) {
 	}
 	return BracketResponse{Bracket: bracket, Weeks: raw.Data.HeroStats.WinWeek}, nil
 }
+
+// FetchAll fetches hero metadata plus 8 bracket histories sequentially with a
+// small sleep to stay well under the 7 rps rate limit.
+func (c *Client) FetchAll() ([]Hero, []BracketResponse, error) {
+	heroes, err := c.FetchHeroes()
+	if err != nil {
+		return nil, nil, err
+	}
+	brackets := make([]BracketResponse, 0, len(AllBrackets()))
+	for i, b := range AllBrackets() {
+		if i > 0 {
+			time.Sleep(200 * time.Millisecond)
+		}
+		br, err := c.FetchBracket(b)
+		if err != nil {
+			return nil, nil, fmt.Errorf("bracket %s: %w", b, err)
+		}
+		brackets = append(brackets, br)
+	}
+	return heroes, brackets, nil
+}

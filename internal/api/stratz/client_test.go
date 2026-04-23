@@ -1,6 +1,8 @@
 package stratz
 
 import (
+	"bytes"
+	"io"
 	"net/http"
 	"net/http/httptest"
 	"os"
@@ -86,4 +88,35 @@ func contains(s []string, v string) bool {
 		}
 	}
 	return false
+}
+
+func TestFetchAll_MakesNinePlusRequests(t *testing.T) {
+	heroesFixture, _ := os.ReadFile("testdata/heroes.json")
+	bracketFixture, _ := os.ReadFile("testdata/response.json")
+	var count int
+	srv := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		count++
+		body, _ := io.ReadAll(r.Body)
+		if bytes.Contains(body, []byte("constants")) {
+			w.Write(heroesFixture)
+			return
+		}
+		w.Write(bracketFixture)
+	}))
+	defer srv.Close()
+	c := NewClient("x")
+	c.Endpoint = srv.URL
+	heroes, brackets, err := c.FetchAll()
+	if err != nil {
+		t.Fatalf("FetchAll: %v", err)
+	}
+	if len(heroes) == 0 {
+		t.Error("no heroes")
+	}
+	if len(brackets) != 8 {
+		t.Errorf("brackets=%d, want 8", len(brackets))
+	}
+	if count != 9 {
+		t.Errorf("http calls=%d, want 9", count)
+	}
 }
