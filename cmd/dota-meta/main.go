@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/narrowcastdev/dota-meta/internal/analysis"
-	"github.com/narrowcastdev/dota-meta/internal/api/opendota"
+	"github.com/narrowcastdev/dota-meta/internal/api/stratz"
 	"github.com/narrowcastdev/dota-meta/internal/format"
 )
 
@@ -16,16 +16,32 @@ func main() {
 	jsonMode := flag.Bool("json", false, "output raw analysis as JSON")
 	htmlMode := flag.Bool("html", false, "generate docs/data.json for static site")
 	minPicks := flag.Int("min-picks", 1000, "minimum picks to qualify a hero")
+	patch := flag.String("patch", "", "current Dota patch version (e.g. 7.40b)")
 	flag.Parse()
 
-	heroes, err := opendota.FetchHeroStats()
+	token := os.Getenv("STRATZ_TOKEN")
+	if token == "" {
+		fmt.Fprintln(os.Stderr, "STRATZ_TOKEN env var not set")
+		os.Exit(1)
+	}
+	client := stratz.NewClient(token)
+	heroes, brackets, err := client.FetchAll()
 	if err != nil {
-		fmt.Fprintf(os.Stderr, "Error: %v\n", err)
+		fmt.Fprintf(os.Stderr, "fetching stratz: %v\n", err)
 		os.Exit(1)
 	}
 
-	result := analysis.Analyze(heroes, *minPicks)
-	date := time.Now().Format("January 2, 2006")
+	result := analysis.Analyze(heroes, brackets, *minPicks)
+	result.Patch = *patch
+	result.SnapshotDate = time.Now().UTC()
+
+	if prior, err := analysis.LoadLatestPriorSnapshot("docs/history", result.SnapshotDate); err == nil {
+		analysis.ApplyDeltas(&result, prior)
+	} else {
+		fmt.Fprintf(os.Stderr, "warn: history load failed: %v\n", err)
+	}
+
+	date := result.SnapshotDate.Format("January 2, 2006")
 
 	if *jsonMode {
 		data, jsonErr := format.FormatJSON(heroes, result)
