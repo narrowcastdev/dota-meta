@@ -2,12 +2,15 @@ package stratz
 
 import "sort"
 
+const picksPerMatch = 10
+
 // AggregatedHero is one hero's totals + weekly series inside an analysis bracket.
 type AggregatedHero struct {
 	HeroID   int
 	Picks    int
 	Wins     int
-	WeeklyWR []float64 // newest last
+	WeeklyWR []float64
+	WeeklyPR []float64 // % of bracket matches in that week, oldest first
 }
 
 // AggregateBrackets rolls up a list of STRATZ bracket responses into one
@@ -20,6 +23,7 @@ func AggregateBrackets(responses []BracketResponse) map[int]AggregatedHero {
 		weekly                map[int64]weekAgg
 	}
 	byHero := map[int]*acc{}
+	weekTotalPicks := map[int64]int{}
 	for _, br := range responses {
 		for _, w := range br.Weeks {
 			a, ok := byHero[w.HeroID]
@@ -33,6 +37,7 @@ func AggregateBrackets(responses []BracketResponse) map[int]AggregatedHero {
 			wa.picks += w.MatchCount
 			wa.wins += w.WinCount
 			a.weekly[w.Week] = wa
+			weekTotalPicks[w.Week] += w.MatchCount
 		}
 	}
 	out := make(map[int]AggregatedHero, len(byHero))
@@ -43,16 +48,25 @@ func AggregateBrackets(responses []BracketResponse) map[int]AggregatedHero {
 		}
 		sort.Slice(weeks, func(i, j int) bool { return weeks[i] < weeks[j] })
 		series := make([]float64, 0, len(weeks))
+		prSeries := make([]float64, 0, len(weeks))
 		for _, w := range weeks {
 			x := a.weekly[w]
 			if x.picks == 0 {
 				series = append(series, 0)
+				prSeries = append(prSeries, 0)
 				continue
 			}
 			series = append(series, float64(x.wins)/float64(x.picks)*100)
+			totalMatches := weekTotalPicks[w] / picksPerMatch
+			if totalMatches == 0 {
+				prSeries = append(prSeries, 0)
+				continue
+			}
+			prSeries = append(prSeries, float64(x.picks)/float64(totalMatches)*100)
 		}
 		out[id] = AggregatedHero{
-			HeroID: id, Picks: a.totalPicks, Wins: a.totalWins, WeeklyWR: series,
+			HeroID: id, Picks: a.totalPicks, Wins: a.totalWins,
+			WeeklyWR: series, WeeklyPR: prSeries,
 		}
 	}
 	return out

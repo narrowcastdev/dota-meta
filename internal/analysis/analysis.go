@@ -34,7 +34,9 @@ type HeroStat struct {
 	Wins      int
 	Tier      Tier
 	WRHistory []float64
+	PRHistory []float64
 	ClimbTag  ClimbTag
+	Momentum  MomentumTag
 	WRDelta   *float64
 	PRDelta   *float64
 }
@@ -170,6 +172,16 @@ func analyzeBracket(bracket Bracket, byID map[int]stratz.Hero, agg map[int]strat
 			ba.Cores = append(ba.Cores, hs)
 		}
 	}
+	applyMomentum := func(stats []HeroStat) {
+		for i := range stats {
+			a := agg[stats[i].Hero.ID]
+			stats[i].WRHistory = a.WeeklyWR
+			stats[i].PRHistory = a.WeeklyPR
+			stats[i].Momentum = TagMomentum(a.WeeklyWR, a.WeeklyPR)
+		}
+	}
+	applyMomentum(ba.Cores)
+	applyMomentum(ba.Supports)
 	ClassifyTiers(ba.Cores)
 	ClassifyTiers(ba.Supports)
 	return ba

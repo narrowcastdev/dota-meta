@@ -41,3 +41,21 @@ func TestAggregateBrackets_MergesTwoBrackets(t *testing.T) {
 		t.Errorf("merged wr=%f, want 55.0", got[1].WeeklyWR[0])
 	}
 }
+
+func TestAggregateBrackets_PopulatesWeeklyPR(t *testing.T) {
+	resp := []BracketResponse{{
+		Bracket: BracketDivine,
+		Weeks: []HeroWeekStat{
+			{HeroID: 1, Week: 100, MatchCount: 100, WinCount: 50},
+			{HeroID: 2, Week: 100, MatchCount: 900, WinCount: 450},
+		},
+	}}
+	got := AggregateBrackets(resp)
+	// Week 100: total picks = 1000 → matches ≈ 100. Hero 1 PR = 100/100 = 100%.
+	if len(got[1].WeeklyPR) != 1 {
+		t.Fatalf("len(WeeklyPR)=%d", len(got[1].WeeklyPR))
+	}
+	if got[1].WeeklyPR[0] != 100 {
+		t.Errorf("hero 1 PR=%v want 100", got[1].WeeklyPR[0])
+	}
+}
