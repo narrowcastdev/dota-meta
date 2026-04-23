@@ -1,180 +1,74 @@
-package format_test
+package format
 
 import (
 	"encoding/json"
-	"os"
 	"strings"
 	"testing"
+	"time"
 
 	"github.com/narrowcastdev/dota-meta/internal/analysis"
-	"github.com/narrowcastdev/dota-meta/internal/api/opendota"
-	"github.com/narrowcastdev/dota-meta/internal/format"
+	"github.com/narrowcastdev/dota-meta/internal/api/stratz"
 )
 
-func loadFixtureAndAnalyze(t *testing.T) ([]opendota.Hero, analysis.FullAnalysis) {
-	t.Helper()
-	f, err := os.Open("../../testdata/herostats.json")
+func TestFormatJSON_EmitsTierClimbMomentum(t *testing.T) {
+	heroes := []stratz.Hero{{ID: 1, DisplayName: "Visage", ShortName: "visage", Roles: []string{"Carry"}}}
+	now := time.Date(2026, 4, 23, 0, 0, 0, 0, time.UTC)
+	full := analysis.FullAnalysis{
+		Patch:        "7.40b",
+		SnapshotDate: now,
+		Brackets: []analysis.BracketAnalysis{{
+			Bracket: analysis.Bracket{Name: "Divine"},
+			Cores: []analysis.HeroStat{{
+				Hero: heroes[0], Picks: 1200, Wins: 660, WinRate: 55, PickRate: 2.3,
+				Tier: analysis.TierPocketPick, ClimbTag: analysis.ClimbUp,
+				Momentum: analysis.MomentumHidden, WRHistory: []float64{53, 54, 54.5, 55},
+			}},
+		}},
+	}
+	out, err := FormatJSON(heroes, full)
 	if err != nil {
-		t.Fatalf("opening fixture: %v", err)
+		t.Fatal(err)
 	}
-	defer f.Close()
+	var got map[string]any
+	if err := json.Unmarshal(out, &got); err != nil {
+		t.Fatal(err)
+	}
+	a := got["analysis"].(map[string]any)["brackets"].(map[string]any)["divine"].(map[string]any)
+	cores := a["cores"].([]any)
+	core0 := cores[0].(map[string]any)
+	if core0["tier"] != "pocket-pick" {
+		t.Errorf("tier=%v", core0["tier"])
+	}
+	if core0["climb"] != "scales-up" {
+		t.Errorf("climb=%v", core0["climb"])
+	}
+	if core0["momentum"] != "hidden-gem" {
+		t.Errorf("momentum=%v", core0["momentum"])
+	}
+	if !strings.Contains(string(out), `"wr_history"`) {
+		t.Errorf("no wr_history in output")
+	}
+}
 
-	heroes, err := opendota.ParseHeroStats(f)
+func TestFormatJSON_OmitsPriorSnapshotWhenNil(t *testing.T) {
+	full := analysis.FullAnalysis{Patch: "7.40b", SnapshotDate: time.Now().UTC()}
+	out, err := FormatJSON(nil, full)
 	if err != nil {
-		t.Fatalf("parsing fixture: %v", err)
+		t.Fatal(err)
 	}
-
-	result := analysis.Analyze(heroes, 1000)
-	return heroes, result
-}
-
-func TestFormatReddit_ContainsTitle(t *testing.T) {
-	_, result := loadFixtureAndAnalyze(t)
-	post := format.FormatReddit(result, "April 12, 2026")
-
-	if !strings.Contains(post, "Week of April 12, 2026") {
-		t.Error("post should contain the date in the title")
+	if strings.Contains(string(out), `"prior_snapshot"`) {
+		t.Errorf("prior_snapshot should be omitted when nil")
 	}
 }
 
-func TestFormatReddit_ContainsBracketSections(t *testing.T) {
-	_, result := loadFixtureAndAnalyze(t)
-	post := format.FormatReddit(result, "April 12, 2026")
-
-	for _, name := range []string{"Herald-Guardian", "Crusader-Archon", "Legend-Ancient", "Divine"} {
-		if !strings.Contains(post, name) {
-			t.Errorf("post should contain bracket %q", name)
-		}
-	}
-}
-
-func TestFormatReddit_ContainsSections(t *testing.T) {
-	_, result := loadFixtureAndAnalyze(t)
-	post := format.FormatReddit(result, "April 12, 2026")
-
-	for _, section := range []string{
-		"Best heroes by bracket",
-		"Best support heroes",
-		"Sleeper picks",
-		"Trap picks",
-		"Bracket delta",
-		"Low bracket stompers",
-		"High skill ceiling",
-		"Free MMR",
-	} {
-		if !strings.Contains(post, section) {
-			t.Errorf("post should contain section %q", section)
-		}
-	}
-}
-
-func TestFormatReddit_ContainsFooter(t *testing.T) {
-	_, result := loadFixtureAndAnalyze(t)
-	post := format.FormatReddit(result, "April 12, 2026")
-
-	if !strings.Contains(post, "dota.narrowcast.dev") {
-		t.Error("post should contain static site link")
-	}
-	if !strings.Contains(post, "OpenDota") {
-		t.Error("post should contain OpenDota attribution")
-	}
-}
-
-func TestFormatReddit_ContainsHeroNames(t *testing.T) {
-	_, result := loadFixtureAndAnalyze(t)
-	post := format.FormatReddit(result, "April 12, 2026")
-
-	// Bloodseeker should appear (high WR in low brackets, known stomper)
-	if !strings.Contains(post, "Bloodseeker") {
-		t.Error("post should contain Bloodseeker")
-	}
-}
-
-func TestFormatReddit_ContainsTableHeaders(t *testing.T) {
-	_, result := loadFixtureAndAnalyze(t)
-	post := format.FormatReddit(result, "April 12, 2026")
-
-	if !strings.Contains(post, "| Hero | Win Rate | Pick Rate | Games |") {
-		t.Error("post should contain best heroes table header")
-	}
-}
-
-func TestFormatJSON_ValidJSON(t *testing.T) {
-	heroes, result := loadFixtureAndAnalyze(t)
-	data, err := format.FormatJSON(heroes, result)
+func TestFormatJSON_IncludesPriorSnapshotWhenSet(t *testing.T) {
+	d := time.Date(2026, 4, 16, 0, 0, 0, 0, time.UTC)
+	full := analysis.FullAnalysis{Patch: "7.40b", SnapshotDate: time.Now().UTC(), PriorSnapshot: &d}
+	out, err := FormatJSON(nil, full)
 	if err != nil {
-		t.Fatalf("FormatJSON: %v", err)
+		t.Fatal(err)
 	}
-
-	var parsed map[string]any
-	if err := json.Unmarshal(data, &parsed); err != nil {
-		t.Fatalf("output is not valid JSON: %v", err)
-	}
-}
-
-func TestFormatJSON_HasRequiredFields(t *testing.T) {
-	heroes, result := loadFixtureAndAnalyze(t)
-	data, err := format.FormatJSON(heroes, result)
-	if err != nil {
-		t.Fatalf("FormatJSON: %v", err)
-	}
-
-	var parsed map[string]json.RawMessage
-	if err := json.Unmarshal(data, &parsed); err != nil {
-		t.Fatalf("unmarshal: %v", err)
-	}
-
-	for _, field := range []string{"generated", "heroes", "analysis"} {
-		if _, ok := parsed[field]; !ok {
-			t.Errorf("JSON output missing field %q", field)
-		}
-	}
-}
-
-func TestFormatJSON_HeroCount(t *testing.T) {
-	heroes, result := loadFixtureAndAnalyze(t)
-	data, err := format.FormatJSON(heroes, result)
-	if err != nil {
-		t.Fatalf("FormatJSON: %v", err)
-	}
-
-	var parsed struct {
-		Heroes []json.RawMessage `json:"heroes"`
-	}
-	if err := json.Unmarshal(data, &parsed); err != nil {
-		t.Fatalf("unmarshal: %v", err)
-	}
-
-	// All 10 heroes should be in the output (JSON includes all, not just qualified)
-	if got := len(parsed.Heroes); got != 10 {
-		t.Errorf("expected 10 heroes in JSON, got %d", got)
-	}
-}
-
-func TestFormatJSON_AnalysisBrackets(t *testing.T) {
-	heroes, result := loadFixtureAndAnalyze(t)
-	data, err := format.FormatJSON(heroes, result)
-	if err != nil {
-		t.Fatalf("FormatJSON: %v", err)
-	}
-
-	var parsed struct {
-		Analysis struct {
-			Brackets map[string]json.RawMessage `json:"brackets"`
-			Delta    json.RawMessage            `json:"delta"`
-		} `json:"analysis"`
-	}
-	if err := json.Unmarshal(data, &parsed); err != nil {
-		t.Fatalf("unmarshal: %v", err)
-	}
-
-	for _, key := range []string{"herald_guardian", "crusader_archon", "legend_ancient", "divine"} {
-		if _, ok := parsed.Analysis.Brackets[key]; !ok {
-			t.Errorf("analysis missing bracket %q", key)
-		}
-	}
-
-	if parsed.Analysis.Delta == nil {
-		t.Error("analysis missing delta")
+	if !strings.Contains(string(out), `"prior_snapshot": "2026-04-16"`) {
+		t.Errorf("prior_snapshot missing: %s", out)
 	}
 }
