@@ -1,0 +1,12 @@
+{
+  "data": {
+    "heroStats": {
+      "winWeek": [
+        {"heroId": 1, "week": 2850, "matchCount": 12000, "winCount": 6300},
+        {"heroId": 1, "week": 2849, "matchCount": 11500, "winCount": 5900},
+        {"heroId": 2, "week": 2850, "matchCount": 8000, "winCount": 4100},
+        {"heroId": 2, "week": 2849, "matchCount": 7800, "winCount": 3800}
+      ]
+    }
+  }
+}
