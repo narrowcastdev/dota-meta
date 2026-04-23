@@ -13,7 +13,7 @@ func FormatReddit(result analysis.FullAnalysis, date string) string {
 
 	fmt.Fprintf(&b, "## [Weekly] Heroes that are secretly broken at your rank -- Week of %s\n\n", date)
 
-	fmt.Fprintf(&b, "Every week I pull data from OpenDota (%s picks this week) and break down which heroes are actually winning at each bracket. ", formatNumber(result.TotalMatches))
+	fmt.Fprintf(&b, "Every week I pull data from OpenDota (%s matches this week) and break down which heroes are actually winning at each bracket. ", formatNumber(result.TotalMatches))
 	b.WriteString("The meta looks pretty different depending on where you're playing — a hero dominating Herald might be throwing games in Immortal.\n\n")
 	b.WriteString("Find your bracket below. Heroes need 1000+ picks to qualify so we're not looking at noise.\n\n")
 
@@ -22,15 +22,15 @@ func FormatReddit(result analysis.FullAnalysis, date string) string {
 	b.WriteString("### Best heroes by bracket\n\n")
 	b.WriteString("The highest win rate heroes at your rank right now.\n\n")
 	for _, ba := range result.Brackets {
-		fmt.Fprintf(&b, "**%s:**\n\n", ba.Pair.Name)
+		fmt.Fprintf(&b, "**%s:**\n\n", ba.Bracket.Name)
 		if len(ba.Best) == 0 {
 			b.WriteString("No heroes qualified this week.\n\n")
 			continue
 		}
-		b.WriteString("| Hero | Win Rate | Pick Rate |\n")
-		b.WriteString("|------|----------|----------|\n")
+		b.WriteString("| Hero | Win Rate | Pick Rate | Games |\n")
+		b.WriteString("|------|----------|-----------|-------|\n")
 		for _, s := range ba.Best {
-			fmt.Fprintf(&b, "| %s | %.1f%% | %.1f%% |\n", s.Hero.LocalizedName, s.WinRate, s.PickRate)
+			fmt.Fprintf(&b, "| %s | %.1f%% | %.1f%% | %s |\n", s.Hero.LocalizedName, s.WinRate, s.PickRate, formatNumber(s.Picks))
 		}
 		b.WriteString("\n")
 	}
@@ -38,7 +38,7 @@ func FormatReddit(result analysis.FullAnalysis, date string) string {
 	b.WriteString("### Sleeper picks\n\n")
 	b.WriteString("These heroes are quietly winning but almost nobody is picking them. Free MMR if they fit your playstyle.\n\n")
 	for _, ba := range result.Brackets {
-		fmt.Fprintf(&b, "**%s:** ", ba.Pair.Name)
+		fmt.Fprintf(&b, "**%s:** ", ba.Bracket.Name)
 		if len(ba.Sleepers) == 0 {
 			b.WriteString("None this week.\n\n")
 			continue
@@ -51,10 +51,26 @@ func FormatReddit(result analysis.FullAnalysis, date string) string {
 		b.WriteString("\n\n")
 	}
 
+	b.WriteString("### Best support heroes\n\n")
+	b.WriteString("Top 5 supports by win rate per bracket. Role tags come from OpenDota's hero metadata, not actual in-game position — flex picks (Visage, Underlord, etc.) can legitimately land here since they're played pos 4/5 in some metas.\n\n")
+	for _, ba := range result.Brackets {
+		fmt.Fprintf(&b, "**%s:**\n\n", ba.Bracket.Name)
+		if len(ba.Supports) == 0 {
+			b.WriteString("No supports qualified this week.\n\n")
+			continue
+		}
+		b.WriteString("| Hero | Win Rate | Pick Rate | Games |\n")
+		b.WriteString("|------|----------|-----------|-------|\n")
+		for _, s := range ba.Supports {
+			fmt.Fprintf(&b, "| %s | %.1f%% | %.1f%% | %s |\n", s.Hero.LocalizedName, s.WinRate, s.PickRate, formatNumber(s.Picks))
+		}
+		b.WriteString("\n")
+	}
+
 	b.WriteString("### Trap picks\n\n")
 	b.WriteString("Popular heroes that are actually losing more than they win. You're seeing these every game but they're not pulling their weight.\n\n")
 	for _, ba := range result.Brackets {
-		fmt.Fprintf(&b, "**%s:** ", ba.Pair.Name)
+		fmt.Fprintf(&b, "**%s:** ", ba.Bracket.Name)
 		if len(ba.Traps) == 0 {
 			b.WriteString("None this week.\n\n")
 			continue
@@ -70,24 +86,24 @@ func FormatReddit(result analysis.FullAnalysis, date string) string {
 	b.WriteString("### Bracket delta\n\n")
 	b.WriteString("Same hero, completely different results depending on rank.\n\n")
 
-	b.WriteString("**Low bracket stompers** — these heroes feast in Herald-Guardian but fall off hard at higher ranks:\n\n")
+	b.WriteString("**Low bracket stompers** — these heroes feast in Herald-Guardian but fall off hard at Divine:\n\n")
 	if len(result.LowStompers) == 0 {
 		b.WriteString("None this week.\n\n")
 	} else {
-		b.WriteString("| Hero | Herald-Guardian WR | Divine-Immortal WR | Gap |\n")
-		b.WriteString("|------|-------------------|-------------------|-----|\n")
+		b.WriteString("| Hero | Herald-Guardian WR | Divine WR | Gap |\n")
+		b.WriteString("|------|-------------------|-----------|-----|\n")
 		for _, d := range result.LowStompers {
 			fmt.Fprintf(&b, "| %s | %.1f%% | %.1f%% | +%.1f%% |\n", d.Hero.LocalizedName, d.LowWR, d.HighWR, d.Delta)
 		}
 		b.WriteString("\n")
 	}
 
-	b.WriteString("**High skill ceiling** — these heroes look bad in low ranks but become monsters in the right hands:\n\n")
+	b.WriteString("**High skill ceiling** — these heroes look bad in low ranks but become monsters at Divine:\n\n")
 	if len(result.HighSkillCap) == 0 {
 		b.WriteString("None this week.\n\n")
 	} else {
-		b.WriteString("| Hero | Herald-Guardian WR | Divine-Immortal WR | Gap |\n")
-		b.WriteString("|------|-------------------|-------------------|-----|\n")
+		b.WriteString("| Hero | Herald-Guardian WR | Divine WR | Gap |\n")
+		b.WriteString("|------|-------------------|-----------|-----|\n")
 		for _, d := range result.HighSkillCap {
 			fmt.Fprintf(&b, "| %s | %.1f%% | %.1f%% | +%.1f%% |\n", d.Hero.LocalizedName, d.LowWR, d.HighWR, -d.Delta)
 		}

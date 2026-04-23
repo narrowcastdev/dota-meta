@@ -41,7 +41,7 @@ func TestAnalyze_MinPicksFilter(t *testing.T) {
 	for _, ba := range result.Brackets {
 		for _, best := range ba.Best {
 			if best.Hero.LocalizedName == "Bane" {
-				t.Errorf("Bane should be filtered out with minPicks=1000 in %s", ba.Pair.Name)
+				t.Errorf("Bane should be filtered out with minPicks=1000 in %s", ba.Bracket.Name)
 			}
 		}
 	}
@@ -79,7 +79,7 @@ func TestAnalyze_BestHeroesSortedByWinRate(t *testing.T) {
 		for i := 1; i < len(ba.Best); i++ {
 			if ba.Best[i].WinRate > ba.Best[i-1].WinRate {
 				t.Errorf("%s: best heroes not sorted by WR descending at index %d: %.2f > %.2f",
-					ba.Pair.Name, i, ba.Best[i].WinRate, ba.Best[i-1].WinRate)
+					ba.Bracket.Name, i, ba.Best[i].WinRate, ba.Best[i-1].WinRate)
 			}
 		}
 	}
@@ -91,7 +91,7 @@ func TestAnalyze_BestHeroesMaxFive(t *testing.T) {
 
 	for _, ba := range result.Brackets {
 		if len(ba.Best) > 5 {
-			t.Errorf("%s: expected at most 5 best heroes, got %d", ba.Pair.Name, len(ba.Best))
+			t.Errorf("%s: expected at most 5 best heroes, got %d", ba.Bracket.Name, len(ba.Best))
 		}
 	}
 }
@@ -104,7 +104,7 @@ func TestAnalyze_SleeperPickThresholds(t *testing.T) {
 		for _, s := range ba.Sleepers {
 			if s.WinRate < 53 {
 				t.Errorf("%s: sleeper %s has WR %.2f < 53%%",
-					ba.Pair.Name, s.Hero.LocalizedName, s.WinRate)
+					ba.Bracket.Name, s.Hero.LocalizedName, s.WinRate)
 			}
 		}
 	}
@@ -118,7 +118,7 @@ func TestAnalyze_TrapPickThresholds(t *testing.T) {
 		for _, s := range ba.Traps {
 			if s.WinRate >= 48 {
 				t.Errorf("%s: trap %s has WR %.2f >= 48%%",
-					ba.Pair.Name, s.Hero.LocalizedName, s.WinRate)
+					ba.Bracket.Name, s.Hero.LocalizedName, s.WinRate)
 			}
 		}
 	}

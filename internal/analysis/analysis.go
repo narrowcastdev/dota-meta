@@ -6,43 +6,54 @@ import (
 	"github.com/narrowcastdev/dota-meta/internal/api"
 )
 
-// BracketPair represents two adjacent brackets combined for analysis.
-type BracketPair struct {
-	Name     string
-	Brackets [2]int // indices into BracketPick/BracketWin (0-indexed)
+// picksPerMatch is how many hero picks OpenDota counts per match (5 per team x 2).
+const picksPerMatch = 10
+
+// Bracket groups one or more OpenDota skill brackets into a single analysis bucket.
+type Bracket struct {
+	Name    string
+	Indices []int // 0-indexed into Hero.BracketPick/BracketWin (0=Herald ... 7=Immortal)
 }
 
-// BracketPairs defines the four bracket pairs used for analysis.
-var BracketPairs = []BracketPair{
-	{Name: "Herald-Guardian", Brackets: [2]int{0, 1}},
-	{Name: "Crusader-Archon", Brackets: [2]int{2, 3}},
-	{Name: "Legend-Ancient", Brackets: [2]int{4, 5}},
-	{Name: "Divine-Immortal", Brackets: [2]int{6, 7}},
+// Brackets defines the analysis buckets. The OpenDota heroStats endpoint's
+// bracket 8 (Immortal) is empty, so Divine (index 6) is effectively the top
+// bucket; index 7 is kept in the sum as a no-op in case the feed ever fills it.
+var Brackets = []Bracket{
+	{Name: "Herald-Guardian", Indices: []int{0, 1}},
+	{Name: "Crusader-Archon", Indices: []int{2, 3}},
+	{Name: "Legend-Ancient", Indices: []int{4, 5}},
+	{Name: "Divine", Indices: []int{6, 7}},
 }
 
-// HeroStat holds computed stats for one hero in one bracket pair.
+// HeroStat holds computed stats for one hero in one bracket.
 type HeroStat struct {
 	Hero     api.Hero
 	WinRate  float64
-	PickRate float64
+	PickRate float64 // % of matches in this bracket where the hero was picked
 	Picks    int
 	Wins     int
 }
 
-// BracketAnalysis holds all analysis results for one bracket pair.
+// BracketAnalysis holds all analysis results for one bracket.
 type BracketAnalysis struct {
-	Pair       BracketPair
+	Bracket    Bracket
 	Best       []HeroStat
 	Sleepers   []HeroStat
 	Traps      []HeroStat
-	TotalPicks int
+	Supports   []HeroStat // Top 5 heroes tagged with "Support" role by win rate
+	TotalPicks int        // sum of all hero picks in this bracket (≈ 10 × matches)
+}
+
+// Matches returns the approximate match count for this bracket.
+func (ba BracketAnalysis) Matches() int {
+	return ba.TotalPicks / picksPerMatch
 }
 
 // DeltaHero holds bracket delta data for one hero.
 type DeltaHero struct {
 	Hero   api.Hero
 	LowWR  float64 // Herald-Guardian win rate
-	HighWR float64 // Divine-Immortal win rate
+	HighWR float64 // Immortal win rate
 	Delta  float64 // LowWR - HighWR (positive = stronger in low brackets)
 }
 
@@ -51,46 +62,53 @@ type FullAnalysis struct {
 	Brackets     []BracketAnalysis
 	LowStompers  []DeltaHero // Heroes stronger in low brackets
 	HighSkillCap []DeltaHero // Heroes stronger in high brackets
-	TotalMatches int
+	TotalMatches int         // sum of matches across all buckets
 }
 
 // Analyze runs the full analysis on all heroes.
 func Analyze(heroes []api.Hero, minPicks int) FullAnalysis {
 	var result FullAnalysis
 
-	for _, pair := range BracketPairs {
-		ba := analyzeBracketPair(heroes, pair, minPicks)
+	for _, bracket := range Brackets {
+		ba := analyzeBracket(heroes, bracket, minPicks)
 		result.Brackets = append(result.Brackets, ba)
-		result.TotalMatches += ba.TotalPicks
+		result.TotalMatches += ba.Matches()
 	}
-
-	// Total matches is total picks / 2 (each match has 10 picks but heroStats
-	// counts per-hero, so total picks across all heroes / 10 * 5 teams...
-	// actually total picks is just total hero selections. Divide by 10 for matches.
-	// Keep as total picks for display — it's more impressive and accurate.
 
 	result.LowStompers, result.HighSkillCap = analyzeBracketDelta(heroes, minPicks)
 
 	return result
 }
 
-func analyzeBracketPair(heroes []api.Hero, pair BracketPair, minPicks int) BracketAnalysis {
-	b1, b2 := pair.Brackets[0], pair.Brackets[1]
+func sumIndices(values [8]int, indices []int) int {
+	var total int
+	for _, i := range indices {
+		total += values[i]
+	}
+	return total
+}
 
+func analyzeBracket(heroes []api.Hero, bracket Bracket, minPicks int) BracketAnalysis {
 	var totalPicks int
 	for _, h := range heroes {
-		totalPicks += h.BracketPick[b1] + h.BracketPick[b2]
+		totalPicks += sumIndices(h.BracketPick, bracket.Indices)
 	}
+
+	matches := totalPicks / picksPerMatch
 
 	var qualified []HeroStat
 	for _, h := range heroes {
-		picks := h.BracketPick[b1] + h.BracketPick[b2]
+		picks := sumIndices(h.BracketPick, bracket.Indices)
 		if picks < minPicks {
 			continue
 		}
-		wins := h.BracketWin[b1] + h.BracketWin[b2]
+		wins := sumIndices(h.BracketWin, bracket.Indices)
 		wr := float64(wins) / float64(picks) * 100
-		pr := float64(picks) / float64(totalPicks) * 100
+
+		var pr float64
+		if matches > 0 {
+			pr = float64(picks) / float64(matches) * 100
+		}
 
 		qualified = append(qualified, HeroStat{
 			Hero:     h,
@@ -102,15 +120,38 @@ func analyzeBracketPair(heroes []api.Hero, pair BracketPair, minPicks int) Brack
 	}
 
 	ba := BracketAnalysis{
-		Pair:       pair,
+		Bracket:    bracket,
 		TotalPicks: totalPicks,
 	}
 
 	ba.Best = bestHeroes(qualified)
 	ba.Sleepers = sleeperPicks(qualified)
 	ba.Traps = trapPicks(qualified)
+	ba.Supports = bestSupports(qualified)
 
 	return ba
+}
+
+// bestSupports returns top 5 heroes by win rate tagged Support but not Carry.
+// OpenDota tags flex heroes like Wraith King with both roles; excluding Carry
+// filters those out since the Support section is meant for pos 4/5 picks.
+func bestSupports(stats []HeroStat) []HeroStat {
+	var filtered []HeroStat
+	for _, s := range stats {
+		var isSupport, isCarry bool
+		for _, r := range s.Hero.Roles {
+			if r == "Support" {
+				isSupport = true
+			}
+			if r == "Carry" {
+				isCarry = true
+			}
+		}
+		if isSupport && !isCarry {
+			filtered = append(filtered, s)
+		}
+	}
+	return bestHeroes(filtered)
 }
 
 // bestHeroes returns the top 5 heroes by win rate.
@@ -192,23 +233,20 @@ func pickRatePercentile(stats []HeroStat, percentile float64) float64 {
 }
 
 func analyzeBracketDelta(heroes []api.Hero, minPicks int) (lowStompers []DeltaHero, highSkillCap []DeltaHero) {
-	lowPair := BracketPairs[0]  // Herald-Guardian
-	highPair := BracketPairs[3] // Divine-Immortal
-
-	lb1, lb2 := lowPair.Brackets[0], lowPair.Brackets[1]
-	hb1, hb2 := highPair.Brackets[0], highPair.Brackets[1]
+	lowBracket := Brackets[0]                 // Herald-Guardian
+	highBracket := Brackets[len(Brackets)-1]  // Immortal
 
 	var deltas []DeltaHero
 	for _, h := range heroes {
-		lowPicks := h.BracketPick[lb1] + h.BracketPick[lb2]
-		highPicks := h.BracketPick[hb1] + h.BracketPick[hb2]
+		lowPicks := sumIndices(h.BracketPick, lowBracket.Indices)
+		highPicks := sumIndices(h.BracketPick, highBracket.Indices)
 
 		if lowPicks < minPicks || highPicks < minPicks {
 			continue
 		}
 
-		lowWins := h.BracketWin[lb1] + h.BracketWin[lb2]
-		highWins := h.BracketWin[hb1] + h.BracketWin[hb2]
+		lowWins := sumIndices(h.BracketWin, lowBracket.Indices)
+		highWins := sumIndices(h.BracketWin, highBracket.Indices)
 
 		lowWR := float64(lowWins) / float64(lowPicks) * 100
 		highWR := float64(highWins) / float64(highPicks) * 100

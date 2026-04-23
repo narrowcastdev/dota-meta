@@ -33,6 +33,7 @@
       return;
     }
     renderBestHeroes();
+    renderSupports();
     renderSleepers();
     renderTraps();
     renderAllHeroes();
@@ -55,15 +56,13 @@
     });
   }
 
-  function renderBestHeroes() {
-    var tbody = document.querySelector("#best-table tbody");
-    var bracketAnalysis = data.analysis.brackets[currentBracket];
-    if (!bracketAnalysis || !bracketAnalysis.best || bracketAnalysis.best.length === 0) {
-      tbody.innerHTML = '<tr><td colspan="5" class="empty-state">No data</td></tr>';
+  function renderRankedTable(selector, heroes, emptyMsg) {
+    var tbody = document.querySelector(selector);
+    if (!heroes || heroes.length === 0) {
+      tbody.innerHTML = '<tr><td colspan="5" class="empty-state">' + emptyMsg + "</td></tr>";
       return;
     }
-
-    tbody.innerHTML = bracketAnalysis.best
+    tbody.innerHTML = heroes
       .map(function (hero, index) {
         return (
           "<tr>" +
@@ -78,15 +77,13 @@
       .join("");
   }
 
-  function renderSleepers() {
-    var tbody = document.querySelector("#sleepers-table tbody");
-    var bracketAnalysis = data.analysis.brackets[currentBracket];
-    if (!bracketAnalysis || !bracketAnalysis.sleepers || bracketAnalysis.sleepers.length === 0) {
-      tbody.innerHTML = '<tr><td colspan="4" class="empty-state">None this week</td></tr>';
+  function renderSimpleTable(selector, heroes, colspan, emptyMsg) {
+    var tbody = document.querySelector(selector);
+    if (!heroes || heroes.length === 0) {
+      tbody.innerHTML = '<tr><td colspan="' + colspan + '" class="empty-state">' + emptyMsg + "</td></tr>";
       return;
     }
-
-    tbody.innerHTML = bracketAnalysis.sleepers
+    tbody.innerHTML = heroes
       .map(function (hero) {
         return (
           "<tr>" +
@@ -100,26 +97,24 @@
       .join("");
   }
 
-  function renderTraps() {
-    var tbody = document.querySelector("#traps-table tbody");
+  function renderBestHeroes() {
     var bracketAnalysis = data.analysis.brackets[currentBracket];
-    if (!bracketAnalysis || !bracketAnalysis.traps || bracketAnalysis.traps.length === 0) {
-      tbody.innerHTML = '<tr><td colspan="4" class="empty-state">None this week</td></tr>';
-      return;
-    }
+    renderRankedTable("#best-table tbody", bracketAnalysis && bracketAnalysis.best, "No data");
+  }
 
-    tbody.innerHTML = bracketAnalysis.traps
-      .map(function (hero) {
-        return (
-          "<tr>" +
-          "<td>" + hero.name + "</td>" +
-          "<td class=\"" + wrClass(hero.win_rate) + "\">" + hero.win_rate.toFixed(1) + "%</td>" +
-          "<td>" + hero.pick_rate.toFixed(1) + "%</td>" +
-          "<td>" + formatNumber(hero.picks) + "</td>" +
-          "</tr>"
-        );
-      })
-      .join("");
+  function renderSupports() {
+    var bracketAnalysis = data.analysis.brackets[currentBracket];
+    renderRankedTable("#supports-table tbody", bracketAnalysis && bracketAnalysis.supports, "No supports qualified");
+  }
+
+  function renderSleepers() {
+    var bracketAnalysis = data.analysis.brackets[currentBracket];
+    renderSimpleTable("#sleepers-table tbody", bracketAnalysis && bracketAnalysis.sleepers, 4, "None this week");
+  }
+
+  function renderTraps() {
+    var bracketAnalysis = data.analysis.brackets[currentBracket];
+    renderSimpleTable("#traps-table tbody", bracketAnalysis && bracketAnalysis.traps, 4, "None this week");
   }
 
   function renderAllHeroes() {
@@ -133,6 +128,7 @@
         return {
           name: hero.name,
           win_rate: bracket.win_rate,
+          pick_rate: bracket.pick_rate,
           picks: bracket.picks,
         };
       })
@@ -162,13 +158,13 @@
           "<tr>" +
           "<td>" + hero.name + "</td>" +
           "<td class=\"" + wrClass(hero.win_rate) + "\">" + hero.win_rate.toFixed(1) + "%</td>" +
+          "<td>" + hero.pick_rate.toFixed(1) + "%</td>" +
           "<td>" + formatNumber(hero.picks) + "</td>" +
           "</tr>"
         );
       })
       .join("");
 
-    // Update sort indicators
     var headers = document.querySelectorAll("#all-heroes-table th.sortable");
     for (var i = 0; i < headers.length; i++) {
       headers[i].classList.remove("sort-asc", "sort-desc");
@@ -178,7 +174,6 @@
     }
   }
 
-  // Sort click handlers
   document.querySelectorAll("#all-heroes-table th.sortable").forEach(function (th) {
     th.addEventListener("click", function () {
       var key = th.getAttribute("data-sort");

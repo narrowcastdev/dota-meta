@@ -9,22 +9,24 @@ import (
 )
 
 type jsonOutput struct {
-	Generated string           `json:"generated"`
-	Heroes    []jsonHero       `json:"heroes"`
-	Analysis  jsonAnalysis     `json:"analysis"`
+	Generated string       `json:"generated"`
+	Heroes    []jsonHero   `json:"heroes"`
+	Analysis  jsonAnalysis `json:"analysis"`
 }
 
 type jsonHero struct {
-	Name        string                    `json:"name"`
-	PrimaryAttr string                    `json:"primary_attr"`
-	AttackType  string                    `json:"attack_type"`
+	Name        string                     `json:"name"`
+	PrimaryAttr string                     `json:"primary_attr"`
+	AttackType  string                     `json:"attack_type"`
+	Roles       []string                   `json:"roles"`
 	Brackets    map[string]jsonBracketStat `json:"brackets"`
 }
 
 type jsonBracketStat struct {
-	Picks   int     `json:"picks"`
-	Wins    int     `json:"wins"`
-	WinRate float64 `json:"win_rate"`
+	Picks    int     `json:"picks"`
+	Wins     int     `json:"wins"`
+	WinRate  float64 `json:"win_rate"`
+	PickRate float64 `json:"pick_rate"`
 }
 
 type jsonAnalysis struct {
@@ -36,6 +38,7 @@ type jsonBracketAnalysis struct {
 	Best     []jsonHeroStat `json:"best"`
 	Sleepers []jsonHeroStat `json:"sleepers"`
 	Traps    []jsonHeroStat `json:"traps"`
+	Supports []jsonHeroStat `json:"supports"`
 }
 
 type jsonHeroStat struct {
@@ -46,7 +49,7 @@ type jsonHeroStat struct {
 }
 
 type jsonDelta struct {
-	LowStompers    []jsonDeltaHero `json:"low_stompers"`
+	LowStompers     []jsonDeltaHero `json:"low_stompers"`
 	HighSkillCeiling []jsonDeltaHero `json:"high_skill_ceiling"`
 }
 
@@ -60,46 +63,58 @@ type jsonDeltaHero struct {
 var bracketKeyMap = map[string]string{
 	"Herald-Guardian": "herald_guardian",
 	"Crusader-Archon": "crusader_archon",
-	"Legend-Ancient":   "legend_ancient",
-	"Divine-Immortal": "divine_immortal",
+	"Legend-Ancient":  "legend_ancient",
+	"Divine":          "divine",
 }
 
 // FormatJSON generates a JSON output suitable for the static site.
 func FormatJSON(heroes []api.Hero, result analysis.FullAnalysis) ([]byte, error) {
+	bracketMatches := make(map[string]int, len(result.Brackets))
+	for _, ba := range result.Brackets {
+		bracketMatches[ba.Bracket.Name] = ba.Matches()
+	}
+
 	output := jsonOutput{
 		Generated: time.Now().UTC().Format(time.RFC3339),
-		Heroes:    buildJSONHeroes(heroes),
+		Heroes:    buildJSONHeroes(heroes, bracketMatches),
 		Analysis:  buildJSONAnalysis(result),
 	}
 
 	return json.MarshalIndent(output, "", "  ")
 }
 
-func buildJSONHeroes(heroes []api.Hero) []jsonHero {
+func buildJSONHeroes(heroes []api.Hero, bracketMatches map[string]int) []jsonHero {
 	out := make([]jsonHero, 0, len(heroes))
 	for _, h := range heroes {
 		jh := jsonHero{
 			Name:        h.LocalizedName,
 			PrimaryAttr: h.PrimaryAttr,
 			AttackType:  h.AttackType,
+			Roles:       h.Roles,
 			Brackets:    make(map[string]jsonBracketStat),
 		}
 
-		for _, pair := range analysis.BracketPairs {
-			key := bracketKeyMap[pair.Name]
-			b1, b2 := pair.Brackets[0], pair.Brackets[1]
-			picks := h.BracketPick[b1] + h.BracketPick[b2]
-			wins := h.BracketWin[b1] + h.BracketWin[b2]
+		for _, bracket := range analysis.Brackets {
+			key := bracketKeyMap[bracket.Name]
+			var picks, wins int
+			for _, i := range bracket.Indices {
+				picks += h.BracketPick[i]
+				wins += h.BracketWin[i]
+			}
 
-			var wr float64
+			var wr, pr float64
 			if picks > 0 {
 				wr = float64(wins) / float64(picks) * 100
 			}
+			if matches := bracketMatches[bracket.Name]; matches > 0 {
+				pr = float64(picks) / float64(matches) * 100
+			}
 
 			jh.Brackets[key] = jsonBracketStat{
-				Picks:   picks,
-				Wins:    wins,
-				WinRate: wr,
+				Picks:    picks,
+				Wins:     wins,
+				WinRate:  wr,
+				PickRate: pr,
 			}
 		}
 
@@ -114,11 +129,12 @@ func buildJSONAnalysis(result analysis.FullAnalysis) jsonAnalysis {
 	}
 
 	for _, ba := range result.Brackets {
-		key := bracketKeyMap[ba.Pair.Name]
+		key := bracketKeyMap[ba.Bracket.Name]
 		ja.Brackets[key] = jsonBracketAnalysis{
 			Best:     heroStatsToJSON(ba.Best),
 			Sleepers: heroStatsToJSON(ba.Sleepers),
 			Traps:    heroStatsToJSON(ba.Traps),
+			Supports: heroStatsToJSON(ba.Supports),
 		}
 	}
 

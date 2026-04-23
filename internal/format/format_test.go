@@ -41,7 +41,7 @@ func TestFormatReddit_ContainsBracketSections(t *testing.T) {
 	_, result := loadFixtureAndAnalyze(t)
 	post := format.FormatReddit(result, "April 12, 2026")
 
-	for _, name := range []string{"Herald-Guardian", "Crusader-Archon", "Legend-Ancient", "Divine-Immortal"} {
+	for _, name := range []string{"Herald-Guardian", "Crusader-Archon", "Legend-Ancient", "Divine"} {
 		if !strings.Contains(post, name) {
 			t.Errorf("post should contain bracket %q", name)
 		}
@@ -54,6 +54,7 @@ func TestFormatReddit_ContainsSections(t *testing.T) {
 
 	for _, section := range []string{
 		"Best heroes by bracket",
+		"Best support heroes",
 		"Sleeper picks",
 		"Trap picks",
 		"Bracket delta",
@@ -93,7 +94,7 @@ func TestFormatReddit_ContainsTableHeaders(t *testing.T) {
 	_, result := loadFixtureAndAnalyze(t)
 	post := format.FormatReddit(result, "April 12, 2026")
 
-	if !strings.Contains(post, "| Hero | Win Rate | Pick Rate |") {
+	if !strings.Contains(post, "| Hero | Win Rate | Pick Rate | Games |") {
 		t.Error("post should contain best heroes table header")
 	}
 }
@@ -167,7 +168,7 @@ func TestFormatJSON_AnalysisBrackets(t *testing.T) {
 		t.Fatalf("unmarshal: %v", err)
 	}
 
-	for _, key := range []string{"herald_guardian", "crusader_archon", "legend_ancient", "divine_immortal"} {
+	for _, key := range []string{"herald_guardian", "crusader_archon", "legend_ancient", "divine"} {
 		if _, ok := parsed.Analysis.Brackets[key]; !ok {
 			t.Errorf("analysis missing bracket %q", key)
 		}

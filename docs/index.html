@@ -19,7 +19,7 @@
         <option value="herald_guardian">Herald-Guardian</option>
         <option value="crusader_archon">Crusader-Archon</option>
         <option value="legend_ancient" selected>Legend-Ancient</option>
-        <option value="divine_immortal">Divine-Immortal</option>
+        <option value="divine">Divine</option>
       </select>
     </div>
 
@@ -28,6 +28,25 @@
       <p class="section-desc">Top 5 by win rate (1000+ picks required)</p>
       <div class="table-wrap">
         <table id="best-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Hero</th>
+              <th>Win Rate</th>
+              <th>Pick Rate</th>
+              <th>Picks</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="supports-section">
+      <h2>Best Support Heroes</h2>
+      <p class="section-desc">Top 5 supports by win rate (1000+ picks required). Role tags from OpenDota metadata, not in-game position — flex heroes (Visage, Underlord) can appear.</p>
+      <div class="table-wrap">
+        <table id="supports-table">
           <thead>
             <tr>
               <th>#</th>
@@ -87,6 +106,7 @@
             <tr>
               <th class="sortable" data-sort="name">Hero</th>
               <th class="sortable" data-sort="win_rate">Win Rate</th>
+              <th class="sortable" data-sort="pick_rate">Pick Rate</th>
               <th class="sortable" data-sort="picks">Picks</th>
             </tr>
           </thead>
@@ -97,17 +117,17 @@
 
     <section id="delta-section">
       <h2>Bracket Delta</h2>
-      <p class="section-desc">Win rate difference between Herald-Guardian and Divine-Immortal</p>
+      <p class="section-desc">Win rate difference between Herald-Guardian and Divine</p>
 
       <h3>Low Bracket Stompers</h3>
-      <p class="section-desc">Much higher WR in Herald-Guardian than Divine-Immortal</p>
+      <p class="section-desc">Much higher WR in Herald-Guardian than Divine</p>
       <div class="table-wrap">
         <table id="low-stompers-table">
           <thead>
             <tr>
               <th>Hero</th>
               <th>Herald-Guardian WR</th>
-              <th>Divine-Immortal WR</th>
+              <th>Divine WR</th>
               <th>Difference</th>
             </tr>
           </thead>
@@ -116,14 +136,14 @@
       </div>
 
       <h3>High Skill Ceiling</h3>
-      <p class="section-desc">Much higher WR in Divine-Immortal than Herald-Guardian</p>
+      <p class="section-desc">Much higher WR in Divine than Herald-Guardian</p>
       <div class="table-wrap">
         <table id="high-ceiling-table">
           <thead>
             <tr>
               <th>Hero</th>
               <th>Herald-Guardian WR</th>
-              <th>Divine-Immortal WR</th>
+              <th>Divine WR</th>
               <th>Difference</th>
             </tr>
           </thead>

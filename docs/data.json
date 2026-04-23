@@ -1,30 +1,39 @@
 {
-  "generated": "2026-04-22T13:45:25Z",
+  "generated": "2026-04-23T01:39:34Z",
   "heroes": [
     {
       "name": "Anti-Mage",
       "primary_attr": "agi",
       "attack_type": "Melee",
+      "roles": [
+        "Carry",
+        "Escape",
+        "Nuker"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 130229,
-          "wins": 63447,
-          "win_rate": 48.71956323092399
+          "picks": 126977,
+          "wins": 61884,
+          "win_rate": 48.73638532962662,
+          "pick_rate": 12.147723946065817
         },
-        "divine_immortal": {
-          "picks": 19708,
-          "wins": 9457,
-          "win_rate": 47.9855896082809
+        "divine": {
+          "picks": 19063,
+          "wins": 9143,
+          "win_rate": 47.96202066831034,
+          "pick_rate": 7.414105585762179
         },
         "herald_guardian": {
-          "picks": 109768,
-          "wins": 54221,
-          "win_rate": 49.39599883390424
+          "picks": 106699,
+          "wins": 52897,
+          "win_rate": 49.575909802341165,
+          "pick_rate": 13.588697968935461
         },
         "legend_ancient": {
-          "picks": 61093,
-          "wins": 29551,
-          "win_rate": 48.37051708051659
+          "picks": 59563,
+          "wins": 28889,
+          "win_rate": 48.50158655541192,
+          "pick_rate": 9.547448718709076
         }
       }
     },
@@ -32,26 +41,36 @@
       "name": "Axe",
       "primary_attr": "str",
       "attack_type": "Melee",
+      "roles": [
+        "Initiator",
+        "Durable",
+        "Disabler",
+        "Carry"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 190184,
-          "wins": 100237,
-          "win_rate": 52.70527489168384
+          "picks": 184630,
+          "wins": 97249,
+          "win_rate": 52.67237177056816,
+          "pick_rate": 17.663311246620502
         },
-        "divine_immortal": {
-          "picks": 36950,
-          "wins": 18923,
-          "win_rate": 51.21244925575101
+        "divine": {
+          "picks": 35602,
+          "wins": 18227,
+          "win_rate": 51.19656199089939,
+          "pick_rate": 13.846560723092121
         },
         "herald_guardian": {
-          "picks": 143994,
-          "wins": 76998,
-          "win_rate": 53.47306137755739
+          "picks": 139354,
+          "wins": 74542,
+          "win_rate": 53.49110897426698,
+          "pick_rate": 17.747489824300438
         },
         "legend_ancient": {
-          "picks": 105129,
-          "wins": 54344,
-          "win_rate": 51.692682323621455
+          "picks": 101825,
+          "wins": 52621,
+          "win_rate": 51.67787871347901,
+          "pick_rate": 16.321692422855662
         }
       }
     },
@@ -59,26 +78,36 @@
       "name": "Bane",
       "primary_attr": "all",
       "attack_type": "Ranged",
+      "roles": [
+        "Support",
+        "Disabler",
+        "Nuker",
+        "Durable"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 25257,
-          "wins": 12677,
-          "win_rate": 50.19202597299759
+          "picks": 24556,
+          "wins": 12340,
+          "win_rate": 50.252484117934515,
+          "pick_rate": 2.3492404862265777
         },
-        "divine_immortal": {
-          "picks": 8203,
-          "wins": 4342,
-          "win_rate": 52.931854199683045
+        "divine": {
+          "picks": 7990,
+          "wins": 4228,
+          "win_rate": 52.91614518147685,
+          "pick_rate": 3.1075226160751095
         },
         "herald_guardian": {
-          "picks": 19681,
-          "wins": 9653,
-          "win_rate": 49.047304506884814
+          "picks": 19128,
+          "wins": 9332,
+          "win_rate": 48.78711836051861,
+          "pick_rate": 2.4360548341577473
         },
         "legend_ancient": {
-          "picks": 16532,
-          "wins": 8535,
-          "win_rate": 51.62714735059279
+          "picks": 16176,
+          "wins": 8365,
+          "win_rate": 51.7124134520277,
+          "pick_rate": 2.59287696176885
         }
       }
     },
@@ -86,26 +115,36 @@
       "name": "Bloodseeker",
       "primary_attr": "agi",
       "attack_type": "Melee",
+      "roles": [
+        "Carry",
+        "Disabler",
+        "Nuker",
+        "Initiator"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 44784,
-          "wins": 23586,
-          "win_rate": 52.666130760986064
+          "picks": 43445,
+          "wins": 22911,
+          "win_rate": 52.73564276671654,
+          "pick_rate": 4.15632647516345
         },
-        "divine_immortal": {
-          "picks": 7940,
-          "wins": 4174,
-          "win_rate": 52.569269521410575
+        "divine": {
+          "picks": 7585,
+          "wins": 3982,
+          "win_rate": 52.49835201054714,
+          "pick_rate": 2.9500073896032175
         },
         "herald_guardian": {
-          "picks": 52729,
-          "wins": 27674,
-          "win_rate": 52.4834531282596
+          "picks": 51289,
+          "wins": 26746,
+          "win_rate": 52.1476339955936,
+          "pick_rate": 6.531933102735085
         },
         "legend_ancient": {
-          "picks": 22705,
-          "wins": 12015,
-          "win_rate": 52.91785950231227
+          "picks": 21926,
+          "wins": 11655,
+          "win_rate": 53.156070418681026,
+          "pick_rate": 3.5145536760474654
         }
       }
     },
@@ -113,26 +152,35 @@
       "name": "Crystal Maiden",
       "primary_attr": "int",
       "attack_type": "Ranged",
+      "roles": [
+        "Support",
+        "Disabler",
+        "Nuker"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 132062,
-          "wins": 68030,
-          "win_rate": 51.51368296709121
+          "picks": 128128,
+          "wins": 66046,
+          "win_rate": 51.54689060939061,
+          "pick_rate": 12.25783861456422
         },
-        "divine_immortal": {
-          "picks": 27231,
-          "wins": 13679,
-          "win_rate": 50.23319011420807
+        "divine": {
+          "picks": 26222,
+          "wins": 13159,
+          "win_rate": 50.18305239874914,
+          "pick_rate": 10.198430292706073
         },
         "herald_guardian": {
-          "picks": 114158,
-          "wins": 60359,
-          "win_rate": 52.873210813083624
+          "picks": 110723,
+          "wins": 58363,
+          "win_rate": 52.71081889038412,
+          "pick_rate": 14.10117625483314
         },
         "legend_ancient": {
-          "picks": 73309,
-          "wins": 37263,
-          "win_rate": 50.830048152341455
+          "picks": 70847,
+          "wins": 36022,
+          "win_rate": 50.844778183973915,
+          "pick_rate": 11.356179161129926
         }
       }
     },
@@ -140,26 +188,35 @@
       "name": "Drow Ranger",
       "primary_attr": "agi",
       "attack_type": "Ranged",
+      "roles": [
+        "Carry",
+        "Disabler",
+        "Pusher"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 126755,
-          "wins": 62980,
-          "win_rate": 49.68640290323853
+          "picks": 122965,
+          "wins": 61045,
+          "win_rate": 49.64420770137844,
+          "pick_rate": 11.763901139796838
         },
-        "divine_immortal": {
-          "picks": 24133,
-          "wins": 12389,
-          "win_rate": 51.336344424646754
+        "divine": {
+          "picks": 23218,
+          "wins": 11897,
+          "win_rate": 51.24041691790852,
+          "pick_rate": 9.030095131418259
         },
         "herald_guardian": {
-          "picks": 112814,
-          "wins": 55108,
-          "win_rate": 48.84854716613186
+          "picks": 109568,
+          "wins": 53523,
+          "win_rate": 48.849116530373834,
+          "pick_rate": 13.954080722971355
         },
         "legend_ancient": {
-          "picks": 67221,
-          "wins": 33946,
-          "win_rate": 50.499099983636064
+          "picks": 65118,
+          "wins": 32878,
+          "win_rate": 50.48987991031666,
+          "pick_rate": 10.43786857050346
         }
       }
     },
@@ -167,26 +224,36 @@
       "name": "Earthshaker",
       "primary_attr": "str",
       "attack_type": "Melee",
+      "roles": [
+        "Support",
+        "Initiator",
+        "Disabler",
+        "Nuker"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 140822,
-          "wins": 70487,
-          "win_rate": 50.053968840096005
+          "picks": 136749,
+          "wins": 68419,
+          "win_rate": 50.03254137141771,
+          "pick_rate": 13.082598438304217
         },
-        "divine_immortal": {
-          "picks": 31098,
-          "wins": 15581,
-          "win_rate": 50.10290050807126
+        "divine": {
+          "picks": 30012,
+          "wins": 15023,
+          "win_rate": 50.05664400906304,
+          "pick_rate": 11.672461671294892
         },
         "herald_guardian": {
-          "picks": 108285,
-          "wins": 53586,
-          "win_rate": 49.486078404211106
+          "picks": 105100,
+          "wins": 51953,
+          "win_rate": 49.43196955280685,
+          "pick_rate": 13.38505662222811
         },
         "legend_ancient": {
-          "picks": 83040,
-          "wins": 41658,
-          "win_rate": 50.16618497109827
+          "picks": 80624,
+          "wins": 40503,
+          "win_rate": 50.2369021631276,
+          "pick_rate": 12.92335015860854
         }
       }
     },
@@ -194,26 +261,35 @@
       "name": "Juggernaut",
       "primary_attr": "agi",
       "attack_type": "Melee",
+      "roles": [
+        "Carry",
+        "Pusher",
+        "Escape"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 164122,
-          "wins": 84724,
-          "win_rate": 51.622573451456844
+          "picks": 158277,
+          "wins": 81650,
+          "win_rate": 51.58677508418785,
+          "pick_rate": 15.142154114614925
         },
-        "divine_immortal": {
-          "picks": 29056,
-          "wins": 14923,
-          "win_rate": 51.35944383259912
+        "divine": {
+          "picks": 27770,
+          "wins": 14282,
+          "win_rate": 51.42960028808067,
+          "pick_rate": 10.800488491665305
         },
         "herald_guardian": {
-          "picks": 128194,
-          "wins": 65589,
-          "win_rate": 51.1638610231368
+          "picks": 123259,
+          "wins": 63031,
+          "win_rate": 51.13703664641122,
+          "pick_rate": 15.697704036148568
         },
         "legend_ancient": {
-          "picks": 87557,
-          "wins": 44984,
-          "win_rate": 51.3768173875304
+          "picks": 84233,
+          "wins": 43230,
+          "win_rate": 51.32192846034215,
+          "pick_rate": 13.501842551970544
         }
       }
     },
@@ -221,26 +297,37 @@
       "name": "Mirana",
       "primary_attr": "agi",
       "attack_type": "Ranged",
+      "roles": [
+        "Carry",
+        "Support",
+        "Escape",
+        "Nuker",
+        "Disabler"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 76629,
-          "wins": 38419,
-          "win_rate": 50.13637134766211
+          "picks": 74071,
+          "wins": 37184,
+          "win_rate": 50.200483320057785,
+          "pick_rate": 7.086275942958498
         },
-        "divine_immortal": {
-          "picks": 16389,
-          "wins": 8056,
-          "win_rate": 49.15492098358655
+        "divine": {
+          "picks": 15595,
+          "wins": 7711,
+          "win_rate": 49.44533504328311,
+          "pick_rate": 6.065308535380643
         },
         "herald_guardian": {
-          "picks": 57431,
-          "wins": 29034,
-          "win_rate": 50.55457853772353
+          "picks": 55303,
+          "wins": 28061,
+          "win_rate": 50.74046615915954,
+          "pick_rate": 7.043137834244349
         },
         "legend_ancient": {
-          "picks": 44613,
-          "wins": 22234,
-          "win_rate": 49.83749131419093
+          "picks": 42942,
+          "wins": 21436,
+          "win_rate": 49.91849471380001,
+          "pick_rate": 6.883241993835185
         }
       }
     },
@@ -248,26 +335,37 @@
       "name": "Morphling",
       "primary_attr": "agi",
       "attack_type": "Ranged",
+      "roles": [
+        "Carry",
+        "Escape",
+        "Durable",
+        "Nuker",
+        "Disabler"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 40866,
-          "wins": 19151,
-          "win_rate": 46.86291782900211
+          "picks": 39495,
+          "wins": 18507,
+          "win_rate": 46.859096088112416,
+          "pick_rate": 3.7784351280142814
         },
-        "divine_immortal": {
-          "picks": 11687,
-          "wins": 5505,
-          "win_rate": 47.103619406177806
+        "divine": {
+          "picks": 11117,
+          "wins": 5250,
+          "win_rate": 47.22497076549429,
+          "pick_rate": 4.323695735032164
         },
         "herald_guardian": {
-          "picks": 32429,
-          "wins": 15285,
-          "win_rate": 47.13373832063893
+          "picks": 31427,
+          "wins": 14844,
+          "win_rate": 47.233270754446814,
+          "pick_rate": 4.002399376467772
         },
         "legend_ancient": {
-          "picks": 24179,
-          "wins": 11110,
-          "win_rate": 45.94896397700484
+          "picks": 23181,
+          "wins": 10661,
+          "win_rate": 45.99025063629697,
+          "pick_rate": 3.7157196371639287
         }
       }
     },
@@ -275,26 +373,34 @@
       "name": "Shadow Fiend",
       "primary_attr": "agi",
       "attack_type": "Ranged",
+      "roles": [
+        "Carry",
+        "Nuker"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 134513,
-          "wins": 63773,
-          "win_rate": 47.41028748150736
+          "picks": 130583,
+          "wins": 61863,
+          "win_rate": 47.37446681421012,
+          "pick_rate": 12.492705261969588
         },
-        "divine_immortal": {
-          "picks": 29144,
-          "wins": 13842,
-          "win_rate": 47.49519626681307
+        "divine": {
+          "picks": 28055,
+          "wins": 13321,
+          "win_rate": 47.48173231153092,
+          "pick_rate": 10.911332539923304
         },
         "herald_guardian": {
-          "picks": 103274,
-          "wins": 49183,
-          "win_rate": 47.62379688982706
+          "picks": 100486,
+          "wins": 47843,
+          "win_rate": 47.611607587126564,
+          "pick_rate": 12.797438627414023
         },
         "legend_ancient": {
-          "picks": 76595,
-          "wins": 36378,
-          "win_rate": 47.49396174685032
+          "picks": 73966,
+          "wins": 35068,
+          "win_rate": 47.410972609036584,
+          "pick_rate": 11.856128669275146
         }
       }
     },
@@ -302,26 +408,36 @@
       "name": "Phantom Lancer",
       "primary_attr": "agi",
       "attack_type": "Melee",
+      "roles": [
+        "Carry",
+        "Escape",
+        "Pusher",
+        "Nuker"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 103857,
-          "wins": 54747,
-          "win_rate": 52.71382766688812
+          "picks": 100364,
+          "wins": 52969,
+          "win_rate": 52.77689211270974,
+          "pick_rate": 9.60169295323523
         },
-        "divine_immortal": {
-          "picks": 25198,
-          "wins": 13186,
-          "win_rate": 52.32954996428288
+        "divine": {
+          "picks": 24094,
+          "wins": 12630,
+          "win_rate": 52.41968954926538,
+          "pick_rate": 9.370794732379686
         },
         "herald_guardian": {
-          "picks": 91514,
-          "wins": 48140,
-          "win_rate": 52.603973162576224
+          "picks": 88826,
+          "wins": 46803,
+          "win_rate": 52.69065363744849,
+          "pick_rate": 11.312474210523634
         },
         "legend_ancient": {
-          "picks": 56483,
-          "wins": 29747,
-          "win_rate": 52.665403749800824
+          "picks": 54339,
+          "wins": 28691,
+          "win_rate": 52.80001472239092,
+          "pick_rate": 8.710085387336642
         }
       }
     },
@@ -329,26 +445,36 @@
       "name": "Puck",
       "primary_attr": "int",
       "attack_type": "Ranged",
+      "roles": [
+        "Initiator",
+        "Disabler",
+        "Escape",
+        "Nuker"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 46951,
-          "wins": 21638,
-          "win_rate": 46.086345338757425
+          "picks": 45343,
+          "wins": 20912,
+          "win_rate": 46.11957744304524,
+          "pick_rate": 4.337905659186013
         },
-        "divine_immortal": {
-          "picks": 17294,
-          "wins": 8491,
-          "win_rate": 49.09795304729964
+        "divine": {
+          "picks": 16552,
+          "wins": 8128,
+          "win_rate": 49.10584823586274,
+          "pick_rate": 6.437511181636448
         },
         "herald_guardian": {
-          "picks": 28414,
-          "wins": 12839,
-          "win_rate": 45.18547195044697
+          "picks": 27431,
+          "wins": 12348,
+          "win_rate": 45.0147643177427,
+          "pick_rate": 3.493487042857652
         },
         "legend_ancient": {
-          "picks": 34300,
-          "wins": 16508,
-          "win_rate": 48.12827988338192
+          "picks": 33017,
+          "wins": 15855,
+          "win_rate": 48.02071660053912,
+          "pick_rate": 5.292347839189053
         }
       }
     },
@@ -356,26 +482,36 @@
       "name": "Pudge",
       "primary_attr": "str",
       "attack_type": "Melee",
+      "roles": [
+        "Disabler",
+        "Initiator",
+        "Durable",
+        "Nuker"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 293234,
-          "wins": 148677,
-          "win_rate": 50.70251062291548
+          "picks": 284106,
+          "wins": 143936,
+          "win_rate": 50.66278079308427,
+          "pick_rate": 27.18005039826878
         },
-        "divine_immortal": {
-          "picks": 72008,
-          "wins": 35747,
-          "win_rate": 49.64309521164315
+        "divine": {
+          "picks": 69476,
+          "wins": 34620,
+          "win_rate": 49.830157176578965,
+          "pick_rate": 27.02105647990417
         },
         "herald_guardian": {
-          "picks": 230222,
-          "wins": 117822,
-          "win_rate": 51.177559051697926
+          "picks": 223536,
+          "wins": 114437,
+          "win_rate": 51.19399112447211,
+          "pick_rate": 28.468525376844745
         },
         "legend_ancient": {
-          "picks": 163161,
-          "wins": 81589,
-          "win_rate": 50.005209578269316
+          "picks": 157250,
+          "wins": 78582,
+          "win_rate": 49.97265500794912,
+          "pick_rate": 25.2058544904891
         }
       }
     },
@@ -383,26 +519,36 @@
       "name": "Razor",
       "primary_attr": "agi",
       "attack_type": "Ranged",
+      "roles": [
+        "Carry",
+        "Durable",
+        "Nuker",
+        "Pusher"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 63381,
-          "wins": 31389,
-          "win_rate": 49.524305391205566
+          "picks": 60384,
+          "wins": 29870,
+          "win_rate": 49.46674615792263,
+          "pick_rate": 5.776858507912758
         },
-        "divine_immortal": {
-          "picks": 12912,
-          "wins": 6236,
-          "win_rate": 48.29615861214374
+        "divine": {
+          "picks": 12269,
+          "wins": 5939,
+          "win_rate": 48.40655310131225,
+          "pick_rate": 4.771739045885546
         },
         "herald_guardian": {
-          "picks": 56271,
-          "wins": 27707,
-          "win_rate": 49.238506513123994
+          "picks": 53806,
+          "wins": 26572,
+          "win_rate": 49.38482697096978,
+          "pick_rate": 6.852486742298816
         },
         "legend_ancient": {
-          "picks": 36058,
-          "wins": 17658,
-          "win_rate": 48.97110211326196
+          "picks": 34268,
+          "wins": 16745,
+          "win_rate": 48.86483016225049,
+          "pick_rate": 5.4928726338955824
         }
       }
     },
@@ -410,26 +556,37 @@
       "name": "Sand King",
       "primary_attr": "all",
       "attack_type": "Melee",
+      "roles": [
+        "Initiator",
+        "Disabler",
+        "Support",
+        "Nuker",
+        "Escape"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 67702,
-          "wins": 33326,
-          "win_rate": 49.224542849546545
+          "picks": 65352,
+          "wins": 32150,
+          "win_rate": 49.19512792263435,
+          "pick_rate": 6.252140587061383
         },
-        "divine_immortal": {
-          "picks": 16863,
-          "wins": 7809,
-          "win_rate": 46.30848603451343
+        "divine": {
+          "picks": 16165,
+          "wins": 7476,
+          "win_rate": 46.24806681101145,
+          "pick_rate": 6.286996631896639
         },
         "herald_guardian": {
-          "picks": 52259,
-          "wins": 26777,
-          "win_rate": 51.23902102987046
+          "picks": 50497,
+          "wins": 25854,
+          "win_rate": 51.19908113353269,
+          "pick_rate": 6.43106759517272
         },
         "legend_ancient": {
-          "picks": 41488,
-          "wins": 19998,
-          "win_rate": 48.20188970304666
+          "picks": 39844,
+          "wins": 19207,
+          "win_rate": 48.205501455677144,
+          "pick_rate": 6.386658609342115
         }
       }
     },
@@ -437,26 +594,37 @@
       "name": "Storm Spirit",
       "primary_attr": "int",
       "attack_type": "Ranged",
+      "roles": [
+        "Carry",
+        "Escape",
+        "Nuker",
+        "Initiator",
+        "Disabler"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 71686,
-          "wins": 33449,
-          "win_rate": 46.66043578941495
+          "picks": 69444,
+          "wins": 32273,
+          "win_rate": 46.47341742987155,
+          "pick_rate": 6.643616888968825
         },
-        "divine_immortal": {
-          "picks": 20866,
-          "wins": 9901,
-          "win_rate": 47.450397776286785
+        "divine": {
+          "picks": 19932,
+          "wins": 9420,
+          "win_rate": 47.26068633353401,
+          "pick_rate": 7.752082701327795
         },
         "herald_guardian": {
-          "picks": 48770,
-          "wins": 22584,
-          "win_rate": 46.307156038548285
+          "picks": 47258,
+          "wins": 21909,
+          "win_rate": 46.360404587583055,
+          "pick_rate": 6.018563328765518
         },
         "legend_ancient": {
-          "picks": 47195,
-          "wins": 22551,
-          "win_rate": 47.78260408941625
+          "picks": 45446,
+          "wins": 21642,
+          "win_rate": 47.62135281432909,
+          "pick_rate": 7.284612166453212
         }
       }
     },
@@ -464,26 +632,37 @@
       "name": "Sven",
       "primary_attr": "str",
       "attack_type": "Melee",
+      "roles": [
+        "Carry",
+        "Disabler",
+        "Initiator",
+        "Durable",
+        "Nuker"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 46496,
-          "wins": 22859,
-          "win_rate": 49.1633688919477
+          "picks": 45169,
+          "wins": 22264,
+          "win_rate": 49.290442560162944,
+          "pick_rate": 4.321259306172353
         },
-        "divine_immortal": {
-          "picks": 7478,
-          "wins": 3703,
-          "win_rate": 49.51858785771597
+        "divine": {
+          "picks": 7146,
+          "wins": 3503,
+          "win_rate": 49.020431010355445,
+          "pick_rate": 2.7792686626373886
         },
         "herald_guardian": {
-          "picks": 45552,
-          "wins": 22442,
-          "win_rate": 49.26677204074464
+          "picks": 44006,
+          "wins": 21666,
+          "win_rate": 49.2341953369995,
+          "pick_rate": 5.604403441653379
         },
         "legend_ancient": {
-          "picks": 22495,
-          "wins": 11013,
-          "win_rate": 48.9575461213603
+          "picks": 21678,
+          "wins": 10644,
+          "win_rate": 49.10047052311099,
+          "pick_rate": 3.4748013586316224
         }
       }
     },
@@ -491,26 +670,38 @@
       "name": "Tiny",
       "primary_attr": "str",
       "attack_type": "Melee",
+      "roles": [
+        "Carry",
+        "Nuker",
+        "Pusher",
+        "Initiator",
+        "Durable",
+        "Disabler"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 79114,
-          "wins": 36228,
-          "win_rate": 45.792148039537885
+          "picks": 79116,
+          "wins": 36220,
+          "win_rate": 45.78087870974266,
+          "pick_rate": 7.5689245116591435
         },
-        "divine_immortal": {
-          "picks": 31898,
-          "wins": 15120,
-          "win_rate": 47.40109097749075
+        "divine": {
+          "picks": 31706,
+          "wins": 15016,
+          "win_rate": 47.36012111272314,
+          "pick_rate": 12.33130313708103
         },
         "herald_guardian": {
-          "picks": 49756,
-          "wins": 22778,
-          "win_rate": 45.77940348902645
+          "picks": 49304,
+          "wins": 22588,
+          "win_rate": 45.81372708096706,
+          "pick_rate": 6.2791325566349645
         },
         "legend_ancient": {
-          "picks": 61516,
-          "wins": 28651,
-          "win_rate": 46.5748748293127
+          "picks": 61309,
+          "wins": 28478,
+          "win_rate": 46.449950252002154,
+          "pick_rate": 9.82731785664481
         }
       }
     },
@@ -518,26 +709,37 @@
       "name": "Vengeful Spirit",
       "primary_attr": "agi",
       "attack_type": "Ranged",
+      "roles": [
+        "Support",
+        "Initiator",
+        "Disabler",
+        "Nuker",
+        "Escape"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 83133,
-          "wins": 43884,
-          "win_rate": 52.78770163472989
+          "picks": 80568,
+          "wins": 42555,
+          "win_rate": 52.81873696753053,
+          "pick_rate": 7.707835457497268
         },
-        "divine_immortal": {
-          "picks": 16958,
-          "wins": 8719,
-          "win_rate": 51.415261233636045
+        "divine": {
+          "picks": 16278,
+          "wins": 8390,
+          "win_rate": 51.541958471556704,
+          "pick_rate": 6.3309453247147225
         },
         "herald_guardian": {
-          "picks": 57850,
-          "wins": 30388,
-          "win_rate": 52.52895419187554
+          "picks": 55975,
+          "wins": 29431,
+          "win_rate": 52.57882983474765,
+          "pick_rate": 7.1287206891457515
         },
         "legend_ancient": {
-          "picks": 49951,
-          "wins": 26214,
-          "win_rate": 52.47942984124442
+          "picks": 48060,
+          "wins": 25201,
+          "win_rate": 52.436537661256764,
+          "pick_rate": 7.7036144153443935
         }
       }
     },
@@ -545,26 +747,37 @@
       "name": "Windranger",
       "primary_attr": "all",
       "attack_type": "Ranged",
+      "roles": [
+        "Carry",
+        "Support",
+        "Disabler",
+        "Escape",
+        "Nuker"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 124261,
-          "wins": 59374,
-          "win_rate": 47.78168532363332
+          "picks": 120623,
+          "wins": 57566,
+          "win_rate": 47.723900085390014,
+          "pick_rate": 11.539845054980798
         },
-        "divine_immortal": {
-          "picks": 26513,
-          "wins": 13142,
-          "win_rate": 49.568136385923886
+        "divine": {
+          "picks": 25620,
+          "wins": 12702,
+          "win_rate": 49.57845433255269,
+          "pick_rate": 9.96429654866637
         },
         "herald_guardian": {
-          "picks": 103271,
-          "wins": 48786,
-          "win_rate": 47.24075490699228
+          "picks": 99980,
+          "wins": 47241,
+          "win_rate": 47.250450090018006,
+          "pick_rate": 12.73299677536029
         },
         "legend_ancient": {
-          "picks": 68889,
-          "wins": 33250,
-          "win_rate": 48.26605118378841
+          "picks": 66843,
+          "wins": 32337,
+          "win_rate": 48.377541402989095,
+          "pick_rate": 10.714371584787044
         }
       }
     },
@@ -572,26 +785,34 @@
       "name": "Zeus",
       "primary_attr": "int",
       "attack_type": "Ranged",
+      "roles": [
+        "Nuker",
+        "Carry"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 165533,
-          "wins": 84710,
-          "win_rate": 51.17408613388267
+          "picks": 159651,
+          "wins": 81671,
+          "win_rate": 51.155958935427904,
+          "pick_rate": 15.273602902205546
         },
-        "divine_immortal": {
-          "picks": 38628,
-          "wins": 19622,
-          "win_rate": 50.79734907321114
+        "divine": {
+          "picks": 37171,
+          "wins": 18884,
+          "win_rate": 50.803045384843024,
+          "pick_rate": 14.456786378238784
         },
         "herald_guardian": {
-          "picks": 128082,
-          "wins": 65333,
-          "win_rate": 51.00872878312332
+          "picks": 123363,
+          "wins": 62898,
+          "win_rate": 50.98611415092046,
+          "pick_rate": 15.710949001788071
         },
         "legend_ancient": {
-          "picks": 96428,
-          "wins": 48890,
-          "win_rate": 50.70104119135521
+          "picks": 92914,
+          "wins": 47101,
+          "win_rate": 50.69311406246637,
+          "pick_rate": 14.89333395312753
         }
       }
     },
@@ -599,26 +820,38 @@
       "name": "Kunkka",
       "primary_attr": "str",
       "attack_type": "Melee",
+      "roles": [
+        "Carry",
+        "Support",
+        "Disabler",
+        "Initiator",
+        "Durable",
+        "Nuker"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 54226,
-          "wins": 26856,
-          "win_rate": 49.52605761074024
+          "picks": 53157,
+          "wins": 26377,
+          "win_rate": 49.62093421374419,
+          "pick_rate": 5.085460845673
         },
-        "divine_immortal": {
-          "picks": 12357,
-          "wins": 6167,
-          "win_rate": 49.906935340292954
+        "divine": {
+          "picks": 12227,
+          "wins": 6144,
+          "win_rate": 50.249447943076795,
+          "pick_rate": 4.755404133510684
         },
         "herald_guardian": {
-          "picks": 40116,
-          "wins": 19490,
-          "win_rate": 48.584106092332235
+          "picks": 38797,
+          "wins": 18806,
+          "win_rate": 48.472820063406964,
+          "pick_rate": 4.941008960728677
         },
         "legend_ancient": {
-          "picks": 33076,
-          "wins": 16508,
-          "win_rate": 49.90929979441287
+          "picks": 32308,
+          "wins": 16068,
+          "win_rate": 49.73381205893278,
+          "pick_rate": 5.178701093028437
         }
       }
     },
@@ -626,26 +859,36 @@
       "name": "Lina",
       "primary_attr": "int",
       "attack_type": "Ranged",
+      "roles": [
+        "Support",
+        "Carry",
+        "Nuker",
+        "Disabler"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 135609,
-          "wins": 65679,
-          "win_rate": 48.43262615313143
+          "picks": 131260,
+          "wins": 63578,
+          "win_rate": 48.43669053786378,
+          "pick_rate": 12.55747296881009
         },
-        "divine_immortal": {
-          "picks": 28060,
-          "wins": 13683,
-          "win_rate": 48.76336421952958
+        "divine": {
+          "picks": 26959,
+          "wins": 13255,
+          "win_rate": 49.16725397826329,
+          "pick_rate": 10.485069112236404
         },
         "herald_guardian": {
-          "picks": 110010,
-          "wins": 52011,
-          "win_rate": 47.27842923370603
+          "picks": 106589,
+          "wins": 50362,
+          "win_rate": 47.24877801649326,
+          "pick_rate": 13.57468887066291
         },
         "legend_ancient": {
-          "picks": 75814,
-          "wins": 36695,
-          "win_rate": 48.40135067401799
+          "picks": 72975,
+          "wins": 35218,
+          "win_rate": 48.26036313806098,
+          "pick_rate": 11.697279691214257
         }
       }
     },
@@ -653,26 +896,36 @@
       "name": "Lion",
       "primary_attr": "int",
       "attack_type": "Ranged",
+      "roles": [
+        "Support",
+        "Disabler",
+        "Nuker",
+        "Initiator"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 301897,
-          "wins": 149642,
-          "win_rate": 49.56723650781558
+          "picks": 292660,
+          "wins": 145129,
+          "win_rate": 49.58962618738468,
+          "pick_rate": 27.998400419411563
         },
-        "divine_immortal": {
-          "picks": 67768,
-          "wins": 33585,
-          "win_rate": 49.558788808877345
+        "divine": {
+          "picks": 65127,
+          "wins": 32411,
+          "win_rate": 49.76584212385033,
+          "pick_rate": 25.329615196135624
         },
         "herald_guardian": {
-          "picks": 215835,
-          "wins": 106649,
-          "win_rate": 49.41228253063683
+          "picks": 209065,
+          "wins": 103316,
+          "win_rate": 49.418123550092076,
+          "pick_rate": 26.625564821371263
         },
         "legend_ancient": {
-          "picks": 175738,
-          "wins": 86748,
-          "win_rate": 49.36211860838293
+          "picks": 170245,
+          "wins": 84023,
+          "win_rate": 49.35416605480337,
+          "pick_rate": 27.28884386475877
         }
       }
     },
@@ -680,26 +933,37 @@
       "name": "Shadow Shaman",
       "primary_attr": "int",
       "attack_type": "Ranged",
+      "roles": [
+        "Support",
+        "Pusher",
+        "Disabler",
+        "Nuker",
+        "Initiator"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 176718,
-          "wins": 91877,
-          "win_rate": 51.99074231261105
+          "picks": 171721,
+          "wins": 89324,
+          "win_rate": 52.016934445990884,
+          "pick_rate": 16.428324056658827
         },
-        "divine_immortal": {
-          "picks": 38398,
-          "wins": 19962,
-          "win_rate": 51.98708266055524
+        "divine": {
+          "picks": 36776,
+          "wins": 19142,
+          "win_rate": 52.05025016314988,
+          "pick_rate": 14.303160416618052
         },
         "herald_guardian": {
-          "picks": 141996,
-          "wins": 73353,
-          "win_rate": 51.6584974224626
+          "picks": 137880,
+          "wins": 71104,
+          "win_rate": 51.56948070786191,
+          "pick_rate": 17.559767907448258
         },
         "legend_ancient": {
-          "picks": 97963,
-          "wins": 51043,
-          "win_rate": 52.10436593407716
+          "picks": 94645,
+          "wins": 49305,
+          "win_rate": 52.094669554651595,
+          "pick_rate": 15.170798717026013
         }
       }
     },
@@ -707,26 +971,37 @@
       "name": "Slardar",
       "primary_attr": "str",
       "attack_type": "Melee",
+      "roles": [
+        "Carry",
+        "Durable",
+        "Initiator",
+        "Disabler",
+        "Escape"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 95575,
-          "wins": 48530,
-          "win_rate": 50.77687679832592
+          "picks": 92670,
+          "wins": 47001,
+          "win_rate": 50.71867918420201,
+          "pick_rate": 8.865618010205937
         },
-        "divine_immortal": {
-          "picks": 25416,
-          "wins": 13097,
-          "win_rate": 51.53053194837898
+        "divine": {
+          "picks": 24744,
+          "wins": 12739,
+          "win_rate": 51.48318784351762,
+          "pick_rate": 9.623596947704945
         },
         "herald_guardian": {
-          "picks": 72382,
-          "wins": 36870,
-          "win_rate": 50.93807852781078
+          "picks": 70126,
+          "wins": 35744,
+          "win_rate": 50.97110914639364,
+          "pick_rate": 8.930927504189993
         },
         "legend_ancient": {
-          "picks": 58142,
-          "wins": 29690,
-          "win_rate": 51.06463485948196
+          "picks": 56304,
+          "wins": 28829,
+          "win_rate": 51.20240125035521,
+          "pick_rate": 9.025058386216205
         }
       }
     },
@@ -734,26 +1009,37 @@
       "name": "Tidehunter",
       "primary_attr": "str",
       "attack_type": "Melee",
+      "roles": [
+        "Initiator",
+        "Durable",
+        "Disabler",
+        "Nuker",
+        "Carry"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 136572,
-          "wins": 70948,
-          "win_rate": 51.94915502445596
+          "picks": 130830,
+          "wins": 68205,
+          "win_rate": 52.132538408621876,
+          "pick_rate": 12.516335429753347
         },
-        "divine_immortal": {
-          "picks": 40618,
-          "wins": 20782,
-          "win_rate": 51.16450834605347
+        "divine": {
+          "picks": 38921,
+          "wins": 19939,
+          "win_rate": 51.229413427198686,
+          "pick_rate": 15.137407727191407
         },
         "herald_guardian": {
-          "picks": 86041,
-          "wins": 44822,
-          "win_rate": 52.09376924954382
+          "picks": 82293,
+          "wins": 42859,
+          "win_rate": 52.080978941100696,
+          "pick_rate": 10.480461128572957
         },
         "legend_ancient": {
-          "picks": 91237,
-          "wins": 47415,
-          "win_rate": 51.96904764514396
+          "picks": 87325,
+          "wins": 45360,
+          "win_rate": 51.943887775551104,
+          "pick_rate": 13.997464186848715
         }
       }
     },
@@ -761,26 +1047,35 @@
       "name": "Witch Doctor",
       "primary_attr": "int",
       "attack_type": "Ranged",
+      "roles": [
+        "Support",
+        "Nuker",
+        "Disabler"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 197641,
-          "wins": 101531,
-          "win_rate": 51.371425969307985
+          "picks": 192310,
+          "wins": 98690,
+          "win_rate": 51.31818418178982,
+          "pick_rate": 18.398046827913063
         },
-        "divine_immortal": {
-          "picks": 30998,
-          "wins": 15321,
-          "win_rate": 49.42576940447771
+        "divine": {
+          "picks": 29992,
+          "wins": 14789,
+          "win_rate": 49.309815950920246,
+          "pick_rate": 11.664683141592576
         },
         "herald_guardian": {
-          "picks": 151576,
-          "wins": 78649,
-          "win_rate": 51.887501979205155
+          "picks": 147499,
+          "wins": 76599,
+          "win_rate": 51.93187750425427,
+          "pick_rate": 18.784799873663406
         },
         "legend_ancient": {
-          "picks": 100896,
-          "wins": 50483,
-          "win_rate": 50.03468918490327
+          "picks": 97776,
+          "wins": 48827,
+          "win_rate": 49.93761250204549,
+          "pick_rate": 15.67267172440103
         }
       }
     },
@@ -788,26 +1083,34 @@
       "name": "Lich",
       "primary_attr": "int",
       "attack_type": "Ranged",
+      "roles": [
+        "Support",
+        "Nuker"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 125239,
-          "wins": 65126,
-          "win_rate": 52.00137337410871
+          "picks": 121548,
+          "wins": 63204,
+          "win_rate": 51.99921018856748,
+          "pick_rate": 11.628338598300541
         },
-        "divine_immortal": {
-          "picks": 32606,
-          "wins": 16568,
-          "win_rate": 50.81273385266515
+        "divine": {
+          "picks": 31248,
+          "wins": 15788,
+          "win_rate": 50.52483358934972,
+          "pick_rate": 12.153174806897999
         },
         "herald_guardian": {
-          "picks": 82794,
-          "wins": 43117,
-          "win_rate": 52.07744522549943
+          "picks": 80114,
+          "wins": 41633,
+          "win_rate": 51.96719674463889,
+          "pick_rate": 10.202953627337608
         },
         "legend_ancient": {
-          "picks": 81006,
-          "wins": 41575,
-          "win_rate": 51.32335876354838
+          "picks": 78408,
+          "wins": 40209,
+          "win_rate": 51.28175696357514,
+          "pick_rate": 12.568143967505685
         }
       }
     },
@@ -815,26 +1118,35 @@
       "name": "Riki",
       "primary_attr": "agi",
       "attack_type": "Melee",
+      "roles": [
+        "Carry",
+        "Escape",
+        "Disabler"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 61344,
-          "wins": 32433,
-          "win_rate": 52.87069640062598
+          "picks": 59549,
+          "wins": 31549,
+          "win_rate": 52.97989890678265,
+          "pick_rate": 5.696975147186288
         },
-        "divine_immortal": {
-          "picks": 10446,
-          "wins": 5409,
-          "win_rate": 51.78058587018954
+        "divine": {
+          "picks": 9972,
+          "wins": 5159,
+          "win_rate": 51.73485760128359,
+          "pick_rate": 3.8783749095745925
         },
         "herald_guardian": {
-          "picks": 63524,
-          "wins": 33344,
-          "win_rate": 52.49039733014293
+          "picks": 61524,
+          "wins": 32286,
+          "win_rate": 52.477082114296856,
+          "pick_rate": 7.83541601927652
         },
         "legend_ancient": {
-          "picks": 29493,
-          "wins": 15703,
-          "win_rate": 53.24314244057911
+          "picks": 28570,
+          "wins": 15182,
+          "win_rate": 53.13965698284914,
+          "pick_rate": 4.579531082946096
         }
       }
     },
@@ -842,26 +1154,35 @@
       "name": "Enigma",
       "primary_attr": "all",
       "attack_type": "Ranged",
+      "roles": [
+        "Disabler",
+        "Initiator",
+        "Pusher"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 34747,
-          "wins": 17308,
-          "win_rate": 49.81149451751231
+          "picks": 34311,
+          "wins": 17006,
+          "win_rate": 49.5642796770715,
+          "pick_rate": 3.282488610641803
         },
-        "divine_immortal": {
-          "picks": 6488,
-          "wins": 3466,
-          "win_rate": 53.42170160295932
+        "divine": {
+          "picks": 6312,
+          "wins": 3384,
+          "win_rate": 53.61216730038023,
+          "pick_rate": 2.454903974050825
         },
         "herald_guardian": {
-          "picks": 29659,
-          "wins": 14577,
-          "win_rate": 49.148656394349096
+          "picks": 29042,
+          "wins": 14172,
+          "win_rate": 48.79829212864128,
+          "pick_rate": 3.6986566548311015
         },
         "legend_ancient": {
-          "picks": 17464,
-          "wins": 8984,
-          "win_rate": 51.44296839212094
+          "picks": 17133,
+          "wins": 8779,
+          "win_rate": 51.24029650382303,
+          "pick_rate": 2.746276025345308
         }
       }
     },
@@ -869,26 +1190,35 @@
       "name": "Tinker",
       "primary_attr": "int",
       "attack_type": "Ranged",
+      "roles": [
+        "Carry",
+        "Nuker",
+        "Pusher"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 44014,
-          "wins": 20570,
-          "win_rate": 46.735129731449085
+          "picks": 42895,
+          "wins": 20078,
+          "win_rate": 46.80732020048956,
+          "pick_rate": 4.1037086926490085
         },
-        "divine_immortal": {
-          "picks": 10665,
-          "wins": 5134,
-          "win_rate": 48.13877168307548
+        "divine": {
+          "picks": 10339,
+          "wins": 4946,
+          "win_rate": 47.83828223232421,
+          "pick_rate": 4.021110929612084
         },
         "herald_guardian": {
-          "picks": 37427,
-          "wins": 16926,
-          "win_rate": 45.22403612365405
+          "picks": 36244,
+          "wins": 16384,
+          "win_rate": 45.20472354044807,
+          "pick_rate": 4.615870525366656
         },
         "legend_ancient": {
-          "picks": 25400,
-          "wins": 12131,
-          "win_rate": 47.759842519685044
+          "picks": 24647,
+          "wins": 11811,
+          "win_rate": 47.92063942873372,
+          "pick_rate": 3.950707126404355
         }
       }
     },
@@ -896,26 +1226,34 @@
       "name": "Sniper",
       "primary_attr": "agi",
       "attack_type": "Ranged",
+      "roles": [
+        "Carry",
+        "Nuker"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 224316,
-          "wins": 111702,
-          "win_rate": 49.796715347991224
+          "picks": 217321,
+          "wins": 108020,
+          "win_rate": 49.7052746858334,
+          "pick_rate": 20.790816570583406
         },
-        "divine_immortal": {
-          "picks": 27992,
-          "wins": 13158,
-          "win_rate": 47.00628751071735
+        "divine": {
+          "picks": 26865,
+          "wins": 12587,
+          "win_rate": 46.85278243067188,
+          "pick_rate": 10.44851002263552
         },
         "herald_guardian": {
-          "picks": 197462,
-          "wins": 99850,
-          "win_rate": 50.56669131275891
+          "picks": 190804,
+          "wins": 96326,
+          "win_rate": 50.4842665772206,
+          "pick_rate": 24.299927152688984
         },
         "legend_ancient": {
-          "picks": 103399,
-          "wins": 50142,
-          "win_rate": 48.4936991653691
+          "picks": 99931,
+          "wins": 48483,
+          "win_rate": 48.5164763686944,
+          "pick_rate": 16.018100127752408
         }
       }
     },
@@ -923,26 +1261,36 @@
       "name": "Necrophos",
       "primary_attr": "int",
       "attack_type": "Ranged",
+      "roles": [
+        "Carry",
+        "Nuker",
+        "Durable",
+        "Disabler"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 160991,
-          "wins": 83765,
-          "win_rate": 52.03085886788702
+          "picks": 156357,
+          "wins": 81371,
+          "win_rate": 52.04180177414507,
+          "pick_rate": 14.958470219291783
         },
-        "divine_immortal": {
-          "picks": 32540,
-          "wins": 16121,
-          "win_rate": 49.54210202827289
+        "divine": {
+          "picks": 31372,
+          "wins": 15478,
+          "win_rate": 49.336988397296956,
+          "pick_rate": 12.201401691052357
         },
         "herald_guardian": {
-          "picks": 128480,
-          "wins": 68533,
-          "win_rate": 53.34137608966376
+          "picks": 124825,
+          "wins": 66585,
+          "win_rate": 53.34267975165231,
+          "pick_rate": 15.897142653374155
         },
         "legend_ancient": {
-          "picks": 88814,
-          "wins": 45472,
-          "win_rate": 51.19913527146621
+          "picks": 85998,
+          "wins": 44041,
+          "win_rate": 51.21165608502524,
+          "pick_rate": 13.784757230353458
         }
       }
     },
@@ -950,26 +1298,35 @@
       "name": "Warlock",
       "primary_attr": "int",
       "attack_type": "Ranged",
+      "roles": [
+        "Support",
+        "Initiator",
+        "Disabler"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 87381,
-          "wins": 43473,
-          "win_rate": 49.751090053901876
+          "picks": 84673,
+          "wins": 42112,
+          "win_rate": 49.73486235281613,
+          "pick_rate": 8.100555452445962
         },
-        "divine_immortal": {
-          "picks": 19177,
-          "wins": 9182,
-          "win_rate": 47.880273243990196
+        "divine": {
+          "picks": 18402,
+          "wins": 8819,
+          "win_rate": 47.924138680578196,
+          "pick_rate": 7.157025179100647
         },
         "herald_guardian": {
-          "picks": 65070,
-          "wins": 33149,
-          "win_rate": 50.94359920086061
+          "picks": 63162,
+          "wins": 32151,
+          "win_rate": 50.90244134131281,
+          "pick_rate": 8.044024228098685
         },
         "legend_ancient": {
-          "picks": 48764,
-          "wins": 24031,
-          "win_rate": 49.28020670986793
+          "picks": 47139,
+          "wins": 23174,
+          "win_rate": 49.160991959948234,
+          "pick_rate": 7.5559858494573335
         }
       }
     },
@@ -977,26 +1334,36 @@
       "name": "Beastmaster",
       "primary_attr": "all",
       "attack_type": "Melee",
+      "roles": [
+        "Initiator",
+        "Disabler",
+        "Durable",
+        "Nuker"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 81310,
-          "wins": 38689,
-          "win_rate": 47.58209322346575
+          "picks": 79757,
+          "wins": 37978,
+          "win_rate": 47.61713705380092,
+          "pick_rate": 7.630248145462339
         },
-        "divine_immortal": {
-          "picks": 25834,
-          "wins": 12689,
-          "win_rate": 49.11744213052566
+        "divine": {
+          "picks": 24993,
+          "wins": 12282,
+          "win_rate": 49.14175969271396,
+          "pick_rate": 9.720439642498775
         },
         "herald_guardian": {
-          "picks": 59911,
-          "wins": 28586,
-          "win_rate": 47.71410926207207
+          "picks": 58792,
+          "wins": 28043,
+          "win_rate": 47.69866648523609,
+          "pick_rate": 7.487480960361894
         },
         "legend_ancient": {
-          "picks": 50582,
-          "wins": 24190,
-          "win_rate": 47.82333636471472
+          "picks": 49292,
+          "wins": 23617,
+          "win_rate": 47.91244015256025,
+          "pick_rate": 7.901093669603743
         }
       }
     },
@@ -1004,26 +1371,35 @@
       "name": "Queen of Pain",
       "primary_attr": "int",
       "attack_type": "Ranged",
+      "roles": [
+        "Carry",
+        "Nuker",
+        "Escape"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 170064,
-          "wins": 83263,
-          "win_rate": 48.95980336814375
+          "picks": 165441,
+          "wins": 81107,
+          "win_rate": 49.024727848598594,
+          "pick_rate": 15.82752464903939
         },
-        "divine_immortal": {
-          "picks": 53676,
-          "wins": 27127,
-          "win_rate": 50.53841567926075
+        "divine": {
+          "picks": 52247,
+          "wins": 26472,
+          "win_rate": 50.6670239439585,
+          "pick_rate": 20.320242067844337
         },
         "herald_guardian": {
-          "picks": 100138,
-          "wins": 47642,
-          "win_rate": 47.57634464439074
+          "picks": 96798,
+          "wins": 46161,
+          "win_rate": 47.68796875968512,
+          "pick_rate": 12.327751768967046
         },
         "legend_ancient": {
-          "picks": 117684,
-          "wins": 58942,
-          "win_rate": 50.08497331837803
+          "picks": 114417,
+          "wins": 57278,
+          "win_rate": 50.060742721798334,
+          "pick_rate": 18.340084281324586
         }
       }
     },
@@ -1031,26 +1407,37 @@
       "name": "Venomancer",
       "primary_attr": "all",
       "attack_type": "Ranged",
+      "roles": [
+        "Support",
+        "Nuker",
+        "Initiator",
+        "Pusher",
+        "Disabler"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 145965,
-          "wins": 70191,
-          "win_rate": 48.087555235844206
+          "picks": 139819,
+          "wins": 67193,
+          "win_rate": 48.05713100508515,
+          "pick_rate": 13.376301333430277
         },
-        "divine_immortal": {
-          "picks": 34333,
-          "wins": 16424,
-          "win_rate": 47.837357644248975
+        "divine": {
+          "picks": 32488,
+          "wins": 15470,
+          "win_rate": 47.61758187638513,
+          "pick_rate": 12.635443648441571
         },
         "herald_guardian": {
-          "picks": 101970,
-          "wins": 48548,
-          "win_rate": 47.610081396489164
+          "picks": 97701,
+          "wins": 46398,
+          "win_rate": 47.48979027850278,
+          "pick_rate": 12.442753730240803
         },
         "legend_ancient": {
-          "picks": 86760,
-          "wins": 41680,
-          "win_rate": 48.040571692023974
+          "picks": 82814,
+          "wins": 39745,
+          "win_rate": 47.99309295529741,
+          "pick_rate": 13.27438876804683
         }
       }
     },
@@ -1058,26 +1445,37 @@
       "name": "Faceless Void",
       "primary_attr": "agi",
       "attack_type": "Melee",
+      "roles": [
+        "Carry",
+        "Initiator",
+        "Disabler",
+        "Escape",
+        "Durable"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 118138,
-          "wins": 59510,
-          "win_rate": 50.37329225143476
+          "picks": 115023,
+          "wins": 57858,
+          "win_rate": 50.30124409900628,
+          "pick_rate": 11.004100360288307
         },
-        "divine_immortal": {
-          "picks": 26750,
-          "wins": 13764,
-          "win_rate": 51.45420560747663
+        "divine": {
+          "picks": 26033,
+          "wins": 13338,
+          "win_rate": 51.23497099834825,
+          "pick_rate": 10.12492318701919
         },
         "herald_guardian": {
-          "picks": 88556,
-          "wins": 43944,
-          "win_rate": 49.62283752653688
+          "picks": 86105,
+          "wins": 42677,
+          "win_rate": 49.56390453516056,
+          "pick_rate": 10.965940061436264
         },
         "legend_ancient": {
-          "picks": 69830,
-          "wins": 35536,
-          "win_rate": 50.889302592009166
+          "picks": 67830,
+          "wins": 34526,
+          "win_rate": 50.90078136517765,
+          "pick_rate": 10.872579396437999
         }
       }
     },
@@ -1085,26 +1483,37 @@
       "name": "Wraith King",
       "primary_attr": "str",
       "attack_type": "Melee",
+      "roles": [
+        "Carry",
+        "Support",
+        "Durable",
+        "Disabler",
+        "Initiator"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 139251,
-          "wins": 75342,
-          "win_rate": 54.105176982571045
+          "picks": 134183,
+          "wins": 72426,
+          "win_rate": 53.975540865832485,
+          "pick_rate": 12.837112565700476
         },
-        "divine_immortal": {
-          "picks": 20387,
-          "wins": 10265,
-          "win_rate": 50.350713690096626
+        "divine": {
+          "picks": 19293,
+          "wins": 9719,
+          "win_rate": 50.37578396309542,
+          "pick_rate": 7.503558677338809
         },
         "herald_guardian": {
-          "picks": 110929,
-          "wins": 61129,
-          "win_rate": 55.10641942143173
+          "picks": 107080,
+          "wins": 58998,
+          "win_rate": 55.097123645872244,
+          "pick_rate": 13.637220391134026
         },
         "legend_ancient": {
-          "picks": 70605,
-          "wins": 36948,
-          "win_rate": 52.33057148927129
+          "picks": 67589,
+          "wins": 35378,
+          "win_rate": 52.3428368521505,
+          "pick_rate": 10.83394912023954
         }
       }
     },
@@ -1112,26 +1521,36 @@
       "name": "Death Prophet",
       "primary_attr": "all",
       "attack_type": "Ranged",
+      "roles": [
+        "Carry",
+        "Pusher",
+        "Nuker",
+        "Disabler"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 46133,
-          "wins": 22001,
-          "win_rate": 47.690373485357554
+          "picks": 44276,
+          "wins": 21113,
+          "win_rate": 47.68497605926461,
+          "pick_rate": 4.235827161107997
         },
-        "divine_immortal": {
-          "picks": 12831,
-          "wins": 6122,
-          "win_rate": 47.71257111682644
+        "divine": {
+          "picks": 12403,
+          "wins": 5951,
+          "win_rate": 47.98032734015964,
+          "pick_rate": 4.8238551948910615
         },
         "herald_guardian": {
-          "picks": 43897,
-          "wins": 21002,
-          "win_rate": 47.843816206118866
+          "picks": 42395,
+          "wins": 20299,
+          "win_rate": 47.880646302630026,
+          "pick_rate": 5.39923382967993
         },
         "legend_ancient": {
-          "picks": 28049,
-          "wins": 13440,
-          "win_rate": 47.9161467431994
+          "picks": 26893,
+          "wins": 12876,
+          "win_rate": 47.8786301267988,
+          "pick_rate": 4.3107220655817065
         }
       }
     },
@@ -1139,26 +1558,34 @@
       "name": "Phantom Assassin",
       "primary_attr": "agi",
       "attack_type": "Melee",
+      "roles": [
+        "Carry",
+        "Escape"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 148211,
-          "wins": 74339,
-          "win_rate": 50.15754566125321
+          "picks": 143833,
+          "wins": 72139,
+          "win_rate": 50.154693290135086,
+          "pick_rate": 13.760315477090218
         },
-        "divine_immortal": {
-          "picks": 22510,
-          "wins": 10831,
-          "win_rate": 48.116392714349175
+        "divine": {
+          "picks": 21479,
+          "wins": 10351,
+          "win_rate": 48.191256576190696,
+          "pick_rate": 8.353751973801913
         },
         "herald_guardian": {
-          "picks": 143004,
-          "wins": 73313,
-          "win_rate": 51.26639814270929
+          "picks": 138254,
+          "wins": 70971,
+          "win_rate": 51.33377696124525,
+          "pick_rate": 17.607398841574927
         },
         "legend_ancient": {
-          "picks": 70253,
-          "wins": 34659,
-          "win_rate": 49.33454799083313
+          "picks": 67765,
+          "wins": 33365,
+          "win_rate": 49.23633143953368,
+          "pick_rate": 10.86216044227659
         }
       }
     },
@@ -1166,26 +1593,34 @@
       "name": "Pugna",
       "primary_attr": "int",
       "attack_type": "Ranged",
+      "roles": [
+        "Nuker",
+        "Pusher"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 43855,
-          "wins": 21881,
-          "win_rate": 49.89396876068864
+          "picks": 42793,
+          "wins": 21282,
+          "win_rate": 49.732432874535554,
+          "pick_rate": 4.093950485709967
         },
-        "divine_immortal": {
-          "picks": 9667,
-          "wins": 4894,
-          "win_rate": 50.62584048825902
+        "divine": {
+          "picks": 9184,
+          "wins": 4647,
+          "win_rate": 50.59886759581882,
+          "pick_rate": 3.5719008393033547
         },
         "herald_guardian": {
-          "picks": 37163,
-          "wins": 17924,
-          "win_rate": 48.230767160885826
+          "picks": 36142,
+          "wins": 17364,
+          "win_rate": 48.04382712633501,
+          "pick_rate": 4.602880270604837
         },
         "legend_ancient": {
-          "picks": 25324,
-          "wins": 12841,
-          "win_rate": 50.70683936187016
+          "picks": 24496,
+          "wins": 12462,
+          "win_rate": 50.8736120182887,
+          "pick_rate": 3.926503094429386
         }
       }
     },
@@ -1193,26 +1628,34 @@
       "name": "Templar Assassin",
       "primary_attr": "agi",
       "attack_type": "Ranged",
+      "roles": [
+        "Carry",
+        "Escape"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 54225,
-          "wins": 24578,
-          "win_rate": 45.32595666205625
+          "picks": 52018,
+          "wins": 23573,
+          "win_rate": 45.31700565188973,
+          "pick_rate": 4.976494201520367
         },
-        "divine_immortal": {
-          "picks": 13189,
-          "wins": 6014,
-          "win_rate": 45.59860489802108
+        "divine": {
+          "picks": 12359,
+          "wins": 5629,
+          "win_rate": 45.54575612913666,
+          "pick_rate": 4.8067424295459675
         },
         "herald_guardian": {
-          "picks": 44790,
-          "wins": 20118,
-          "win_rate": 44.91627595445412
+          "picks": 43173,
+          "wins": 19414,
+          "win_rate": 44.96791976466773,
+          "pick_rate": 5.498316361098517
         },
         "legend_ancient": {
-          "picks": 30716,
-          "wins": 14085,
-          "win_rate": 45.85558015366584
+          "picks": 29277,
+          "wins": 13444,
+          "win_rate": 45.920005465040816,
+          "pick_rate": 4.692857245901744
         }
       }
     },
@@ -1220,26 +1663,36 @@
       "name": "Viper",
       "primary_attr": "agi",
       "attack_type": "Ranged",
+      "roles": [
+        "Carry",
+        "Durable",
+        "Initiator",
+        "Disabler"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 84248,
-          "wins": 40747,
-          "win_rate": 48.36553983477352
+          "picks": 81386,
+          "wins": 39466,
+          "win_rate": 48.492369695033545,
+          "pick_rate": 7.786092450400566
         },
-        "divine_immortal": {
-          "picks": 15344,
-          "wins": 7652,
-          "win_rate": 49.8696558915537
+        "divine": {
+          "picks": 14753,
+          "wins": 7309,
+          "win_rate": 49.54246593913103,
+          "pick_rate": 5.737832434913153
         },
         "herald_guardian": {
-          "picks": 88985,
-          "wins": 42732,
-          "win_rate": 48.02157667022532
+          "picks": 86125,
+          "wins": 41289,
+          "win_rate": 47.94078374455733,
+          "pick_rate": 10.968487170213091
         },
         "legend_ancient": {
-          "picks": 41558,
-          "wins": 20432,
-          "win_rate": 49.16502237836277
+          "picks": 39983,
+          "wins": 19609,
+          "win_rate": 49.0433434209539,
+          "pick_rate": 6.408939142087284
         }
       }
     },
@@ -1247,26 +1700,35 @@
       "name": "Luna",
       "primary_attr": "agi",
       "attack_type": "Ranged",
+      "roles": [
+        "Carry",
+        "Nuker",
+        "Pusher"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 79882,
-          "wins": 39975,
-          "win_rate": 50.04256278010065
+          "picks": 76804,
+          "wins": 38394,
+          "win_rate": 49.9895838758398,
+          "pick_rate": 7.347738487707529
         },
-        "divine_immortal": {
-          "picks": 24491,
-          "wins": 12128,
-          "win_rate": 49.52023192193051
+        "divine": {
+          "picks": 23399,
+          "wins": 11609,
+          "win_rate": 49.61323133467242,
+          "pick_rate": 9.100490825224217
         },
         "herald_guardian": {
-          "picks": 60102,
-          "wins": 30382,
-          "win_rate": 50.550730424944256
+          "picks": 57742,
+          "wins": 29097,
+          "win_rate": 50.39139621073049,
+          "pick_rate": 7.353757749578453
         },
         "legend_ancient": {
-          "picks": 52330,
-          "wins": 26181,
-          "win_rate": 50.03057519587235
+          "picks": 50243,
+          "wins": 25134,
+          "win_rate": 50.0248790876341,
+          "pick_rate": 8.053530983565302
         }
       }
     },
@@ -1274,26 +1736,38 @@
       "name": "Dragon Knight",
       "primary_attr": "str",
       "attack_type": "Melee",
+      "roles": [
+        "Carry",
+        "Pusher",
+        "Durable",
+        "Disabler",
+        "Initiator",
+        "Nuker"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 51764,
-          "wins": 25057,
-          "win_rate": 48.40622826674909
+          "picks": 49557,
+          "wins": 24045,
+          "win_rate": 48.51988619165809,
+          "pick_rate": 4.7410535419421125
         },
-        "divine_immortal": {
-          "picks": 6683,
-          "wins": 3120,
-          "win_rate": 46.68562023043543
+        "divine": {
+          "picks": 6342,
+          "wins": 2942,
+          "win_rate": 46.38915168716493,
+          "pick_rate": 2.4665717686042985
         },
         "herald_guardian": {
-          "picks": 47544,
-          "wins": 23518,
-          "win_rate": 49.46575803466263
+          "picks": 45443,
+          "wins": 22469,
+          "win_rate": 49.44435886715225,
+          "pick_rate": 5.78741320726843
         },
         "legend_ancient": {
-          "picks": 23375,
-          "wins": 11284,
-          "win_rate": 48.27379679144385
+          "picks": 22277,
+          "wins": 10746,
+          "win_rate": 48.23809310050725,
+          "pick_rate": 3.570816028519082
         }
       }
     },
@@ -1301,26 +1775,35 @@
       "name": "Dazzle",
       "primary_attr": "all",
       "attack_type": "Ranged",
+      "roles": [
+        "Support",
+        "Nuker",
+        "Disabler"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 52287,
-          "wins": 26432,
-          "win_rate": 50.55176238835657
+          "picks": 51492,
+          "wins": 26062,
+          "win_rate": 50.613687563116606,
+          "pick_rate": 4.926172467697465
         },
-        "divine_immortal": {
-          "picks": 9724,
-          "wins": 4976,
-          "win_rate": 51.17235705470999
+        "divine": {
+          "picks": 9446,
+          "wins": 4886,
+          "win_rate": 51.72559813677747,
+          "pick_rate": 3.67379957840369
         },
         "herald_guardian": {
-          "picks": 41482,
-          "wins": 20819,
-          "win_rate": 50.18803336386867
+          "picks": 40752,
+          "wins": 20477,
+          "win_rate": 50.24784059678053,
+          "pick_rate": 5.189988843663557
         },
         "legend_ancient": {
-          "picks": 27075,
-          "wins": 13840,
-          "win_rate": 51.11726685133887
+          "picks": 26560,
+          "wins": 13595,
+          "win_rate": 51.18599397590361,
+          "pick_rate": 4.2573449619547885
         }
       }
     },
@@ -1328,26 +1811,36 @@
       "name": "Clockwerk",
       "primary_attr": "str",
       "attack_type": "Melee",
+      "roles": [
+        "Initiator",
+        "Disabler",
+        "Durable",
+        "Nuker"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 30494,
-          "wins": 14566,
-          "win_rate": 47.766773791565555
+          "picks": 29249,
+          "wins": 13959,
+          "win_rate": 47.724708537044,
+          "pick_rate": 2.7982136741179824
         },
-        "divine_immortal": {
-          "picks": 8621,
-          "wins": 4258,
-          "win_rate": 49.391021923210765
+        "divine": {
+          "picks": 8316,
+          "wins": 4124,
+          "win_rate": 49.591149591149595,
+          "pick_rate": 3.234312650222855
         },
         "herald_guardian": {
-          "picks": 19844,
-          "wins": 9524,
-          "win_rate": 47.99435597661762
+          "picks": 19043,
+          "wins": 9170,
+          "win_rate": 48.15417738801659,
+          "pick_rate": 2.425229621856231
         },
         "legend_ancient": {
-          "picks": 19981,
-          "wins": 9654,
-          "win_rate": 48.31590010509984
+          "picks": 19157,
+          "wins": 9317,
+          "win_rate": 48.63496372083311,
+          "pick_rate": 3.070706228771381
         }
       }
     },
@@ -1355,26 +1848,37 @@
       "name": "Leshrac",
       "primary_attr": "int",
       "attack_type": "Ranged",
+      "roles": [
+        "Carry",
+        "Support",
+        "Nuker",
+        "Pusher",
+        "Disabler"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 30192,
-          "wins": 14711,
-          "win_rate": 48.72482776894542
+          "picks": 28850,
+          "wins": 14030,
+          "win_rate": 48.63084922010399,
+          "pick_rate": 2.7600418646211424
         },
-        "divine_immortal": {
-          "picks": 9855,
-          "wins": 4841,
-          "win_rate": 49.12227295788939
+        "divine": {
+          "picks": 9326,
+          "wins": 4544,
+          "win_rate": 48.72399742654943,
+          "pick_rate": 3.6271284001897963
         },
         "herald_guardian": {
-          "picks": 22263,
-          "wins": 10905,
-          "win_rate": 48.98261689799218
+          "picks": 21311,
+          "wins": 10407,
+          "win_rate": 48.833935526254045,
+          "pick_rate": 2.714071757148461
         },
         "legend_ancient": {
-          "picks": 19486,
-          "wins": 9597,
-          "win_rate": 49.25074412398645
+          "picks": 18544,
+          "wins": 9121,
+          "win_rate": 49.18572044866264,
+          "pick_rate": 2.9724474764491564
         }
       }
     },
@@ -1382,26 +1886,36 @@
       "name": "Nature's Prophet",
       "primary_attr": "all",
       "attack_type": "Ranged",
+      "roles": [
+        "Carry",
+        "Pusher",
+        "Escape",
+        "Nuker"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 82355,
-          "wins": 35304,
-          "win_rate": 42.86807115536397
+          "picks": 79863,
+          "wins": 34244,
+          "win_rate": 42.8784293101937,
+          "pick_rate": 7.6403890271833035
         },
-        "divine_immortal": {
-          "picks": 13947,
-          "wins": 6268,
-          "win_rate": 44.94156449415645
+        "divine": {
+          "picks": 13467,
+          "wins": 6049,
+          "win_rate": 44.91720501967773,
+          "pick_rate": 5.237672975054256
         },
         "herald_guardian": {
-          "picks": 78129,
-          "wins": 34599,
-          "win_rate": 44.28445263602504
+          "picks": 75564,
+          "wins": 33437,
+          "win_rate": 44.24990736329469,
+          "pick_rate": 9.623486380609371
         },
         "legend_ancient": {
-          "picks": 41119,
-          "wins": 18136,
-          "win_rate": 44.106130985675726
+          "picks": 39750,
+          "wins": 17450,
+          "win_rate": 43.89937106918239,
+          "pick_rate": 6.371591198708691
         }
       }
     },
@@ -1409,26 +1923,36 @@
       "name": "Lifestealer",
       "primary_attr": "str",
       "attack_type": "Melee",
+      "roles": [
+        "Carry",
+        "Durable",
+        "Escape",
+        "Disabler"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 132630,
-          "wins": 69808,
-          "win_rate": 52.63364246399759
+          "picks": 128037,
+          "wins": 67402,
+          "win_rate": 52.642595499738356,
+          "pick_rate": 12.249132763275467
         },
-        "divine_immortal": {
-          "picks": 33392,
-          "wins": 17421,
-          "win_rate": 52.17117872544323
+        "divine": {
+          "picks": 31873,
+          "wins": 16597,
+          "win_rate": 52.07228688858909,
+          "pick_rate": 12.396253860095365
         },
         "herald_guardian": {
-          "picks": 85146,
-          "wins": 43534,
-          "win_rate": 51.12864961360487
+          "picks": 82019,
+          "wins": 41985,
+          "win_rate": 51.18935856325974,
+          "pick_rate": 10.445565738330421
         },
         "legend_ancient": {
-          "picks": 84512,
-          "wins": 44717,
-          "win_rate": 52.91201249526695
+          "picks": 81058,
+          "wins": 42998,
+          "win_rate": 53.04596708529695,
+          "pick_rate": 12.992916714086267
         }
       }
     },
@@ -1436,26 +1960,35 @@
       "name": "Dark Seer",
       "primary_attr": "int",
       "attack_type": "Melee",
+      "roles": [
+        "Initiator",
+        "Escape",
+        "Disabler"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 18025,
-          "wins": 8673,
-          "win_rate": 48.11650485436893
+          "picks": 17508,
+          "wins": 8438,
+          "win_rate": 48.19511080648846,
+          "pick_rate": 1.6749675204778842
         },
-        "divine_immortal": {
-          "picks": 4920,
-          "wins": 2357,
-          "win_rate": 47.90650406504065
+        "divine": {
+          "picks": 4764,
+          "wins": 2268,
+          "win_rate": 47.607052896725435,
+          "pick_rate": 1.852845775091592
         },
         "herald_guardian": {
-          "picks": 14764,
-          "wins": 7208,
-          "win_rate": 48.821457599566514
+          "picks": 14405,
+          "wins": 7039,
+          "win_rate": 48.86497743838945,
+          "pick_rate": 1.8345550965099515
         },
         "legend_ancient": {
-          "picks": 11224,
-          "wins": 5488,
-          "win_rate": 48.8952245188881
+          "picks": 10945,
+          "wins": 5365,
+          "win_rate": 49.01781635449977,
+          "pick_rate": 1.7543915891790347
         }
       }
     },
@@ -1463,26 +1996,35 @@
       "name": "Clinkz",
       "primary_attr": "agi",
       "attack_type": "Ranged",
+      "roles": [
+        "Carry",
+        "Escape",
+        "Pusher"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 55026,
-          "wins": 27584,
-          "win_rate": 50.12902991313197
+          "picks": 53254,
+          "wins": 26673,
+          "win_rate": 50.0863784880009,
+          "pick_rate": 5.094740709134638
         },
-        "divine_immortal": {
-          "picks": 12620,
-          "wins": 6663,
-          "win_rate": 52.79714738510302
+        "divine": {
+          "picks": 12092,
+          "wins": 6353,
+          "win_rate": 52.538868673503146,
+          "pick_rate": 4.702899058020053
         },
         "herald_guardian": {
-          "picks": 62336,
-          "wins": 30518,
-          "win_rate": 48.95726386036961
+          "picks": 60562,
+          "wins": 29679,
+          "win_rate": 49.0059773455302,
+          "pick_rate": 7.71290008711112
         },
         "legend_ancient": {
-          "picks": 28217,
-          "wins": 14505,
-          "win_rate": 51.40518127370025
+          "picks": 27408,
+          "wins": 14078,
+          "win_rate": 51.364565090484525,
+          "pick_rate": 4.393272240860573
         }
       }
     },
@@ -1490,26 +2032,35 @@
       "name": "Omniknight",
       "primary_attr": "str",
       "attack_type": "Melee",
+      "roles": [
+        "Support",
+        "Durable",
+        "Nuker"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 27087,
-          "wins": 13221,
-          "win_rate": 48.80939195924244
+          "picks": 26309,
+          "wins": 12829,
+          "win_rate": 48.76278079744574,
+          "pick_rate": 2.516947709404424
         },
-        "divine_immortal": {
-          "picks": 7022,
-          "wins": 3573,
-          "win_rate": 50.88293933352321
+        "divine": {
+          "picks": 6652,
+          "wins": 3404,
+          "win_rate": 51.172579675285625,
+          "pick_rate": 2.587138978990191
         },
         "herald_guardian": {
-          "picks": 20619,
-          "wins": 9754,
-          "win_rate": 47.305882923517146
+          "picks": 20034,
+          "wins": 9447,
+          "win_rate": 47.15483677747829,
+          "pick_rate": 2.55143886174803
         },
         "legend_ancient": {
-          "picks": 16020,
-          "wins": 7885,
-          "win_rate": 49.219725343320846
+          "picks": 15510,
+          "wins": 7635,
+          "win_rate": 49.22630560928433,
+          "pick_rate": 2.4861227545150135
         }
       }
     },
@@ -1517,26 +2068,36 @@
       "name": "Enchantress",
       "primary_attr": "int",
       "attack_type": "Ranged",
+      "roles": [
+        "Support",
+        "Pusher",
+        "Durable",
+        "Disabler"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 22818,
-          "wins": 10967,
-          "win_rate": 48.06293277237269
+          "picks": 22275,
+          "wins": 10726,
+          "win_rate": 48.152637485970814,
+          "pick_rate": 2.1310201918348683
         },
-        "divine_immortal": {
-          "picks": 5948,
-          "wins": 2883,
-          "win_rate": 48.47007397444519
+        "divine": {
+          "picks": 5755,
+          "wins": 2797,
+          "win_rate": 48.601216333622936,
+          "pick_rate": 2.2382719218413336
         },
         "herald_guardian": {
-          "picks": 28689,
-          "wins": 14047,
-          "win_rate": 48.96301718428666
+          "picks": 27948,
+          "wins": 13759,
+          "win_rate": 49.23071418348361,
+          "pick_rate": 3.559329804738641
         },
         "legend_ancient": {
-          "picks": 11696,
-          "wins": 5568,
-          "win_rate": 47.60601915184679
+          "picks": 11371,
+          "wins": 5417,
+          "win_rate": 47.63873010289332,
+          "pick_rate": 1.8226758118368935
         }
       }
     },
@@ -1544,26 +2105,35 @@
       "name": "Huskar",
       "primary_attr": "str",
       "attack_type": "Ranged",
+      "roles": [
+        "Carry",
+        "Durable",
+        "Initiator"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 61481,
-          "wins": 29657,
-          "win_rate": 48.237666921487936
+          "picks": 59313,
+          "wins": 28631,
+          "win_rate": 48.27103670358943,
+          "pick_rate": 5.674397335052818
         },
-        "divine_immortal": {
-          "picks": 16247,
-          "wins": 8268,
-          "win_rate": 50.88939496522434
+        "divine": {
+          "picks": 15781,
+          "wins": 8098,
+          "win_rate": 51.314872314808945,
+          "pick_rate": 6.137648861612178
         },
         "herald_guardian": {
-          "picks": 62562,
-          "wins": 29608,
-          "win_rate": 47.32585275406797
+          "picks": 60556,
+          "wins": 28575,
+          "win_rate": 47.18772706255367,
+          "pick_rate": 7.712135954478072
         },
         "legend_ancient": {
-          "picks": 33949,
-          "wins": 16819,
-          "win_rate": 49.54195999882176
+          "picks": 32714,
+          "wins": 16304,
+          "win_rate": 49.83798985143975,
+          "pick_rate": 5.243779483636632
         }
       }
     },
@@ -1571,26 +2141,37 @@
       "name": "Night Stalker",
       "primary_attr": "str",
       "attack_type": "Melee",
+      "roles": [
+        "Carry",
+        "Initiator",
+        "Durable",
+        "Disabler",
+        "Nuker"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 79690,
-          "wins": 41294,
-          "win_rate": 51.818295896599324
+          "picks": 77456,
+          "wins": 40127,
+          "win_rate": 51.80618673827722,
+          "pick_rate": 7.410114477161011
         },
-        "divine_immortal": {
-          "picks": 26774,
-          "wins": 14182,
-          "win_rate": 52.969298573242696
+        "divine": {
+          "picks": 25709,
+          "wins": 13625,
+          "win_rate": 52.997004939904315,
+          "pick_rate": 9.998911005841677
         },
         "herald_guardian": {
-          "picks": 43217,
-          "wins": 21484,
-          "win_rate": 49.71191892079506
+          "picks": 42069,
+          "wins": 20903,
+          "win_rate": 49.6874182890014,
+          "pick_rate": 5.3577159566176435
         },
         "legend_ancient": {
-          "picks": 56877,
-          "wins": 29765,
-          "win_rate": 52.332225679976084
+          "picks": 54931,
+          "wins": 28767,
+          "win_rate": 52.36933607616828,
+          "pick_rate": 8.80497801600672
         }
       }
     },
@@ -1598,26 +2179,36 @@
       "name": "Broodmother",
       "primary_attr": "agi",
       "attack_type": "Melee",
+      "roles": [
+        "Carry",
+        "Pusher",
+        "Escape",
+        "Nuker"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 33512,
-          "wins": 16603,
-          "win_rate": 49.543447123418474
+          "picks": 32527,
+          "wins": 16164,
+          "win_rate": 49.69410028591631,
+          "pick_rate": 3.1118156579040517
         },
-        "divine_immortal": {
-          "picks": 5302,
-          "wins": 2616,
-          "win_rate": 49.33987174651075
+        "divine": {
+          "picks": 5063,
+          "wins": 2515,
+          "win_rate": 49.67410626111001,
+          "pick_rate": 1.9691347941412114
         },
         "herald_guardian": {
-          "picks": 40998,
-          "wins": 20581,
-          "win_rate": 50.20000975657349
+          "picks": 39787,
+          "wins": 19936,
+          "win_rate": 50.10681881016412,
+          "pick_rate": 5.067090845181634
         },
         "legend_ancient": {
-          "picks": 12943,
-          "wins": 6332,
-          "win_rate": 48.922197326740324
+          "picks": 12483,
+          "wins": 6100,
+          "win_rate": 48.86645838340142,
+          "pick_rate": 2.0009200737982535
         }
       }
     },
@@ -1625,26 +2216,34 @@
       "name": "Bounty Hunter",
       "primary_attr": "agi",
       "attack_type": "Melee",
+      "roles": [
+        "Escape",
+        "Nuker"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 47836,
-          "wins": 24141,
-          "win_rate": 50.46617610168074
+          "picks": 46072,
+          "wins": 23289,
+          "win_rate": 50.549140475777044,
+          "pick_rate": 4.407648138191518
         },
-        "divine_immortal": {
-          "picks": 12743,
-          "wins": 6849,
-          "win_rate": 53.747155300949544
+        "divine": {
+          "picks": 12231,
+          "wins": 6569,
+          "win_rate": 53.70779167688659,
+          "pick_rate": 4.756959839451147
         },
         "herald_guardian": {
-          "picks": 42705,
-          "wins": 20958,
-          "win_rate": 49.0762205830699
+          "picks": 41121,
+          "wins": 20212,
+          "win_rate": 49.152501155127545,
+          "pick_rate": 5.236983000596023
         },
         "legend_ancient": {
-          "picks": 27994,
-          "wins": 14640,
-          "win_rate": 52.29692076873616
+          "picks": 27031,
+          "wins": 14171,
+          "win_rate": 52.42499352595168,
+          "pick_rate": 4.332842306724393
         }
       }
     },
@@ -1652,26 +2251,34 @@
       "name": "Weaver",
       "primary_attr": "agi",
       "attack_type": "Ranged",
+      "roles": [
+        "Carry",
+        "Escape"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 95419,
-          "wins": 44007,
-          "win_rate": 46.11974554334042
+          "picks": 91897,
+          "wins": 42507,
+          "win_rate": 46.25504641065541,
+          "pick_rate": 8.791666108599276
         },
-        "divine_immortal": {
-          "picks": 22288,
-          "wins": 10465,
-          "win_rate": 46.9535175879397
+        "divine": {
+          "picks": 21287,
+          "wins": 9991,
+          "win_rate": 46.9347489077841,
+          "pick_rate": 8.279078088659682
         },
         "herald_guardian": {
-          "picks": 79266,
-          "wins": 36992,
-          "win_rate": 46.66818055660687
+          "picks": 76295,
+          "wins": 35581,
+          "win_rate": 46.63608362278,
+          "pick_rate": 9.716583206402413
         },
         "legend_ancient": {
-          "picks": 54492,
-          "wins": 25423,
-          "win_rate": 46.65455479703443
+          "picks": 52191,
+          "wins": 24301,
+          "win_rate": 46.56166772048821,
+          "pick_rate": 8.365779025202649
         }
       }
     },
@@ -1679,26 +2286,36 @@
       "name": "Jakiro",
       "primary_attr": "int",
       "attack_type": "Ranged",
+      "roles": [
+        "Support",
+        "Nuker",
+        "Pusher",
+        "Disabler"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 114584,
-          "wins": 53464,
-          "win_rate": 46.65921943726873
+          "picks": 110584,
+          "wins": 51572,
+          "win_rate": 46.63604138030818,
+          "pick_rate": 10.579427021049026
         },
-        "divine_immortal": {
-          "picks": 23519,
-          "wins": 10777,
-          "win_rate": 45.82252646796207
+        "divine": {
+          "picks": 22466,
+          "wins": 10287,
+          "win_rate": 45.78919255764266,
+          "pick_rate": 8.73762241461119
         },
         "herald_guardian": {
-          "picks": 72973,
-          "wins": 34940,
-          "win_rate": 47.88072300713962
+          "picks": 70211,
+          "wins": 33599,
+          "win_rate": 47.85432482089701,
+          "pick_rate": 8.94175271649151
         },
         "legend_ancient": {
-          "picks": 66916,
-          "wins": 30933,
-          "win_rate": 46.226612469364575
+          "picks": 64362,
+          "wins": 29777,
+          "win_rate": 46.26487679065287,
+          "pick_rate": 10.316688119026132
         }
       }
     },
@@ -1706,26 +2323,35 @@
       "name": "Batrider",
       "primary_attr": "all",
       "attack_type": "Ranged",
+      "roles": [
+        "Initiator",
+        "Disabler",
+        "Escape"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 36305,
-          "wins": 17831,
-          "win_rate": 49.11444704586145
+          "picks": 35144,
+          "wins": 17231,
+          "win_rate": 49.029706351012976,
+          "pick_rate": 3.362180633977311
         },
-        "divine_immortal": {
-          "picks": 18985,
-          "wins": 9999,
-          "win_rate": 52.66789570713721
+        "divine": {
+          "picks": 18188,
+          "wins": 9602,
+          "win_rate": 52.79305036287663,
+          "pick_rate": 7.073794911285869
         },
         "herald_guardian": {
-          "picks": 21235,
-          "wins": 10171,
-          "win_rate": 47.897339298328234
+          "picks": 20501,
+          "wins": 9825,
+          "win_rate": 47.92449148822009,
+          "pick_rate": 2.6109138516869503
         },
         "legend_ancient": {
-          "picks": 28320,
-          "wins": 14241,
-          "win_rate": 50.28601694915255
+          "picks": 27150,
+          "wins": 13607,
+          "win_rate": 50.117863720073665,
+          "pick_rate": 4.351917007419899
         }
       }
     },
@@ -1733,26 +2359,34 @@
       "name": "Chen",
       "primary_attr": "int",
       "attack_type": "Ranged",
+      "roles": [
+        "Support",
+        "Pusher"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 5500,
-          "wins": 2467,
-          "win_rate": 44.85454545454545
+          "picks": 5298,
+          "wins": 2361,
+          "win_rate": 44.56398640996603,
+          "pick_rate": 0.5068527486572899
         },
-        "divine_immortal": {
-          "picks": 1772,
-          "wins": 842,
-          "win_rate": 47.51693002257336
+        "divine": {
+          "picks": 1714,
+          "wins": 820,
+          "win_rate": 47.841306884480744,
+          "pick_rate": 0.6666199954884527
         },
         "herald_guardian": {
-          "picks": 4571,
-          "wins": 1986,
-          "win_rate": 43.44782323342813
+          "picks": 4429,
+          "wins": 1923,
+          "win_rate": 43.418378866561305,
+          "pick_rate": 0.5640572386284328
         },
         "legend_ancient": {
-          "picks": 3317,
-          "wins": 1560,
-          "win_rate": 47.03044920108532
+          "picks": 3230,
+          "wins": 1533,
+          "win_rate": 47.46130030959752,
+          "pick_rate": 0.5177418760208571
         }
       }
     },
@@ -1760,26 +2394,35 @@
       "name": "Spectre",
       "primary_attr": "agi",
       "attack_type": "Melee",
+      "roles": [
+        "Carry",
+        "Durable",
+        "Escape"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 109654,
-          "wins": 59824,
-          "win_rate": 54.55706130191329
+          "picks": 106330,
+          "wins": 58101,
+          "win_rate": 54.642151791592205,
+          "pick_rate": 10.172452390473694
         },
-        "divine_immortal": {
-          "picks": 15959,
-          "wins": 8248,
-          "win_rate": 51.68243624287236
+        "divine": {
+          "picks": 15173,
+          "wins": 7831,
+          "win_rate": 51.61141501351084,
+          "pick_rate": 5.901181558661782
         },
         "herald_guardian": {
-          "picks": 90145,
-          "wins": 50559,
-          "win_rate": 56.08630539686062
+          "picks": 87239,
+          "wins": 49018,
+          "win_rate": 56.18817272091611,
+          "pick_rate": 11.110361129082378
         },
         "legend_ancient": {
-          "picks": 55145,
-          "wins": 29502,
-          "win_rate": 53.498957294405656
+          "picks": 53408,
+          "wins": 28616,
+          "win_rate": 53.57998801677651,
+          "pick_rate": 8.56085390542475
         }
       }
     },
@@ -1787,26 +2430,35 @@
       "name": "Ancient Apparition",
       "primary_attr": "int",
       "attack_type": "Ranged",
+      "roles": [
+        "Support",
+        "Disabler",
+        "Nuker"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 70257,
-          "wins": 35104,
-          "win_rate": 49.965128029947195
+          "picks": 68197,
+          "wins": 34131,
+          "win_rate": 50.0476560552517,
+          "pick_rate": 6.524318025704265
         },
-        "divine_immortal": {
-          "picks": 13802,
-          "wins": 6687,
-          "win_rate": 48.44950007245327
+        "divine": {
+          "picks": 13188,
+          "wins": 6357,
+          "win_rate": 48.20291173794358,
+          "pick_rate": 5.129162485706951
         },
         "herald_guardian": {
-          "picks": 51894,
-          "wins": 26174,
-          "win_rate": 50.43743014606699
+          "picks": 50116,
+          "wins": 25250,
+          "win_rate": 50.383111182057625,
+          "pick_rate": 6.382545172974156
         },
         "legend_ancient": {
-          "picks": 40608,
-          "wins": 20051,
-          "win_rate": 49.37697005516154
+          "picks": 39246,
+          "wins": 19425,
+          "win_rate": 49.495489986240635,
+          "pick_rate": 6.290804231057138
         }
       }
     },
@@ -1814,26 +2466,37 @@
       "name": "Doom",
       "primary_attr": "str",
       "attack_type": "Melee",
+      "roles": [
+        "Carry",
+        "Disabler",
+        "Initiator",
+        "Durable",
+        "Nuker"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 61351,
-          "wins": 27853,
-          "win_rate": 45.39942299229026
+          "picks": 58313,
+          "wins": 26405,
+          "win_rate": 45.2814981222026,
+          "pick_rate": 5.578728639572017
         },
-        "divine_immortal": {
-          "picks": 20437,
-          "wins": 9702,
-          "win_rate": 47.47272104516318
+        "divine": {
+          "picks": 19305,
+          "wins": 9130,
+          "win_rate": 47.293447293447294,
+          "pick_rate": 7.508225795160199
         },
         "herald_guardian": {
-          "picks": 36245,
-          "wins": 16305,
-          "win_rate": 44.98551524348186
+          "picks": 34414,
+          "wins": 15418,
+          "win_rate": 44.80153425931307,
+          "pick_rate": 4.382810072286947
         },
         "legend_ancient": {
-          "picks": 43890,
-          "wins": 20638,
-          "win_rate": 47.022100706311235
+          "picks": 41357,
+          "wins": 19419,
+          "win_rate": 46.95456633701671,
+          "pick_rate": 6.629179803899253
         }
       }
     },
@@ -1841,26 +2504,35 @@
       "name": "Ursa",
       "primary_attr": "agi",
       "attack_type": "Melee",
+      "roles": [
+        "Carry",
+        "Durable",
+        "Disabler"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 82027,
-          "wins": 39046,
-          "win_rate": 47.60139953917613
+          "picks": 80499,
+          "wins": 38312,
+          "win_rate": 47.593137802954075,
+          "pick_rate": 7.701234317509094
         },
-        "divine_immortal": {
-          "picks": 20125,
-          "wins": 9667,
-          "win_rate": 48.03478260869565
+        "divine": {
+          "picks": 19391,
+          "wins": 9338,
+          "win_rate": 48.156361198494146,
+          "pick_rate": 7.541673472880156
         },
         "herald_guardian": {
-          "picks": 58270,
-          "wins": 26782,
-          "win_rate": 45.961901493049595
+          "picks": 56710,
+          "wins": 26116,
+          "win_rate": 46.051842708517015,
+          "pick_rate": 7.2223269366941585
         },
         "legend_ancient": {
-          "picks": 50583,
-          "wins": 24294,
-          "win_rate": 48.02799359468597
+          "picks": 49324,
+          "wins": 23705,
+          "win_rate": 48.05976806422837,
+          "pick_rate": 7.906223000883207
         }
       }
     },
@@ -1868,26 +2540,37 @@
       "name": "Spirit Breaker",
       "primary_attr": "str",
       "attack_type": "Melee",
+      "roles": [
+        "Carry",
+        "Initiator",
+        "Disabler",
+        "Durable",
+        "Escape"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 192854,
-          "wins": 98672,
-          "win_rate": 51.164093044479245
+          "picks": 185906,
+          "wins": 95223,
+          "win_rate": 51.2210471958947,
+          "pick_rate": 17.785384502054008
         },
-        "divine_immortal": {
-          "picks": 46248,
-          "wins": 23241,
-          "win_rate": 50.252983912817854
+        "divine": {
+          "picks": 43962,
+          "wins": 22091,
+          "win_rate": 50.250216095719026,
+          "pick_rate": 17.09798613866007
         },
         "herald_guardian": {
-          "picks": 141419,
-          "wins": 72454,
-          "win_rate": 51.23356833240229
+          "picks": 137150,
+          "wins": 70326,
+          "win_rate": 51.27670433831572,
+          "pick_rate": 17.466798437094056
         },
         "legend_ancient": {
-          "picks": 116787,
-          "wins": 59207,
-          "win_rate": 50.69656725491707
+          "picks": 111932,
+          "wins": 56720,
+          "win_rate": 50.673623271271836,
+          "pick_rate": 17.94175964915374
         }
       }
     },
@@ -1895,26 +2578,35 @@
       "name": "Gyrocopter",
       "primary_attr": "agi",
       "attack_type": "Ranged",
+      "roles": [
+        "Carry",
+        "Nuker",
+        "Disabler"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 36982,
-          "wins": 16051,
-          "win_rate": 43.402195662754856
+          "picks": 35369,
+          "wins": 15323,
+          "win_rate": 43.323249173004605,
+          "pick_rate": 3.383706090460491
         },
-        "divine_immortal": {
-          "picks": 8674,
-          "wins": 3791,
-          "win_rate": 43.705326262393356
+        "divine": {
+          "picks": 8245,
+          "wins": 3595,
+          "win_rate": 43.60218314129776,
+          "pick_rate": 3.206698869779634
         },
         "herald_guardian": {
-          "picks": 24140,
-          "wins": 10222,
-          "win_rate": 42.34465617232809
+          "picks": 23183,
+          "wins": 9875,
+          "win_rate": 42.595867661648626,
+          "pick_rate": 2.9524811386595076
         },
         "legend_ancient": {
-          "picks": 22710,
-          "wins": 10002,
-          "win_rate": 44.04227212681638
+          "picks": 21755,
+          "wins": 9561,
+          "win_rate": 43.94851758216502,
+          "pick_rate": 3.4871438120228317
         }
       }
     },
@@ -1922,26 +2614,38 @@
       "name": "Alchemist",
       "primary_attr": "str",
       "attack_type": "Melee",
+      "roles": [
+        "Carry",
+        "Support",
+        "Durable",
+        "Disabler",
+        "Initiator",
+        "Nuker"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 139294,
-          "wins": 70584,
-          "win_rate": 50.672677933005005
+          "picks": 134858,
+          "wins": 68462,
+          "win_rate": 50.765990894125665,
+          "pick_rate": 12.901688935150018
         },
-        "divine_immortal": {
-          "picks": 47662,
-          "wins": 23951,
-          "win_rate": 50.25177290084344
+        "divine": {
+          "picks": 46009,
+          "wins": 23147,
+          "win_rate": 50.3097220109109,
+          "pick_rate": 17.89411865369208
         },
         "herald_guardian": {
-          "picks": 76204,
-          "wins": 38755,
-          "win_rate": 50.85691039840429
+          "picks": 73510,
+          "wins": 37448,
+          "win_rate": 50.94272888042444,
+          "pick_rate": 9.361898309229193
         },
         "legend_ancient": {
-          "picks": 102540,
-          "wins": 52081,
-          "win_rate": 50.79091086405305
+          "picks": 98960,
+          "wins": 50297,
+          "win_rate": 50.82558609539207,
+          "pick_rate": 15.862456981741182
         }
       }
     },
@@ -1949,26 +2653,37 @@
       "name": "Invoker",
       "primary_attr": "int",
       "attack_type": "Ranged",
+      "roles": [
+        "Carry",
+        "Nuker",
+        "Disabler",
+        "Escape",
+        "Pusher"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 221373,
-          "wins": 114377,
-          "win_rate": 51.66709580662502
+          "picks": 217201,
+          "wins": 112108,
+          "win_rate": 51.61486365164064,
+          "pick_rate": 20.779336327125712
         },
-        "divine_immortal": {
-          "picks": 58415,
-          "wins": 30971,
-          "win_rate": 53.018916374218946
+        "divine": {
+          "picks": 56763,
+          "wins": 30069,
+          "win_rate": 52.97288726811479,
+          "pick_rate": 22.076634074627215
         },
         "herald_guardian": {
-          "picks": 142616,
-          "wins": 72820,
-          "win_rate": 51.06018960004488
+          "picks": 140159,
+          "wins": 71429,
+          "win_rate": 50.96283506588946,
+          "pick_rate": 17.85001095256774
         },
         "legend_ancient": {
-          "picks": 139003,
-          "wins": 73453,
-          "win_rate": 52.84274440119997
+          "picks": 135938,
+          "wins": 71589,
+          "win_rate": 52.6629787108829,
+          "pick_rate": 21.78971985836634
         }
       }
     },
@@ -1976,26 +2691,37 @@
       "name": "Silencer",
       "primary_attr": "int",
       "attack_type": "Ranged",
+      "roles": [
+        "Carry",
+        "Support",
+        "Disabler",
+        "Initiator",
+        "Nuker"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 133526,
-          "wins": 67973,
-          "win_rate": 50.90619055464853
+          "picks": 129126,
+          "wins": 65752,
+          "win_rate": 50.920806034416,
+          "pick_rate": 12.353315972654059
         },
-        "divine_immortal": {
-          "picks": 26227,
-          "wins": 13256,
-          "win_rate": 50.54333320623785
+        "divine": {
+          "picks": 25316,
+          "wins": 12836,
+          "win_rate": 50.703112656027805,
+          "pick_rate": 9.846062897191173
         },
         "herald_guardian": {
-          "picks": 99248,
-          "wins": 51429,
-          "win_rate": 51.81867644688054
+          "picks": 95542,
+          "wins": 49519,
+          "win_rate": 51.829561868078954,
+          "pick_rate": 12.167793337782284
         },
         "legend_ancient": {
-          "picks": 73570,
-          "wins": 37224,
-          "win_rate": 50.596710615740115
+          "picks": 71037,
+          "wins": 35980,
+          "win_rate": 50.64966144403621,
+          "pick_rate": 11.386634565601742
         }
       }
     },
@@ -2003,26 +2729,35 @@
       "name": "Outworld Devourer",
       "primary_attr": "int",
       "attack_type": "Ranged",
+      "roles": [
+        "Carry",
+        "Nuker",
+        "Disabler"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 49509,
-          "wins": 24348,
-          "win_rate": 49.17893716294007
+          "picks": 47438,
+          "wins": 23290,
+          "win_rate": 49.09566170580547,
+          "pick_rate": 4.538331576218293
         },
-        "divine_immortal": {
-          "picks": 10326,
-          "wins": 5007,
-          "win_rate": 48.48925043579314
+        "divine": {
+          "picks": 9895,
+          "wins": 4783,
+          "win_rate": 48.337544214249625,
+          "pick_rate": 3.848427570220677
         },
         "herald_guardian": {
-          "picks": 34424,
-          "wins": 16229,
-          "win_rate": 47.144434115733205
+          "picks": 32920,
+          "wins": 15549,
+          "win_rate": 47.232685297691376,
+          "pick_rate": 4.192541046657938
         },
         "legend_ancient": {
-          "picks": 29105,
-          "wins": 14234,
-          "win_rate": 48.90568630819447
+          "picks": 27780,
+          "wins": 13633,
+          "win_rate": 49.07487401007919,
+          "pick_rate": 4.452900716984338
         }
       }
     },
@@ -2030,26 +2765,36 @@
       "name": "Lycan",
       "primary_attr": "str",
       "attack_type": "Melee",
+      "roles": [
+        "Carry",
+        "Pusher",
+        "Durable",
+        "Escape"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 9661,
-          "wins": 4434,
-          "win_rate": 45.89586999275437
+          "picks": 9379,
+          "wins": 4324,
+          "win_rate": 46.102996055016526,
+          "pick_rate": 0.8972766949144435
         },
-        "divine_immortal": {
-          "picks": 2699,
-          "wins": 1340,
-          "win_rate": 49.648017784364576
+        "divine": {
+          "picks": 2540,
+          "wins": 1233,
+          "win_rate": 48.54330708661417,
+          "pick_rate": 0.9878732721940899
         },
         "herald_guardian": {
-          "picks": 8912,
-          "wins": 3928,
-          "win_rate": 44.0754039497307
+          "picks": 8521,
+          "wins": 3799,
+          "win_rate": 44.583969017720925,
+          "pick_rate": 1.0851956943673235
         },
         "legend_ancient": {
-          "picks": 5415,
-          "wins": 2541,
-          "win_rate": 46.92520775623269
+          "picks": 5222,
+          "wins": 2439,
+          "win_rate": 46.70624281884336,
+          "pick_rate": 0.8370427481674662
         }
       }
     },
@@ -2057,26 +2802,37 @@
       "name": "Brewmaster",
       "primary_attr": "all",
       "attack_type": "Melee",
+      "roles": [
+        "Carry",
+        "Initiator",
+        "Durable",
+        "Disabler",
+        "Nuker"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 14073,
-          "wins": 7098,
-          "win_rate": 50.43700703474738
+          "picks": 13561,
+          "wins": 6849,
+          "win_rate": 50.50512499078239,
+          "pick_rate": 1.297363179415158
         },
-        "divine_immortal": {
-          "picks": 5617,
-          "wins": 2862,
-          "win_rate": 50.95246572903685
+        "divine": {
+          "picks": 5402,
+          "wins": 2738,
+          "win_rate": 50.68493150684932,
+          "pick_rate": 2.100980872595462
         },
         "herald_guardian": {
-          "picks": 10113,
-          "wins": 5066,
-          "win_rate": 50.09393849500643
+          "picks": 9844,
+          "wins": 4920,
+          "win_rate": 49.97968305566843,
+          "pick_rate": 1.2536869399544577
         },
         "legend_ancient": {
-          "picks": 9691,
-          "wins": 4907,
-          "win_rate": 50.63460943143122
+          "picks": 9336,
+          "wins": 4719,
+          "win_rate": 50.54627249357326,
+          "pick_rate": 1.4964824007835054
         }
       }
     },
@@ -2084,26 +2840,36 @@
       "name": "Shadow Demon",
       "primary_attr": "int",
       "attack_type": "Ranged",
+      "roles": [
+        "Support",
+        "Disabler",
+        "Initiator",
+        "Nuker"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 29339,
-          "wins": 13142,
-          "win_rate": 44.793619414431305
+          "picks": 28045,
+          "wins": 12610,
+          "win_rate": 44.96345159564985,
+          "pick_rate": 2.6830285647590966
         },
-        "divine_immortal": {
-          "picks": 11065,
-          "wins": 5058,
-          "win_rate": 45.71170356981473
+        "divine": {
+          "picks": 10703,
+          "wins": 4906,
+          "win_rate": 45.83761562178829,
+          "pick_rate": 4.16268017019423
         },
         "herald_guardian": {
-          "picks": 18230,
-          "wins": 7757,
-          "win_rate": 42.55074053757543
+          "picks": 17290,
+          "wins": 7395,
+          "win_rate": 42.770387507229614,
+          "pick_rate": 2.2019755375673076
         },
         "legend_ancient": {
-          "picks": 21680,
-          "wins": 9835,
-          "win_rate": 45.36439114391143
+          "picks": 20866,
+          "wins": 9490,
+          "win_rate": 45.480686283906834,
+          "pick_rate": 3.3446445774152336
         }
       }
     },
@@ -2111,26 +2877,35 @@
       "name": "Lone Druid",
       "primary_attr": "agi",
       "attack_type": "Ranged",
+      "roles": [
+        "Carry",
+        "Pusher",
+        "Durable"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 47123,
-          "wins": 25068,
-          "win_rate": 53.196952655815636
+          "picks": 49691,
+          "wins": 26366,
+          "win_rate": 53.059910245316054,
+          "pick_rate": 4.753873147136541
         },
-        "divine_immortal": {
-          "picks": 17905,
-          "wins": 9520,
-          "win_rate": 53.16950572465792
+        "divine": {
+          "picks": 19108,
+          "wins": 10043,
+          "win_rate": 52.55913753401716,
+          "pick_rate": 7.43160727759239
         },
         "herald_guardian": {
-          "picks": 31848,
-          "wins": 16776,
-          "win_rate": 52.67520723436323
+          "picks": 32387,
+          "wins": 17060,
+          "win_rate": 52.675456201562355,
+          "pick_rate": 4.124660597755487
         },
         "legend_ancient": {
-          "picks": 31929,
-          "wins": 16669,
-          "win_rate": 52.206458078862475
+          "picks": 34054,
+          "wins": 17733,
+          "win_rate": 52.07317789393316,
+          "pick_rate": 5.45857023096417
         }
       }
     },
@@ -2138,26 +2913,37 @@
       "name": "Chaos Knight",
       "primary_attr": "str",
       "attack_type": "Melee",
+      "roles": [
+        "Carry",
+        "Disabler",
+        "Durable",
+        "Pusher",
+        "Initiator"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 41421,
-          "wins": 20443,
-          "win_rate": 49.354192317906374
+          "picks": 40119,
+          "wins": 19794,
+          "win_rate": 49.338218799072756,
+          "pick_rate": 3.838132393994302
         },
-        "divine_immortal": {
-          "picks": 5520,
-          "wins": 2685,
-          "win_rate": 48.641304347826086
+        "divine": {
+          "picks": 5293,
+          "wins": 2586,
+          "win_rate": 48.85698091819384,
+          "pick_rate": 2.058587885717842
         },
         "herald_guardian": {
-          "picks": 46487,
-          "wins": 23258,
-          "win_rate": 50.03119151590767
+          "picks": 45023,
+          "wins": 22524,
+          "win_rate": 50.02776358749972,
+          "pick_rate": 5.733923922955054
         },
         "legend_ancient": {
-          "picks": 18201,
-          "wins": 8890,
-          "win_rate": 48.84347013900335
+          "picks": 17501,
+          "wins": 8547,
+          "win_rate": 48.837209302325576,
+          "pick_rate": 2.8052633350591396
         }
       }
     },
@@ -2165,26 +2951,38 @@
       "name": "Meepo",
       "primary_attr": "agi",
       "attack_type": "Melee",
+      "roles": [
+        "Carry",
+        "Escape",
+        "Nuker",
+        "Disabler",
+        "Initiator",
+        "Pusher"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 21380,
-          "wins": 10598,
-          "win_rate": 49.56969130028064
+          "picks": 20610,
+          "wins": 10254,
+          "win_rate": 49.75254730713246,
+          "pick_rate": 1.9717318138593325
         },
-        "divine_immortal": {
-          "picks": 5663,
-          "wins": 2906,
-          "win_rate": 51.315557125198666
+        "divine": {
+          "picks": 5338,
+          "wins": 2716,
+          "win_rate": 50.88047958036718,
+          "pick_rate": 2.0760895775480517
         },
         "herald_guardian": {
-          "picks": 20746,
-          "wins": 10270,
-          "win_rate": 49.503518750602524
+          "picks": 19898,
+          "wins": 9842,
+          "win_rate": 49.46225751331792,
+          "pick_rate": 2.5341185220656035
         },
         "legend_ancient": {
-          "picks": 11702,
-          "wins": 5771,
-          "win_rate": 49.316356178431036
+          "picks": 11007,
+          "wins": 5394,
+          "win_rate": 49.00517852275825,
+          "pick_rate": 1.7643296685329952
         }
       }
     },
@@ -2192,26 +2990,37 @@
       "name": "Treant Protector",
       "primary_attr": "str",
       "attack_type": "Melee",
+      "roles": [
+        "Support",
+        "Initiator",
+        "Durable",
+        "Disabler",
+        "Escape"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 27532,
-          "wins": 13504,
-          "win_rate": 49.04838006683132
+          "picks": 26855,
+          "wins": 13186,
+          "win_rate": 49.100726121765035,
+          "pick_rate": 2.569182817136942
         },
-        "divine_immortal": {
-          "picks": 8857,
-          "wins": 4713,
-          "win_rate": 53.21214858304166
+        "divine": {
+          "picks": 8509,
+          "wins": 4486,
+          "win_rate": 52.72064872487954,
+          "pick_rate": 3.309375461850201
         },
         "herald_guardian": {
-          "picks": 23079,
-          "wins": 11134,
-          "win_rate": 48.242991464101564
+          "picks": 22219,
+          "wins": 10669,
+          "win_rate": 48.01746253206715,
+          "pick_rate": 2.829710495616426
         },
         "legend_ancient": {
-          "picks": 16451,
-          "wins": 8208,
-          "win_rate": 49.893623487933866
+          "picks": 15968,
+          "wins": 7924,
+          "win_rate": 49.62424849699399,
+          "pick_rate": 2.559536308452336
         }
       }
     },
@@ -2219,26 +3028,37 @@
       "name": "Ogre Magi",
       "primary_attr": "str",
       "attack_type": "Melee",
+      "roles": [
+        "Support",
+        "Nuker",
+        "Disabler",
+        "Durable",
+        "Initiator"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 188922,
-          "wins": 95881,
-          "win_rate": 50.75163294904775
+          "picks": 182548,
+          "wins": 92761,
+          "win_rate": 50.81458027477704,
+          "pick_rate": 17.464129022629475
         },
-        "divine_immortal": {
-          "picks": 26717,
-          "wins": 13267,
-          "win_rate": 49.65752142830407
+        "divine": {
+          "picks": 25650,
+          "wins": 12729,
+          "win_rate": 49.62573099415204,
+          "pick_rate": 9.975964343219845
         },
         "herald_guardian": {
-          "picks": 160144,
-          "wins": 83100,
-          "win_rate": 51.890798281546616
+          "picks": 154458,
+          "wins": 80184,
+          "win_rate": 51.91314143650702,
+          "pick_rate": 19.671066372560507
         },
         "legend_ancient": {
-          "picks": 91350,
-          "wins": 46255,
-          "win_rate": 50.63492063492063
+          "picks": 88452,
+          "wins": 44690,
+          "win_rate": 50.52457830235608,
+          "pick_rate": 14.178112822847325
         }
       }
     },
@@ -2246,26 +3066,36 @@
       "name": "Undying",
       "primary_attr": "str",
       "attack_type": "Melee",
+      "roles": [
+        "Support",
+        "Durable",
+        "Disabler",
+        "Nuker"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 104589,
-          "wins": 54563,
-          "win_rate": 52.16896614366712
+          "picks": 101641,
+          "wins": 52971,
+          "win_rate": 52.115780049389514,
+          "pick_rate": 9.723861877364213
         },
-        "divine_immortal": {
-          "picks": 22874,
-          "wins": 11863,
-          "win_rate": 51.862376497333216
+        "divine": {
+          "picks": 22053,
+          "wins": 11396,
+          "win_rate": 51.67550900104294,
+          "pick_rate": 8.576995776258372
         },
         "herald_guardian": {
-          "picks": 82417,
-          "wins": 42269,
-          "win_rate": 51.28674909302693
+          "picks": 79834,
+          "wins": 40878,
+          "win_rate": 51.20374777663652,
+          "pick_rate": 10.167294104462025
         },
         "legend_ancient": {
-          "picks": 56745,
-          "wins": 29650,
-          "win_rate": 52.25129967398009
+          "picks": 55050,
+          "wins": 28775,
+          "win_rate": 52.270663033605814,
+          "pick_rate": 8.824052716702225
         }
       }
     },
@@ -2273,26 +3103,35 @@
       "name": "Rubick",
       "primary_attr": "int",
       "attack_type": "Ranged",
+      "roles": [
+        "Support",
+        "Disabler",
+        "Nuker"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 237663,
-          "wins": 119333,
-          "win_rate": 50.21101307313297
+          "picks": 230864,
+          "wins": 116034,
+          "win_rate": 50.260759581398574,
+          "pick_rate": 22.08645771347991
         },
-        "divine_immortal": {
-          "picks": 74818,
-          "wins": 38667,
-          "win_rate": 51.68141356358096
+        "divine": {
+          "picks": 72218,
+          "wins": 37282,
+          "win_rate": 51.62424880223767,
+          "pick_rate": 28.087492902091647
         },
         "herald_guardian": {
-          "picks": 126726,
-          "wins": 62210,
-          "win_rate": 49.09016302889699
+          "picks": 122959,
+          "wins": 60518,
+          "win_rate": 49.21803202693581,
+          "pick_rate": 15.659497404496156
         },
         "legend_ancient": {
-          "picks": 168701,
-          "wins": 86119,
-          "win_rate": 51.04830439653588
+          "picks": 163739,
+          "wins": 83702,
+          "win_rate": 51.11915914962226,
+          "pick_rate": 26.245986699002827
         }
       }
     },
@@ -2300,26 +3139,36 @@
       "name": "Disruptor",
       "primary_attr": "int",
       "attack_type": "Ranged",
+      "roles": [
+        "Support",
+        "Disabler",
+        "Nuker",
+        "Initiator"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 81279,
-          "wins": 40056,
-          "win_rate": 49.28210238807072
+          "picks": 78482,
+          "wins": 38670,
+          "win_rate": 49.272444636986826,
+          "pick_rate": 7.508270558724315
         },
-        "divine_immortal": {
-          "picks": 27154,
-          "wins": 13470,
-          "win_rate": 49.605951241069455
+        "divine": {
+          "picks": 26067,
+          "wins": 12997,
+          "win_rate": 49.85997621513791,
+          "pick_rate": 10.138146687513126
         },
         "herald_guardian": {
-          "picks": 44423,
-          "wins": 21542,
-          "win_rate": 48.49289782319969
+          "picks": 42685,
+          "wins": 20783,
+          "win_rate": 48.68923509429542,
+          "pick_rate": 5.436166906943928
         },
         "legend_ancient": {
-          "picks": 58023,
-          "wins": 28975,
-          "win_rate": 49.93709391103528
+          "picks": 55953,
+          "wins": 27920,
+          "win_rate": 49.89902239379479,
+          "pick_rate": 8.968796033744589
         }
       }
     },
@@ -2327,26 +3176,36 @@
       "name": "Nyx Assassin",
       "primary_attr": "all",
       "attack_type": "Melee",
+      "roles": [
+        "Disabler",
+        "Nuker",
+        "Initiator",
+        "Escape"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 70038,
-          "wins": 36196,
-          "win_rate": 51.68051629115623
+          "picks": 67624,
+          "wins": 34987,
+          "win_rate": 51.73754879924287,
+          "pick_rate": 6.469499863193766
         },
-        "divine_immortal": {
-          "picks": 19117,
-          "wins": 9971,
-          "win_rate": 52.157765339749965
+        "divine": {
+          "picks": 18160,
+          "wins": 9492,
+          "win_rate": 52.26872246696035,
+          "pick_rate": 7.062904969702627
         },
         "herald_guardian": {
-          "picks": 45497,
-          "wins": 23258,
-          "win_rate": 51.11985405631141
+          "picks": 43852,
+          "wins": 22393,
+          "win_rate": 51.0649457265347,
+          "pick_rate": 5.584790704071809
         },
         "legend_ancient": {
-          "picks": 45141,
-          "wins": 23275,
-          "win_rate": 51.560665470414925
+          "picks": 43462,
+          "wins": 22440,
+          "win_rate": 51.63131010998113,
+          "pick_rate": 6.966593627126469
         }
       }
     },
@@ -2354,26 +3213,38 @@
       "name": "Naga Siren",
       "primary_attr": "agi",
       "attack_type": "Melee",
+      "roles": [
+        "Carry",
+        "Support",
+        "Pusher",
+        "Disabler",
+        "Initiator",
+        "Escape"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 21065,
-          "wins": 10536,
-          "win_rate": 50.01661523854736
+          "picks": 20456,
+          "wins": 10213,
+          "win_rate": 49.92667188111068,
+          "pick_rate": 1.956998834755289
         },
-        "divine_immortal": {
-          "picks": 4004,
-          "wins": 2034,
-          "win_rate": 50.7992007992008
+        "divine": {
+          "picks": 3774,
+          "wins": 1914,
+          "win_rate": 50.71542130365659,
+          "pick_rate": 1.4678085548269666
         },
         "herald_guardian": {
-          "picks": 28827,
-          "wins": 14568,
-          "win_rate": 50.5359558747008
+          "picks": 27740,
+          "wins": 14001,
+          "win_rate": 50.47224224945926,
+          "pick_rate": 3.532839873459636
         },
         "legend_ancient": {
-          "picks": 9339,
-          "wins": 4744,
-          "win_rate": 50.79772994967341
+          "picks": 8981,
+          "wins": 4570,
+          "win_rate": 50.88520209330809,
+          "pick_rate": 1.439578881901956
         }
       }
     },
@@ -2381,26 +3252,35 @@
       "name": "Keeper of the Light",
       "primary_attr": "int",
       "attack_type": "Ranged",
+      "roles": [
+        "Support",
+        "Nuker",
+        "Disabler"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 51133,
-          "wins": 26220,
-          "win_rate": 51.278039622161806
+          "picks": 49701,
+          "wins": 25515,
+          "win_rate": 51.33699523148427,
+          "pick_rate": 4.754829834091348
         },
-        "divine_immortal": {
-          "picks": 17422,
-          "wins": 9284,
-          "win_rate": 53.28894501205372
+        "divine": {
+          "picks": 16892,
+          "wins": 9010,
+          "win_rate": 53.33885863130477,
+          "pick_rate": 6.569746186575813
         },
         "herald_guardian": {
-          "picks": 38306,
-          "wins": 19029,
-          "win_rate": 49.67629092048243
+          "picks": 37402,
+          "wins": 18607,
+          "win_rate": 49.74867654136143,
+          "pick_rate": 4.763348123544964
         },
         "legend_ancient": {
-          "picks": 32546,
-          "wins": 17025,
-          "win_rate": 52.31057580040558
+          "picks": 31626,
+          "wins": 16521,
+          "win_rate": 52.23866439005881,
+          "pick_rate": 5.0693822201348695
         }
       }
     },
@@ -2408,26 +3288,35 @@
       "name": "Io",
       "primary_attr": "all",
       "attack_type": "Ranged",
+      "roles": [
+        "Support",
+        "Escape",
+        "Nuker"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 37401,
-          "wins": 18996,
-          "win_rate": 50.79008582658218
+          "picks": 37007,
+          "wins": 18794,
+          "win_rate": 50.78498662415218,
+          "pick_rate": 3.5404114136580453
         },
-        "divine_immortal": {
-          "picks": 12744,
-          "wins": 6574,
-          "win_rate": 51.58505963590709
+        "divine": {
+          "picks": 12501,
+          "wins": 6403,
+          "win_rate": 51.219902407807375,
+          "pick_rate": 4.861969990432408
         },
         "herald_guardian": {
-          "picks": 29803,
-          "wins": 15147,
-          "win_rate": 50.82374257625071
+          "picks": 29313,
+          "wins": 14937,
+          "win_rate": 50.95691331491147,
+          "pick_rate": 3.733169978757113
         },
         "legend_ancient": {
-          "picks": 23740,
-          "wins": 12234,
-          "win_rate": 51.533277169334454
+          "picks": 23431,
+          "wins": 12061,
+          "win_rate": 51.474542273057054,
+          "pick_rate": 3.7557925377847377
         }
       }
     },
@@ -2435,26 +3324,37 @@
       "name": "Visage",
       "primary_attr": "all",
       "attack_type": "Ranged",
+      "roles": [
+        "Support",
+        "Nuker",
+        "Durable",
+        "Disabler",
+        "Pusher"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 16649,
-          "wins": 8734,
-          "win_rate": 52.45960718361463
+          "picks": 16155,
+          "wins": 8452,
+          "win_rate": 52.31816774992263,
+          "pick_rate": 1.5455277754923589
         },
-        "divine_immortal": {
-          "picks": 5669,
-          "wins": 3076,
-          "win_rate": 54.260010583877225
+        "divine": {
+          "picks": 5350,
+          "wins": 2902,
+          "win_rate": 54.242990654205606,
+          "pick_rate": 2.080756695369441
         },
         "herald_guardian": {
-          "picks": 14962,
-          "wins": 7532,
-          "win_rate": 50.34086352091967
+          "picks": 14409,
+          "wins": 7216,
+          "win_rate": 50.07981122909293,
+          "pick_rate": 1.835064518265317
         },
         "legend_ancient": {
-          "picks": 9991,
-          "wins": 5414,
-          "win_rate": 54.18876989290361
+          "picks": 9640,
+          "wins": 5226,
+          "win_rate": 54.21161825726141,
+          "pick_rate": 1.5452110479384096
         }
       }
     },
@@ -2462,26 +3362,36 @@
       "name": "Slark",
       "primary_attr": "agi",
       "attack_type": "Melee",
+      "roles": [
+        "Carry",
+        "Escape",
+        "Disabler",
+        "Nuker"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 167534,
-          "wins": 84255,
-          "win_rate": 50.2912841572457
+          "picks": 160745,
+          "wins": 80810,
+          "win_rate": 50.272170207471454,
+          "pick_rate": 15.378264455061544
         },
-        "divine_immortal": {
-          "picks": 42848,
-          "wins": 22080,
-          "win_rate": 51.53099327856609
+        "divine": {
+          "picks": 40981,
+          "wins": 21097,
+          "win_rate": 51.47995412508235,
+          "pick_rate": 15.938596286529922
         },
         "herald_guardian": {
-          "picks": 110778,
-          "wins": 56343,
-          "win_rate": 50.861181823105674
+          "picks": 106383,
+          "wins": 54081,
+          "win_rate": 50.836129832774034,
+          "pick_rate": 13.548453650261589
         },
         "legend_ancient": {
-          "picks": 102021,
-          "wins": 51229,
-          "win_rate": 50.21417159212319
+          "picks": 97703,
+          "wins": 49030,
+          "win_rate": 50.182696539512605,
+          "pick_rate": 15.660970437419754
         }
       }
     },
@@ -2489,26 +3399,35 @@
       "name": "Medusa",
       "primary_attr": "agi",
       "attack_type": "Ranged",
+      "roles": [
+        "Carry",
+        "Disabler",
+        "Durable"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 48647,
-          "wins": 24443,
-          "win_rate": 50.24564721360002
+          "picks": 47011,
+          "wins": 23558,
+          "win_rate": 50.11167599072558,
+          "pick_rate": 4.497481043247991
         },
-        "divine_immortal": {
-          "picks": 8965,
-          "wins": 4419,
-          "win_rate": 49.291689905186836
+        "divine": {
+          "picks": 8610,
+          "wins": 4240,
+          "win_rate": 49.24506387921022,
+          "pick_rate": 3.348657036846895
         },
         "herald_guardian": {
-          "picks": 39394,
-          "wins": 19920,
-          "win_rate": 50.56607605219069
+          "picks": 37605,
+          "wins": 18936,
+          "win_rate": 50.355005983246905,
+          "pick_rate": 4.789201277629762
         },
         "legend_ancient": {
-          "picks": 26233,
-          "wins": 13200,
-          "win_rate": 50.318301376129305
+          "picks": 25258,
+          "wins": 12671,
+          "win_rate": 50.16628394963972,
+          "pick_rate": 4.048645295521613
         }
       }
     },
@@ -2516,26 +3435,36 @@
       "name": "Troll Warlord",
       "primary_attr": "agi",
       "attack_type": "Ranged",
+      "roles": [
+        "Carry",
+        "Pusher",
+        "Disabler",
+        "Durable"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 25045,
-          "wins": 12467,
-          "win_rate": 49.778398882012375
+          "picks": 24423,
+          "wins": 12217,
+          "win_rate": 50.02251975596773,
+          "pick_rate": 2.336516549727631
         },
-        "divine_immortal": {
-          "picks": 3397,
-          "wins": 1631,
-          "win_rate": 48.01295260523992
+        "divine": {
+          "picks": 3269,
+          "wins": 1560,
+          "win_rate": 47.72101560110125,
+          "pick_rate": 1.271400679843496
         },
         "herald_guardian": {
-          "picks": 32669,
-          "wins": 16846,
-          "win_rate": 51.56570449049558
+          "picks": 31710,
+          "wins": 16364,
+          "win_rate": 51.60517187007253,
+          "pick_rate": 4.03844096565988
         },
         "legend_ancient": {
-          "picks": 11070,
-          "wins": 5491,
-          "win_rate": 49.60252935862692
+          "picks": 10798,
+          "wins": 5382,
+          "win_rate": 49.84256343767364,
+          "pick_rate": 1.7308287236139985
         }
       }
     },
@@ -2543,26 +3472,37 @@
       "name": "Centaur Warrunner",
       "primary_attr": "str",
       "attack_type": "Melee",
+      "roles": [
+        "Durable",
+        "Initiator",
+        "Disabler",
+        "Nuker",
+        "Escape"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 52576,
-          "wins": 25266,
-          "win_rate": 48.056147291539865
+          "picks": 50552,
+          "wins": 24214,
+          "win_rate": 47.899192910270614,
+          "pick_rate": 4.836243893945511
         },
-        "divine_immortal": {
-          "picks": 10240,
-          "wins": 4656,
-          "win_rate": 45.46875
+        "divine": {
+          "picks": 9749,
+          "wins": 4409,
+          "win_rate": 45.225151297568985,
+          "pick_rate": 3.791644303393772
         },
         "herald_guardian": {
-          "picks": 36059,
-          "wins": 17770,
-          "win_rate": 49.280346099448124
+          "picks": 34518,
+          "wins": 17003,
+          "win_rate": 49.258357958166755,
+          "pick_rate": 4.39605503792645
         },
         "legend_ancient": {
-          "picks": 29472,
-          "wins": 13792,
-          "win_rate": 46.79695982627579
+          "picks": 28279,
+          "wins": 13173,
+          "win_rate": 46.58226952862548,
+          "pick_rate": 4.532886226623473
         }
       }
     },
@@ -2570,26 +3510,36 @@
       "name": "Magnus",
       "primary_attr": "all",
       "attack_type": "Melee",
+      "roles": [
+        "Initiator",
+        "Disabler",
+        "Nuker",
+        "Escape"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 115309,
-          "wins": 56211,
-          "win_rate": 48.7481462851989
+          "picks": 112385,
+          "wins": 54749,
+          "win_rate": 48.71557592205365,
+          "pick_rate": 10.75172634160995
         },
-        "divine_immortal": {
-          "picks": 32263,
-          "wins": 15909,
-          "win_rate": 49.31035551560611
+        "divine": {
+          "picks": 31222,
+          "wins": 15428,
+          "win_rate": 49.413874831849334,
+          "pick_rate": 12.14306271828499
         },
         "herald_guardian": {
-          "picks": 53920,
-          "wins": 25786,
-          "win_rate": 47.8227002967359
+          "picks": 52332,
+          "wins": 25021,
+          "win_rate": 47.81204616678132,
+          "pick_rate": 6.664764825446635
         },
         "legend_ancient": {
-          "picks": 82320,
-          "wins": 40393,
-          "win_rate": 49.068270165208936
+          "picks": 80296,
+          "wins": 39408,
+          "win_rate": 49.078409883431306,
+          "pick_rate": 12.870774512994037
         }
       }
     },
@@ -2597,26 +3547,35 @@
       "name": "Timbersaw",
       "primary_attr": "str",
       "attack_type": "Melee",
+      "roles": [
+        "Nuker",
+        "Durable",
+        "Escape"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 31607,
-          "wins": 13889,
-          "win_rate": 43.94279748157054
+          "picks": 30835,
+          "wins": 13535,
+          "win_rate": 43.89492459867034,
+          "pick_rate": 2.949944225150535
         },
-        "divine_immortal": {
-          "picks": 8863,
-          "wins": 3817,
-          "win_rate": 43.06668171048178
+        "divine": {
+          "picks": 8655,
+          "wins": 3709,
+          "win_rate": 42.85384170999422,
+          "pick_rate": 3.3661587286771053
         },
         "herald_guardian": {
-          "picks": 22232,
-          "wins": 9695,
-          "win_rate": 43.60831234256927
+          "picks": 21590,
+          "wins": 9421,
+          "win_rate": 43.635942566002775,
+          "pick_rate": 2.7496039245852035
         },
         "legend_ancient": {
-          "picks": 20675,
-          "wins": 9054,
-          "win_rate": 43.79201934703749
+          "picks": 20007,
+          "wins": 8762,
+          "win_rate": 43.7946718648473,
+          "pick_rate": 3.2069540908821326
         }
       }
     },
@@ -2624,26 +3583,36 @@
       "name": "Bristleback",
       "primary_attr": "str",
       "attack_type": "Melee",
+      "roles": [
+        "Carry",
+        "Durable",
+        "Initiator",
+        "Nuker"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 100419,
-          "wins": 49473,
-          "win_rate": 49.26657305888328
+          "picks": 97792,
+          "wins": 48269,
+          "win_rate": 49.358843259162306,
+          "pick_rate": 9.355633068458605
         },
-        "divine_immortal": {
-          "picks": 19682,
-          "wins": 9199,
-          "win_rate": 46.738136368255255
+        "divine": {
+          "picks": 19143,
+          "wins": 8946,
+          "win_rate": 46.73248707099201,
+          "pick_rate": 7.445219704571442
         },
         "herald_guardian": {
-          "picks": 105675,
-          "wins": 55962,
-          "win_rate": 52.95670688431512
+          "picks": 102586,
+          "wins": 54414,
+          "win_rate": 53.04232546351354,
+          "pick_rate": 13.064885048980901
         },
         "legend_ancient": {
-          "picks": 48828,
-          "wins": 23298,
-          "win_rate": 47.71442614893095
+          "picks": 47541,
+          "wins": 22744,
+          "win_rate": 47.840811089375485,
+          "pick_rate": 7.620423073655594
         }
       }
     },
@@ -2651,26 +3620,35 @@
       "name": "Tusk",
       "primary_attr": "str",
       "attack_type": "Melee",
+      "roles": [
+        "Initiator",
+        "Disabler",
+        "Nuker"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 59671,
-          "wins": 28782,
-          "win_rate": 48.234485763603764
+          "picks": 57797,
+          "wins": 27822,
+          "win_rate": 48.13744658027233,
+          "pick_rate": 5.529363592703922
         },
-        "divine_immortal": {
-          "picks": 27861,
-          "wins": 13621,
-          "win_rate": 48.889128171996695
+        "divine": {
+          "picks": 26909,
+          "wins": 13174,
+          "win_rate": 48.9575978297224,
+          "pick_rate": 10.465622787980616
         },
         "herald_guardian": {
-          "picks": 31693,
-          "wins": 14570,
-          "win_rate": 45.97229672167356
+          "picks": 30759,
+          "wins": 14142,
+          "win_rate": 45.97678728177119,
+          "pick_rate": 3.9173259433217353
         },
         "legend_ancient": {
-          "picks": 50813,
-          "wins": 24891,
-          "win_rate": 48.98549583767933
+          "picks": 49215,
+          "wins": 24130,
+          "win_rate": 49.02976734735345,
+          "pick_rate": 7.888751216212533
         }
       }
     },
@@ -2678,26 +3656,35 @@
       "name": "Skywrath Mage",
       "primary_attr": "int",
       "attack_type": "Ranged",
+      "roles": [
+        "Support",
+        "Nuker",
+        "Disabler"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 136783,
-          "wins": 68061,
-          "win_rate": 49.75837640642477
+          "picks": 132523,
+          "wins": 65827,
+          "win_rate": 49.672132384567206,
+          "pick_rate": 12.678302531202345
         },
-        "divine_immortal": {
-          "picks": 29823,
-          "wins": 14363,
-          "win_rate": 48.16081547798679
+        "divine": {
+          "picks": 28608,
+          "wins": 13756,
+          "win_rate": 48.08445190156599,
+          "pick_rate": 11.126408886192332
         },
         "herald_guardian": {
-          "picks": 107653,
-          "wins": 53975,
-          "win_rate": 50.13794320641319
+          "picks": 104405,
+          "wins": 52423,
+          "win_rate": 50.21119678176332,
+          "pick_rate": 13.296544592233356
         },
         "legend_ancient": {
-          "picks": 76074,
-          "wins": 37430,
-          "win_rate": 49.20209269921392
+          "picks": 73341,
+          "wins": 36061,
+          "win_rate": 49.168950518809396,
+          "pick_rate": 11.755946417723122
         }
       }
     },
@@ -2705,26 +3692,35 @@
       "name": "Abaddon",
       "primary_attr": "all",
       "attack_type": "Melee",
+      "roles": [
+        "Support",
+        "Carry",
+        "Durable"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 36154,
-          "wins": 18290,
-          "win_rate": 50.58914642916413
+          "picks": 35082,
+          "wins": 17827,
+          "win_rate": 50.815232882959926,
+          "pick_rate": 3.3562491748575014
         },
-        "divine_immortal": {
-          "picks": 7862,
-          "wins": 3937,
-          "win_rate": 50.0763164589163
+        "divine": {
+          "picks": 7558,
+          "wins": 3746,
+          "win_rate": 49.56337655464409,
+          "pick_rate": 2.9395063745050907
         },
         "herald_guardian": {
-          "picks": 25580,
-          "wins": 12754,
-          "win_rate": 49.85926505082096
+          "picks": 24642,
+          "wins": 12270,
+          "win_rate": 49.79303627952277,
+          "pick_rate": 3.138292723929068
         },
         "legend_ancient": {
-          "picks": 21372,
-          "wins": 10792,
-          "win_rate": 50.4959760434213
+          "picks": 20787,
+          "wins": 10514,
+          "win_rate": 50.57968922884495,
+          "pick_rate": 3.3319815408190583
         }
       }
     },
@@ -2732,26 +3728,36 @@
       "name": "Elder Titan",
       "primary_attr": "str",
       "attack_type": "Melee",
+      "roles": [
+        "Initiator",
+        "Disabler",
+        "Nuker",
+        "Durable"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 9208,
-          "wins": 4633,
-          "win_rate": 50.314943527367504
+          "picks": 8842,
+          "wins": 4463,
+          "win_rate": 50.47500565482922,
+          "pick_rate": 0.8459026054412528
         },
-        "divine_immortal": {
-          "picks": 2946,
-          "wins": 1512,
-          "win_rate": 51.32382892057027
+        "divine": {
+          "picks": 2814,
+          "wins": 1447,
+          "win_rate": 51.421464108031266,
+          "pick_rate": 1.0944391291158146
         },
         "herald_guardian": {
-          "picks": 8594,
-          "wins": 4098,
-          "win_rate": 47.684430998370956
+          "picks": 8274,
+          "wins": 3945,
+          "win_rate": 47.67947788252357,
+          "pick_rate": 1.053738900973505
         },
         "legend_ancient": {
-          "picks": 5931,
-          "wins": 3100,
-          "win_rate": 52.2677457427078
+          "picks": 5690,
+          "wins": 3006,
+          "win_rate": 52.82952548330404,
+          "pick_rate": 0.9120592181296214
         }
       }
     },
@@ -2759,26 +3765,37 @@
       "name": "Legion Commander",
       "primary_attr": "str",
       "attack_type": "Melee",
+      "roles": [
+        "Carry",
+        "Disabler",
+        "Initiator",
+        "Durable",
+        "Nuker"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 175005,
-          "wins": 92197,
-          "win_rate": 52.68249478586326
+          "picks": 169711,
+          "wins": 89388,
+          "win_rate": 52.67071668895946,
+          "pick_rate": 16.236029978742415
         },
-        "divine_immortal": {
-          "picks": 30878,
-          "wins": 16120,
-          "win_rate": 52.20545372109593
+        "divine": {
+          "picks": 29653,
+          "wins": 15417,
+          "win_rate": 51.99136680942906,
+          "pick_rate": 11.532837063138325
         },
         "herald_guardian": {
-          "picks": 135515,
-          "wins": 71818,
-          "win_rate": 52.99634726783013
+          "picks": 131247,
+          "wins": 69518,
+          "win_rate": 52.967305919373395,
+          "pick_rate": 16.71501928161344
         },
         "legend_ancient": {
-          "picks": 91590,
-          "wins": 47693,
-          "win_rate": 52.072278633038536
+          "picks": 88228,
+          "wins": 45932,
+          "win_rate": 52.06057034048148,
+          "pick_rate": 14.142207503891079
         }
       }
     },
@@ -2786,26 +3803,34 @@
       "name": "Techies",
       "primary_attr": "all",
       "attack_type": "Ranged",
+      "roles": [
+        "Nuker",
+        "Disabler"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 121185,
-          "wins": 63970,
-          "win_rate": 52.78706110492223
+          "picks": 118919,
+          "wins": 62634,
+          "win_rate": 52.669464089001764,
+          "pick_rate": 11.376825597881513
         },
-        "divine_immortal": {
-          "picks": 29564,
-          "wins": 15381,
-          "win_rate": 52.02611283994047
+        "divine": {
+          "picks": 28855,
+          "wins": 14959,
+          "win_rate": 51.84196846300468,
+          "pick_rate": 11.222473728015931
         },
         "herald_guardian": {
-          "picks": 99997,
-          "wins": 52732,
-          "win_rate": 52.73358200746022
+          "picks": 97766,
+          "wins": 51543,
+          "win_rate": 52.72078227604688,
+          "pick_rate": 12.451031833765493
         },
         "legend_ancient": {
-          "picks": 70043,
-          "wins": 36376,
-          "win_rate": 51.93381208686093
+          "picks": 68516,
+          "wins": 35658,
+          "win_rate": 52.04331834899878,
+          "pick_rate": 10.9825394357415
         }
       }
     },
@@ -2813,26 +3838,37 @@
       "name": "Ember Spirit",
       "primary_attr": "agi",
       "attack_type": "Melee",
+      "roles": [
+        "Carry",
+        "Escape",
+        "Nuker",
+        "Disabler",
+        "Initiator"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 76957,
-          "wins": 38418,
-          "win_rate": 49.92138466936081
+          "picks": 74550,
+          "wins": 37149,
+          "win_rate": 49.83098591549296,
+          "pick_rate": 7.132101248093801
         },
-        "divine_immortal": {
-          "picks": 30477,
-          "wins": 15628,
-          "win_rate": 51.2780129277816
+        "divine": {
+          "picks": 29269,
+          "wins": 14967,
+          "win_rate": 51.136014212989856,
+          "pick_rate": 11.383489292853865
         },
         "herald_guardian": {
-          "picks": 41120,
-          "wins": 19482,
-          "win_rate": 47.378404669260696
+          "picks": 39678,
+          "wins": 18826,
+          "win_rate": 47.44694793084329,
+          "pick_rate": 5.053209102347925
         },
         "legend_ancient": {
-          "picks": 59875,
-          "wins": 30298,
-          "win_rate": 50.602087682672234
+          "picks": 57745,
+          "wins": 29195,
+          "win_rate": 50.55848991254655,
+          "pick_rate": 9.256038585394549
         }
       }
     },
@@ -2840,26 +3876,37 @@
       "name": "Earth Spirit",
       "primary_attr": "str",
       "attack_type": "Melee",
+      "roles": [
+        "Nuker",
+        "Escape",
+        "Disabler",
+        "Initiator",
+        "Durable"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 32845,
-          "wins": 16483,
-          "win_rate": 50.18419850814432
+          "picks": 32348,
+          "wins": 16217,
+          "win_rate": 50.13292939285273,
+          "pick_rate": 3.0946909614129883
         },
-        "divine_immortal": {
-          "picks": 13819,
-          "wins": 7076,
-          "win_rate": 51.204862869961644
+        "divine": {
+          "picks": 13315,
+          "wins": 6828,
+          "win_rate": 51.280510702215544,
+          "pick_rate": 5.178556149316656
         },
         "herald_guardian": {
-          "picks": 17630,
-          "wins": 8427,
-          "win_rate": 47.799205899035734
+          "picks": 17104,
+          "wins": 8153,
+          "win_rate": 47.66721234798877,
+          "pick_rate": 2.178287425942812
         },
         "legend_ancient": {
-          "picks": 25745,
-          "wins": 13268,
-          "win_rate": 51.53622062536415
+          "picks": 25114,
+          "wins": 12865,
+          "win_rate": 51.22640758142869,
+          "pick_rate": 4.0255633047640265
         }
       }
     },
@@ -2867,26 +3914,37 @@
       "name": "Underlord",
       "primary_attr": "str",
       "attack_type": "Melee",
+      "roles": [
+        "Support",
+        "Nuker",
+        "Disabler",
+        "Durable",
+        "Escape"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 59269,
-          "wins": 30763,
-          "win_rate": 51.90403077494137
+          "picks": 57260,
+          "wins": 29699,
+          "win_rate": 51.866922808243096,
+          "pick_rate": 5.477989503230732
         },
-        "divine_immortal": {
-          "picks": 16959,
-          "wins": 8364,
-          "win_rate": 49.31894569255263
+        "divine": {
+          "picks": 16423,
+          "wins": 8109,
+          "win_rate": 49.3758752968398,
+          "pick_rate": 6.387339665056511
         },
         "herald_guardian": {
-          "picks": 36790,
-          "wins": 19071,
-          "win_rate": 51.83745583038869
+          "picks": 35268,
+          "wins": 18334,
+          "win_rate": 51.98480208687762,
+          "pick_rate": 4.4915716170574775
         },
         "legend_ancient": {
-          "picks": 40010,
-          "wins": 20352,
-          "win_rate": 50.8672831792052
+          "picks": 38858,
+          "wins": 19722,
+          "win_rate": 50.75402748468784,
+          "pick_rate": 6.2286110892936435
         }
       }
     },
@@ -2894,26 +3952,35 @@
       "name": "Terrorblade",
       "primary_attr": "agi",
       "attack_type": "Melee",
+      "roles": [
+        "Carry",
+        "Pusher",
+        "Nuker"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 31887,
-          "wins": 15280,
-          "win_rate": 47.919214727004736
+          "picks": 31257,
+          "wins": 14945,
+          "win_rate": 47.81328982307963,
+          "pick_rate": 2.9903164146434333
         },
-        "divine_immortal": {
-          "picks": 10831,
-          "wins": 5303,
-          "win_rate": 48.961314744714244
+        "divine": {
+          "picks": 10489,
+          "wins": 5164,
+          "win_rate": 49.232529316426735,
+          "pick_rate": 4.079449902379452
         },
         "herald_guardian": {
-          "picks": 30245,
-          "wins": 14525,
-          "win_rate": 48.02446685402546
+          "picks": 29588,
+          "wins": 14209,
+          "win_rate": 48.022847100175746,
+          "pick_rate": 3.7681927244384896
         },
         "legend_ancient": {
-          "picks": 18581,
-          "wins": 9001,
-          "win_rate": 48.44195683762983
+          "picks": 18125,
+          "wins": 8761,
+          "win_rate": 48.336551724137934,
+          "pick_rate": 2.90528529500868
         }
       }
     },
@@ -2921,26 +3988,37 @@
       "name": "Phoenix",
       "primary_attr": "str",
       "attack_type": "Ranged",
+      "roles": [
+        "Support",
+        "Nuker",
+        "Initiator",
+        "Escape",
+        "Disabler"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 86405,
-          "wins": 45437,
-          "win_rate": 52.586077194606794
+          "picks": 85850,
+          "wins": 45117,
+          "win_rate": 52.55329062317996,
+          "pick_rate": 8.213157507026866
         },
-        "divine_immortal": {
-          "picks": 34481,
-          "wins": 18176,
-          "win_rate": 52.71308836750674
+        "divine": {
+          "picks": 33743,
+          "wins": 17752,
+          "win_rate": 52.60943010402157,
+          "pick_rate": 13.12354638726188
         },
         "herald_guardian": {
-          "picks": 47236,
-          "wins": 24646,
-          "win_rate": 52.17630620713015
+          "picks": 46745,
+          "wins": 24389,
+          "win_rate": 52.174564124505295,
+          "pick_rate": 5.953229988639895
         },
         "legend_ancient": {
-          "picks": 65472,
-          "wins": 34662,
-          "win_rate": 52.941715542522
+          "picks": 64779,
+          "wins": 34289,
+          "win_rate": 52.932277435588695,
+          "pick_rate": 10.383529717261643
         }
       }
     },
@@ -2948,26 +4026,36 @@
       "name": "Oracle",
       "primary_attr": "int",
       "attack_type": "Ranged",
+      "roles": [
+        "Support",
+        "Nuker",
+        "Disabler",
+        "Escape"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 35502,
-          "wins": 17878,
-          "win_rate": 50.357726325277454
+          "picks": 34757,
+          "wins": 17516,
+          "win_rate": 50.395603763270714,
+          "pick_rate": 3.3251568488262406
         },
-        "divine_immortal": {
-          "picks": 11825,
-          "wins": 6149,
-          "win_rate": 52
+        "divine": {
+          "picks": 11465,
+          "wins": 5997,
+          "win_rate": 52.30702136938509,
+          "pick_rate": 4.459042151852457
         },
         "herald_guardian": {
-          "picks": 20889,
-          "wins": 10046,
-          "win_rate": 48.09229738139691
+          "picks": 20464,
+          "wins": 9837,
+          "win_rate": 48.06978107896794,
+          "pick_rate": 2.6062017004498195
         },
         "legend_ancient": {
-          "picks": 24983,
-          "wins": 12706,
-          "win_rate": 50.858583837009164
+          "picks": 24498,
+          "wins": 12483,
+          "win_rate": 50.95518001469508,
+          "pick_rate": 3.9268236776343524
         }
       }
     },
@@ -2975,26 +4063,35 @@
       "name": "Winter Wyvern",
       "primary_attr": "int",
       "attack_type": "Ranged",
+      "roles": [
+        "Support",
+        "Disabler",
+        "Nuker"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 41168,
-          "wins": 20511,
-          "win_rate": 49.82267780800622
+          "picks": 40257,
+          "wins": 19968,
+          "win_rate": 49.60131157314256,
+          "pick_rate": 3.851334673970653
         },
-        "divine_immortal": {
-          "picks": 15833,
-          "wins": 8367,
-          "win_rate": 52.84532305943282
+        "divine": {
+          "picks": 15443,
+          "wins": 8127,
+          "win_rate": 52.62578514537331,
+          "pick_rate": 6.006191709643043
         },
         "herald_guardian": {
-          "picks": 30777,
-          "wins": 15169,
-          "win_rate": 49.286805081716864
+          "picks": 30026,
+          "wins": 14760,
+          "win_rate": 49.157396922667026,
+          "pick_rate": 3.8239744066510104
         },
         "legend_ancient": {
-          "picks": 26804,
-          "wins": 13606,
-          "win_rate": 50.76108043575586
+          "picks": 26319,
+          "wins": 13414,
+          "win_rate": 50.96698202819256,
+          "pick_rate": 4.218714685756328
         }
       }
     },
@@ -3002,26 +4099,35 @@
       "name": "Arc Warden",
       "primary_attr": "all",
       "attack_type": "Ranged",
+      "roles": [
+        "Carry",
+        "Escape",
+        "Nuker"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 32293,
-          "wins": 16038,
-          "win_rate": 49.664013872975566
+          "picks": 31512,
+          "wins": 15697,
+          "win_rate": 49.812769738512316,
+          "pick_rate": 3.0147119319910374
         },
-        "divine_immortal": {
-          "picks": 6310,
-          "wins": 3097,
-          "win_rate": 49.080824088748024
+        "divine": {
+          "picks": 6044,
+          "wins": 2963,
+          "win_rate": 49.02382528127068,
+          "pick_rate": 2.350671676039795
         },
         "herald_guardian": {
-          "picks": 30734,
-          "wins": 14921,
-          "win_rate": 48.548838419990894
+          "picks": 30019,
+          "wins": 14600,
+          "win_rate": 48.63586395282987,
+          "pick_rate": 3.823082918579121
         },
         "legend_ancient": {
-          "picks": 16025,
-          "wins": 7999,
-          "win_rate": 49.915756630265214
+          "picks": 15528,
+          "wins": 7766,
+          "win_rate": 50.012879958784126,
+          "pick_rate": 2.489008003359712
         }
       }
     },
@@ -3029,26 +4135,36 @@
       "name": "Monkey King",
       "primary_attr": "agi",
       "attack_type": "Melee",
+      "roles": [
+        "Carry",
+        "Escape",
+        "Disabler",
+        "Initiator"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 102258,
-          "wins": 47123,
-          "win_rate": 46.08245809618807
+          "picks": 98554,
+          "wins": 45361,
+          "win_rate": 46.02654382369057,
+          "pick_rate": 9.428532614414976
         },
-        "divine_immortal": {
-          "picks": 33901,
-          "wins": 16308,
-          "win_rate": 48.10477567033421
+        "divine": {
+          "picks": 32475,
+          "wins": 15644,
+          "win_rate": 48.1724403387221,
+          "pick_rate": 12.630387604135066
         },
         "herald_guardian": {
-          "picks": 69811,
-          "wins": 31826,
-          "win_rate": 45.588804056667286
+          "picks": 67270,
+          "wins": 30723,
+          "win_rate": 45.67117585848075,
+          "pick_rate": 8.567200370859037
         },
         "legend_ancient": {
-          "picks": 70275,
-          "wins": 33061,
-          "win_rate": 47.045179651369615
+          "picks": 67378,
+          "wins": 31742,
+          "win_rate": 47.110332749562176,
+          "pick_rate": 10.800127592115578
         }
       }
     },
@@ -3056,26 +4172,36 @@
       "name": "Dark Willow",
       "primary_attr": "int",
       "attack_type": "Ranged",
+      "roles": [
+        "Support",
+        "Nuker",
+        "Disabler",
+        "Escape"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 47332,
-          "wins": 22476,
-          "win_rate": 47.485844671680894
+          "picks": 45742,
+          "wins": 21725,
+          "win_rate": 47.49464387215251,
+          "pick_rate": 4.376077468682853
         },
-        "divine_immortal": {
-          "picks": 13830,
-          "wins": 6854,
-          "win_rate": 49.5589298626175
+        "divine": {
+          "picks": 13312,
+          "wins": 6594,
+          "win_rate": 49.53425480769231,
+          "pick_rate": 5.1773893698613085
         },
         "herald_guardian": {
-          "picks": 36375,
-          "wins": 17122,
-          "win_rate": 47.07079037800687
+          "picks": 35242,
+          "wins": 16565,
+          "win_rate": 47.003575279496054,
+          "pick_rate": 4.488260375647602
         },
         "legend_ancient": {
-          "picks": 30230,
-          "wins": 14694,
-          "win_rate": 48.60734369831293
+          "picks": 28997,
+          "wins": 14076,
+          "win_rate": 48.54295271924682,
+          "pick_rate": 4.647975597206438
         }
       }
     },
@@ -3083,26 +4209,38 @@
       "name": "Pangolier",
       "primary_attr": "all",
       "attack_type": "Melee",
+      "roles": [
+        "Carry",
+        "Nuker",
+        "Disabler",
+        "Durable",
+        "Escape",
+        "Initiator"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 80629,
-          "wins": 39742,
-          "win_rate": 49.28995770752459
+          "picks": 78609,
+          "wins": 38719,
+          "win_rate": 49.25517434390464,
+          "pick_rate": 7.520420483050377
         },
-        "divine_immortal": {
-          "picks": 39432,
-          "wins": 19630,
-          "win_rate": 49.78190302292555
+        "divine": {
+          "picks": 37988,
+          "wins": 18887,
+          "win_rate": 49.71833210487522,
+          "pick_rate": 14.77453931657838
         },
         "herald_guardian": {
-          "picks": 37554,
-          "wins": 18081,
-          "win_rate": 48.14666879693242
+          "picks": 36909,
+          "wins": 17806,
+          "win_rate": 48.242975967921105,
+          "pick_rate": 4.700561892196168
         },
         "legend_ancient": {
-          "picks": 71585,
-          "wins": 35482,
-          "win_rate": 49.566249912691205
+          "picks": 69255,
+          "wins": 34396,
+          "win_rate": 49.66572810627392,
+          "pick_rate": 11.100994929976613
         }
       }
     },
@@ -3110,26 +4248,36 @@
       "name": "Grimstroke",
       "primary_attr": "int",
       "attack_type": "Ranged",
+      "roles": [
+        "Support",
+        "Nuker",
+        "Disabler",
+        "Escape"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 54663,
-          "wins": 28653,
-          "win_rate": 52.41754020086713
+          "picks": 54085,
+          "wins": 28438,
+          "win_rate": 52.58019783673846,
+          "pick_rate": 5.174241395079185
         },
-        "divine_immortal": {
-          "picks": 16507,
-          "wins": 8709,
-          "win_rate": 52.759435391046225
+        "divine": {
+          "picks": 16216,
+          "wins": 8570,
+          "win_rate": 52.84903798717316,
+          "pick_rate": 6.306831882637544
         },
         "herald_guardian": {
-          "picks": 33536,
-          "wins": 17479,
-          "win_rate": 52.120109732824424
+          "picks": 32890,
+          "wins": 17090,
+          "win_rate": 51.961082395865,
+          "pick_rate": 4.188720383492697
         },
         "legend_ancient": {
-          "picks": 37261,
-          "wins": 19459,
-          "win_rate": 52.223504468479106
+          "picks": 36745,
+          "wins": 19248,
+          "win_rate": 52.38263709348211,
+          "pick_rate": 5.889914933246562
         }
       }
     },
@@ -3137,26 +4285,36 @@
       "name": "Hoodwink",
       "primary_attr": "agi",
       "attack_type": "Ranged",
+      "roles": [
+        "Support",
+        "Nuker",
+        "Escape",
+        "Disabler"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 106264,
-          "wins": 52549,
-          "win_rate": 49.45136640819092
+          "picks": 104674,
+          "wins": 51767,
+          "win_rate": 49.455452165771824,
+          "pick_rate": 10.014025030757486
         },
-        "divine_immortal": {
-          "picks": 28768,
-          "wins": 14384,
-          "win_rate": 50
+        "divine": {
+          "picks": 28185,
+          "wins": 14086,
+          "win_rate": 49.97693808763526,
+          "pick_rate": 10.961892982988356
         },
         "herald_guardian": {
-          "picks": 78815,
-          "wins": 38297,
-          "win_rate": 48.59100425045994
+          "picks": 77262,
+          "wins": 37587,
+          "win_rate": 48.64875359167508,
+          "pick_rate": 9.839735915762018
         },
         "legend_ancient": {
-          "picks": 66271,
-          "wins": 32860,
-          "win_rate": 49.584282717930925
+          "picks": 64885,
+          "wins": 32173,
+          "win_rate": 49.58464976496879,
+          "pick_rate": 10.400520627124866
         }
       }
     },
@@ -3164,26 +4322,36 @@
       "name": "Void Spirit",
       "primary_attr": "all",
       "attack_type": "Melee",
+      "roles": [
+        "Carry",
+        "Escape",
+        "Nuker",
+        "Disabler"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 59374,
-          "wins": 29446,
-          "win_rate": 49.59409842692087
+          "picks": 57063,
+          "wins": 28362,
+          "win_rate": 49.7029598864413,
+          "pick_rate": 5.459142770221013
         },
-        "divine_immortal": {
-          "picks": 27216,
-          "wins": 13434,
-          "win_rate": 49.360670194003525
+        "divine": {
+          "picks": 25743,
+          "wins": 12753,
+          "win_rate": 49.53968068989628,
+          "pick_rate": 10.012134506335613
         },
         "herald_guardian": {
-          "picks": 33779,
-          "wins": 16587,
-          "win_rate": 49.10447319340419
+          "picks": 32406,
+          "wins": 15980,
+          "win_rate": 49.31185582916744,
+          "pick_rate": 4.127080351093474
         },
         "legend_ancient": {
-          "picks": 50964,
-          "wins": 25467,
-          "win_rate": 49.97056745938309
+          "picks": 48882,
+          "wins": 24450,
+          "win_rate": 50.01841168528293,
+          "pick_rate": 7.835374112585616
         }
       }
     },
@@ -3191,26 +4359,36 @@
       "name": "Snapfire",
       "primary_attr": "all",
       "attack_type": "Ranged",
+      "roles": [
+        "Support",
+        "Nuker",
+        "Disabler",
+        "Escape"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 62554,
-          "wins": 30026,
-          "win_rate": 48.00012788950347
+          "picks": 60975,
+          "wins": 29149,
+          "win_rate": 47.80483804838048,
+          "pick_rate": 5.833398706941912
         },
-        "divine_immortal": {
-          "picks": 19770,
-          "wins": 9513,
-          "win_rate": 48.11836115326252
+        "divine": {
+          "picks": 19377,
+          "wins": 9362,
+          "win_rate": 48.31501264385612,
+          "pick_rate": 7.536228502088535
         },
         "herald_guardian": {
-          "picks": 36022,
-          "wins": 17173,
-          "win_rate": 47.67364388429293
+          "picks": 35128,
+          "wins": 16716,
+          "win_rate": 47.58597130494193,
+          "pick_rate": 4.473741855619686
         },
         "legend_ancient": {
-          "picks": 44357,
-          "wins": 21416,
-          "win_rate": 48.280992853439145
+          "picks": 43286,
+          "wins": 20913,
+          "win_rate": 48.31354248486809,
+          "pick_rate": 6.938382305089419
         }
       }
     },
@@ -3218,26 +4396,36 @@
       "name": "Mars",
       "primary_attr": "str",
       "attack_type": "Melee",
+      "roles": [
+        "Carry",
+        "Initiator",
+        "Disabler",
+        "Durable"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 76342,
-          "wins": 33918,
-          "win_rate": 44.42901679285322
+          "picks": 73536,
+          "wins": 32696,
+          "win_rate": 44.46257615317668,
+          "pick_rate": 7.035093190876268
         },
-        "divine_immortal": {
-          "picks": 27221,
-          "wins": 12055,
-          "win_rate": 44.28566180522391
+        "divine": {
+          "picks": 26020,
+          "wins": 11575,
+          "win_rate": 44.48501152959262,
+          "pick_rate": 10.119867142712684
         },
         "herald_guardian": {
-          "picks": 42540,
-          "wins": 19055,
-          "win_rate": 44.79313587212036
+          "picks": 41279,
+          "wins": 18525,
+          "win_rate": 44.87754063809685,
+          "pick_rate": 5.25710515993296
         },
         "legend_ancient": {
-          "picks": 59229,
-          "wins": 26553,
-          "win_rate": 44.83107936990326
+          "picks": 56870,
+          "wins": 25560,
+          "win_rate": 44.94461051521013,
+          "pick_rate": 9.115783433221717
         }
       }
     },
@@ -3245,26 +4433,36 @@
       "name": "Ring Master",
       "primary_attr": "int",
       "attack_type": "Ranged",
+      "roles": [
+        "Support",
+        "Nuker",
+        "Escape",
+        "Disabler"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 34312,
-          "wins": 16411,
-          "win_rate": 47.82874795989741
+          "picks": 33456,
+          "wins": 16001,
+          "win_rate": 47.826996652319465,
+          "pick_rate": 3.2006918760057173
         },
-        "divine_immortal": {
-          "picks": 16045,
-          "wins": 7946,
-          "win_rate": 49.52321595512621
+        "divine": {
+          "picks": 15405,
+          "wins": 7621,
+          "win_rate": 49.47095098993833,
+          "pick_rate": 5.991412503208644
         },
         "herald_guardian": {
-          "picks": 19327,
-          "wins": 9244,
-          "win_rate": 47.82946137527811
+          "picks": 18732,
+          "wins": 8936,
+          "win_rate": 47.70446295109972,
+          "pick_rate": 2.3856220803765646
         },
         "legend_ancient": {
-          "picks": 28210,
-          "wins": 13779,
-          "win_rate": 48.84438142502658
+          "picks": 27387,
+          "wins": 13351,
+          "win_rate": 48.74940665279147,
+          "pick_rate": 4.389906117208425
         }
       }
     },
@@ -3272,26 +4470,34 @@
       "name": "Dawnbreaker",
       "primary_attr": "str",
       "attack_type": "Melee",
+      "roles": [
+        "Carry",
+        "Durable"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 94436,
-          "wins": 50167,
-          "win_rate": 53.122749798805536
+          "picks": 92889,
+          "wins": 49374,
+          "win_rate": 53.15376417013855,
+          "pick_rate": 8.886569454516232
         },
-        "divine_immortal": {
-          "picks": 35261,
-          "wins": 18683,
-          "win_rate": 52.984884149627064
+        "divine": {
+          "picks": 34166,
+          "wins": 18093,
+          "win_rate": 52.956155242053505,
+          "pick_rate": 13.288062290465858
         },
         "herald_guardian": {
-          "picks": 51933,
-          "wins": 27363,
-          "win_rate": 52.68904164981804
+          "picks": 50943,
+          "wins": 26888,
+          "win_rate": 52.78055866360442,
+          "pick_rate": 6.48786812089597
         },
         "legend_ancient": {
-          "picks": 72125,
-          "wins": 38376,
-          "win_rate": 53.207625649913346
+          "picks": 70753,
+          "wins": 37680,
+          "win_rate": 53.255692338134075,
+          "pick_rate": 11.341111750496504
         }
       }
     },
@@ -3299,26 +4505,37 @@
       "name": "Marci",
       "primary_attr": "all",
       "attack_type": "Melee",
+      "roles": [
+        "Support",
+        "Carry",
+        "Initiator",
+        "Disabler",
+        "Escape"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 43706,
-          "wins": 21263,
-          "win_rate": 48.65007092847664
+          "picks": 42420,
+          "wins": 20655,
+          "win_rate": 48.691654879773694,
+          "pick_rate": 4.058266062295628
         },
-        "divine_immortal": {
-          "picks": 12158,
-          "wins": 5926,
-          "win_rate": 48.74156933706202
+        "divine": {
+          "picks": 11711,
+          "wins": 5729,
+          "win_rate": 48.91981897361455,
+          "pick_rate": 4.554718067190939
         },
         "herald_guardian": {
-          "picks": 35671,
-          "wins": 17106,
-          "win_rate": 47.95492136469401
+          "picks": 34720,
+          "wins": 16701,
+          "win_rate": 48.10195852534562,
+          "pick_rate": 4.421780836572407
         },
         "legend_ancient": {
-          "picks": 26432,
-          "wins": 12713,
-          "win_rate": 48.09700363196126
+          "picks": 25472,
+          "wins": 12232,
+          "win_rate": 48.0213567839196,
+          "pick_rate": 4.082947698453026
         }
       }
     },
@@ -3326,26 +4543,35 @@
       "name": "Primal Beast",
       "primary_attr": "str",
       "attack_type": "Melee",
+      "roles": [
+        "Initiator",
+        "Durable",
+        "Disabler"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 44139,
-          "wins": 22336,
-          "win_rate": 50.60377443983779
+          "picks": 42712,
+          "wins": 21620,
+          "win_rate": 50.61809327589436,
+          "pick_rate": 4.086201321376022
         },
-        "divine_immortal": {
-          "picks": 15366,
-          "wins": 8067,
-          "win_rate": 52.49902381882078
+        "divine": {
+          "picks": 14768,
+          "wins": 7756,
+          "win_rate": 52.518959913326114,
+          "pick_rate": 5.743666332189889
         },
         "herald_guardian": {
-          "picks": 31022,
-          "wins": 15598,
-          "win_rate": 50.280446135000965
+          "picks": 29962,
+          "wins": 15144,
+          "win_rate": 50.54402242840932,
+          "pick_rate": 3.815823658565163
         },
         "legend_ancient": {
-          "picks": 30400,
-          "wins": 15455,
-          "win_rate": 50.83881578947368
+          "picks": 29363,
+          "wins": 14966,
+          "win_rate": 50.96890644688894,
+          "pick_rate": 4.706642323715303
         }
       }
     },
@@ -3353,26 +4579,35 @@
       "name": "Muerta",
       "primary_attr": "int",
       "attack_type": "Ranged",
+      "roles": [
+        "Carry",
+        "Nuker",
+        "Disabler"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 63281,
-          "wins": 30658,
-          "win_rate": 48.447401273684044
+          "picks": 60773,
+          "wins": 29383,
+          "win_rate": 48.34877330393431,
+          "pick_rate": 5.81407363045479
         },
-        "divine_immortal": {
-          "picks": 21176,
-          "wins": 10140,
-          "win_rate": 47.88439743105402
+        "divine": {
+          "picks": 20260,
+          "wins": 9721,
+          "win_rate": 47.981243830207305,
+          "pick_rate": 7.879650588445772
         },
         "herald_guardian": {
-          "picks": 44700,
-          "wins": 22076,
-          "win_rate": 49.387024608501115
+          "picks": 43071,
+          "wins": 21223,
+          "win_rate": 49.27445380882728,
+          "pick_rate": 5.485326106336697
         },
         "legend_ancient": {
-          "picks": 43362,
-          "wins": 21003,
-          "win_rate": 48.43641898436419
+          "picks": 41620,
+          "wins": 20060,
+          "win_rate": 48.1979817395483,
+          "pick_rate": 6.671336495352345
         }
       }
     },
@@ -3380,26 +4615,35 @@
       "name": "Kez",
       "primary_attr": "agi",
       "attack_type": "Melee",
+      "roles": [
+        "Carry",
+        "Escape",
+        "Disabler"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 38602,
-          "wins": 18621,
-          "win_rate": 48.23843324180094
+          "picks": 37884,
+          "wins": 18295,
+          "win_rate": 48.29215499947207,
+          "pick_rate": 3.624312859594709
         },
-        "divine_immortal": {
-          "picks": 14880,
-          "wins": 7298,
-          "win_rate": 49.045698924731184
+        "divine": {
+          "picks": 14555,
+          "wins": 7101,
+          "win_rate": 48.78735829611817,
+          "pick_rate": 5.6608249908602275
         },
         "herald_guardian": {
-          "picks": 26771,
-          "wins": 12702,
-          "win_rate": 47.446864144036454
+          "picks": 26332,
+          "wins": 12439,
+          "win_rate": 47.239100713960205,
+          "pick_rate": 3.353523415570985
         },
         "legend_ancient": {
-          "picks": 28448,
-          "wins": 13969,
-          "win_rate": 49.103627671541055
+          "picks": 28006,
+          "wins": 13705,
+          "win_rate": 48.935942298078984,
+          "pick_rate": 4.48912661914555
         }
       }
     },
@@ -3407,26 +4651,35 @@
       "name": "Largo",
       "primary_attr": "str",
       "attack_type": "Melee",
+      "roles": [
+        "Durable",
+        "Disabler",
+        "Support"
+      ],
       "brackets": {
         "crusader_archon": {
-          "picks": 18270,
-          "wins": 8624,
-          "win_rate": 47.20306513409962
+          "picks": 17715,
+          "wins": 8373,
+          "win_rate": 47.265029635901776,
+          "pick_rate": 1.6947709404424103
         },
-        "divine_immortal": {
-          "picks": 5190,
-          "wins": 2599,
-          "win_rate": 50.07707129094412
+        "divine": {
+          "picks": 4989,
+          "wins": 2538,
+          "win_rate": 50.87191822008419,
+          "pick_rate": 1.9403542342426434
         },
         "herald_guardian": {
-          "picks": 12120,
-          "wins": 5650,
-          "win_rate": 46.617161716171616
+          "picks": 11772,
+          "wins": 5493,
+          "win_rate": 46.66156982670744,
+          "pick_rate": 1.4992282260406213
         },
         "legend_ancient": {
-          "picks": 12448,
-          "wins": 6086,
-          "win_rate": 48.8913881748072
+          "picks": 12037,
+          "wins": 5863,
+          "win_rate": 48.70814987123037,
+          "pick_rate": 1.9294300190907296
         }
       }
     }
@@ -3437,123 +4690,181 @@
         "best": [
           {
             "name": "Spectre",
-            "win_rate": 54.55706130191329,
-            "pick_rate": 1.017778781854664,
-            "picks": 109654
+            "win_rate": 54.642151791592205,
+            "pick_rate": 10.172452390473694,
+            "picks": 106330
           },
           {
             "name": "Wraith King",
-            "win_rate": 54.105176982571045,
-            "pick_rate": 1.29249013398548,
-            "picks": 139251
-          },
-          {
-            "name": "Lone Druid",
-            "win_rate": 53.196952655815636,
-            "pick_rate": 0.4373829457870879,
-            "picks": 47123
+            "win_rate": 53.975540865832485,
+            "pick_rate": 12.837112565700476,
+            "picks": 134183
           },
           {
             "name": "Dawnbreaker",
-            "win_rate": 53.122749798805536,
-            "pick_rate": 0.87652942020562,
-            "picks": 94436
+            "win_rate": 53.15376417013855,
+            "pick_rate": 8.886569454516232,
+            "picks": 92889
+          },
+          {
+            "name": "Lone Druid",
+            "win_rate": 53.059910245316054,
+            "pick_rate": 4.753873147136541,
+            "picks": 49691
           },
           {
             "name": "Riki",
-            "win_rate": 52.87069640062598,
-            "pick_rate": 0.5693784229858693,
-            "picks": 61344
+            "win_rate": 52.97989890678265,
+            "pick_rate": 5.696975147186288,
+            "picks": 59549
           }
         ],
         "sleepers": [
           {
             "name": "Lone Druid",
-            "win_rate": 53.196952655815636,
-            "pick_rate": 0.4373829457870879,
-            "picks": 47123
+            "win_rate": 53.059910245316054,
+            "pick_rate": 4.753873147136541,
+            "picks": 49691
           }
         ],
         "traps": [
           {
             "name": "Shadow Fiend",
-            "win_rate": 47.41028748150736,
-            "pick_rate": 1.2485132989550443,
-            "picks": 134513
+            "win_rate": 47.37446681421012,
+            "pick_rate": 12.492705261969588,
+            "picks": 130583
+          }
+        ],
+        "supports": [
+          {
+            "name": "Vengeful Spirit",
+            "win_rate": 52.81873696753053,
+            "pick_rate": 7.707835457497268,
+            "picks": 80568
+          },
+          {
+            "name": "Grimstroke",
+            "win_rate": 52.58019783673846,
+            "pick_rate": 5.174241395079185,
+            "picks": 54085
+          },
+          {
+            "name": "Phoenix",
+            "win_rate": 52.55329062317996,
+            "pick_rate": 8.213157507026866,
+            "picks": 85850
+          },
+          {
+            "name": "Visage",
+            "win_rate": 52.31816774992263,
+            "pick_rate": 1.5455277754923589,
+            "picks": 16155
+          },
+          {
+            "name": "Undying",
+            "win_rate": 52.115780049389514,
+            "pick_rate": 9.723861877364213,
+            "picks": 101641
           }
         ]
       },
-      "divine_immortal": {
+      "divine": {
         "best": [
           {
             "name": "Visage",
-            "win_rate": 54.260010583877225,
-            "pick_rate": 0.21238366477772957,
-            "picks": 5669
+            "win_rate": 54.242990654205606,
+            "pick_rate": 2.080756695369441,
+            "picks": 5350
           },
           {
             "name": "Bounty Hunter",
-            "win_rate": 53.747155300949544,
-            "pick_rate": 0.477404311212314,
-            "picks": 12743
+            "win_rate": 53.70779167688659,
+            "pick_rate": 4.756959839451147,
+            "picks": 12231
           },
           {
             "name": "Enigma",
-            "win_rate": 53.42170160295932,
-            "pick_rate": 0.2430667167186293,
-            "picks": 6488
+            "win_rate": 53.61216730038023,
+            "pick_rate": 2.454903974050825,
+            "picks": 6312
           },
           {
             "name": "Keeper of the Light",
-            "win_rate": 53.28894501205372,
-            "pick_rate": 0.652698572545,
-            "picks": 17422
+            "win_rate": 53.33885863130477,
+            "pick_rate": 6.569746186575813,
+            "picks": 16892
           },
           {
-            "name": "Treant Protector",
-            "win_rate": 53.21214858304166,
-            "pick_rate": 0.3318190366795468,
-            "picks": 8857
+            "name": "Night Stalker",
+            "win_rate": 52.997004939904315,
+            "pick_rate": 9.998911005841677,
+            "picks": 25709
           }
         ],
         "sleepers": [
           {
             "name": "Visage",
-            "win_rate": 54.260010583877225,
-            "pick_rate": 0.21238366477772957,
-            "picks": 5669
+            "win_rate": 54.242990654205606,
+            "pick_rate": 2.080756695369441,
+            "picks": 5350
           },
           {
             "name": "Bounty Hunter",
-            "win_rate": 53.747155300949544,
-            "pick_rate": 0.477404311212314,
-            "picks": 12743
+            "win_rate": 53.70779167688659,
+            "pick_rate": 4.756959839451147,
+            "picks": 12231
           },
           {
             "name": "Enigma",
-            "win_rate": 53.42170160295932,
-            "pick_rate": 0.2430667167186293,
-            "picks": 6488
-          },
-          {
-            "name": "Treant Protector",
-            "win_rate": 53.21214858304166,
-            "pick_rate": 0.3318190366795468,
-            "picks": 8857
+            "win_rate": 53.61216730038023,
+            "pick_rate": 2.454903974050825,
+            "picks": 6312
           }
         ],
         "traps": [
           {
             "name": "Venomancer",
-            "win_rate": 47.837357644248975,
-            "pick_rate": 1.286253018665336,
-            "picks": 34333
+            "win_rate": 47.61758187638513,
+            "pick_rate": 12.635443648441571,
+            "picks": 32488
           },
           {
             "name": "Tiny",
-            "win_rate": 47.40109097749075,
-            "pick_rate": 1.1950280718080821,
-            "picks": 31898
+            "win_rate": 47.36012111272314,
+            "pick_rate": 12.33130313708103,
+            "picks": 31706
+          }
+        ],
+        "supports": [
+          {
+            "name": "Visage",
+            "win_rate": 54.242990654205606,
+            "pick_rate": 2.080756695369441,
+            "picks": 5350
+          },
+          {
+            "name": "Keeper of the Light",
+            "win_rate": 53.33885863130477,
+            "pick_rate": 6.569746186575813,
+            "picks": 16892
+          },
+          {
+            "name": "Bane",
+            "win_rate": 52.91614518147685,
+            "pick_rate": 3.1075226160751095,
+            "picks": 7990
+          },
+          {
+            "name": "Grimstroke",
+            "win_rate": 52.84903798717316,
+            "pick_rate": 6.306831882637544,
+            "picks": 16216
+          },
+          {
+            "name": "Treant Protector",
+            "win_rate": 52.72064872487954,
+            "pick_rate": 3.309375461850201,
+            "picks": 8509
           }
         ]
       },
@@ -3561,54 +4872,86 @@
         "best": [
           {
             "name": "Spectre",
-            "win_rate": 56.08630539686062,
-            "pick_rate": 1.1121928638290748,
-            "picks": 90145
+            "win_rate": 56.18817272091611,
+            "pick_rate": 11.110361129082378,
+            "picks": 87239
           },
           {
             "name": "Wraith King",
-            "win_rate": 55.10641942143173,
-            "pick_rate": 1.368622133137672,
-            "picks": 110929
+            "win_rate": 55.097123645872244,
+            "pick_rate": 13.637220391134026,
+            "picks": 107080
           },
           {
             "name": "Axe",
-            "win_rate": 53.47306137755739,
-            "pick_rate": 1.7765721807554917,
-            "picks": 143994
+            "win_rate": 53.49110897426698,
+            "pick_rate": 17.747489824300438,
+            "picks": 139354
           },
           {
             "name": "Necrophos",
-            "win_rate": 53.34137608966376,
-            "pick_rate": 1.5851632275196574,
-            "picks": 128480
+            "win_rate": 53.34267975165231,
+            "pick_rate": 15.897142653374155,
+            "picks": 124825
           },
           {
-            "name": "Legion Commander",
-            "win_rate": 52.99634726783013,
-            "pick_rate": 1.6719597974573972,
-            "picks": 135515
+            "name": "Bristleback",
+            "win_rate": 53.04232546351354,
+            "pick_rate": 13.064885048980901,
+            "picks": 102586
           }
         ],
         "sleepers": [],
         "traps": [
           {
             "name": "Lina",
-            "win_rate": 47.27842923370603,
-            "pick_rate": 1.3572836757428202,
-            "picks": 110010
+            "win_rate": 47.24877801649326,
+            "pick_rate": 13.57468887066291,
+            "picks": 106589
           },
           {
             "name": "Shadow Fiend",
-            "win_rate": 47.62379688982706,
-            "pick_rate": 1.2741761142501955,
-            "picks": 103274
+            "win_rate": 47.611607587126564,
+            "pick_rate": 12.797438627414023,
+            "picks": 100486
           },
           {
             "name": "Windranger",
-            "win_rate": 47.24075490699228,
-            "pick_rate": 1.2741391007875353,
-            "picks": 103271
+            "win_rate": 47.250450090018006,
+            "pick_rate": 12.73299677536029,
+            "picks": 99980
+          }
+        ],
+        "supports": [
+          {
+            "name": "Crystal Maiden",
+            "win_rate": 52.71081889038412,
+            "pick_rate": 14.10117625483314,
+            "picks": 110723
+          },
+          {
+            "name": "Vengeful Spirit",
+            "win_rate": 52.57882983474765,
+            "pick_rate": 7.1287206891457515,
+            "picks": 55975
+          },
+          {
+            "name": "Phoenix",
+            "win_rate": 52.174564124505295,
+            "pick_rate": 5.953229988639895,
+            "picks": 46745
+          },
+          {
+            "name": "Underlord",
+            "win_rate": 51.98480208687762,
+            "pick_rate": 4.4915716170574775,
+            "picks": 35268
+          },
+          {
+            "name": "Lich",
+            "win_rate": 51.96719674463889,
+            "pick_rate": 10.202953627337608,
+            "picks": 80114
           }
         ]
       },
@@ -3616,55 +4959,99 @@
         "best": [
           {
             "name": "Visage",
-            "win_rate": 54.18876989290361,
-            "pick_rate": 0.1549360491416022,
-            "picks": 9991
+            "win_rate": 54.21161825726141,
+            "pick_rate": 1.5452110479384096,
+            "picks": 9640
           },
           {
             "name": "Spectre",
-            "win_rate": 53.498957294405656,
-            "pick_rate": 0.8551644910332952,
-            "picks": 55145
-          },
-          {
-            "name": "Riki",
-            "win_rate": 53.24314244057911,
-            "pick_rate": 0.4573645177993467,
-            "picks": 29493
+            "win_rate": 53.57998801677651,
+            "pick_rate": 8.56085390542475,
+            "picks": 53408
           },
           {
             "name": "Dawnbreaker",
-            "win_rate": 53.207625649913346,
-            "pick_rate": 1.1184828890339362,
-            "picks": 72125
+            "win_rate": 53.255692338134075,
+            "pick_rate": 11.341111750496504,
+            "picks": 70753
           },
           {
-            "name": "Phoenix",
-            "win_rate": 52.941715542522,
-            "pick_rate": 1.0153110809127193,
-            "picks": 65472
+            "name": "Bloodseeker",
+            "win_rate": 53.156070418681026,
+            "pick_rate": 3.5145536760474654,
+            "picks": 21926
+          },
+          {
+            "name": "Riki",
+            "win_rate": 53.13965698284914,
+            "pick_rate": 4.579531082946096,
+            "picks": 28570
           }
         ],
         "sleepers": [
           {
             "name": "Visage",
-            "win_rate": 54.18876989290361,
-            "pick_rate": 0.1549360491416022,
-            "picks": 9991
+            "win_rate": 54.21161825726141,
+            "pick_rate": 1.5452110479384096,
+            "picks": 9640
+          },
+          {
+            "name": "Bloodseeker",
+            "win_rate": 53.156070418681026,
+            "pick_rate": 3.5145536760474654,
+            "picks": 21926
           },
           {
             "name": "Riki",
-            "win_rate": 53.24314244057911,
-            "pick_rate": 0.4573645177993467,
-            "picks": 29493
+            "win_rate": 53.13965698284914,
+            "pick_rate": 4.579531082946096,
+            "picks": 28570
           }
         ],
         "traps": [
           {
+            "name": "Venomancer",
+            "win_rate": 47.99309295529741,
+            "pick_rate": 13.27438876804683,
+            "picks": 82814
+          },
+          {
             "name": "Shadow Fiend",
-            "win_rate": 47.49396174685032,
-            "pick_rate": 1.1878016899210309,
-            "picks": 76595
+            "win_rate": 47.410972609036584,
+            "pick_rate": 11.856128669275146,
+            "picks": 73966
+          }
+        ],
+        "supports": [
+          {
+            "name": "Visage",
+            "win_rate": 54.21161825726141,
+            "pick_rate": 1.5452110479384096,
+            "picks": 9640
+          },
+          {
+            "name": "Phoenix",
+            "win_rate": 52.932277435588695,
+            "pick_rate": 10.383529717261643,
+            "picks": 64779
+          },
+          {
+            "name": "Vengeful Spirit",
+            "win_rate": 52.436537661256764,
+            "pick_rate": 7.7036144153443935,
+            "picks": 48060
+          },
+          {
+            "name": "Grimstroke",
+            "win_rate": 52.38263709348211,
+            "pick_rate": 5.889914933246562,
+            "picks": 36745
+          },
+          {
+            "name": "Undying",
+            "win_rate": 52.270663033605814,
+            "pick_rate": 8.824052716702225,
+            "picks": 55050
           }
         ]
       }
@@ -3673,65 +5060,65 @@
       "low_stompers": [
         {
           "name": "Bristleback",
-          "low_wr": 52.95670688431512,
-          "high_wr": 46.738136368255255,
-          "delta": 6.218570516059861
+          "low_wr": 53.04232546351354,
+          "high_wr": 46.73248707099201,
+          "delta": 6.309838392521535
         },
         {
           "name": "Sand King",
-          "low_wr": 51.23902102987046,
-          "high_wr": 46.30848603451343,
-          "delta": 4.930534995357028
+          "low_wr": 51.19908113353269,
+          "high_wr": 46.24806681101145,
+          "delta": 4.951014322521241
         },
         {
           "name": "Wraith King",
-          "low_wr": 55.10641942143173,
-          "high_wr": 50.350713690096626,
-          "delta": 4.755705731335104
+          "low_wr": 55.097123645872244,
+          "high_wr": 50.37578396309542,
+          "delta": 4.721339682776822
         },
         {
           "name": "Spectre",
-          "low_wr": 56.08630539686062,
-          "high_wr": 51.68243624287236,
-          "delta": 4.403869153988252
+          "low_wr": 56.18817272091611,
+          "high_wr": 51.61141501351084,
+          "delta": 4.576757707405266
         },
         {
           "name": "Centaur Warrunner",
-          "low_wr": 49.280346099448124,
-          "high_wr": 45.46875,
-          "delta": 3.811596099448122
+          "low_wr": 49.258357958166755,
+          "high_wr": 45.225151297568985,
+          "delta": 4.033206660597772
         }
       ],
       "high_skill_ceiling": [
         {
-          "name": "Lycan",
-          "low_wr": 44.0754039497307,
-          "high_wr": 49.648017784364576,
-          "delta": -5.57261383463388
-        },
-        {
-          "name": "Treant Protector",
-          "low_wr": 48.242991464101564,
-          "high_wr": 53.21214858304166,
-          "delta": -4.969157118940099
-        },
-        {
           "name": "Batrider",
-          "low_wr": 47.897339298328234,
-          "high_wr": 52.66789570713721,
-          "delta": -4.77055640880898
-        },
-        {
-          "name": "Bounty Hunter",
-          "low_wr": 49.0762205830699,
-          "high_wr": 53.747155300949544,
-          "delta": -4.670934717879648
+          "low_wr": 47.92449148822009,
+          "high_wr": 52.79305036287663,
+          "delta": -4.868558874656534
         },
         {
           "name": "Enigma",
-          "low_wr": 49.148656394349096,
-          "high_wr": 53.42170160295932,
-          "delta": -4.273045208610219
+          "low_wr": 48.79829212864128,
+          "high_wr": 53.61216730038023,
+          "delta": -4.813875171738952
+        },
+        {
+          "name": "Treant Protector",
+          "low_wr": 48.01746253206715,
+          "high_wr": 52.72064872487954,
+          "delta": -4.703186192812388
+        },
+        {
+          "name": "Bounty Hunter",
+          "low_wr": 49.152501155127545,
+          "high_wr": 53.70779167688659,
+          "delta": -4.5552905217590505
+        },
+        {
+          "name": "Chen",
+          "low_wr": 43.418378866561305,
+          "high_wr": 47.841306884480744,
+          "delta": -4.422928017919439
         }
       ]
     }
