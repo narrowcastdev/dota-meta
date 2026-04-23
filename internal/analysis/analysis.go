@@ -35,6 +35,8 @@ type HeroStat struct {
 	Tier      Tier
 	WRHistory []float64
 	ClimbTag  ClimbTag
+	WRDelta   *float64
+	PRDelta   *float64
 }
 
 // BracketAnalysis holds all analysis results for one bracket.
