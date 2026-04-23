@@ -72,3 +72,45 @@ func TestFormatJSON_IncludesPriorSnapshotWhenSet(t *testing.T) {
 		t.Errorf("prior_snapshot missing: %s", out)
 	}
 }
+
+func TestFormatReddit_HasTierSections(t *testing.T) {
+	full := analysis.FullAnalysis{
+		Patch: "7.40b", TotalMatches: 100000,
+		Brackets: []analysis.BracketAnalysis{{
+			Bracket: analysis.Bracket{Name: "Divine"},
+			Cores: []analysis.HeroStat{
+				{Hero: stratz.Hero{DisplayName: "Visage"}, WinRate: 55, PickRate: 5, Tier: analysis.TierMetaTyrant},
+				{Hero: stratz.Hero{DisplayName: "Sniper"}, WinRate: 56, PickRate: 1, Tier: analysis.TierPocketPick},
+				{Hero: stratz.Hero{DisplayName: "PA"}, WinRate: 45, PickRate: 10, Tier: analysis.TierTrap},
+			},
+		}},
+	}
+	post := FormatReddit(full, "April 23, 2026")
+	for _, want := range []string{"Ban list", "Pocket picks", "Stop picking", "7.40b", "Visage", "Sniper", "PA"} {
+		if !strings.Contains(post, want) {
+			t.Errorf("missing %q in post", want)
+		}
+	}
+}
+
+func TestFormatReddit_RisingSectionOnlyWhenPresent(t *testing.T) {
+	full := analysis.FullAnalysis{
+		Patch: "7.40b",
+		Brackets: []analysis.BracketAnalysis{{
+			Bracket: analysis.Bracket{Name: "Divine"},
+			Cores: []analysis.HeroStat{
+				{Hero: stratz.Hero{DisplayName: "Lina"}, WinRate: 55, PickRate: 5, Tier: analysis.TierMetaTyrant, Momentum: analysis.MomentumRising},
+			},
+		}},
+	}
+	post := FormatReddit(full, "April 23, 2026")
+	if !strings.Contains(post, "Rising this week") {
+		t.Error("expected Rising section")
+	}
+	// No rising heroes → no section
+	full.Brackets[0].Cores[0].Momentum = analysis.MomentumNone
+	post = FormatReddit(full, "April 23, 2026")
+	if strings.Contains(post, "Rising this week") {
+		t.Error("should not include Rising section when empty")
+	}
+}
