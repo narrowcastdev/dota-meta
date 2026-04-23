@@ -27,11 +27,12 @@ var Brackets = []Bracket{
 
 // HeroStat holds computed stats for one hero in one bracket.
 type HeroStat struct {
-	Hero     stratz.Hero
-	WinRate  float64
-	PickRate float64
-	Picks    int
-	Wins     int
+	Hero      stratz.Hero
+	WinRate   float64
+	PickRate  float64
+	Picks     int
+	Wins      int
+	WRHistory []float64
 }
 
 // BracketAnalysis holds all analysis results for one bracket.
@@ -63,4 +64,86 @@ type FullAnalysis struct {
 	SnapshotDate     time.Time
 	PriorSnapshot    *time.Time
 	SnapshotsInPatch int
+}
+
+// Analyze builds a FullAnalysis from STRATZ hero catalog + per-STRATZ-bracket
+// weekly responses. Missing brackets produce empty buckets (no panic).
+func Analyze(heroes []stratz.Hero, responses []stratz.BracketResponse, minPicks int) FullAnalysis {
+	byID := make(map[int]stratz.Hero, len(heroes))
+	for _, h := range heroes {
+		byID[h.ID] = h
+	}
+
+	respByBracket := make(map[stratz.Bracket]stratz.BracketResponse, len(responses))
+	for _, r := range responses {
+		respByBracket[r.Bracket] = r
+	}
+
+	var full FullAnalysis
+	for _, b := range Brackets {
+		bucketResps := make([]stratz.BracketResponse, 0, len(b.Stratz))
+		for _, sb := range b.Stratz {
+			if r, ok := respByBracket[sb]; ok {
+				bucketResps = append(bucketResps, r)
+			}
+		}
+		agg := stratz.AggregateBrackets(bucketResps)
+		ba := analyzeBracket(b, byID, agg, minPicks)
+		full.Brackets = append(full.Brackets, ba)
+		full.TotalMatches += ba.Matches()
+	}
+	return full
+}
+
+func analyzeBracket(bracket Bracket, byID map[int]stratz.Hero, agg map[int]stratz.AggregatedHero, minPicks int) BracketAnalysis {
+	var totalPicks int
+	for _, h := range agg {
+		totalPicks += h.Picks
+	}
+	matches := totalPicks / picksPerMatch
+	ba := BracketAnalysis{Bracket: bracket, TotalPicks: totalPicks}
+	for id, a := range agg {
+		if a.Picks < minPicks {
+			continue
+		}
+		hero, ok := byID[id]
+		if !ok {
+			continue
+		}
+		wr := 0.0
+		if a.Picks > 0 {
+			wr = float64(a.Wins) / float64(a.Picks) * 100
+		}
+		pr := 0.0
+		if matches > 0 {
+			pr = float64(a.Picks) / float64(matches) * 100
+		}
+		hs := HeroStat{
+			Hero:      hero,
+			Picks:     a.Picks,
+			Wins:      a.Wins,
+			WinRate:   wr,
+			PickRate:  pr,
+			WRHistory: a.WeeklyWR,
+		}
+		if isSupport(hero) {
+			ba.Supports = append(ba.Supports, hs)
+		} else {
+			ba.Cores = append(ba.Cores, hs)
+		}
+	}
+	return ba
+}
+
+func isSupport(h stratz.Hero) bool {
+	var support, carry bool
+	for _, r := range h.Roles {
+		if r == "Support" {
+			support = true
+		}
+		if r == "Carry" {
+			carry = true
+		}
+	}
+	return support && !carry
 }
