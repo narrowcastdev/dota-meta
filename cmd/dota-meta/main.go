@@ -1,15 +1,56 @@
 package main
 
 import (
+	"bufio"
 	"flag"
 	"fmt"
 	"os"
+	"strings"
 	"time"
 
 	"github.com/narrowcastdev/dota-meta/internal/analysis"
 	"github.com/narrowcastdev/dota-meta/internal/api/stratz"
 	"github.com/narrowcastdev/dota-meta/internal/format"
 )
+
+// loadDotenv reads KEY=VALUE lines from path and sets any keys not already
+// present in the process environment. Silently no-ops if path is missing.
+// Supports `#` comment lines, blank lines, and optional surrounding quotes on
+// the value. Not a general shell parser.
+func loadDotenv(path string) error {
+	f, err := os.Open(path)
+	if err != nil {
+		if os.IsNotExist(err) {
+			return nil
+		}
+		return err
+	}
+	defer f.Close()
+	scanner := bufio.NewScanner(f)
+	for scanner.Scan() {
+		line := strings.TrimSpace(scanner.Text())
+		if line == "" || strings.HasPrefix(line, "#") {
+			continue
+		}
+		line = strings.TrimPrefix(line, "export ")
+		eq := strings.IndexByte(line, '=')
+		if eq <= 0 {
+			continue
+		}
+		key := strings.TrimSpace(line[:eq])
+		val := strings.TrimSpace(line[eq+1:])
+		if len(val) >= 2 {
+			first, last := val[0], val[len(val)-1]
+			if (first == '"' && last == '"') || (first == '\'' && last == '\'') {
+				val = val[1 : len(val)-1]
+			}
+		}
+		if _, exists := os.LookupEnv(key); !exists {
+			os.Setenv(key, val)
+		}
+	}
+	return scanner.Err()
+}
 
 func main() {
 	outputFile := flag.String("output", "", "write Reddit post to file instead of stdout")
@@ -18,6 +59,10 @@ func main() {
 	minPicks := flag.Int("min-picks", 1000, "minimum picks to qualify a hero")
 	patch := flag.String("patch", "", "current Dota patch version (e.g. 7.40b)")
 	flag.Parse()
+
+	if err := loadDotenv(".env"); err != nil {
+		fmt.Fprintf(os.Stderr, "warn: loading .env: %v\n", err)
+	}
 
 	token := os.Getenv("STRATZ_TOKEN")
 	if token == "" {
