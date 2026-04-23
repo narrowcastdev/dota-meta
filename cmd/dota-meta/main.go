@@ -2,9 +2,11 @@ package main
 
 import (
 	"bufio"
+	"encoding/json"
 	"flag"
 	"fmt"
 	"os"
+	"path/filepath"
 	"strings"
 	"time"
 
@@ -12,6 +14,36 @@ import (
 	"github.com/narrowcastdev/dota-meta/internal/api/stratz"
 	"github.com/narrowcastdev/dota-meta/internal/format"
 )
+
+// archivePriorSnapshot copies dataPath into historyDir named by the
+// snapshot_date field already inside the file, so archives never collide with
+// today's regenerated output. Skips if archive file already exists.
+func archivePriorSnapshot(dataPath, historyDir string) error {
+	data, err := os.ReadFile(dataPath)
+	if err != nil {
+		if os.IsNotExist(err) {
+			return nil
+		}
+		return err
+	}
+	var head struct {
+		SnapshotDate string `json:"snapshot_date"`
+	}
+	if err := json.Unmarshal(data, &head); err != nil {
+		return fmt.Errorf("parsing %s: %w", dataPath, err)
+	}
+	if head.SnapshotDate == "" {
+		return nil
+	}
+	if err := os.MkdirAll(historyDir, 0755); err != nil {
+		return err
+	}
+	dest := filepath.Join(historyDir, "data-"+head.SnapshotDate+".json")
+	if _, err := os.Stat(dest); err == nil {
+		return nil // already archived
+	}
+	return os.WriteFile(dest, data, 0644)
+}
 
 // loadDotenv reads KEY=VALUE lines from path and sets any keys not already
 // present in the process environment. Silently no-ops if path is missing.
@@ -79,12 +111,10 @@ func main() {
 	result := analysis.Analyze(heroes, brackets, *minPicks)
 	result.Patch = *patch
 	result.SnapshotDate = time.Now().UTC()
-
-	if prior, err := analysis.LoadLatestPriorSnapshot("docs/history", result.SnapshotDate); err == nil {
-		analysis.ApplyDeltas(&result, prior)
-	} else {
-		fmt.Fprintf(os.Stderr, "warn: history load failed: %v\n", err)
-	}
+	// WR/PR deltas now come from STRATZ week-over-week inside Analyze. Mark the
+	// prior snapshot as exactly one week ago for UI copy.
+	prior := result.SnapshotDate.AddDate(0, 0, -7)
+	result.PriorSnapshot = &prior
 
 	date := result.SnapshotDate.Format("January 2, 2006")
 
@@ -103,6 +133,9 @@ func main() {
 		if jsonErr != nil {
 			fmt.Fprintf(os.Stderr, "Error formatting JSON: %v\n", jsonErr)
 			os.Exit(1)
+		}
+		if err := archivePriorSnapshot("docs/data.json", "docs/history"); err != nil {
+			fmt.Fprintf(os.Stderr, "warn: archiving prior snapshot: %v\n", err)
 		}
 		if writeErr := os.WriteFile("docs/data.json", data, 0644); writeErr != nil {
 			fmt.Fprintf(os.Stderr, "Error writing docs/data.json: %v\n", writeErr)

@@ -136,14 +136,14 @@ func Analyze(heroes []stratz.Hero, responses []stratz.BracketResponse, minPicks 
 }
 
 func analyzeBracket(bracket Bracket, byID map[int]stratz.Hero, agg map[int]stratz.AggregatedHero, minPicks int) BracketAnalysis {
-	var totalPicks int
+	var latestPicks int
 	for _, h := range agg {
-		totalPicks += h.Picks
+		latestPicks += h.LatestPicks
 	}
-	matches := totalPicks / picksPerMatch
-	ba := BracketAnalysis{Bracket: bracket, TotalPicks: totalPicks}
+	matches := latestPicks / picksPerMatch
+	ba := BracketAnalysis{Bracket: bracket, TotalPicks: latestPicks}
 	for id, a := range agg {
-		if a.Picks < minPicks {
+		if a.LatestPicks < minPicks {
 			continue
 		}
 		hero, ok := byID[id]
@@ -151,20 +151,21 @@ func analyzeBracket(bracket Bracket, byID map[int]stratz.Hero, agg map[int]strat
 			continue
 		}
 		wr := 0.0
-		if a.Picks > 0 {
-			wr = float64(a.Wins) / float64(a.Picks) * 100
+		if a.LatestPicks > 0 {
+			wr = float64(a.LatestWins) / float64(a.LatestPicks) * 100
 		}
 		pr := 0.0
 		if matches > 0 {
-			pr = float64(a.Picks) / float64(matches) * 100
+			pr = float64(a.LatestPicks) / float64(matches) * 100
 		}
 		hs := HeroStat{
 			Hero:      hero,
-			Picks:     a.Picks,
-			Wins:      a.Wins,
+			Picks:     a.LatestPicks,
+			Wins:      a.LatestWins,
 			WinRate:   wr,
 			PickRate:  pr,
 			WRHistory: a.WeeklyWR,
+			PRHistory: a.WeeklyPR,
 		}
 		if isSupport(hero) {
 			ba.Supports = append(ba.Supports, hs)
@@ -178,6 +179,12 @@ func analyzeBracket(bracket Bracket, byID map[int]stratz.Hero, agg map[int]strat
 			stats[i].WRHistory = a.WeeklyWR
 			stats[i].PRHistory = a.WeeklyPR
 			stats[i].Momentum = TagMomentum(a.WeeklyWR, a.WeeklyPR)
+			if d := weekOverWeekDelta(a.WeeklyWR); d != nil {
+				stats[i].WRDelta = d
+			}
+			if d := weekOverWeekDelta(a.WeeklyPR); d != nil {
+				stats[i].PRDelta = d
+			}
 		}
 	}
 	applyMomentum(ba.Cores)
@@ -185,6 +192,17 @@ func analyzeBracket(bracket Bracket, byID map[int]stratz.Hero, agg map[int]strat
 	ClassifyTiers(ba.Cores)
 	ClassifyTiers(ba.Supports)
 	return ba
+}
+
+// weekOverWeekDelta returns series[-1] - series[-2] if the series has at least
+// two entries. Returns nil otherwise (caller leaves delta unset).
+func weekOverWeekDelta(series []float64) *float64 {
+	n := len(series)
+	if n < 2 {
+		return nil
+	}
+	d := series[n-1] - series[n-2]
+	return &d
 }
 
 func isSupport(h stratz.Hero) bool {

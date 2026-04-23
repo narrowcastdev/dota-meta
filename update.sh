@@ -9,13 +9,9 @@ PATCH="${DOTA_PATCH:-7.40b}"
 echo "Building dota-meta..."
 go build -o dota-meta ./cmd/dota-meta
 
-if [[ -f docs/data.json ]]; then
-  DATE=$(date +%Y-%m-%d)
-  cp docs/data.json "docs/history/data-${DATE}.json"
-  echo "Archived previous snapshot → docs/history/data-${DATE}.json"
-fi
-
 echo "Fetching latest hero stats..."
+# Archiving of the prior docs/data.json into docs/history/ happens inside
+# dota-meta --html itself, keyed by the prior file's snapshot_date.
 ./dota-meta --html --patch "$PATCH"
 
 echo "Generating Reddit post..."

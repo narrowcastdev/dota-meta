@@ -6,11 +6,13 @@ const picksPerMatch = 10
 
 // AggregatedHero is one hero's totals + weekly series inside an analysis bracket.
 type AggregatedHero struct {
-	HeroID   int
-	Picks    int
-	Wins     int
-	WeeklyWR []float64
-	WeeklyPR []float64 // % of bracket matches in that week, oldest first
+	HeroID      int
+	Picks       int // cumulative across all returned weeks
+	Wins        int
+	LatestPicks int // most recent week only
+	LatestWins  int
+	WeeklyWR    []float64
+	WeeklyPR    []float64 // % of bracket matches in that week, oldest first
 }
 
 // AggregateBrackets rolls up a list of STRATZ bracket responses into one
@@ -64,8 +66,15 @@ func AggregateBrackets(responses []BracketResponse) map[int]AggregatedHero {
 			}
 			prSeries = append(prSeries, float64(x.picks)/float64(totalMatches)*100)
 		}
+		var latestPicks, latestWins int
+		if len(weeks) > 0 {
+			last := a.weekly[weeks[len(weeks)-1]]
+			latestPicks = last.picks
+			latestWins = last.wins
+		}
 		out[id] = AggregatedHero{
 			HeroID: id, Picks: a.totalPicks, Wins: a.totalWins,
+			LatestPicks: latestPicks, LatestWins: latestWins,
 			WeeklyWR: series, WeeklyPR: prSeries,
 		}
 	}

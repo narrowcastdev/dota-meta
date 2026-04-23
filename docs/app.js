@@ -1,20 +1,70 @@
 (function () {
   "use strict";
 
-  var MOMENTUM_ICON = { rising: "🔥", "falling-off": "⚠️", "hidden-gem": "💤", dying: "📉" };
-  var CLIMB_ICON = { "scales-up": "↗", "scales-down": "↘", universal: "≈" };
+  var MOMENTUM_ICON = {
+    rising: "🔥",
+    "falling-off": "⚠️",
+    "hidden-gem": "💎",
+    dying: "📉",
+  };
+  var CLIMB_ICON = {
+    "high-skill": "🧠",
+    pubstomp: "🪓",
+    "all-rank": "⚖️",
+  };
+  var TIER_ICON = {
+    "meta-tyrant": "👑",
+    "pocket-pick": "🎯",
+    trap: "🪤",
+    dead: "💀",
+  };
   var TIER_ORDER = ["meta-tyrant", "pocket-pick", "trap", "dead"];
   var TIER_TITLE = {
-    "meta-tyrant": "Meta Tyrant — ban or first-pick",
-    "pocket-pick": "Pocket Pick — last-pick counter",
-    trap:          "Trap — popular but losing",
-    dead:          "Dead — ignore",
+    "meta-tyrant": "Meta Tyrants — ban or first-pick",
+    "pocket-pick": "Pocket Picks — last-pick counters",
+    trap: "Traps — popular but losing",
+    dead: "Dead — ignore",
   };
   var BRACKET_KEYS = ["herald_guardian", "crusader_archon", "legend_ancient", "divine", "immortal"];
 
+  var TIER_SLUG = {
+    "meta-tyrant": "meta-tyrants",
+    "pocket-pick": "pocket-picks",
+    trap: "traps",
+    dead: "dead",
+  };
+
   var data = null;
-  var currentBracket = localStorage.getItem("dotaMeta_bracket") || "divine";
+  var hashState = parseHash();
+  var currentBracket =
+    hashState.bracket ||
+    localStorage.getItem("dotaMeta_bracket") ||
+    "divine";
   var currentRole = localStorage.getItem("dotaMeta_role") || "all";
+
+  function parseHash() {
+    var h = (location.hash || "").replace(/^#/, "");
+    if (!h) return {};
+    var parts = h.split("-");
+    // Bracket keys like "herald_guardian", "crusader_archon" use underscores;
+    // also try the first token (e.g. "divine", "immortal").
+    for (var i = 0; i < BRACKET_KEYS.length; i++) {
+      var key = BRACKET_KEYS[i];
+      if (h === key) return { bracket: key };
+      if (h.indexOf(key + "-") === 0) {
+        return { bracket: key, anchor: h };
+      }
+    }
+    return {};
+  }
+
+  function updateHash(bracket) {
+    if (history.replaceState) {
+      history.replaceState(null, "", "#" + bracket);
+    } else {
+      location.hash = bracket;
+    }
+  }
 
   fetch("data.json")
     .then(function (r) {
@@ -47,7 +97,24 @@
     bracketEl.addEventListener("change", function () {
       currentBracket = bracketEl.value;
       localStorage.setItem("dotaMeta_bracket", currentBracket);
+      updateHash(currentBracket);
       render();
+    });
+
+    window.addEventListener("hashchange", function () {
+      var st = parseHash();
+      if (st.bracket && st.bracket !== currentBracket) {
+        currentBracket = st.bracket;
+        localStorage.setItem("dotaMeta_bracket", currentBracket);
+        for (var j = 0; j < bracketEl.options.length; j++) {
+          if (bracketEl.options[j].value === currentBracket) {
+            bracketEl.options[j].selected = true;
+            break;
+          }
+        }
+        render();
+      }
+      if (st.anchor) scrollToAnchor(st.anchor);
     });
 
     var roleEl = document.getElementById("role");
@@ -82,140 +149,284 @@
 
   function renderLegend() {
     var el = document.getElementById("legend");
-    var rows = TIER_ORDER.map(function (t) {
-      return '<span class="legend-tier tier-' + t + '">' + TIER_TITLE[t] + "</span>";
+
+    var tiers = TIER_ORDER.map(function (t) {
+      return '<span class="legend-tier tier-' + t + '">' +
+        TIER_ICON[t] + " " + TIER_TITLE[t] + "</span>";
     }).join("");
 
-    var climbRows = Object.keys(CLIMB_ICON).map(function (k) {
-      return "<span>" + CLIMB_ICON[k] + " " + k + "</span>";
-    }).join(" &nbsp;");
 
-    var momRows = Object.keys(MOMENTUM_ICON).map(function (k) {
+    var mom = Object.keys(MOMENTUM_ICON).map(function (k) {
       return "<span>" + MOMENTUM_ICON[k] + " " + k + "</span>";
     }).join(" &nbsp;");
 
+    var trend =
+      '<span>↗ rising WR</span> &nbsp;' +
+      '<span>→ flat</span> &nbsp;' +
+      '<span>↘ falling WR</span>';
+
     el.innerHTML =
       '<div class="legend">' +
-      '<div class="legend-row"><strong>Tiers:</strong> ' + rows + "</div>" +
-      '<div class="legend-row"><strong>Climb:</strong> ' + climbRows + "</div>" +
-      '<div class="legend-row"><strong>Momentum:</strong> ' + momRows + "</div>" +
+      '<div class="legend-row"><strong>Tiers:</strong> ' + tiers + "</div>" +
+      '<div class="legend-row"><strong>Momentum:</strong> ' + mom + "</div>" +
+      '<div class="legend-row"><strong>Trend:</strong> ' + trend + "</div>" +
       "</div>";
   }
 
   function render() {
     if (!data) return;
-    var tiersEl = document.getElementById("tiers");
-    tiersEl.innerHTML = "";
+    var root = document.getElementById("tiers");
+    root.innerHTML = "";
 
-    var brackets = data.analysis.brackets;
-    var bracketData = brackets[currentBracket];
+    var bracketData = data.analysis.brackets[currentBracket];
     if (!bracketData) {
-      tiersEl.innerHTML = '<p class="empty-state">No data for this bracket.</p>';
+      root.innerHTML = '<p class="empty-state">No data for this bracket.</p>';
       return;
     }
 
-    if (currentRole === "all" || currentRole === "cores") {
-      tiersEl.appendChild(renderRoleSection("Cores", bracketData.cores || []));
+    var showCores = currentRole === "all" || currentRole === "cores";
+    var showSupports = currentRole === "all" || currentRole === "supports";
+
+    // Part 1 — full ranking tables (old format).
+    if (showCores) {
+      var coresSection = renderRankingSection("Cores — full ranking", bracketData.cores || []);
+      coresSection.id = currentBracket + "-cores";
+      root.appendChild(coresSection);
     }
-    if (currentRole === "all" || currentRole === "supports") {
-      tiersEl.appendChild(renderRoleSection("Supports", bracketData.supports || []));
+    if (showSupports) {
+      var suppSection = renderRankingSection("Supports — full ranking", bracketData.supports || []);
+      suppSection.id = currentBracket + "-supports";
+      root.appendChild(suppSection);
+    }
+
+    // Part 2 — analysis broken out by tier.
+    var combined = [];
+    if (showCores) combined = combined.concat((bracketData.cores || []).map(tag("core")));
+    if (showSupports) combined = combined.concat((bracketData.supports || []).map(tag("support")));
+
+    var analysisWrap = document.createElement("section");
+    analysisWrap.className = "analysis-wrap";
+    analysisWrap.id = currentBracket + "-analysis";
+    var title = document.createElement("h2");
+    title.textContent = "Analysis";
+    analysisWrap.appendChild(title);
+
+    TIER_ORDER.forEach(function (tier) {
+      var heroes = combined.filter(function (h) { return h.tier === tier; });
+      var sect = renderTierSection(tier, heroes);
+      sect.id = currentBracket + "-" + TIER_SLUG[tier];
+      analysisWrap.appendChild(sect);
+    });
+
+    root.appendChild(analysisWrap);
+
+    if (hashState.anchor) {
+      scrollToAnchor(hashState.anchor);
+      hashState.anchor = null;
     }
   }
 
-  function renderRoleSection(roleLabel, heroes) {
+  function scrollToAnchor(id) {
+    var el = document.getElementById(id);
+    if (el && el.scrollIntoView) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }
+
+  function tag(role) {
+    return function (h) {
+      var clone = {};
+      for (var k in h) clone[k] = h[k];
+      clone._role = role;
+      return clone;
+    };
+  }
+
+  // ── Ranking table (old per-bracket WR table) ──
+
+  function renderRankingSection(label, heroes) {
     var section = document.createElement("section");
-    section.className = "role-section";
+    section.className = "ranking-section";
 
-    var heading = document.createElement("h2");
-    heading.textContent = roleLabel;
-    section.appendChild(heading);
+    var h2 = document.createElement("h2");
+    h2.textContent = label + " (" + heroes.length + ")";
+    section.appendChild(h2);
 
-    var grid = document.createElement("div");
-    grid.className = "tier-grid";
-
-    TIER_ORDER.forEach(function (tier) {
-      var heroesInTier = heroes
-        .filter(function (h) { return h.tier === tier; })
-        .sort(function (a, b) { return b.win_rate - a.win_rate; });
-
-      var cell = document.createElement("div");
-      cell.className = "tier-cell tier-" + tier + (tier === "dead" ? " collapsed" : "");
-
-      var header = document.createElement("div");
-      header.className = "tier-cell-header";
-      header.textContent = TIER_TITLE[tier] + " (" + heroesInTier.length + ")";
-      header.addEventListener("click", function () {
-        cell.classList.toggle("collapsed");
-      });
-
-      var chips = document.createElement("div");
-      chips.className = "chips";
-      chips.innerHTML = heroesInTier.map(renderChip).join("");
-
-      cell.appendChild(header);
-      cell.appendChild(chips);
-      grid.appendChild(cell);
-    });
-
-    section.appendChild(grid);
+    var sorted = heroes.slice().sort(function (a, b) { return b.win_rate - a.win_rate; });
+    section.appendChild(buildTable(sorted, { rank: true }));
     return section;
   }
 
-  function renderChip(hero) {
-    var parts = [];
-    parts.push('<span class="chip-name">' + hero.name + "</span>");
+  // ── Tier analysis table ──
 
-    if (hero.climb && CLIMB_ICON[hero.climb]) {
-      parts.push('<span class="chip-climb" title="' + hero.climb + '">' + CLIMB_ICON[hero.climb] + "</span>");
+  function renderTierSection(tier, heroes) {
+    var section = document.createElement("section");
+    section.className = "tier-section tier-" + tier + (tier === "dead" ? " collapsed" : "");
+
+    var header = document.createElement("h3");
+    header.className = "tier-section-header";
+    header.innerHTML = TIER_ICON[tier] + " " + TIER_TITLE[tier] +
+      ' <span class="count">(' + heroes.length + ")</span>";
+    header.addEventListener("click", function () {
+      section.classList.toggle("collapsed");
+    });
+    section.appendChild(header);
+
+    if (heroes.length === 0) {
+      var empty = document.createElement("p");
+      empty.className = "empty-state";
+      empty.textContent = "none";
+      section.appendChild(empty);
+      return section;
     }
 
-    var wrStr = hero.win_rate.toFixed(1) + "%";
-    if (hero.wr_delta != null && hero.wr_delta !== 0) {
-      var wrSign = hero.wr_delta > 0 ? "+" : "";
-      var wrClass = hero.wr_delta > 0 ? "up" : "down";
-      wrStr += ' <span class="delta ' + wrClass + '">' + wrSign + hero.wr_delta.toFixed(1) + "</span>";
-    }
-    parts.push('<span class="chip-wr">WR ' + wrStr + "</span>");
-
-    var prStr = hero.pick_rate.toFixed(1) + "%";
-    if (hero.pr_delta != null && hero.pr_delta !== 0) {
-      var prSign = hero.pr_delta > 0 ? "+" : "";
-      var prClass = hero.pr_delta > 0 ? "up" : "down";
-      prStr += ' <span class="delta ' + prClass + '">' + prSign + hero.pr_delta.toFixed(1) + "</span>";
-    }
-    parts.push('<span class="chip-pr">PR ' + prStr + "</span>");
-
-    if (hero.momentum && MOMENTUM_ICON[hero.momentum]) {
-      parts.push('<span class="chip-momentum" title="' + hero.momentum + '">' + MOMENTUM_ICON[hero.momentum] + "</span>");
-    }
-
-    var sparkline = "";
-    if (hero.wr_history && hero.wr_history.length > 1) {
-      sparkline = '<span class="sparkline">' + buildSparkline(hero.wr_history) + "</span>";
-    }
-
-    return '<span class="chip">' + parts.join("") + sparkline + "</span>";
+    var sortKey = (tier === "trap") ? "pick_rate" : "win_rate";
+    var sorted = heroes.slice().sort(function (a, b) { return b[sortKey] - a[sortKey]; });
+    section.appendChild(buildTable(sorted, { rank: false, role: true }));
+    return section;
   }
 
-  function buildSparkline(history) {
-    var w = 80;
-    var h = 24;
+  // ── Shared table builder ──
+
+  function buildTable(heroes, opts) {
+    opts = opts || {};
+    var table = document.createElement("table");
+    table.className = "hero-table";
+
+    var thead = document.createElement("thead");
+    var headCells = [];
+    if (opts.rank) headCells.push("#");
+    headCells.push("Hero");
+    if (opts.role) headCells.push("Role");
+    headCells.push("Tier");
+    headCells.push("WR%");
+    headCells.push("ΔWR");
+    headCells.push("PR%");
+    headCells.push("ΔPR");
+    headCells.push("Picks");
+    headCells.push("Momentum");
+    headCells.push("Trend");
+
+    var trh = document.createElement("tr");
+    headCells.forEach(function (h) {
+      var th = document.createElement("th");
+      th.textContent = h;
+      trh.appendChild(th);
+    });
+    thead.appendChild(trh);
+    table.appendChild(thead);
+
+    var tbody = document.createElement("tbody");
+    heroes.forEach(function (hero, idx) {
+      tbody.appendChild(renderRow(hero, idx + 1, opts));
+    });
+    table.appendChild(tbody);
+
+    return table;
+  }
+
+  function renderRow(hero, rank, opts) {
+    var tr = document.createElement("tr");
+    tr.className = "tier-row tier-" + hero.tier;
+
+    var cells = [];
+    if (opts.rank) cells.push(td(String(rank), "num"));
+    cells.push(td(hero.name, "name"));
+    if (opts.role) cells.push(td(hero._role || "", "role"));
+
+    cells.push(tdHTML(
+      '<span class="tier-badge tier-' + hero.tier + '" title="' + hero.tier + '">' +
+        TIER_ICON[hero.tier] + "</span>",
+      "tier"
+    ));
+
+    cells.push(td(hero.win_rate.toFixed(1), "num wr"));
+    cells.push(tdHTML(formatDelta(hero.wr_delta), "num delta-cell"));
+    cells.push(td(hero.pick_rate.toFixed(1), "num pr"));
+    cells.push(tdHTML(formatDelta(hero.pr_delta), "num delta-cell"));
+    cells.push(td(formatPicks(hero.picks), "num picks"));
+
+
+    cells.push(tdHTML(
+      hero.momentum && MOMENTUM_ICON[hero.momentum]
+        ? '<span title="' + hero.momentum + '">' + MOMENTUM_ICON[hero.momentum] + "</span>"
+        : '<span class="muted">—</span>',
+      "momentum"
+    ));
+
+    cells.push(tdHTML(renderTrend(hero.wr_history), "trend"));
+
+    cells.forEach(function (c) { tr.appendChild(c); });
+    return tr;
+  }
+
+  function td(text, cls) {
+    var el = document.createElement("td");
+    el.className = cls || "";
+    el.textContent = text;
+    return el;
+  }
+
+  function tdHTML(html, cls) {
+    var el = document.createElement("td");
+    el.className = cls || "";
+    el.innerHTML = html;
+    return el;
+  }
+
+  function formatDelta(v) {
+    if (v == null) return '<span class="muted">—</span>';
+    if (Math.abs(v) < 0.05) return '<span class="muted">→ 0.0</span>';
+    var sign = v > 0 ? "+" : "";
+    var arrow = v > 0 ? "▲" : "▼";
+    var cls = v > 0 ? "up" : "down";
+    return '<span class="delta ' + cls + '">' + arrow + " " + sign + v.toFixed(1) + "</span>";
+  }
+
+  function formatPicks(n) {
+    if (n == null) return "";
+    if (n >= 1000) return (n / 1000).toFixed(n >= 10000 ? 0 : 1) + "k";
+    return String(n);
+  }
+
+  function renderTrend(history) {
+    if (!history || history.length < 2) return '<span class="muted">—</span>';
+    var slope = recentSlope(history);
+    var arrow, cls;
+    if (slope > 0.3) { arrow = "↗"; cls = "up"; }
+    else if (slope < -0.3) { arrow = "↘"; cls = "down"; }
+    else { arrow = "→"; cls = "flat"; }
+    return '<span class="trend ' + cls + '" title="recent WR slope ' + slope.toFixed(2) + 'pp/wk">' +
+      arrow + " " + sparklineSVG(history) + "</span>";
+  }
+
+  function recentSlope(history) {
+    var n = Math.min(4, history.length);
+    var y = history.slice(history.length - n);
+    var sx = 0, sy = 0, sxy = 0, sxx = 0;
+    for (var i = 0; i < n; i++) {
+      sx += i; sy += y[i]; sxy += i * y[i]; sxx += i * i;
+    }
+    var denom = n * sxx - sx * sx;
+    if (denom === 0) return 0;
+    return (n * sxy - sx * sy) / denom;
+  }
+
+  function sparklineSVG(history) {
+    var w = 60, h = 16;
     var n = history.length;
     var min = Math.min.apply(null, history);
     var max = Math.max.apply(null, history);
     var range = max - min || 1;
-
     var points = history.map(function (wr, i) {
       var x = (i / (n - 1)) * w;
       var y = h - ((wr - min) / range) * h;
       return x.toFixed(1) + "," + y.toFixed(1);
     }).join(" ");
-
     return (
-      '<svg width="' + w + '" height="' + h + '" viewBox="0 0 ' + w + " " + h + '">' +
-      '<polyline points="' + points + '" fill="none" stroke="#60a5fa" stroke-width="1.5"/>' +
+      '<svg class="spark" width="' + w + '" height="' + h + '" viewBox="0 0 ' + w + " " + h + '">' +
+      '<polyline points="' + points + '" fill="none" stroke="currentColor" stroke-width="1.2"/>' +
       "</svg>"
     );
   }
-
 })();

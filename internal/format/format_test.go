@@ -39,7 +39,7 @@ func TestFormatJSON_EmitsTierClimbMomentum(t *testing.T) {
 	if core0["tier"] != "pocket-pick" {
 		t.Errorf("tier=%v", core0["tier"])
 	}
-	if core0["climb"] != "scales-up" {
+	if core0["climb"] != "high-skill" {
 		t.Errorf("climb=%v", core0["climb"])
 	}
 	if core0["momentum"] != "hidden-gem" {
@@ -86,31 +86,34 @@ func TestFormatReddit_HasTierSections(t *testing.T) {
 		}},
 	}
 	post := FormatReddit(full, "April 23, 2026")
-	for _, want := range []string{"Ban list", "Pocket picks", "Stop picking", "7.40b", "Visage", "Sniper", "PA"} {
+	for _, want := range []string{"Meta Tyrants", "Pocket Picks", "Traps", "Top Cores", "7.40b", "Visage", "Sniper", "PA", "👑", "🎯", "🪤"} {
 		if !strings.Contains(post, want) {
 			t.Errorf("missing %q in post", want)
 		}
 	}
 }
 
-func TestFormatReddit_RisingSectionOnlyWhenPresent(t *testing.T) {
+func TestFormatReddit_MomentumSectionOnlyWhenPresent(t *testing.T) {
 	full := analysis.FullAnalysis{
 		Patch: "7.40b",
 		Brackets: []analysis.BracketAnalysis{{
 			Bracket: analysis.Bracket{Name: "Divine"},
 			Cores: []analysis.HeroStat{
-				{Hero: stratz.Hero{DisplayName: "Lina"}, WinRate: 55, PickRate: 5, Tier: analysis.TierMetaTyrant, Momentum: analysis.MomentumRising},
+				{Hero: stratz.Hero{DisplayName: "Lina"}, WinRate: 55, PickRate: 5, Tier: analysis.TierMetaTyrant, Momentum: analysis.MomentumHidden},
 			},
 		}},
 	}
 	post := FormatReddit(full, "April 23, 2026")
-	if !strings.Contains(post, "Rising this week") {
-		t.Error("expected Rising section")
+	if !strings.Contains(post, "Momentum watch") {
+		t.Error("expected Momentum watch section")
 	}
-	// No rising heroes → no section
+	if !strings.Contains(post, "Hidden gems") {
+		t.Error("expected Hidden gems subsection")
+	}
+	// No momentum → no section
 	full.Brackets[0].Cores[0].Momentum = analysis.MomentumNone
 	post = FormatReddit(full, "April 23, 2026")
-	if strings.Contains(post, "Rising this week") {
-		t.Error("should not include Rising section when empty")
+	if strings.Contains(post, "Momentum watch") {
+		t.Error("should not include Momentum section when empty")
 	}
 }

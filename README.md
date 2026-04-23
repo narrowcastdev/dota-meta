@@ -46,7 +46,7 @@ dota-meta --min-picks 2000           # raise qualification threshold
 Five brackets (Herald-Guardian, Crusader-Archon, Legend-Ancient, Divine, Immortal). Heroes need ≥1000 picks per bracket to qualify.
 
 - **Tier quadrants** — per-bracket 2×2 split of WR vs PR medians → Meta Tyrant / Pocket Pick / Trap / Dead. Cores and Supports classified separately so support-pool medians don't drag carry-pool classifications.
-- **Climb tag** — `scales-up` / `scales-down` / `universal` based on Herald-Guardian vs Divine WR delta (±2pp threshold).
+- **Climb tag** — `high-skill` (better in Divine) / `pubstomp` (better in Herald) / `all-rank` based on Herald-Guardian vs Divine WR delta (±2pp threshold).
 - **Momentum** — `rising` / `falling-off` / `hidden-gem` / `dying` from the last 4 weekly WR/PR points via least-squares slope. Noise floor of 1.0pp across the 4-week projection.
 - **Deltas** — WR/PR change vs prior snapshot (if one exists in `docs/history/`).
 

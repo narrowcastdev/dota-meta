@@ -19,8 +19,10 @@ type snapshotSummary struct {
 }
 
 // LoadLatestPriorSnapshot returns the newest snapshot in dir strictly older
-// than today. Returns nil, nil if none exist.
+// than today's date (date comparison, not time). Returns nil, nil if none
+// exist.
 func LoadLatestPriorSnapshot(dir string, today time.Time) (*snapshotSummary, error) {
+	todayDate := time.Date(today.Year(), today.Month(), today.Day(), 0, 0, 0, 0, time.UTC)
 	entries, err := os.ReadDir(dir)
 	if err != nil {
 		if os.IsNotExist(err) {
@@ -46,7 +48,7 @@ func LoadLatestPriorSnapshot(dir string, today time.Time) (*snapshotSummary, err
 		if err != nil {
 			continue
 		}
-		if !d.Before(today) {
+		if !d.Before(todayDate) {
 			continue
 		}
 		candidates = append(candidates, dated{d, filepath.Join(dir, name)})

@@ -4,9 +4,9 @@ type ClimbTag string
 
 const (
 	ClimbUnknown   ClimbTag = ""
-	ClimbUp        ClimbTag = "scales-up"
-	ClimbDown      ClimbTag = "scales-down"
-	ClimbUniversal ClimbTag = "universal"
+	ClimbUp        ClimbTag = "high-skill"
+	ClimbDown      ClimbTag = "pubstomp"
+	ClimbUniversal ClimbTag = "all-rank"
 )
 
 const climbDeltaThreshold = 2.0

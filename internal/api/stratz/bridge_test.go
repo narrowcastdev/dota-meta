@@ -18,6 +18,9 @@ func TestAggregateBrackets_SingleBracket(t *testing.T) {
 	if h.Picks != 300 || h.Wins != 165 {
 		t.Errorf("totals=%d/%d, want 300/165", h.Picks, h.Wins)
 	}
+	if h.LatestPicks != 200 || h.LatestWins != 110 {
+		t.Errorf("latest=%d/%d, want 200/110 (week 101)", h.LatestPicks, h.LatestWins)
+	}
 	if len(h.WeeklyWR) != 2 {
 		t.Fatalf("weekly len=%d, want 2", len(h.WeeklyWR))
 	}
