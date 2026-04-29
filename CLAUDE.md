@@ -55,7 +55,7 @@ dota-meta/
 
 ## Data source
 
-Single API call to `https://api.opendota.com/api/heroStats`. No API key required. Zero running cost.
+STRATZ GraphQL API (`https://api.stratz.com/graphql`). Requires `STRATZ_TOKEN` in `.env`. Free tier, rate-limited but sufficient for weekly runs.
 
 ## Design decisions (driven by community feedback)
 
@@ -68,11 +68,9 @@ These started as r/DotA2 reader feedback. Update this list when new feedback lan
 - **No item data.** Skipped because OpenDota item popularity isn't bracket-scoped, and per-bracket item insights require STRATZ (API key, paid tier for volume). Revisit only if a STRATZ data source is wired in.
 - **Reddit tables all show Games column alongside Win Rate / Pick Rate.** Readers want the sample size, not just percentages.
 
-## Future upgrade path
+## Future upgrade path (STRATZ already wired in)
 
-Wire in **STRATZ GraphQL API** if we need:
+Possible next features using STRATZ data:
 - Actual in-game position (pos 1-5) per hero per bracket
 - Item pick/win rates per bracket
 - Matchup win rates per bracket
-
-STRATZ has a free tier with an API key (rate-limited but usable for 126 hero fetches per run).
