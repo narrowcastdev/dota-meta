@@ -70,6 +70,33 @@ var momentumEmoji = map[analysis.MomentumTag]string{
 	analysis.MomentumDying:   "📉",
 }
 
+// FormatRedditWithImages generates a Reddit post where per-bracket tables are
+// replaced by image placeholders. The caller uploads the PNGs and substitutes
+// the filenames with the real URLs before posting.
+func FormatRedditWithImages(result analysis.FullAnalysis, date string) string {
+	var b strings.Builder
+
+	fmt.Fprintf(&b, "## [Weekly] Dota 2 hero rankings by bracket — %s\n\n", date)
+	fmt.Fprintf(&b, "Patch **%s** · %s matches in the last week.\n\n", result.Patch, formatNumber(result.TotalMatches))
+	b.WriteString("Tiers computed per-bracket from median WR and pick rate. Same hero can be a Meta Tyrant in Divine and a Trap in Herald. ≥1000 picks to qualify.\n\n")
+	b.WriteString("**Legend:** Gold = Meta Tyrant · Blue = Pocket Pick · Red = Trap · Gray = Dead. WR bars centered at 50%.\n\n")
+	b.WriteString("---\n\n")
+
+	for _, ba := range result.Brackets {
+		slug := bracketSlug[ba.Bracket.Name]
+		fmt.Fprintf(&b, "### [%s](%s)\n\n", ba.Bracket.Name, bracketLink(ba.Bracket.Name))
+		fmt.Fprintf(&b, "![%s](%s.png)\n\n", ba.Bracket.Name, slug)
+	}
+
+	writeMomentumSection(&b, result)
+
+	b.WriteString("---\n\n")
+	b.WriteString("Interactive site with full rankings, sparklines, and deltas: [dota.narrowcast.dev](https://dota.narrowcast.dev)\n\n")
+	b.WriteString("Data from [STRATZ](https://stratz.com). Tool is open source: [github.com/narrowcastdev/dota-meta](https://github.com/narrowcastdev/dota-meta)\n")
+
+	return b.String()
+}
+
 // FormatReddit generates a Reddit-formatted markdown post from the analysis.
 func FormatReddit(result analysis.FullAnalysis, date string) string {
 	var b strings.Builder
