@@ -100,6 +100,11 @@ const heroesQuery = `query Heroes {
       roles { roleId }
       stats { primaryAttributeEnum attackType }
     }
+    gameVersions {
+      id
+      name
+      asOfDateTime
+    }
   }
 }`
 
@@ -118,29 +123,29 @@ var roleIDToName = map[string]string{
 	"JUNGLER":   "Jungler",
 }
 
-// FetchHeroes returns the hero catalog. Call once per run.
-func (c *Client) FetchHeroes() ([]Hero, error) {
+// FetchHeroes returns the hero catalog and the current patch version. Call once per run.
+func (c *Client) FetchHeroes() ([]Hero, string, error) {
 	body, _ := json.Marshal(graphQLRequest{Query: heroesQuery})
 	req, err := http.NewRequest("POST", c.Endpoint, bytes.NewReader(body))
 	if err != nil {
-		return nil, fmt.Errorf("building heroes request: %w", err)
+		return nil, "", fmt.Errorf("building heroes request: %w", err)
 	}
 	req.Header.Set("Content-Type", "application/json")
 	req.Header.Set("Authorization", "Bearer "+c.Token)
 	req.Header.Set("User-Agent", userAgent)
 	resp, err := c.HTTP.Do(req)
 	if err != nil {
-		return nil, fmt.Errorf("heroes request: %w", err)
+		return nil, "", fmt.Errorf("heroes request: %w", err)
 	}
 	defer resp.Body.Close()
 	if resp.StatusCode != http.StatusOK {
 		snippet, _ := io.ReadAll(io.LimitReader(resp.Body, 512))
-		return nil, fmt.Errorf("stratz heroes returned %d: %s", resp.StatusCode, string(snippet))
+		return nil, "", fmt.Errorf("stratz heroes returned %d: %s", resp.StatusCode, string(snippet))
 	}
 	return parseHeroes(resp.Body)
 }
 
-func parseHeroes(r io.Reader) ([]Hero, error) {
+func parseHeroes(r io.Reader) ([]Hero, string, error) {
 	var raw struct {
 		Data struct {
 			Constants struct {
@@ -156,11 +161,16 @@ func parseHeroes(r io.Reader) ([]Hero, error) {
 						AttackType           string `json:"attackType"`
 					} `json:"stats"`
 				} `json:"heroes"`
+				GameVersions []struct {
+					ID           int    `json:"id"`
+					Name         string `json:"name"`
+					AsOfDateTime int64  `json:"asOfDateTime"`
+				} `json:"gameVersions"`
 			} `json:"constants"`
 		} `json:"data"`
 	}
 	if err := json.NewDecoder(r).Decode(&raw); err != nil {
-		return nil, fmt.Errorf("decoding heroes: %w", err)
+		return nil, "", fmt.Errorf("decoding heroes: %w", err)
 	}
 	out := make([]Hero, 0, len(raw.Data.Constants.Heroes))
 	for _, h := range raw.Data.Constants.Heroes {
@@ -176,7 +186,17 @@ func parseHeroes(r io.Reader) ([]Hero, error) {
 			AttackType: h.Stats.AttackType,
 		})
 	}
-	return out, nil
+
+	var latestPatch string
+	var latestTime int64
+	for _, gv := range raw.Data.Constants.GameVersions {
+		if gv.AsOfDateTime > latestTime {
+			latestTime = gv.AsOfDateTime
+			latestPatch = gv.Name
+		}
+	}
+
+	return out, latestPatch, nil
 }
 
 func parseBracket(bracket Bracket, r io.Reader) (BracketResponse, error) {
@@ -190,12 +210,12 @@ func parseBracket(bracket Bracket, r io.Reader) (BracketResponse, error) {
 	return BracketResponse{Bracket: bracket, Weeks: raw.Data.HeroStats.WinWeek}, nil
 }
 
-// FetchAll fetches hero metadata plus 8 bracket histories sequentially with a
-// small sleep to stay well under the 7 rps rate limit.
-func (c *Client) FetchAll() ([]Hero, []BracketResponse, error) {
-	heroes, err := c.FetchHeroes()
+// FetchAll fetches hero metadata, current patch, plus 8 bracket histories
+// sequentially with a small sleep to stay well under the 7 rps rate limit.
+func (c *Client) FetchAll() ([]Hero, string, []BracketResponse, error) {
+	heroes, patch, err := c.FetchHeroes()
 	if err != nil {
-		return nil, nil, err
+		return nil, "", nil, err
 	}
 	brackets := make([]BracketResponse, 0, len(AllBrackets()))
 	for i, b := range AllBrackets() {
@@ -204,9 +224,9 @@ func (c *Client) FetchAll() ([]Hero, []BracketResponse, error) {
 		}
 		br, err := c.FetchBracket(b)
 		if err != nil {
-			return nil, nil, fmt.Errorf("bracket %s: %w", b, err)
+			return nil, "", nil, fmt.Errorf("bracket %s: %w", b, err)
 		}
 		brackets = append(brackets, br)
 	}
-	return heroes, brackets, nil
+	return heroes, patch, brackets, nil
 }

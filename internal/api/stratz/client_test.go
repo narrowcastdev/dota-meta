@@ -66,7 +66,7 @@ func TestFetchHeroes_ParsesFixture(t *testing.T) {
 	defer srv.Close()
 	c := NewClient("x")
 	c.Endpoint = srv.URL
-	got, err := c.FetchHeroes()
+	got, _, err := c.FetchHeroes()
 	if err != nil {
 		t.Fatalf("FetchHeroes: %v", err)
 	}
@@ -106,7 +106,7 @@ func TestFetchAll_MakesNinePlusRequests(t *testing.T) {
 	defer srv.Close()
 	c := NewClient("x")
 	c.Endpoint = srv.URL
-	heroes, brackets, err := c.FetchAll()
+	heroes, _, brackets, err := c.FetchAll()
 	if err != nil {
 		t.Fatalf("FetchAll: %v", err)
 	}

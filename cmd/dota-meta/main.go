@@ -5,9 +5,14 @@ import (
 	"encoding/json"
 	"flag"
 	"fmt"
+	"image"
+	_ "image/jpeg"
+	"image/png"
+	"net/http"
 	"os"
 	"path/filepath"
 	"strings"
+	"sync"
 	"time"
 
 	"github.com/narrowcastdev/dota-meta/internal/analysis"
@@ -88,6 +93,8 @@ func main() {
 	outputFile := flag.String("output", "", "write Reddit post to file instead of stdout")
 	jsonMode := flag.Bool("json", false, "output raw analysis as JSON")
 	htmlMode := flag.Bool("html", false, "generate docs/data.json for static site")
+	infographicFile := flag.String("infographic", "", "write per-bracket infographic PNGs to directory")
+	useImages := flag.Bool("images", false, "use image placeholders in Reddit post instead of tables")
 	minPicks := flag.Int("min-picks", 1000, "minimum picks to qualify a hero")
 	patch := flag.String("patch", "", "current Dota patch version (e.g. 7.40b)")
 	flag.Parse()
@@ -102,14 +109,18 @@ func main() {
 		os.Exit(1)
 	}
 	client := stratz.NewClient(token)
-	heroes, brackets, err := client.FetchAll()
+	heroes, detectedPatch, brackets, err := client.FetchAll()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "fetching stratz: %v\n", err)
 		os.Exit(1)
 	}
 
 	result := analysis.Analyze(heroes, brackets, *minPicks)
-	result.Patch = *patch
+	if *patch != "" {
+		result.Patch = *patch
+	} else {
+		result.Patch = detectedPatch
+	}
 	result.SnapshotDate = time.Now().UTC()
 	// WR/PR deltas now come from STRATZ week-over-week inside Analyze. Mark the
 	// prior snapshot as exactly one week ago for UI copy.
@@ -117,6 +128,36 @@ func main() {
 	result.PriorSnapshot = &prior
 
 	date := result.SnapshotDate.Format("January 2, 2006")
+
+	if *infographicFile != "" {
+		if err := os.MkdirAll(*infographicFile, 0755); err != nil {
+			fmt.Fprintf(os.Stderr, "Error creating directory %s: %v\n", *infographicFile, err)
+			os.Exit(1)
+		}
+		icons := fetchHeroIcons(result)
+		fmt.Fprintf(os.Stderr, "Fetched %d hero icons\n", len(icons))
+
+		images, igErr := format.FormatBracketImages(result, date, icons)
+		if igErr != nil {
+			fmt.Fprintf(os.Stderr, "Error generating infographics: %v\n", igErr)
+			os.Exit(1)
+		}
+		for _, bi := range images {
+			path := filepath.Join(*infographicFile, bi.Slug+".png")
+			f, fErr := os.Create(path)
+			if fErr != nil {
+				fmt.Fprintf(os.Stderr, "Error creating %s: %v\n", path, fErr)
+				os.Exit(1)
+			}
+			if fErr = png.Encode(f, bi.Image); fErr != nil {
+				f.Close()
+				fmt.Fprintf(os.Stderr, "Error encoding %s: %v\n", path, fErr)
+				os.Exit(1)
+			}
+			f.Close()
+			fmt.Fprintf(os.Stderr, "Wrote %s\n", path)
+		}
+	}
 
 	if *jsonMode {
 		data, jsonErr := format.FormatJSON(heroes, result)
@@ -144,7 +185,12 @@ func main() {
 		fmt.Fprintln(os.Stderr, "Wrote docs/data.json")
 	}
 
-	post := format.FormatReddit(result, date)
+	var post string
+	if *useImages {
+		post = format.FormatRedditWithImages(result, date)
+	} else {
+		post = format.FormatReddit(result, date)
+	}
 
 	if *outputFile != "" {
 		if writeErr := os.WriteFile(*outputFile, []byte(post), 0644); writeErr != nil {
@@ -156,4 +202,51 @@ func main() {
 	}
 
 	fmt.Print(post)
+}
+
+func fetchHeroIcons(result analysis.FullAnalysis) map[string]image.Image {
+	names := make(map[string]bool)
+	for _, ba := range result.Brackets {
+		for _, list := range [][]analysis.HeroStat{ba.Cores, ba.Supports} {
+			for _, s := range list {
+				if s.Hero.ShortName != "" {
+					names[s.Hero.ShortName] = true
+				}
+			}
+		}
+	}
+
+	icons := make(map[string]image.Image, len(names))
+	var mu sync.Mutex
+	var wg sync.WaitGroup
+	sem := make(chan struct{}, 10)
+	client := &http.Client{Timeout: 5 * time.Second}
+
+	for name := range names {
+		wg.Add(1)
+		go func(n string) {
+			defer wg.Done()
+			sem <- struct{}{}
+			defer func() { <-sem }()
+
+			url := "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/" + n + ".png"
+			resp, err := client.Get(url)
+			if err != nil {
+				return
+			}
+			defer resp.Body.Close()
+			if resp.StatusCode != http.StatusOK {
+				return
+			}
+			img, _, err := image.Decode(resp.Body)
+			if err != nil {
+				return
+			}
+			mu.Lock()
+			icons[n] = img
+			mu.Unlock()
+		}(name)
+	}
+	wg.Wait()
+	return icons
 }
