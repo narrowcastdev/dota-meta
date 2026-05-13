@@ -73,47 +73,71 @@ func TestFormatJSON_IncludesPriorSnapshotWhenSet(t *testing.T) {
 	}
 }
 
-func TestFormatReddit_HasTierSections(t *testing.T) {
+func TestFormatReddit_PlainSections(t *testing.T) {
 	full := analysis.FullAnalysis{
 		Patch: "7.40b", TotalMatches: 100000,
 		Brackets: []analysis.BracketAnalysis{{
 			Bracket: analysis.Bracket{Name: "Divine"},
 			Cores: []analysis.HeroStat{
-				{Hero: stratz.Hero{DisplayName: "Visage"}, WinRate: 55, PickRate: 5, Tier: analysis.TierMetaTyrant},
-				{Hero: stratz.Hero{DisplayName: "Sniper"}, WinRate: 56, PickRate: 1, Tier: analysis.TierPocketPick},
-				{Hero: stratz.Hero{DisplayName: "PA"}, WinRate: 45, PickRate: 10, Tier: analysis.TierTrap},
+				{Hero: stratz.Hero{ID: 1, DisplayName: "Visage"}, WinRate: 55, PickRate: 5, Picks: 12000, Tier: analysis.TierMetaTyrant},
+				{Hero: stratz.Hero{ID: 2, DisplayName: "Sniper"}, WinRate: 56, PickRate: 1, Picks: 1500, Tier: analysis.TierPocketPick},
+				{Hero: stratz.Hero{ID: 3, DisplayName: "PA"}, WinRate: 45, PickRate: 10, Picks: 20000, Tier: analysis.TierTrap},
+			},
+			Supports: []analysis.HeroStat{
+				{Hero: stratz.Hero{ID: 4, DisplayName: "Lion"}, WinRate: 54, PickRate: 8, Picks: 18000},
 			},
 		}},
 	}
 	post := FormatReddit(full, "April 23, 2026")
-	for _, want := range []string{"Meta Tyrants", "Pocket Picks", "Traps", "Top Cores", "7.40b", "Visage", "Sniper", "PA", "👑", "🎯", "🪤"} {
+	wants := []string{
+		"Best heroes by bracket",
+		"Sleeper picks",
+		"Best support heroes",
+		"Trap picks",
+		"7.40b",
+		"STRATZ",
+		"Visage", "Sniper", "PA", "Lion",
+	}
+	for _, want := range wants {
 		if !strings.Contains(post, want) {
 			t.Errorf("missing %q in post", want)
 		}
 	}
+	for _, banned := range []string{"👑", "🎯", "🪤", "💀", "🔥", "💎", "Meta Tyrant", "Momentum watch", "Tier"} {
+		if strings.Contains(post, banned) {
+			t.Errorf("unexpected %q in post — should be plain format", banned)
+		}
+	}
 }
 
-func TestFormatReddit_MomentumSectionOnlyWhenPresent(t *testing.T) {
+func TestFormatReddit_BracketDelta(t *testing.T) {
 	full := analysis.FullAnalysis{
 		Patch: "7.40b",
-		Brackets: []analysis.BracketAnalysis{{
-			Bracket: analysis.Bracket{Name: "Divine"},
-			Cores: []analysis.HeroStat{
-				{Hero: stratz.Hero{DisplayName: "Lina"}, WinRate: 55, PickRate: 5, Tier: analysis.TierMetaTyrant, Momentum: analysis.MomentumHidden},
+		Brackets: []analysis.BracketAnalysis{
+			{
+				Bracket: analysis.Bracket{Name: "Herald-Guardian"},
+				Cores: []analysis.HeroStat{
+					{Hero: stratz.Hero{ID: 1, DisplayName: "Sniper"}, WinRate: 55, PickRate: 5},
+					{Hero: stratz.Hero{ID: 2, DisplayName: "Invoker"}, WinRate: 45, PickRate: 5},
+				},
 			},
-		}},
+			{
+				Bracket: analysis.Bracket{Name: "Divine"},
+				Cores: []analysis.HeroStat{
+					{Hero: stratz.Hero{ID: 1, DisplayName: "Sniper"}, WinRate: 48, PickRate: 5},
+					{Hero: stratz.Hero{ID: 2, DisplayName: "Invoker"}, WinRate: 53, PickRate: 5},
+				},
+			},
+		},
 	}
 	post := FormatReddit(full, "April 23, 2026")
-	if !strings.Contains(post, "Momentum watch") {
-		t.Error("expected Momentum watch section")
+	if !strings.Contains(post, "Bracket delta") {
+		t.Error("expected Bracket delta section")
 	}
-	if !strings.Contains(post, "Hidden gems") {
-		t.Error("expected Hidden gems subsection")
+	if !strings.Contains(post, "Low bracket stompers") || !strings.Contains(post, "Sniper") {
+		t.Error("expected Sniper as low-bracket stomper")
 	}
-	// No momentum → no section
-	full.Brackets[0].Cores[0].Momentum = analysis.MomentumNone
-	post = FormatReddit(full, "April 23, 2026")
-	if strings.Contains(post, "Momentum watch") {
-		t.Error("should not include Momentum section when empty")
+	if !strings.Contains(post, "High skill ceiling") || !strings.Contains(post, "Invoker") {
+		t.Error("expected Invoker as high skill ceiling")
 	}
 }
